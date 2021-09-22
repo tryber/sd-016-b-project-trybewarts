@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  font-weight: 900;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+main form h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#agreement {
+  margin-left: 12px;
+}
+
+#agreement , #label-infos {
+  margin-top: 15px;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#fullName {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#house {
+  margin-left: 5px;
+}
+
+#input-email {
+  margin-right: 5px;
+}
+
+#input-name {
+  margin-right: 5px;
+}
+
+#rate-container {
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-evenly;
+}
+
+#selectHouse {
+  display: flex;
+}
+
+#submit-btn {
+  margin-top: 20px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-family: Courier New, Courier, monospace;
+  font-size: 20px;
+}
+
+.formView {
+  height: 50px;
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+
+
+.half {
+  flex-basis: 50%;
+}
+
+.header {
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  height: 60px;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-basis: 24%;
+  justify-content: space-between;
+  margin-right: 28px;
+}
+
+.container-secondSection {
+  display: flex;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-inputs-family {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  margin: 40px;
+}
+
+.label-choices {
+  flex-wrap: wrap;
+  padding-right: 20px;
+}
