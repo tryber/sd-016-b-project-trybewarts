@@ -1,0 +1,146 @@
+/* Header */
+body {
+  margin: 0;
+  background-color: rgb(236, 236, 236);
+  font-weight: 700;
+  font-family: Koh Santepheap, cursive;
+}
+
+input {
+  border: 0;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  left: 0;
+  padding: 0.5%;
+  top: 0;
+  margin-bottom: 20px;
+}
+
+.trybewarts-header-logo {
+  margin-left: 1%;
+  width: 60px;
+  align-self: center;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.header form input {
+  color: rgb(38, 124, 108);
+  height: 32px;
+  margin: auto 5px;
+  width: 140px;
+}
+
+.header form input:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.header form button {
+  background-color: rgb(87, 32, 160);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  height: 32px;
+  margin: auto 5px;
+  width: 140px;
+}
+
+.header form button:hover {
+  background-color: rgb(42, 7, 87);
+}
+
+#trybewarts-header-title {
+  color: white;
+  align-self: center;
+  font-weight: 700;
+}
+
+/* Forms */
+#trybewarts-forms-logo {
+  margin-top: 40px;
+  height: 500px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-flow: column wrap;
+  width: 675px;
+}
+
+#input-name {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#input-lastname {
+  width: 49.7%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#input-email {
+  width: 49.7%;
+  padding: 10px;
+}
+
+#house {
+  width: 30%;
+  padding: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 10px 20px;
+  justify-content: space-around;
+}
+
+hr {
+  width: 80%;
+  height: 2px;
+  align-self: center;
+}
+
+.flex-row {
+  display: flex;
+}
+
+#text-area {
+  border-radius: 5px;
+  border: 1px rgb(42, 7, 87) solid;
+  resize: none;
+  align-self: center;
+  width: 700px;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(77, 76, 76);
+  justify-content: center;
+  height: 30px;
+  margin-top: 20px;
+}
+
+/* contador */
+#counter {
+  position: absolute;
+  margin: 550px 0 0 282.8px;
+}
