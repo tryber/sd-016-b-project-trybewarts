@@ -6,9 +6,22 @@
   width: 100%;
 }
 
+main {
+  display: flex;
+}
+
+#evaluation-form{
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
 .trybewarts-header-logo {
   height: 60px;
   margin-left: 8px;
+}
+*{
+  margin: 0;
 }
 
 #trybewarts-header-title {
