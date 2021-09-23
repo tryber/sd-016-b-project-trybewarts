@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
   <title>Trybewarts</title>
 </head>
 <body>
@@ -15,7 +19,7 @@
     <form class="trybewarts-login" action="#"">
       <input class="user-email" type="email" name="email" placeholder="Email">
       <input class="user-password" type="password" name="password" placeholder="Senha">
-      <button class="loginBtn">Entrar</button>
+      <button class="loginBtn button is-danger is-light">Entrar</button>
     </form>
   </header>
 
@@ -43,24 +47,26 @@
       <hr>
       <div class="container-secondSection">
           <div class="container-inputs-family">
-            <h2 id="label-family">Qual sua família?</h2>
-            <label for="family"><input type="radio" name="family" value="Frontend">Frontend</label>
-            <label for="family"><input type="radio" name="family" value="Backend">Backend</label>
-            <label for="family"><input type="radio" name="family" value="FullStack">Fullstack</label>
+            <label id="label-family" for="family">Qual sua família?</label>
+            <label class="margin"  for="family"><input type="radio" name="family" value="Frontend">Frontend</label>
+            <label class="margin"  for="family"><input type="radio" name="family" value="Backend">Backend</label>
+            <label class="margin"  for="family"><input type="radio" name="family" value="FullStack">Fullstack</label>
           </div>
-          <div>
-            <h2 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h2>
+
+          <div class="learn">
+            <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
             <div class="label-choices">
-              <label for="HoFs"><input type="checkbox" value="HoFs">HoFs</label>
-              <label for="Jest"><input type="checkbox" value="Jest">Jest</label>
-              <label for="Promises"><input type="checkbox" value="Promises">Promises</label>
-              <label for="React"><input type="checkbox" value="React">React</label>
-              <label for="SQL"><input type="checkbox" value="SQL">SQL</label>
-              <label for="Python"><input type="checkbox" value="Python">Python</label>
+              <input type="checkbox" value="HoFs">HoFs</label>
+              <input type="checkbox" value="Jest">Jest</label>
+              <input type="checkbox" value="Promises">Promises</label>
+              <input type="checkbox" value="React">React</label>
+              <input type="checkbox" value="SQL">SQL
+              <input type="checkbox" value="Python">Python
             </div>
           </div>
-        </div>
       </div>
+
+      <hr>
 
       <div id="rate-container">
         <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
@@ -75,24 +81,27 @@
           <input name="rate" value="9" type="radio">9
           <input name="rate" value="10" type="radio">10
       </div>
+
+      <hr>
       
       <label class="textarea" for="">Deixe seu comentário:</label>
-      <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+      <textarea placeholder="DEIXE SEU COMENTÁRIO" name="" id="" cols="30" rows="10" maxlength="500"></textarea>
 
       <div>
         <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
         <input id="agreement" type="checkbox">
       </div>
 
-      <button id="submit-btn" class="formView" type="submit">Enviar</button>
+      <button id="submit-btn" class="formView button is-success" type="submit">Enviar</button>
       
     </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="brasão Trybewarts">
+    <div id="right-side">
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="brasão Trybewarts">
+      <footer>
+        Direitos reservados à Trybewarts©
+      </footer>
+    </div>
   </main>
-
-  <footer>
-    Direitos reservados à Trybewarts©
-  </footer>
 <script src="script.js"></script>  
 </body>
 </html>
