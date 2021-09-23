@@ -44,11 +44,6 @@ main , #evaluation-form {
   margin: 10px;
 }
 
-#frontend , #backend , #fullstack {
-  display: flex;
-  flex-direction: column;
-}
-
 .checkbox-container {
   display: flex;
   flex-direction: column;
