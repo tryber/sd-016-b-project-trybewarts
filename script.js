@@ -47,39 +47,47 @@ function contador(chars) {
 
 textArea.addEventListener('input', contador);
 
-
-//Exercício 21
+// Exercício 21
 function inputRadioValue(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if(arr[i].checked){
-      return arr[i].value
-    }    
+  for (let i = 0; i < arr.length; i += 1) {
+    if (arr[i].checked) {
+      return arr[i].value;
+    }
   }
 }
 function inputCheckboxValue(arr) {
-  let aux = []
-  for (let i = 0; i < arr.length; i++) {
-    if(arr[i].checked){
-      aux.push(arr[i].value)
-    }    
+  const aux = [];
+  for (let i = 0; i < arr.length; i += 1) {
+    if (arr[i].checked) {
+      aux.push(arr[i].value);
+    }
   }
-  return aux
+  return aux;
 }
+function criaParagrafo(value, name) {
+  return `<p>${name}: ${value}</p>`;
+}
+const nome = document.getElementById('input-name').value;
+const sobrenome = document.getElementById('input-lastname').value;
+const nomeCompleto = `${nome} ${sobrenome}`;
+const email = document.getElementById('input-email').value;
+const casa = document.getElementById('house').value;
+const comentario = document.getElementById('textarea').value;
+const familia = inputRadioValue(document.getElementsByName('family'));
+const conteudo = inputCheckboxValue(document.getElementsByName('conteudo'));
+const rate = inputRadioValue(document.getElementsByName('rate'));
+const form = document.getElementById('evaluation-form');
 function enviarFormulario(event) {
   event.preventDefault();
-  let nome = document.getElementById('input-name').value;
-  let sobrenome = document.getElementById('input-lastname').value;
-  let email = document.getElementById('input-email').value;
-  let casa = document.getElementById('house').value;
-  let comentario = document.getElementById('textarea').value;
-  let familia = inputRadioValue(document.getElementsByName('family'));
-  let conteudo = inputCheckboxValue(document.getElementsByName('conteudo'));
-  let rate =inputRadioValue(document.getElementsByName('rate'));
-  let form = document.getElementById('evaluation-form')
-
-
-  form.innerHTML = "<p>Nome: " + nome + " " + sobrenome + "</p><p>Email: " + email + "</p><p>Casa: " + casa + "</p><p>Família: " + familia + "</p><p>Matérias: " + conteudo.join(', ') + "</p><p>Avaliação: " + rate + "</p><p>Observações: " + comentario + "</p>";
-  
+  let p;
+  p = criaParagrafo(nomeCompleto, 'Nome');
+  p += criaParagrafo(email, 'Email');
+  p += criaParagrafo(casa, 'Casa');
+  p += criaParagrafo(familia, 'Família');
+  p += criaParagrafo(conteudo.join(', '), 'Matérias');
+  p += criaParagrafo(rate, 'Avaliação');
+  p += criaParagrafo(comentario, 'Observações');
+  form.innerHTML = p;
 }
 
 botaoEnviar.addEventListener('click', enviarFormulario);
