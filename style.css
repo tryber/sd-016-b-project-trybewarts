@@ -84,6 +84,7 @@ main {
   display: flex;
   flex-flow: wrap row;
   justify-content: space-around;
+  align-items: flex-start;
 }
 
 .input-container input {
@@ -109,7 +110,6 @@ main {
   border-radius: 7px;
   padding: 10px;
   font-size: medium;
-  margin-bottom: 20px;
   flex-grow: 1;
 }
 
