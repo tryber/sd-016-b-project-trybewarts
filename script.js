@@ -1,6 +1,7 @@
 const sendButton = document.querySelector('#btn-entrar');
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
+const checkBox = document.querySelector('#agreement');
 
 function validateLog(event) {
   event.preventDefault();
@@ -11,17 +12,31 @@ function validateLog(event) {
   }
 }
 
-sendButton.addEventListener('click', validateLog);
+/* const submitButton = document.querySelector('#submit-btn');
 
-const checkBox = document.querySelector('#agreement');
-const submitButton = document.querySelector('#submit-btn');
+submitButton.addEventListener('click', () => {
 
-checkBox.addEventListener('click', () => {
-  submitButton.disable = true;
 });
-
-/*
-if (checkBox.checked === true) {
-  submitButton.disable = false;
-}
 */
+
+function enableButton() {
+  document.querySelector('#submit-btn').disabled = false;
+}
+
+function disableButton() {
+  document.querySelector('#submit-btn').disabled = true;
+}
+
+function verifyChecked() {
+  console.log('hello');
+  enableButton();
+}
+
+window.onload = () => {
+  sendButton.addEventListener('click', validateLog);
+
+  disableButton();
+  checkBox.addEventListener('click', () => {
+    verifyChecked();
+  });
+};
