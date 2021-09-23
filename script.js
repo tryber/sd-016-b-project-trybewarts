@@ -23,10 +23,12 @@ function agreementCheck() {
 }
 agreementCheck();
 
-// contador
 const texto = document.getElementById('textarea');
-const counter = document.getElementById('counter');
-function counterCharacter() {
-  counter.value = 500 - texto.value.length;
+const p = document.getElementById('counter');
+p.innerHTML = 500;
+function contador() {
+  const textArea = texto.value.length;
+  const calcularContador = 500 - textArea;
+  p.innerText = calcularContador;
 }
-counterCharacter();
+texto.addEventListener('keyup', contador);
