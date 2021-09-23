@@ -111,3 +111,11 @@ main {
   display: flex;
   align-items: center;
 }
+
+.coment {
+  justify-content: space-around;
+  display: flex;
+  margin: 50px;
+  height: 100px;
+  width: 400px;
+}
