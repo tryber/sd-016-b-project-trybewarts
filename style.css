@@ -75,8 +75,11 @@ main input {
   height: 50px;
   left: 0;
   text-align: center;
-  padding: 10px 10px 0px 10px;
   position: fixed;
   right: 0;
   width: 100%;
+}
+
+.footer p {
+  margin-top: 16px;
 }
