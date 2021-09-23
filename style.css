@@ -67,3 +67,16 @@ main input {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.footer {
+  background-color: rgb(50, 167, 145);
+  bottom: 0;
+  color: white;
+  height: 50px;
+  left: 0;
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+  position: fixed;
+  right: 0;
+  width: 100%;
+}
