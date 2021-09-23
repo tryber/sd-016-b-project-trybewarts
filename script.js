@@ -1,10 +1,10 @@
-const inputEmail = document.getElementById('email');
-const inputPassword = document.getElementById('senha');
-const buttonEnter = document.getElementById('btn-entrar');
+const inputEmail = document.querySelector('#email');
+const inputPassword = document.querySelector('#senha');
+const buttonEnter = document.querySelector('#btn-entrar');
 const checkAgreement = document.querySelector('#agreement');
 const btnSubmit = document.querySelector('#submit-btn');
-const textArea = document.getElementById('textarea');
-const countCaracters = document.getElementById('counter');
+const textArea = document.querySelector('#textarea');
+const countCaracters = document.querySelector('#counter');
 
 buttonEnter.addEventListener('click', (event) => {
   event.preventDefault();
@@ -44,7 +44,6 @@ function conteudoCheck() {
   }
   return check.join(', ');
 }
-
 
 btnSubmit.addEventListener('click', (event) => {
   event.preventDefault();
