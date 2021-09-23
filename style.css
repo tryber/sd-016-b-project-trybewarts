@@ -5,18 +5,22 @@
 
 .header {
   display: flex;
+
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  border: tomato;
 }
 
 .trybewarts-login {
-  display: flex;
+  /* height: 50px; */
+  /* display: flex; */
 }
 
 .flex-container-main {
   display: flex;
-
+  justify-content:flex-end;
+  margin: 50px;
 }
 
 #evaluation-form {
@@ -45,4 +49,13 @@
 
 #submit-btn {
   
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3C404A;
+  height: 50px;
+  color: rgb(187, 187, 187);
 }
