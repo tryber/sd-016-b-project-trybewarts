@@ -19,21 +19,19 @@ window.onload = () => {
   btnSubmit.disabled = true;
 };
 
-function agreementValidation() {
+checkAgreement.addEventListener('click', () => {
   if (checkAgreement.checked) {
     btnSubmit.disabled = false;
   } else {
     btnSubmit.disabled = true;
   }
-}
-checkAgreement.addEventListener('click', agreementValidation);
+});
 
 countCaracters.innerText = 500;
-function textCount() {
+textArea.addEventListener('keyup', () => {
   const count = 500 - textArea.value.length;
   countCaracters.innerText = `${count}`;
-}
-textArea.addEventListener('keyup', textCount);
+});
 
 function conteudoCheck() {
   const conteudo = document.getElementsByClassName('subject');
@@ -48,7 +46,7 @@ function conteudoCheck() {
 }
 
 // const data = document.getElementById('data');
-function dataForm(event) {
+btnSubmit.addEventListener('click', (event) => {
   event.preventDefault();
   const inputN = document.querySelector('#input-name').value;
   const inputL = document.querySelector('#input-lastname').value;
@@ -62,6 +60,4 @@ function dataForm(event) {
   form.innerHTML = `Nome: ${inputN} ${inputL} Email: ${inputEmailF}  Casa: ${house}`;
   form.innerHTML += `Família: ${family}  Matérias: ${checkbox}  Avaliação: ${evo}`;
   form.innerHTML += `Observações: ${textarea}`;
-}
-
-btnSubmit.addEventListener('click', dataForm);
+});
