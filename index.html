@@ -14,14 +14,37 @@
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <!-- FORMULÁRIO LOGIN -->
     <form action="" class="trybewarts-login">
-      <input type="email" class="trybewarts-email"name="email" placeholder="Email" required>
-      <input type="password"class="trybewarts-password" name="password"placeholder="Senha" required>
+      <input type="email" class="trybewarts-email" name="email" placeholder="Email" required>
+      <input type="password" class="trybewarts-password" name="password" placeholder="Senha" required>
       <button class="trybewarts-submit">Entrar</button>
     </form>
   </header>
   <main>
     <form id="evaluation-form">
-      
+      <div class="name-lastname-container">
+        <input type="text" id="input-name" name="nome" placeholder="Nome" required>
+        <input type="text" id="input-lastname" name="sobrenome" placeholder="Sobrenome" required>
+      </div>
+      <div>
+        <input type="text" id="input-email" name="email" placeholder="Email" required>
+        <label for="house">Casa: </label>
+        <select name="casa" id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+      <div>
+        <div class="family-container">
+          <label for="" id="label-family">Qual sua família?</label>
+        </div>
+        <div class="learning-container">
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <input type="checkbox" value="HoFs">
+        </div>
+      </div>
+      <button class="trybewarts-submit">Entrar</button>
     </form>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
   </main>
