@@ -22,12 +22,11 @@
     <main>
         <sectio id="formMain">
             <form action="#" id="evaluation-form">
-                <div id="nameAndLastname">
+                <div id="nameAndLastname" class="first-part-form ">
                     <input type="text" name="name" id="input-name" placeholder="Nome">
                     <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
                 </div>
-                <div>
-                    <div id="emailAndHouse">
+                    <div id="emailAndHouse" class="first-part-form ">
                         <input type="email" name="email" id="input-email" placeholder="Email">
                         <select name="houseSelect" id="house">
                             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -36,32 +35,33 @@
                             <option id="pytherina-house" value="Pytherina">Pytherina</option>
                         </select>
                     </div>
-                    <div class="radio-family">
-                        <div id="label-family">
-                            <label id="label-family">Qual sua família?</label>
-                        </div>
+                    <hr>
+                   <div> 
+                    <div class="radio-family second-part-form ">
+                        <label id="label-family">Qual sua família?</label>
                         <input type="radio" name="family" value="Frontend" id="radioFrontend">Frontend
                         <input type="radio" name="family" value="Backend" id="radioBackend">Backend
                         <input type="radio" name="family" value="FullStack" id="radioFullStack">FullStack
                     </div>
-                    <div class="checkbox">
+                    <div class="checkbox second-part-form ">
                         <label for="#" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
                         <div class="checkbox-itens">
-                            <label for="HoFs">HoFs</label>
                             <input type="checkbox" value="HoFs" id="HoFs">
-                            <label for="Jest">Jest</label>
+                            <label for="HoFs">HoFs</label>
                             <input type="checkbox" value="Jest" id="Jest">
-                            <label for="Promises">Promises</label>
+                            <label for="Jest">Jest</label>
                             <input type="checkbox" value="Promises" id="Promises">
-                            <label for="React">React</label>
+                            <label for="Promises">Promises</label>
                             <input type="checkbox" value="React" id="React">
-                            <label for="SQL">SQL</label>
+                            <label for="React">React</label>
                             <input type="checkbox" value="SQL" id="SQL">
-                            <label for="Python">Python</label>
+                            <label for="SQL">SQL</label>
                             <input type="checkbox" value="Python" id="Python">
+                            <label for="Python">Python</label>
                         </div>
                     </div>
                 </div>
+                <hr>
                 <div class="rate">
                     <div id="label-rate">
                         <label for="">Como você avalia a Trybewarts?</label>
@@ -97,7 +97,7 @@
                 <button type="submit" id="submit-btn" disabled>Enviar</button>
             </form>
         </sectio>
-        <aside>
+        <aside id="img-brasao">
             <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo-TrybeWarts">
         </aside>
     </main>
