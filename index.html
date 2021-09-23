@@ -32,7 +32,7 @@
 
       <form action="" method="post" id="evaluation-form">
 
-      <section class="section1">
+        <section class="section1">
           <div class="alingMail">
             <input type="text" name="name" class="inputStyle" id="input-name" placeholder="Nome">
             <input type="text" name="name" class="inputStyle" id="input-lastname" placeholder="Sobrenome">
@@ -41,7 +41,7 @@
           <div class="alingMail">
             <input type="email" name="email" id="input-email" class="inputStyle" placeholder="Email">
             <label for="house">Casa:
-              <select name="" id="house" class="inputStyle" >
+              <select name="" id="house" class="inputStyle">
                 <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                 <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                 <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -49,7 +49,7 @@
               </select>
             </label>
           </div>
-      </section>
+        </section>
 
         <hr>
 
@@ -65,19 +65,19 @@
           <div class="tecnologias">
             <h4 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h4>
             <div class="tecCheck">
-            <label class="tecCheck"> <input type="checkbox" value="HoFs">HoFs</label>
-            <label class="tecCheck"> <input type="checkbox" value="Jest">Jest</label>
-            <label class="tecCheck"> <input type="checkbox" value="Promises">Promises</label>
-            <br>
-            <label class="tecCheck"> <input type="checkbox" value="React">React</label>
-            <label class="tecCheck"> <input type="checkbox" value="SQL">SQL</label>
-            <label class="tecCheck"> <input type="checkbox" value="Python">Python</label>
+              <label class="tecCheck"> <input type="checkbox" value="HoFs">HoFs</label>
+              <label class="tecCheck"> <input type="checkbox" value="Jest">Jest</label>
+              <label class="tecCheck"> <input type="checkbox" value="Promises">Promises</label>
+              <br>
+              <label class="tecCheck"> <input type="checkbox" value="React">React</label>
+              <label class="tecCheck"> <input type="checkbox" value="SQL">SQL</label>
+              <label class="tecCheck"> <input type="checkbox" value="Python">Python</label>
             </div>
           </div>
         </section>
         <hr>
         <section class="section3">
-          <h4 id="label-rate">Como você avalia a Trybewarts?</h4> 
+          <h4 id="label-rate">Como você avalia a Trybewarts?</h4>
           <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="1">1</label>
           <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="2">2</label>
           <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="3">3</label>
@@ -90,16 +90,19 @@
           <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="10">10</label>
         </section>
 
-        <section  class="section4">
-          <label for="" class="textarea"><h4>Deixe seu comentário:</h4>
+        <section class="section4">
+          <label for="" class="textarea">
+            <h4>Deixe seu comentário:</h4>
             <textarea name="textarea" id="textarea" class="textarea" cols="80" rows="10" maxlength="500rows"></textarea>
+            <div id="counter">500 caracteres disponiveis</div>
+            <!-- com essas condicoes aqui, o campo do textarea vai ficar com mais caracteres do 500, neh? deveriamos mudar o numero de colunas e linhas pra chegar no numero certo? -->
           </label>
-
         </section>
 
         <section class="section5">
           <label for="agreement" id="label-infos" name="agreement">
-            Você concorda com o uso das informações acima? <input type="checkbox" name="agreement" id="agreement"class="contractCheck">
+            Você concorda com o uso das informações acima?
+            <input type="checkbox" name="agreement" id="agreement" class="contractCheck">
           </label>
         </section>
         <button type="submit" id="submit-btn" disabled preventdefault>Enviar</button>

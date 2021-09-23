@@ -20,3 +20,15 @@ contractCheck.addEventListener('click', () => {
   const btnSend = query('#submit-btn');
   btnSend.removeAttribute('disabled');
 });
+
+
+// Requisito 20
+const textArea = document.querySelector('#textarea')
+const remaininhCaracteres = document.querySelector('#counter')
+const MAX_CARACTERES = 500
+
+textArea.addEventListener('input', () => {
+  const remaining = (MAX_CARACTERES - textArea.value.length)
+
+  remaininhCaracteres.textContent = `${remaining} caracteres disponiveis `
+})
