@@ -3,6 +3,8 @@ const senha = document.querySelector('#senha');
 const botaoLogin = document.querySelector('#botaoLogin');
 const checkBoxTermo = document.querySelector('#agreement');
 const botaoEnviar = document.querySelector('#submit-btn');
+const comentario = document.querySelector('#textarea');
+const contagem = document.querySelector('#counter');
 
 // Varifica se o e-mail e senha estão corretos
 function varificaUsuario() {
@@ -33,3 +35,13 @@ function verificaCheckTermo() {
 }
 
 checkBoxTermo.addEventListener('click', verificaCheckTermo);
+
+// conta quantos caracteres tem escrito em comentarios
+contagem.innerHTML = 500;
+
+function contaCaracter() {
+  const QtdCaracter = comentario.value.length;
+  contagem.innerHTML = (500 - QtdCaracter);
+}
+
+comentario.addEventListener('keyup', contaCaracter);
