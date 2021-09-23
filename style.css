@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+main {
+  display: flex;
+}
+
+main form {
+  display: flex;
+  width: 675px;
+}
+
+section div {
+  display: flex;
+}
+
+main div {
+  margin: 20px 0;
+  justify-content: center;
+}
+
+#main-pag {
+  display: flex;
+  justify-content: space-between;
+}
+
+#evaluation-form {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.trybewarts-header-logo {
+  height: 90px;
+}
+
+#conteudo2 {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  justify-content: space-around;
+}
+
+#Qfamilia div {
+  display: flex;
+  flex-direction: column;
+}
+
+#Qconteudo div {
+  flex-direction: row;
+  height: 100px;
+  width: 55%;
+}
+
+#avalicao div {
+  display: flex;
+}
+
+#checkboxAvalicao {
+  display: flex;
+}
+
+#textAvalicao {
+  flex-direction: column;
+}
+
+
+hr {
+  width: 600px;
+}
+
+.trybewarts-login input {
+  width: 130px;
+  height: 30px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+footer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
