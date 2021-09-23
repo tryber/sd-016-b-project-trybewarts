@@ -17,6 +17,7 @@
 body {
   background-color: rgb(235, 235, 235);
   font-family: Times, serif;
+  font-size: 18px;
 }
 
 .trybewarts-login {
@@ -31,6 +32,8 @@ body {
   height: 28px;
   border-radius: 5px;
   border: 1px solid white;
+  font-family: Times, serif;
+  font-size: 16px;
 }
 
 #loginButton {
@@ -39,6 +42,8 @@ body {
   border: none;
   align-self: center;
   margin-right: 20px;
+  font-family: Times, serif;
+  font-size: 16px;
 }
 
 #trybewarts-header-title {
@@ -55,7 +60,8 @@ footer {
   bottom: 0;
   position: absolute;
   width: 100%;
-  padding: 15px;
+  padding: 6px;
+  height: auto;
 }
 
 .forms-logo {
@@ -102,11 +108,41 @@ footer {
 
 #input-name {
   margin-right: 10px;
+  padding: 5px;
+  width: 300px;
+  font-family: Times, serif;
+  font-size: 17px;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
+}
+
+#input-lastname {
+  padding: 5px;
+  width: 300px;
+  font-family: Times, serif;
+  font-size: 17px;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
 }
 
 #input-email {
   margin-right: 10px;
   margin-top: 10px;
+  padding: 5px;
+  width: 300px;
+  font-family: Times, serif;
+  font-size: 17px;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
+}
+
+#house {
+  padding: 5px;
+  width: 250px;
+  font-family: Times, serif;
+  font-size: 17px;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
 }
 
 .subsection {
@@ -141,6 +177,23 @@ footer {
   background-color: rgb(8, 148, 8);
   color: white;
   border: none;
+  border-radius: 3px;
   align-self: center;
   margin-right: 20px;
+}
+
+#textarea {
+  resize: none;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
+}
+
+.titleT {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+#houseC {
+  font-size: 20px;
 }
