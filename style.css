@@ -83,11 +83,16 @@ h1 {
 .linha1 , .linha2 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   flex-basis: 46%;
 }
 
 .checkbox {
   display: flex;
+}
+
+.select-family {
+  display: block;
 }
 
 .cadastro3 {

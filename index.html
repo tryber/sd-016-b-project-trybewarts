@@ -38,23 +38,38 @@
 
       <div class="cadastro2">
         <div class="linha1">
-          <label for="family" id="label-family">Qual sua família?</label>
-          <input type="radio" name="family" value="Frontend">Frontend
-          <input type="radio" name="family" value="Backend">Backend
-          <input type="radio" name="family" value="FullStack">FullStack
+          <legend for="family" id="label-family">Qual sua família?</legend>
+          <div class="select-family">
+            <input type="radio" name="family" value="Frontend">
+            <label for="">Frontend </label>
+          </div>
+          <div class="select-family">
+            <input type="radio" name="family" value="Backend">
+            <label for="">Backend </label>
+          </div>
+          <div class="select-family">
+            <input type="radio" name="family" value="FullStack">
+            <label for="">FullStack </label>
+          </div>
         </div>
 
         <div class="linha2">
           <div>
-            <label for="aprender" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <legend for="aprender" id="label-content">Qual conteúdo você está com mais vontade de aprender?</legend>
           </div>
           <div class="checkbox">
-            <input type="checkbox" name="aprender" id="" value="HoFs"> HoFs
-            <input type="checkbox" name="aprender" id="" value="Jest">Jest
-            <input type="checkbox" name="aprender" id="" value="Promises">Promises
-            <input type="checkbox" name="aprender" id="" value="React">React
-            <input type="checkbox" name="aprender" id="" value="SQL">SQL
-            <input type="checkbox" name="aprender" id="" value="Python">Python
+            <input type="checkbox" name="aprender" value="HoFs"> 
+            <label for="">HoFs</label>
+            <input type="checkbox" name="aprender" value="Jest">
+            <label for="">Jest</label>
+            <input type="checkbox" name="aprender" value="Promises">
+            <label for="">Promises</label>
+            <input type="checkbox" name="aprender" value="React">
+            <label for="">React</label>
+            <input type="checkbox" name="aprender" value="SQL">
+            <label for="">SQL</label>
+            <input type="checkbox" name="aprender" value="Python">
+            <label for="">Python</label>
           </div>
         </div>
       </div>
@@ -79,8 +94,8 @@
       </div>
 
       <div class="cadastro5">
-        <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" id="agreement" required>
+        <label for="checkbox" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="checkbox" id="agreement">
       </div>
       
       <button type="submit" id="submit-btn">Enviar</button>

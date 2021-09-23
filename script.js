@@ -1,7 +1,6 @@
 const inputEmail = document.querySelector('.email');
 const inputSenha = document.querySelector('.senha');
 const buttonEntrar = document.querySelector('.entrar');
-// const buttonEnviar = document.querySelector('#submit-btn');
 
 buttonEntrar.addEventListener('click', () => {
   if (inputEmail.value === 'tryber@teste.com' && inputSenha.value === '123456') {
@@ -10,3 +9,12 @@ buttonEntrar.addEventListener('click', () => {
   }
   return alert('Email ou senha inválidos.');
 });
+
+// const buttonEnviar = document.querySelector('#submit-btn');
+// const inputCheckbox = document.querySelector('#agreement');
+
+// if (inputCheckbox.value) {
+//   buttonEnviar.disabled = false;
+// } else {
+//   buttonEnviar.disabled = true;
+// }
