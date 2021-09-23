@@ -3,6 +3,8 @@ const password = document.querySelector('.password');
 const loginButton = document.querySelector('.loginbtt');
 const check = document.getElementById('agreement');
 const botaoEnviar = document.getElementById('submit-btn');
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
 
 function login(event) {
   event.preventDefault();
@@ -24,3 +26,8 @@ function itsChecked() {
 }
 
 check.addEventListener('click', itsChecked);
+
+textArea.addEventListener('input', () => {
+  const atual = 500;
+  counter.innerText = (atual - textArea.value.length);
+});

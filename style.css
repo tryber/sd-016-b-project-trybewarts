@@ -1,23 +1,113 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Berkshire Swash, cursive;
+  font-weight: 100;
+}
+
+body {
+  background-color: rgb(236, 236, 236);
 }
 
 .header {
   display: flex;
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  align-items: center;
+  padding: 0 5vh;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: white;
 }
 
 .trybewarts-login {
   display: flex;
+  height: 30px;
+}
+
+.input {
+  margin-left: 10px;
+  width: 130px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 8px;
+  height: 30px;
+}
+
+.trybewarts-login button {
+  margin-left: 10px;
+  width: 60px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(119, 0, 255);
+  color: white;
+  font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.trybewarts-login button:hover {
+  background-color: rgba(119, 0, 255, 0.685);
+  cursor: pointer;
+}
+
+.trybewarts-header-logo {
+  height: 45px;
 }
 
 main {
   display: flex;
-  margin-left: 1%;
+  margin: 0 150px;
+  justify-content: space-between;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario h1 {
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.name-surname {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.name-surname input {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+select option:first-child {
+  background-color: aquamarine;
+}
+
+.email-house {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.email-house input {
+  width: 50%;
+  text-align: center;
+}
+
+.email-house select {
+  width: 50%;
+  text-align: center;
 }
 
 #evaluation-form {
@@ -30,7 +120,103 @@ main {
   height: 500px;
 }
 
+hr {
+  width: 80%;
+  align-self: center;
+  border: 1px solid rgba(128, 128, 128, 0.308);
+  margin-bottom: 20px;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 120px;
+  align-items: center;
+}
+
 .familys {
+  width: 50%;
+  text-align: center;
+  height: 120px;
+  color: rgb(87, 87, 87);
+}
+
+.familys div {
+  margin: 15px;
+}
+
+.conteudo {
+  width: 50%;
+  height: 120px;
+  color: rgb(87, 87, 87);
+}
+
+.conteudo div {
+  margin-top: 15px;
+}
+
+.checks {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.checks label {
+  margin-right: 24px;
+}
+
+.rate {
+  margin-bottom: 15px;
+  color: rgb(87, 87, 87);
+}
+
+.rate label {
+  margin-right: 15px;
+}
+
+.comentario {
+  color: rgb(87, 87, 87);
+  display: flex;
+  flex-direction: column;
+}
+
+.comentario textarea {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.comentario p {
+  align-self: flex-end;
+}
+
+#label-infos {
+  color: rgb(87, 87, 87);
+}
+
+#agreement {
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+#submit-btn {
+  background-color: rgb(81, 54, 177);
+  color: white;
+  border-radius: 6px;
+  border: none;
+  padding-left: 8px;
+  height: 30px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(61, 61, 61);
+  color: white;
 }
