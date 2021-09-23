@@ -3,6 +3,8 @@ const inputsenha = document.getElementById('senha-input');
 const buttonLogin = document.getElementById('btn-login');
 const btnSubmit = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 function verificaFormulario() {
   if (inputemail.value === 'tryber@teste.com' && inputsenha.value === '123456') {
@@ -52,3 +54,8 @@ agreement.addEventListener('click', () => {
 btnSubmit.addEventListener('click', (evt) => {
   evt.preventDefault();
 });
+
+textarea.addEventListener('keyup', () => {
+  let tamanho = textarea.value.length;
+  counter.innerText = 500 - tamanho;
+})
