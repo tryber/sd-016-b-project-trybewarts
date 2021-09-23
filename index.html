@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Douglas Toledo e Breno Tainan - projeto TrybeWarts</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header"> <!--requisito-->
       <img
         src="images/trybewarts-header-logo.svg"
-        class="trybewarts-header-logo"
+        class="trybewarts-header-logo" 
         alt="Logo da escola TrybeWarts"
-        width="100px"
       />
 
       <h1 id="trybewarts-header-title">Trybewarts</h1>
 
-      <form action="" class="trybewarts-login">
+      <form action="" class="trybewarts-login"> <!--requisito-->
         <input id="email" type="text" placeholder="Email" name="email" />
         <input id="senha" type="text" placeholder="Senha" name="password" />
         <button id="entrar" type="submit">Entrar</button>
@@ -26,35 +27,41 @@
     </header>
 
     <main class="flex-container-main">
-      <div>
+      <div id="flex-container-id">
         <form action="" id="evaluation-form">
-          <div class="formulario">
-            <input
-              id="input-name"
-              type="text"
-              placeholder="Nome"
-              name="input-name"
-            />
-            <input
-              id="input-lastname"
-              type="text"
-              placeholder="Sobrenome"
-              name="input-lastname"
-            />
-            <input
-              id="input-email"
-              type="text"
-              placeholder="Email"
-              name="input-email"
-            />
-
-            <select name="" id="house">
-              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-              <option value="Corvinode" id="corvinode-house">Corvinode</option>
-              <option value="Pytherina" id="pytherina-house">Pytherina</option>
-            </select>
+          <div id="title-formulario">
+            <h1>Formulário de Avaliação</h1>
           </div>
+          <section class="formulario">
+            <div>
+              <input
+                id="input-name"
+                type="text"
+                placeholder="Nome"
+                name="input-name"
+              />
+              <input
+                id="input-lastname"
+                type="text"
+                placeholder="Sobrenome"
+                name="input-lastname"
+              />
+            </div>
+            <div>
+              <input
+                id="input-email"
+                type="text"
+                placeholder="Email"
+                name="input-email"
+              />
+              <select name="" id="house">
+                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                <option value="Pytherina" id="pytherina-house">Pytherina</option>
+              </select>
+            </div>
+          </section>
 
           <div class="flex-container-family">
             <label id="label-family" for="family">Qual sua família?</label>
@@ -210,8 +217,7 @@
           
         </form>
       </div>
-
-
+      
       <div>
         <img
           id="trybewarts-forms-logo"
@@ -219,6 +225,7 @@
           alt="logo trybewarts"
         />
       </div>
+
     </main>
 
     <footer id="footer">Direitos reservados à Trybewarts©</footer>

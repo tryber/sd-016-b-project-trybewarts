@@ -1,26 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
+
 * {
   padding: 0%;
   margin: 0%;
+  font-family: 'Trykker', serif;
+}
+
+body {
+  background-color: #505050;
 }
 
 .header {
-  display: flex;
-
-  background-color: rgb(50, 167, 145);
-  justify-content: space-around;
+  display: flex; /*requisito*/
+  background-color: rgb(50, 167, 145);/*requisito*/
+  justify-content: space-between;
   align-items: center;
-  border: tomato;
+  height: 123px;
+  margin-bottom: 20px;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+  margin: 10px 20px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: 60px;
 }
 
 .trybewarts-login {
-  /* height: 50px; */
-  /* display: flex; */
+  margin-right: 20px;
+}
+
+#email, #senha , #entrar, #input-name, #input-email, #input-lastname {
+  border-radius: 10px;
+  border: transparent;
+  width: 180px;
+  height: 65px;
+  margin: 0px 5px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+#entrar {
+  background-color: #4E2C83;
+  color: white;
+  padding: 0px;
 }
 
 .flex-container-main {
   display: flex;
-  justify-content:flex-end;
-  margin: 50px;
+  justify-content: center;
+  /* margin: 50px; */
 }
 
 #evaluation-form {
@@ -29,12 +61,19 @@
   flex-direction: column;
 }
 
+#title-formulario {
+  text-align: center;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
 
 #evaluation-form .formulario {
-  margin: 120px;
+  display: flex;
+  justify-content: center;
+
+  /* margin: 120px; */
 }
 
 .flex-container-family {
@@ -47,8 +86,20 @@
   flex-direction: column;
 }
 
+#label-infos {
+  margin: 20px;
+}
+
 #submit-btn {
-  
+  background-color: #4E2C83;
+  color: white;
+  padding: 0px;
+  border-radius: 10px;
+  border: transparent;
+  height: 65px;
+  margin: 0px 5px;
+  padding-left: 20px;
+  font-weight: bold;
 }
 
 #footer {
@@ -56,6 +107,7 @@
   justify-content: center;
   align-items: center;
   background-color: #3C404A;
+  margin-top: 20px;
   height: 50px;
   color: rgb(187, 187, 187);
 }
