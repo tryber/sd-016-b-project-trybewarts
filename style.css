@@ -3,7 +3,7 @@
 * {
   padding: 0%;
   margin: 0%;
-  font-family: 'Trykker', serif;
+  font-family: Trykker, serif;
 }
 
 body {
@@ -11,8 +11,8 @@ body {
 }
 
 .header {
-  display: flex; /*requisito*/
-  background-color: rgb(50, 167, 145);/*requisito*/
+  display: flex;
+  background-color: #32a791;
   justify-content: space-between;
   align-items: center;
   height: 123px;
@@ -34,7 +34,7 @@ body {
   margin-right: 20px;
 }
 
-#email, #senha , #entrar, #input-name, #input-email, #input-lastname {
+#email , #senha , #entrar , #input-name , #input-email , #input-lastname {
   border-radius: 10px;
   border: transparent;
   width: 180px;
@@ -53,7 +53,6 @@ body {
 .flex-container-main {
   display: flex;
   justify-content: center;
-  /* margin: 50px; */
 }
 
 #evaluation-form {
@@ -73,18 +72,16 @@ body {
 #evaluation-form .formulario {
   display: flex;
   justify-content: center;
-
-  /* margin: 120px; */
 }
 
-#input-name, #input-email, #input-lastname {
+#input-name , #input-email , #input-lastname {
   border-radius: 10px;
   border: transparent;
   width: 300px;
   height: 65px;
   margin: 0px 5px;
   padding-left: 20px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 #house {
@@ -118,7 +115,7 @@ body {
 }
 
 #submit-btn {
-  background-color: #4E2C83;
+  background-color: #4e2c83;
   color: white;
   padding: 0px;
   border-radius: 10px;
@@ -136,5 +133,5 @@ body {
   background-color: #3C404A;
   margin-top: 20px;
   height: 50px;
-  color: rgb(187, 187, 187);
+  color: #bbbbbb;
 }
