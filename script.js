@@ -5,6 +5,8 @@ const formDiv4 = document.querySelector('.form-div-4');
 const sendBtn = document.querySelector('#submit-btn');
 const agreementCheck = document.querySelector('#agreement');
 const textarea = document.getElementById('textarea');
+const getTextType = document.querySelectorAll('[type = text]');
+const getForm = document.querySelector('#evaluation-form');
 
 function changeEventSubmit() {
   if (emailIpt.value === 'tryber@teste.com' && passwordIpt.value === '123456') {
@@ -45,3 +47,124 @@ function countWords() {
   textCounter.innerText = count;
 }
 textarea.addEventListener('input', countWords);
+
+function testText() {
+  const name = document.createElement('li');
+  for (let i = 0; i < getTextType.length; i += 1) {
+    if (getTextType[i].value === '') {
+      return false;
+    }
+    name.innerText += ` ${getTextType[i].value}`;
+  }
+  name.innerText = `Nome:${name.innerText}`;
+  return name;
+}
+
+// Obj: Understanding how the e-mail regex works ref: https://emailregex.com/
+function testEmail() {
+  const email = document.createElement('li');
+  const getEmailType = document.querySelector('#input-email');
+  const regex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (!regex.test(getEmailType.value)) {
+    return false;
+  }
+  email.innerText = `Email: ${getEmailType.value}`;
+  return email;
+}
+
+function testHouse() {
+  const house = document.createElement('li');
+  const getSelectedOption = document.querySelector('#house');
+  if (getSelectedOption.value === 'Selecione') {
+    return false;
+  }
+  house.innerText = `Casa: ${getSelectedOption.value}`;
+  return house;
+}
+
+function testFmy() {
+  let count = 0;
+  const family = document.createElement('li');
+  const getSelectedOption = document.querySelectorAll('.input-radio');
+  for (let i = 0; i < getSelectedOption.length; i += 1) {
+    if (getSelectedOption[i].checked) {
+      count += 1;
+      family.innerText += ` ${getSelectedOption[i].value}`;
+    }
+  }
+  if (count === 0) {
+    return false;
+  }
+  family.innerText = `Família: ${family.innerText}`;
+  return family;
+}
+
+function testSbj() {
+  const subject = document.createElement('li');
+  let count = 0;
+  const getSbjMarked = document.querySelectorAll('.subject');
+  for (let i = 0; i < getSbjMarked.length; i += 1) {
+    if (getSbjMarked[i].checked) {
+      count += 1;
+      subject.innerText += `${getSbjMarked[i].value}, `;
+    }
+  }
+  if (count === 0) {
+    return false;
+  }
+  subject.innerText = `Matérias: ${subject.innerText}`;
+  subject.innerText = subject.innerText.slice(0, -2);
+  return subject;
+}
+
+function testRate() {
+  const rate = document.createElement('li');
+  let count = 0;
+  const getRate = document.querySelectorAll('[name="rate"]');
+  for (let i = 0; i < getRate.length; i += 1) {
+    if (getRate[i].checked) {
+      count += 1;
+      rate.innerText += ` ${getRate[i].value}`;
+    }
+  }
+  if (count === 0) {
+    return false;
+  }
+  rate.innerText = `Avaliação: ${rate.innerText}`;
+  return rate;
+}
+
+function testCmt() {
+  const comment = document.createElement('li');
+  const getComment = document.querySelector('#textarea');
+  if (getComment.value === '') {
+    return false;
+  }
+  comment.innerText = `Observações: ${getComment.value}`;
+  return comment;
+}
+
+function printInformationStudent() {
+  const createUL = document.createElement('ul');
+  getForm.appendChild(createUL);
+  createUL.appendChild(testText());
+  createUL.appendChild(testEmail());
+  createUL.appendChild(testHouse());
+  createUL.appendChild(testFmy());
+  createUL.appendChild(testSbj());
+  createUL.appendChild(testRate());
+  createUL.appendChild(testCmt());
+}
+
+function submitButton(event) {
+  event.preventDefault();
+  const array = [testText(), testEmail(), testHouse(), testFmy(), testSbj(), testRate(), testCmt()];
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] === false) {
+      return alert('Favor corrigir formulário!');
+    }
+  }
+  printInformationStudent();
+}
+
+sendBtn.addEventListener('click', submitButton);

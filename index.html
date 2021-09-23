@@ -23,10 +23,11 @@
     <main>
       <form action="#" method="GET" id="evaluation-form">
         <div class="form-div-1">
-          <input type="text" name="input-name" id="input-name" placeholder="Nome">
-          <input type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome">
-          <input type="email" name="input-email" id="input-email" placeholder="Email">
+          <input type="text" name="name" id="input-name" placeholder="Nome">
+          <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
+          <input type="email" name="email" id="input-email" placeholder="Email">
           <select name="house" id="house">
+            <option disabled selected>Selecione</option>
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
             <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -36,34 +37,34 @@
         <div class="form-div-2">
           <label id="label-family">Qual sua família?</label>
           <label for="radio-1">Frontend
-            <input type="radio" name="family" id="radio-1" value="Frontend">
+            <input class="input-radio" type="radio" name="family" id="radio-1" value="Frontend">
           </label>
           <label for="radio-2">Backend
-            <input type="radio" name="family" id="radio-2" value="Backend">
+            <input class="input-radio" type="radio" name="family" id="radio-2" value="Backend">
           </label>
           <label for="radio-3">FullStack
-            <input type="radio" name="family" id="radio-3" value="FullStack">
+            <input class="input-radio" type="radio" name="family" id="radio-3" value="FullStack">
           </label>
         </div>
         <div class="form-div-3">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <label for="checkbox-1">HoFs
-            <input type="checkbox" name="checkbox" id="checkbox-1" value="HoFs">
+            <input class="subject" type="checkbox" name="checkbox" id="checkbox-1" value="HoFs">
           </label>
           <label for="checkbox-2">Jest
-            <input type="checkbox" name="checkbox" id="checkbox-2" value="Jest">
+            <input class="subject" type="checkbox" name="checkbox" id="checkbox-2" value="Jest">
           </label>
           <label for="checkbox-3">Promises
-            <input type="checkbox" name="checkbox" id="checkbox-3" value="Promises">
+            <input class="subject" type="checkbox" name="checkbox" id="checkbox-3" value="Promises">
           </label>
           <label for="checkbox-4">React
-            <input type="checkbox" name="checkbox" id="checkbox-4" value="React">
+            <input class="subject" type="checkbox" name="checkbox" id="checkbox-4" value="React">
           </label>
           <label for="checkbox-5">SQL
-            <input type="checkbox" name="checkbox" id="checkbox-5" value="SQL">
+            <input class="subject" type="checkbox" name="checkbox" id="checkbox-5" value="SQL">
           </label>
           <label for="checkbox-6">Python
-            <input type="checkbox" name="checkbox" id="checkbox-6" value="Python">
+            <input class="subject" type="checkbox" name="checkbox" id="checkbox-6" value="Python">
           </label>
         </div>
         <div class="form-div-4">
