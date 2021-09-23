@@ -5,10 +5,12 @@
     const passwordInput = document.querySelector('#passwordId');
     if (emailInput.value === 'tryber@teste.com' && passwordInput.value === '123456') {
       alert('Olá, Tryber!');
-    } else { alert('Email ou senha inválidos.'); }
+    } else {
+      alert('Email ou senha inválidos.');
+    }
   });
 })();
-
+​
 function clickCheckbox() {
   const checkboxElement = document.querySelector('#agreement');
   checkboxElement.addEventListener('click', (e) => {
@@ -17,12 +19,12 @@ function clickCheckbox() {
   });
 }
 clickCheckbox();
-
+​
 function counter() {
   const textarea = document.querySelector('#textarea');
   const counterElement = document.querySelector('#counter');
   textarea.addEventListener('keyup', () => {
-    counterElement.innerHTML = 500 - `${textarea.value.length}`;
+    counterElement.innerHTML = `${textarea.value.length}/500`;
   });
 }
 counter();

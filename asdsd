@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+​
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-
+​
 <body>
     <header class="header">
         <img src="images/trybewarts-header-logo.svg" alt="logo-trybe-header" class="trybewarts-header-logo">
@@ -36,10 +36,9 @@
                             <option id="pytherina-house" value="Pytherina">Pytherina</option>
                         </select>
                     </div>
+                    <hr>
                     <div class="radio-family">
-                        <div id="label-family">
-                            <label id="label-family">Qual sua família?</label>
-                        </div>
+                        <div id="label-family">Qual sua Família?</div>
                         <input type="radio" name="family" value="Frontend" id="radioFrontend">Frontend
                         <input type="radio" name="family" value="Backend" id="radioBackend">Backend
                         <input type="radio" name="family" value="FullStack" id="radioFullStack">FullStack
@@ -62,6 +61,7 @@
                         </div>
                     </div>
                 </div>
+                <hr>
                 <div class="rate">
                     <div id="label-rate">
                         <label for="">Como você avalia a Trybewarts?</label>
@@ -86,13 +86,13 @@
                     </div>
                     <textarea name="comment" id="textarea" rows="4" cols="50" maxlength="500"></textarea>
                     <div id="counter">500</div>
-                  </div>
+                </div>
                 <div class="agreement">
                     <div>
                         <label for="" id="label-infos">Você concorda com o uso das informações acima?
                         </label>
                     </div>
-                    <input type="checkbox" name="" id="agreement">
+                    <input type="checkbox" id="agreement">
                 </div>
                 <button type="submit" id="submit-btn" disabled>Enviar</button>
             </form>
@@ -101,7 +101,8 @@
             <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo-TrybeWarts">
         </aside>
     </main>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
 <Footer>Direitos reservados à Trybewarts©</Footer>
+​
 </html>
