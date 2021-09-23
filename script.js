@@ -45,6 +45,7 @@ function conteudoCheck() {
   return check.join(', ');
 }
 
+// último requisito
 btnSubmit.addEventListener('click', (event) => {
   event.preventDefault();
   const inputN = document.querySelector('#input-name').value;
