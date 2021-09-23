@@ -53,3 +53,12 @@ main , #evaluation-form , #complete-name , #data {
 #evaluation input {
   margin: 0 10px;
 }
+
+footer {
+  background-color: rgb(60, 64, 74);
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
