@@ -123,7 +123,7 @@ hr {
   display: flex;
 }
 
-#text-area {
+#textarea {
   border-radius: 5px;
   border: 1px rgb(42, 7, 87) solid;
   resize: none;
@@ -142,5 +142,5 @@ footer {
 /* contador */
 #counter {
   position: absolute;
-  margin: 550px 0 0 282.8px;
+  margin: 545px 0 0 282.8px;
 }
