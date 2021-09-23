@@ -56,6 +56,6 @@ btnSubmit.addEventListener('click', (evt) => {
 });
 
 textarea.addEventListener('keyup', () => {
-  let tamanho = textarea.value.length;
+  const tamanho = textarea.value.length;
   counter.innerText = 500 - tamanho;
-})
+});
