@@ -69,3 +69,8 @@ main {
 .name-lastname-container {
   display: flex;
 }
+
+.family-container{
+  display: flex;
+  flex-direction: column;
+}
