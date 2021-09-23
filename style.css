@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
 
 * {
-  padding: 0%;
-  margin: 0%;
-  font-family: 'Trykker', serif;
+  padding: 0;
+  margin: 0;
+  font-family: Trykker, serif;
 }
 
 body {
-  background-color: #505050;
+  background-color: darkgray;
 }
 
 .header {
-  display: flex; /*requisito*/
-  background-color: rgb(50, 167, 145);/*requisito*/
+  display: flex;
+  background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
   height: 123px;
@@ -34,26 +34,26 @@ body {
   margin-right: 20px;
 }
 
-#email, #senha , #entrar, #input-name, #input-email, #input-lastname {
+#email , #senha , #entrar {
   border-radius: 10px;
   border: transparent;
   width: 180px;
   height: 65px;
-  margin: 0px 5px;
+  margin: 0 5px;
   padding-left: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #entrar {
-  background-color: #4E2C83;
+  background-color: blueviolet;
   color: white;
-  padding: 0px;
+  padding: 0;
 }
 
 .flex-container-main {
   display: flex;
   justify-content: center;
-  /* margin: 50px; */
+  margin-top: 50px;
 }
 
 #evaluation-form {
@@ -73,18 +73,16 @@ body {
 #evaluation-form .formulario {
   display: flex;
   justify-content: center;
-
-  /* margin: 120px; */
 }
 
-#input-name, #input-email, #input-lastname {
+#input-name , #input-email , #input-lastname {
   border-radius: 10px;
   border: transparent;
   width: 300px;
   height: 65px;
-  margin: 0px 5px;
+  margin: 0 5px;
   padding-left: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #house {
@@ -118,22 +116,22 @@ body {
 }
 
 #submit-btn {
-  background-color: #4E2C83;
+  background-color: blueviolet;
   color: white;
-  padding: 0px;
+  padding: 0;
   border-radius: 10px;
   border: transparent;
   height: 65px;
-  margin: 0px 5px;
+  margin: 0 5px;
   padding-left: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3C404A;
+  background-color: darkslategrey;
   margin-top: 20px;
   height: 50px;
   color: rgb(187, 187, 187);
