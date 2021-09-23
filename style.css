@@ -58,6 +58,10 @@ main {
   flex-direction: column;
 }
 
-.test {
+.avaliar , #label-rate {
+  display: flex;
+}
+
+.textarea {
   display: flex;
 }
