@@ -21,23 +21,19 @@
         <button id="buttonSubmit">Entrar</button>
     <form>
   </header>
-  <main>
+  <main class="main-content">
     <form id="evaluation-form">
-      <label for="input-name">Nome:
-        <input type="text" name="nome" id="input-name" placeholder="Nome">
-      </label>
-      <label for="input-lastname">Sobrenome:
-        <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">  
-      </label>
-      <label for="input-email">Email:
-        <input type="email" name="email" id="input-email" placeholder="Email">
-      </label>
+      <div class="div-form">
+      <input type="text" name="nome" id="input-name" placeholder="Nome">
+      <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">  
+      <input type="email" name="email" id="input-email" placeholder="Email">   
       <select name="house" id="house">
         <option value="Gitnória" id="gitnoria-house">Gitnória</option>
         <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
         <option value="Corvinode" id="corvinode-house">Corvinode</option>
         <option value="Pytherina" id="pytherina-house">Pytherina</option>
       </select>
+      </div>
       <div class="radio-container">
         <label id="label-family">Qual sua família?</label>
         <label for="frontend">Frontend
@@ -52,27 +48,43 @@
       </div>
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div class="checkbox-container">
-        <label for="hofs">HoFs
-          <input type="checkbox" name="check" id="hofs" value="HoFs"></label>
-        <label for="jest">Jest
-          <input type="checkbox" name="check" id="jest" value="Jest">  
-        </label>
-        <label for="promises">Promises
-          <input type="checkbox" name="check" id="promises" value="Promises">  
-        </label>
-        <label for="react">React
-          <input type="checkbox" name="check" id="react" value="React">
-        </label>
-        <label for="sql">SQL
-          <input type="checkbox" name="check" id="sql" value="SQL">  
-        </label>
-        <label for="python">Python
-          <input type="checkbox" name="check" id="python" value="Python">    
-        </label>        
+        <input type="checkbox" name="check" id="hofs" value="HoFs">HoFs 
+        <input type="checkbox" name="check" id="jest" value="Jest">Jest
+        <input type="checkbox" name="check" id="promises" value="Promises">Promises
+        <input type="checkbox" name="check" id="react" value="React">React
+        <input type="checkbox" name="check" id="sql" value="SQL">SQL
+        <input type="checkbox" name="check" id="python" value="Python">Python
+      </div>
+      <label id="label-rate">Como você avalia a Trybewarts?</label>
+      <div class="radios-container">
+        <input type="radio" name="rate" id="" value="1">1
+        <input type="radio" name="rate" id="" value="2">2
+        <input type="radio" name="rate" id="" value="3">3
+        <input type="radio" name="rate" id="" value="4">4
+        <input type="radio" name="rate" id="" value="5">5
+        <input type="radio" name="rate" id="" value="6">6
+        <input type="radio" name="rate" id="" value="7">7
+        <input type="radio" name="rate" id="" value="8">8
+        <input type="radio" name="rate" id="" value="9">9
+        <input type="radio" name="rate" id="" value="10">10
+      </div>
+      <label for="textarea" class="textarea">Deixe seu comentário:</label>
+      <div class="textarea-container">
+        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      </div>
+      <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+      <div class="agree-conteiner">
+        <input type="checkbox" name="" id="agreement">
+      </div>
+      <div>
+        <button type="submit" id="submit-btn">Enviar</button>
       </div>
     </form>   
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
   </main>
+  <footer>
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
     <script src="script.js"></script>
 </body>
 </html>
