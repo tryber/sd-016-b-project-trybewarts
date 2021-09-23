@@ -126,3 +126,10 @@ main {
   margin-left: 50px;
   width: 450px;
 }
+
+.btn-success {
+  border-radius: 3px;
+  margin-top: 50px;
+  width: 150px;
+  align-self: center;
+}

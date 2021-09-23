@@ -16,3 +16,17 @@ function mensagemLogin(event) {
 
 const button = document.getElementById('login');
 button.addEventListener('click', mensagemLogin);
+const buttonAgreement = document.getElementById('submit-btn');
+buttonAgreement.disable = true;
+
+function habilitaEnvio() {
+  const agree = document.getElementById('agreement');
+  if (agree.checked === true) {
+    buttonAgreement.disable = false;
+    console.log('formulario enviado');
+  } else {
+    buttonAgreement.disable = true;
+  }
+}
+
+button.addEventListener('click', habilitaEnvio);
