@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  top: 0;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 80px;
+}
+
+.header h1 {
+  color: white;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.trybewarts-login input {
+  border-radius: 5px;
+  border: white;
+  width: 120px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.trybewarts-login button {
+  border-radius: 5px;
+  border: purple;
+  width: 120px;
+  height: 30px;
+  background-color: rgb(99, 2, 99);
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo-container {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 35px;
+}
+
+#input-form-1 {
+  display: flex;
+  margin-top: 40px;
+}
+
+#input-form-2 {
+  display: flex;
+  margin-top: 10px;
+}
+
+#input-name , #input-lastname {
+  border-radius: 5px;
+  border: white;
+  width: 300px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+#input-email {
+  border-radius: 5px;
+  border: white;
+  width: 265px;
+  height: 30px;
+  margin-right: 40px;
+}
+
+#house {
+  border-radius: 5px;
+  border: white;
+  width: 250px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: white;
+}
+
+.div-hr hr {
+  width: 620px;
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#input-container {
+  display: flex;
+
+}
+
+#input-form-3 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+#input-form-3 label {
+  margin-top: 10px;
+}
+
+#sub-container {
+  margin-left: 145px;
+  margin-top: 19px;
+}
+
+#input-form-4 {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+#input-form-4-1 {
+  margin-top: 10px;
+  margin-right: 80px;
+}
+
+#input-form-4 label {
+  margin-right: 24px;
+}
+
+#input-form-4-1 label {
+  margin-right: 20px;
+}
+
+#level-buttons {
+  margin-top: 25px;
+  align-self: flex-start;
+  margin-left: 29px;
+}
+
+#level-buttons label {
+  margin-right: 10px;
+}
+
+#text-area-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 29px;
+  margin-top: 20px;
+}
+
+#text-area-container textarea {
+  max-height: 200px;
+  max-width: 615px;
+  min-height: 200px;
+  min-width: 615px;
+}
+
+#agreement-container {
+  align-self: flex-start;
+  margin-left: 29px;
+  margin-top: 10px;
+}
+
+#submit-btn {
+  margin-top: 15px;
+  border-radius: 5px;
+  border: purple;
+  width: 620px;
+  height: 30px;
+  background-color: rgb(99, 2, 99);
+  color: white;
+}
+
+footer {
+  text-align: center;
+  background-color: gray;
+  height: 25px;
+  margin-top: 20px;
+}
