@@ -1,4 +1,4 @@
-const loginButton = document.getElementById('login');
+const loginButton = document.getElementById('login-btn');
 const agreeCheck = document.getElementById('agreement');// Check box agreement.
 const buttonContainer = document.querySelector('.button-container');
 const createSubmit = document.createElement('button'); // Botão enviar
