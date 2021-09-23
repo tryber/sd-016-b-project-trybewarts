@@ -19,3 +19,15 @@ function chamaButton() {
 window.onload = () => {
   chamaButton();
 };
+
+/* Requisito 18 */
+const checkBoxAgreement = document.getElementById('agreement');
+checkBoxAgreement.addEventListener('click', () => {
+  const buttonEnviar = document.getElementById('submit-btn');
+
+  if (checkBoxAgreement.checked) {
+    buttonEnviar.disabled = false;
+  } else {
+    buttonEnviar.disabled = true;
+  }
+});
