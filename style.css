@@ -14,24 +14,24 @@ main {
 }
 
 #trybewarts-forms-logo {
-  display: flex;  
+  display: flex;
   height: 500px;
 }
 
 #fullname {
-  display: inline;  
+  display: inline;
 }
 
 #campos {
-  display: inline;  
+  display: inline;
 }
 
 .label-family {
-  display: flex; 
-  flex-direction: column;  
+  display: flex;
+  flex-direction: column;
 }
 
 #label-content {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
