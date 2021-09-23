@@ -10,7 +10,6 @@ function username() {
 
 const submitButton = document.querySelector('#submitButton');
 submitButton.addEventListener('click', username);
-
 const agreementButton = document.getElementById('submit-btn');
 
 function agreementCheck() {
@@ -32,3 +31,4 @@ function contador() {
   p.innerText = calcularContador;
 }
 texto.addEventListener('keyup', contador);
+
