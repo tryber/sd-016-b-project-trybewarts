@@ -33,6 +33,20 @@
   border: 1px solid grey;
 }
 
+.information-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.information-container input , select {
+  padding: 20px;
+  flex-basis: 30%;
+  margin: 10px;
+
+}
+
 .trybewarts-login input:focus {
   outline: none;
 }
@@ -68,12 +82,13 @@ hr {
 #label-family {
   display: flex;
   flex-direction: column;
-  
+
 }
+
 footer {
   color: white;
   padding: 20px;
-  background-color: #3C404A;
+  background-color: black;
   display: flex;
   justify-content: center;
 }
@@ -81,19 +96,10 @@ footer {
 .house-container {
   display: flex;
   align-items: center;
-  
+
 }
 
-.information-container {
+.test {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start
-}
-
-.information-container input,select {
-  padding: 20px;
-  flex-basis: 30%;
-  margin: 10px;
-
 }
