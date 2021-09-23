@@ -31,4 +31,3 @@ function contador() {
   p.innerText = calcularContador;
 }
 texto.addEventListener('keyup', contador);
-
