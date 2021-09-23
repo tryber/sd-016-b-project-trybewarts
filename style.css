@@ -91,6 +91,13 @@ main {
 }
 
 .family {
-  margin: 40px;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px;
 }
 
+.checkbox {
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px;
+}
