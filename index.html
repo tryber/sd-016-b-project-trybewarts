@@ -10,7 +10,10 @@
   <body>
     <header class="header">
       <div class="logo">
-        <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo"/>
+        <img
+          src="images/trybewarts-header-logo.svg"
+          class="trybewarts-header-logo"
+        />
       </div>
 
       <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -18,7 +21,12 @@
       <form action="" class="trybewarts-login">
         <input type="email" name="email" placeholder="Email" id="email" />
 
-        <input type="password" name="password" placeholder="Senha" id="password" />
+        <input
+          type="password"
+          name="password"
+          placeholder="Senha"
+          id="password"
+        />
 
         <button id="login-button">Entrar</button>
       </form>
@@ -53,7 +61,11 @@
 
           <label for="fullstack"
             >FullStack
-            <input type="radio" name="family" id="fullstack" value="FullStack"
+            <input
+              type="radio"
+              name="family"
+              id="fullstack"
+              value="FullStack"
             />
           </label>
         </div>
@@ -119,11 +131,23 @@
         </div>
         <div>
           <label for="textarea" class="textarea">Deixe seu comentário:</label>
-          <textarea name="textarea" id="" cols="30" rows="10" maxlength="500"></textarea>
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            maxlength="500"
+          ></textarea>
+          <p>
+            <span id="counter">500</span>
+            caracteres restantes
+          </p>
         </div>
         <div>
-          <label id="label-infos" for="label-infos">Você concorda com o uso das informações acima?</label>
-          <input id="agreement" type="checkbox" name="label-infos">
+          <label id="label-infos" for="label-infos"
+            >Você concorda com o uso das informações acima?</label
+          >
+          <input id="agreement" type="checkbox" name="label-infos" />
         </div>
         <button type="submit" id="submit-btn" disabled>Enviar</button>
       </form>
