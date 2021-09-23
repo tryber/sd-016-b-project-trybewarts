@@ -19,6 +19,9 @@ function varificaUsuario() {
 botaoLogin.addEventListener('click', varificaUsuario);
 
 // habilita / desabilita se o checkbox estiver marcado/desmarcado
+// fonte de como habilitar/desabilitar o botão:
+// https://www.delftstack.com/pt/howto/javascript/javascript-disable-button/#:~:text=A%20melhor%20maneira%20de%20fazer,alternar%20seu%20estado%20on%20%2F%20off%20.
+
 botaoEnviar.disabled = true;
 
 function verificaCheckTermo() {
