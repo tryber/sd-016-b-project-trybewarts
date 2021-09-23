@@ -1,9 +1,9 @@
 const loginButton = document.getElementById('login');
-const agreeCheck = document.getElementById('agreement');
+const agreeCheck = document.getElementById('agreement');// Check box agreement.
 const buttonContainer = document.querySelector('.button-container');
-const createSubmit = document.createElement('button');
+const createSubmit = document.createElement('button'); // Botão enviar
 const textAreaInput = document.getElementById('textarea');
-const form1 = document.querySelector('#evaluation-form');
+const formInputs = document.querySelector('#formulario-inputs');
 const divRespostas = document.getElementById('respostas-fomulario');
 divRespostas.style.display = 'none';
 
@@ -30,9 +30,9 @@ buttonContainer.appendChild(createSubmit);
 // Evento para habilitar e desabilitar o botão enviar.
 agreeCheck.addEventListener('click', () => {
   if (createSubmit.disabled === true) {
-    createSubmit.removeAttribute('disabled', '');
+    createSubmit.removeAttribute('disabled', ''); // Remove o atributo
   } else {
-    createSubmit.setAttribute('disabled', true);
+    createSubmit.setAttribute('disabled', true); // Adiciona Atributo
   }
 });
 
@@ -123,7 +123,7 @@ function getNameInput() {
 // Função para apagar o formulário
 createSubmit.addEventListener('click', (event) => {
   event.preventDefault();
-  form1.style.display = 'none';
+  formInputs.style.display = 'none';
   divRespostas.style.display = '';
   getNameInput();
 });
