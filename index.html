@@ -31,11 +31,13 @@
         <p id="resposta-observacao">Observações: -Texto preenchido-</p>
       </div>
       <div id="formulario-inputs">
-        <div class="name-input-container">
+        <!-- Nome -->
+        <div class="flex-container">
           <input type="text" id="input-name" placeholder="Nome">
           <input type="text" id="input-lastname" placeholder="Sobrenome">
         </div>
-        <div class="email-house-container">
+        <!-- Email e Casa -->
+        <div class="flex-container">
           <input type="text" id="input-email" placeholder="Email">
           <label for="house">Casa:</label>
           <select name="casa" id="house">
@@ -46,7 +48,8 @@
           </select>
         </div>
         <hr>
-        <div class="parte-2">
+        <!-- Parte 2 -->
+        <div class="flex-container">
           <div class="family-container">
             <label for="family" id="label-family">Qual sua família?</label>
             <div>
@@ -93,8 +96,9 @@
           </div>
         </div>
         <hr>
-        <div class="parte-3">
-          <div class="avaliacao">
+        <div class="flex-container parte-3">
+          <!-- Avaliação -->
+          <div class="flex-container">
             <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
             <div>
               <input class="rate-input" type="radio" name="rate" value="1" id="1">
@@ -137,6 +141,7 @@
               <label for="10">10</label>
             </div>
           </div>
+          <!-- campo de comentário -->
           <div class="textarea-container">
             <label for="textarea" class="textarea">Deixe seu comentário:</label>
             <textarea name="textarea" id="textarea" maxlength="500" cols="30" rows="10"></textarea>

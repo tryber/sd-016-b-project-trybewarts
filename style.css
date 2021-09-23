@@ -2,7 +2,7 @@
   border: 0;
   margin: 0;
   padding: 0;
-  }
+}
 
 html {
   height: 100%;
@@ -49,24 +49,11 @@ body {
   height: 500px;
 }
 
-.name-input-container {
-  display: flex;
-}
-
-.email-house-container {
-  display: flex;
-}
-
-.avaliacao {
-  display: flex;
-}
-
-.parte-2 {
+.flex-container {
   display: flex;
 }
 
 .parte-3 {
-  display: flex;
   flex-direction: column;
 }
 
@@ -107,7 +94,8 @@ footer p {
   width: 140px;
 }
 
-#email, #senha {
+#email,
+#senha {
   height: 20px;
 }
 
