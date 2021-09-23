@@ -4,7 +4,8 @@ const login = document.getElementById('email');
 const password = document.getElementById('password');
 const submitButton = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
-
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 // Funções
 function verifyLogin() {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
@@ -21,18 +22,12 @@ function verifyAgreementSubmitBtn() {
   }
 }
 
-function limiteTextArea(valor) {
-  const quant = 500;
-  const total = valor.length;
-  if (total <= quant) {
-    const resto = quant - total;
-    document.getElementById('counter').innerHTML = resto;
-  } else {
-    document.getElementById('textarea').value = valor.substr(0, quant);
-  }
+function limiteTextArea() {
+  textArea.addEventListener('keydown', () => { counter.innerHTML = 500 - textArea.value.length; });
 }
 
-limiteTextArea('');
+limiteTextArea();
+
 // EventListeners
 agreement.addEventListener('click', verifyAgreementSubmitBtn);
 loginButton.addEventListener('click', verifyLogin);
