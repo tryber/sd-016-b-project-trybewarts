@@ -108,3 +108,7 @@ textarea {
   justify-content: center;
   padding: 15px;
 }
+
+#char-counter{
+  text-align: right;
+}

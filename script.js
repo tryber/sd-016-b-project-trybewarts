@@ -21,3 +21,12 @@ function habilitaBtn() {
   }
 }
 agreement.addEventListener('change', habilitaBtn);
+
+const textArea = document.getElementById("area");
+const charCounter = document.getElementById("char-counter")
+const maxChars = 250;
+
+textArea.addEventListener('input', () => {
+  const remainingChars = maxChars - textArea.value.length;
+  charCounter.textContent = `${remainingChars} caracteres disponíveis`;
+});
