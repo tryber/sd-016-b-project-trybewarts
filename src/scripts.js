@@ -22,11 +22,11 @@ contractCheck.addEventListener('click', () => {
   btnSend.removeAttribute('disabled');
 });
 
-const txtArea = query('#counter');
-txtArea.addEventListener('keypress', (event) => {
-  const maxChars = 500;
-  const contador = txtArea.value.length;
-  if (contador >= maxChars) {
-    event.preventDefault();
-  }
-});
+// const txtArea = query('#counter');
+// txtArea.addEventListener('keypress', (event) => {
+//   const maxChars = 500;
+//   const contador = txtArea.value.length;
+//   if (contador >= maxChars) {
+//     event.preventDefault();
+//   }
+// });
