@@ -22,6 +22,8 @@ function verifyAgreementSubmitBtn() {
   }
 }
 
+/* ideia de usar o keydown venho atravez de uma discução em uma tread no slack https://trybecourse.slack.com/archives/C02B4PPBERE/p1632408569342700 */
+
 function limiteTextArea() {
   textArea.addEventListener('keydown', () => { counter.innerHTML = 500 - textArea.value.length; });
 }
