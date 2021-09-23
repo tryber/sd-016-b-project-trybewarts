@@ -14,3 +14,15 @@ confirmar.addEventListener('click', () => {
     alert('Email ou senha inválidos.');
   }
 });
+
+const checkBox = document.getElementById('agreement');
+const buttonEnviar = document.getElementById('submit-btn');
+buttonEnviar.disabled = true;
+
+checkBox.addEventListener('click', (event) => {
+  if (event.target.checked === true) {
+    buttonEnviar.disabled = false;
+  } else {
+    buttonEnviar.disabled = true;
+  }
+});
