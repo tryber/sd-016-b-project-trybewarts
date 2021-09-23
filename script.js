@@ -21,7 +21,7 @@ const contador = document.getElementById('counter');
 
 contador.innerHTML = 500;
 
-const textArea = document.getElementById('text-area');
+const textArea = document.getElementById('textarea');
 
 function changeContador() {
   console.log(textArea.value.length);
