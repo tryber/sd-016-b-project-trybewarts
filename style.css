@@ -1,0 +1,37 @@
+.header {
+  background-color: rgb(50, 167, 145); /* requisitos 1 */
+  display: flex; /* requisitos 1 */
+  justify-content: space-between; /* requisitos 3 */
+}
+
+.trybewarts-login {
+  display: flex; /* requisitos 3 */
+}
+
+main {
+  display: flex; /* requisitos 5 */
+}
+
+#evaluation-form {
+  display: flex; /* requisitos 5 */
+  width: 675px; /* requisitos 5 */
+  flex-direction: column; /* requisitos 6 */
+}
+
+#trybewarts-forms-logo {
+  height: 500px; /* requisitos 7 */
+  display: flex; /* requisitos 7 */
+}
+
+#primeirParte {
+  flex-wrap: wrap; /* requisitos 11 */
+}
+
+.formulario {
+  width: 40%; /* acresentado para validar o exercicio 11 */
+  height: 25px; /* acresentado para validar o exercicio 11 */
+}
+
+hr {
+  width: 500px; /* usei hr para separa as partes igual na imagem de exemplo */
+}
