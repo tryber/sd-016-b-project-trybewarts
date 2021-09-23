@@ -26,6 +26,40 @@
         <button class="login-button" type="text">Entrar</button>
       </form>
     </header>
+    <!-- Ref: https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Your_first_form -->
+    <main>
+      <form id="evaluation-form">
+        <fieldset class="container-name">
+          <input
+            type="text"
+            id="input-name"
+            name="first-name"
+            placeholder="Nome"
+          />
+          <input
+            type="text"
+            id="input-lastname"
+            name="last-name"
+            placeholder="Sobrenome"
+          />
+        </fieldset>
+        <fieldset class="email-container">
+          <input
+            type="email"
+            name="email"
+            id="input-email"
+            placeholder="Email"
+          />
+          <select id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </fieldset>
+      </form>
+      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" />
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
