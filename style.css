@@ -14,6 +14,24 @@ main {
 }
 
 #trybewarts-forms-logo {
+  display: flex;  
   height: 500px;
 }
 
+#fullname {
+  display: inline;  
+}
+
+#campos {
+  display: inline;  
+}
+
+.label-family {
+  display: flex; 
+  flex-direction: column;  
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;  
+}
