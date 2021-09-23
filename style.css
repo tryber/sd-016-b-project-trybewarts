@@ -20,8 +20,17 @@ body {
   display: flex;
   background-color: var(--header-color);
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  height: 80px;
+}
+
+.trybewarts-header-logo {
+  height: 79px;
+}
+
+#trybewarts-header-title {
+  color: white;
 }
 
 .trybewarts-login {
@@ -64,4 +73,9 @@ main {
 
 .textarea {
   display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
