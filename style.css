@@ -94,8 +94,7 @@ hr {
 }
 
 #input-lastname {
-  margin-left: 1%;
-  
+  margin-left: 1%;  
 }
 
 .container2 {
@@ -119,5 +118,10 @@ hr {
 }
 
 textarea{width: 500px;
-height: 100px;}
+height: 100px;
+}
 
+#submit-btn{width: 500px;
+background-color: rgba(60, 0, 128, 0.87);
+height: 23px;
+}
