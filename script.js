@@ -32,7 +32,7 @@ function createFamilySection() {
 // Funcao para criar os inputs do tipo radio
 function createInput(positionId, familyArray) {
   let newInput = document.createElement('input');
-  newInput.Id = positionId;
+  newInput.id = positionId;
   newInput.type = 'radio';
   newInput.name = 'family';
   newInput.value = familyArray;
@@ -43,6 +43,32 @@ function createInput(positionId, familyArray) {
 function createLabel(positionId, familyArray) {
   let newLabel = newChild('label', ` Familia ${familyArray}`, '', '');
   newLabel.for = positionId;
+  return newLabel;
+}
+
+function createLearningSection() {
+  const learningsArray = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
+  for (let index = 0; index < learningsArray.length; index += 1) {
+    let newDiv = document.createElement('div');
+    learningDiv.append(newDiv);
+    newDiv.append(createCheckbox(learningsArray[index]));
+    newDiv.append(createLabelCheck(learningsArray[index]))
+  }
+}
+
+function createCheckbox(learningArray) {
+  let newCheck = document.createElement('input');
+  newCheck.type = 'checkbox';
+  newCheck.id = `learning${learningArray}`;
+  newCheck.value = learningArray;
+  return newCheck;
+}
+
+// <label for="learningsHofs">Hofs</label>
+function createLabelCheck(learningArray) {
+  let newLabel = document.createElement('label');
+  newLabel.for = `learning${learningArray}`;
+  newLabel.innerText = learningArray;
   return newLabel;
 }
 
@@ -61,4 +87,5 @@ loginButton.addEventListener('click', (event) => {
 
 window.onload = () => {
   createFamilySection();
+  createLearningSection();
 }
