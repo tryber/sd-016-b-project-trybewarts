@@ -30,6 +30,7 @@ body {
 }
 
 .trybewarts-login {
+  display: flex;
   margin-right: 20px;
 }
 
@@ -74,6 +75,32 @@ body {
   justify-content: center;
 
   /* margin: 120px; */
+}
+
+#input-name, #input-email, #input-lastname {
+  border-radius: 10px;
+  border: transparent;
+  width: 300px;
+  height: 65px;
+  margin: 0px 5px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+#house {
+  width: 300px;
+}
+
+#fullName {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#email-famaily {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .flex-container-family {
