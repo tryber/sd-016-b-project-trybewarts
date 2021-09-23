@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+}
+
+.trybewarts-login {
+  display: flex;
+  height: 30px;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+.mainContent {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.rowMode {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#input-name {
+  width: 40%;
+}
+
+#input-lastname {
+  width: 40%;
+}
+
+#house {
+  width: 40%;
+  float: right;
+}
+
+#input-email {
+  width: 40%;
+}
+
+.levels input {
+  margin-left: 15px;
+}
