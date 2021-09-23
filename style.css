@@ -53,3 +53,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+hr {
+  margin-inline: 0;
+  margin-block: 20px;
+  width: 549px;
+}
+
+#respostas-fomulario {
+  width: 550px;
+}
