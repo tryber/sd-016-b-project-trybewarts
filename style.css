@@ -1,11 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'Open-sans', sans-serif;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 5px 15px;
 }
 
 .trybewarts-login {
   display: flex;
+}
+
+.trybewarts-header-logo {
+  height: 60px;
+}
+
+.trybewarts-header-title {
+  justify-content: center;
 }
 
 body {
