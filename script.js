@@ -13,8 +13,8 @@ const btnSubmit = document.getElementById('submit-btn');
 const agree = document.getElementById('agreement');
 btnSubmit.disabled = true;
 
- function CheckAgreement() {
-  if (agree.value == 'on') { // se o valor do agree for on o botao estara h habilitado
+function CheckAgreement() {
+  if (agree.value === 'on') { // se o valor do agree for on o botao estara habilitado
     btnSubmit.disabled = false;
   }
 }
