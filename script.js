@@ -39,7 +39,7 @@ charsRestantes.innerHTML = counter;
 function contador(chars) {
   const len = textArea.value.length;
   if (len >= counter) {
-    chars.prevetDefault();
+    chars.preventDefault();
   } else {
     charsRestantes.innerHTML = counter - len;
   }
@@ -78,7 +78,7 @@ function enviarFormulario(event) {
   let form = document.getElementById('evaluation-form')
 
 
-  form.style.display = 'none';
+  form.innerHTML = "<p>Nome: " + nome + " " + sobrenome + "</p><p>Email: " + email + "</p><p>Casa: " + casa + "</p><p>Família: " + familia + "</p><p>Matérias: " + conteudo.join(', ') + "</p><p>Avaliação: " + rate + "</p><p>Observações: " + comentario + "</p>";
   
 }
 
