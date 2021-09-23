@@ -8,6 +8,11 @@
 
 main {
   display: flex;
+  justify-content: right;
+}
+
+main img{
+  height: 500px;  
 }
 
 #evaluation-form{
