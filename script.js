@@ -29,12 +29,11 @@ function checkEnable() {
 }
 checkbox.addEventListener('click', checkEnable);
 
-
 // requisito 20
 // const textMaxLenght = document.querySelector('#textarea-id').maxLength;
 const textArea = document.querySelector('#textarea');
 const charsRestantes = document.querySelector('#counter');
-const counter = 500; 
+const counter = 500;
 charsRestantes.innerHTML = counter;
 
 function contador(chars) {
@@ -42,7 +41,7 @@ function contador(chars) {
   if (len >= counter) {
     chars.prevetDefault();
   } else {
-    charsRestantes.innerHTML = counter - len ;
+    charsRestantes.innerHTML = counter - len;
   }
 }
 
