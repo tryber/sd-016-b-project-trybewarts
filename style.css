@@ -27,8 +27,8 @@ body {
   margin-right: 1vw;
 }
 
-#email, #password {
-  margin-right: .8vw;
+#email , #password {
+  margin-right: 0.8vw;
   height: 30px;
   border: 1px solid black;
   border-radius: 5px;
