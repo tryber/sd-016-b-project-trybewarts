@@ -95,6 +95,7 @@ hr {
 
 #input-lastname {
   margin-left: 1%;
+  
 }
 
 .container2 {
@@ -116,3 +117,7 @@ hr {
 .label-family-inputs {
   display: flex;
 }
+
+textarea{width: 500px;
+height: 100px;}
+
