@@ -4,11 +4,11 @@
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
 }
+
 .trybewarts-login {
   display: flex;
 }
 
-/* Conteúdo Principal*/
 main {
   display: flex;
 }
@@ -22,4 +22,9 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
 }
