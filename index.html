@@ -23,19 +23,20 @@
     </header>
     <main>
         <form action="#" method="GET" id="evaluation-form"> 
-            <input id="input-name" placeholder="Nome">
+            <div class="name-lastname">
+                <input id="input-name" placeholder="Nome">
 
-            <input id="input-lastname" placeholder="Sobrenome">
-            
-            <input id="input-email" placeholder="Email">
-
-            Casa <select name="" id="house">
-                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                <option value="Reactpuff" id='reactpuff-house'>Reactpuff</option>
-                <option value="Corvinode" id='corvinode-house'>Corvinode</option>
-                <option value="Pytherina" id='pytherina-house'>Pytherina</option>
-            </select>
-
+                <input id="input-lastname" placeholder="Sobrenome">
+            </div>
+            <div class="email-house">
+                <input id="input-email" placeholder="Email">
+                <select name="Casa" id="house">
+                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                    <option value="Reactpuff" id='reactpuff-house'>Reactpuff</option>
+                    <option value="Corvinode" id='corvinode-house'>Corvinode</option>
+                    <option value="Pytherina" id='pytherina-house'>Pytherina</option>
+                </select>
+            </div>
              <label for="label-content">
                 Qual conteúdo você está com mais vontade de aprender?
                 <div id='inputs-conteudo'>
