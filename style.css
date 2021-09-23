@@ -53,3 +53,31 @@ main {
   margin-right: 0;
   height: 500px;
 }
+
+.dados-pessoais {
+  margin: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 10px;
+  height: 74px;
+  border: solid black;
+}
+
+#input-name {
+  width: 250px;
+}
+
+#input-lastname {
+  width: 250px;
+}
+
+#input-email {
+  width: 250px;
+}
+
+#house {
+  padding: 3px;
+  border-radius: 2px;
+}
