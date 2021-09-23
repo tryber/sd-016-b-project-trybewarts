@@ -81,3 +81,16 @@ main {
   padding: 3px;
   border-radius: 2px;
 }
+
+.label-family {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 83px;
+}
+
+.family {
+  margin: 40px;
+}
+
