@@ -17,7 +17,7 @@
 body {
   background-color: rgb(235, 235, 235);
   font-family: Times, serif;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .trybewarts-login {
@@ -32,8 +32,9 @@ body {
   height: 28px;
   border-radius: 5px;
   border: 1px solid white;
-  font-family: Times, serif;
   font-size: 16px;
+  font-family: Times, serif;
+  letter-spacing: 0.5px;
 }
 
 #loginButton {
@@ -42,8 +43,9 @@ body {
   border: none;
   align-self: center;
   margin-right: 20px;
+  font-size: 18px;
   font-family: Times, serif;
-  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 #trybewarts-header-title {
@@ -58,10 +60,11 @@ footer {
   color: white;
   text-align: center;
   bottom: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
   padding: 6px;
   height: auto;
+  margin-top: 40px;
 }
 
 .forms-logo {
@@ -83,7 +86,7 @@ footer {
   display: flex;
   width: 675px;
   flex-direction: column;
-  margin-top: 130px;
+  margin-top: 50px;
 }
 
 .inputRadio {
@@ -103,37 +106,40 @@ footer {
 .score {
   display: flex;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 #input-name {
   margin-right: 10px;
-  padding: 5px;
+  padding: 10px;
   width: 300px;
   font-family: Times, serif;
   font-size: 17px;
   border-radius: 5px;
   border-color: rgb(206, 206, 206);
+  letter-spacing: 1px;
 }
 
 #input-lastname {
-  padding: 5px;
+  padding: 10px;
   width: 300px;
   font-family: Times, serif;
   font-size: 17px;
   border-radius: 5px;
   border-color: rgb(206, 206, 206);
+  letter-spacing: 1px;
 }
 
 #input-email {
   margin-right: 10px;
   margin-top: 10px;
-  padding: 5px;
+  padding: 10px;
   width: 300px;
   font-family: Times, serif;
   font-size: 17px;
   border-radius: 5px;
   border-color: rgb(206, 206, 206);
+  letter-spacing: 1px;
 }
 
 #house {
@@ -143,6 +149,7 @@ footer {
   font-size: 17px;
   border-radius: 5px;
   border-color: rgb(206, 206, 206);
+  letter-spacing: 1px;
 }
 
 .subsection {
@@ -154,12 +161,15 @@ footer {
 }
 
 #label-content {
-  margin-top: 10px;
-  margin-bottom: 7px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .checkOpt {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 
@@ -172,7 +182,6 @@ footer {
 }
 
 #submit-btn {
-  margin-top: 10px;
   padding: 10px 30px;
   background-color: rgb(8, 148, 8);
   color: white;
@@ -180,6 +189,9 @@ footer {
   border-radius: 3px;
   align-self: center;
   margin-right: 20px;
+  font-size: 18px;
+  font-family: Times, serif;
+  letter-spacing: 1px;
 }
 
 #textarea {
@@ -192,8 +204,24 @@ footer {
   display: flex;
   justify-content: center;
   height: 100px;
+  margin-top: 0;
+  letter-spacing: 1px;
 }
 
 #houseC {
   font-size: 20px;
+}
+
+#label-family {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+#label-rate {
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
