@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: static;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+  font-family: Times, serif;
+  font-size: 19px;
+}
+
+.trybewarts-login {
+  align-self: center;
+  border-radius: 3px;
+  display: flex;
+}
+
+.login-menus {
+  width: 120px;
+  margin: 0 5px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 16px;
+  font-family: Times, serif;
+  letter-spacing: 0.5px;
+}
+
+#loginButton {
+  background-color: rgb(53, 70, 187);
+  color: white;
+  border: none;
+  align-self: center;
+  margin-right: 20px;
+  font-size: 18px;
+  font-family: Times, serif;
+  letter-spacing: 1px;
+}
+
+#trybewarts-header-title {
+  align-self: center;
+  color: white;
+  font-size: 55px;
+  text-shadow: 2px 2px 4px black;
+}
+
+footer {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  text-align: center;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  padding: 6px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.forms-logo {
+  width: 30%;
+  margin-top: 90px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.inputRadio {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputCheckbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputScore {
+  display: inline;
+}
+
+.score {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#input-name {
+  margin-right: 10px;
+  padding: 10px;
+  width: 300px;
+  font-family: Times, serif;
+  font-size: 17px;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
+  letter-spacing: 1px;
+}
+
+#input-lastname {
+  padding: 10px;
+  width: 300px;
+  font-family: Times, serif;
+  font-size: 17px;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
+  letter-spacing: 1px;
+}
+
+#input-email {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 300px;
+  font-family: Times, serif;
+  font-size: 17px;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
+  letter-spacing: 1px;
+}
+
+#house {
+  padding: 5px;
+  width: 250px;
+  font-family: Times, serif;
+  font-size: 17px;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
+  letter-spacing: 1px;
+}
+
+.subsection {
+  margin-bottom: 15px;
+}
+
+.opt {
+  margin-top: 7px;
+}
+
+#label-content {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.checkOpt {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.radOpt {
+  margin-left: 5px;
+}
+
+#agreement {
+  margin-top: 20px;
+}
+
+#submit-btn {
+  padding: 10px 30px;
+  background-color: rgb(8, 148, 8);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  align-self: center;
+  margin-right: 20px;
+  font-size: 18px;
+  font-family: Times, serif;
+  letter-spacing: 1px;
+}
+
+#textarea {
+  resize: none;
+  border-radius: 5px;
+  border-color: rgb(206, 206, 206);
+}
+
+.titleT {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+#houseC {
+  font-size: 20px;
+}
+
+#label-family {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+#label-rate {
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
