@@ -22,17 +22,6 @@
   color: white;
 }
 
-#rodape {
-  display: flex;
-  height: 70px;
-  padding: 0 30px;
-  background-color: rgb(50, 167, 145);
-  justify-content: center;
-  align-items: center;
-  color: white;
-  bottom: 0;
-}
-
 .trybewarts-header-logo {
   height: 70px;
 }
@@ -46,20 +35,12 @@
   height: 500px;
 }
 
-#house {
-  width: 100%;
-}
-
-#email-form {
-  width: 50%;
-}
-
 .collum {
   display: flex;
   flex-direction: column;
 }
 
-#input-name , #input-lastname , #email-form , #casa {
+#input-name , #input-lastname , #email-form , #house {
   width: 49.5%;
   margin-bottom: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
@@ -68,4 +49,15 @@
 
 #input-name , #input-lastname , #email-form {
   padding-left: 14px;
+}
+
+#rodape {
+  display: flex;
+  height: 70px;
+  padding: 0 30px;
+  background-color: rgb(50, 167, 145);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  bottom: 0;
 }
