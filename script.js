@@ -3,14 +3,13 @@ const buttonEntrar = document.getElementById('botaoEntrar');
 const inputLogin = document.getElementById('email');
 const inputPassword = document.getElementById('password');
 
-console.log (inputLogin);
-
-function login(_event) {
+function login(event) {
+event.preventDefault();
   if (inputLogin.value === 'tryber@teste.com' && inputPassword.value === '123456') {
-    window.alert('Olá, Tryber!');
+    alert('Olá, Tryber!');
   } else {
-    window.alert('Email ou senha inválidos.');
+    alert('Email ou senha inválidos.');
   }
-}
+};
 
 buttonEntrar.addEventListener('click', login);

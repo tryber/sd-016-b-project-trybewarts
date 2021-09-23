@@ -10,19 +10,17 @@
 <body>
     <header class='header'> 
         <h1>TrybeWarts</h1>
-        
-        <form action="#" method="GET" id="" class='trybewarts-login'>
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg"><img>
+
+        <form class='trybewarts-login'>
             <label for="email"> </label>
             <input type="email" name="email" id="email" placeholder="Email" required> 
             
             <label for="password"> </label>
             <input type="password" name="password" id="password" placeholder="Senha" required> 
             
-            <button id="botaoEntrar"> Entrar </button>
-        </form>
-
-        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg"><img>
-        
+            <button type="button" id="botaoEntrar"> Entrar </button>
+        </form>        
     </header>
     <main>
         <form action="#" method="GET" id="evaluation-form"> 
@@ -33,7 +31,7 @@
                 <option value="Pytherina" id='pytherina-house'>Pytherina</option>
             </select>
 
-            <label for="label-content">
+             <label for="label-content">
                 Qual conteúdo você está com mais vontade de aprender?
                 <div id='inputs-conteudo'>
                     <input type="checkbox" id='label-content'>
@@ -49,7 +47,7 @@
                     <input type="checkbox" id='label-content'>
                     <span>Python</span>
                 </div>
-            </label>
+            </label> -->
 
             <label class="textarea" for="">Deixe seu comentário:
                 <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
@@ -63,7 +61,6 @@
     </main>
 
     <footer>Direitos reservados à Trybewarts©</footer>
-
-    <source src="script.js"> 
+    <script src="script.js"> </script>
 </body>
 </html>

@@ -8,9 +8,14 @@
   align-items: center;
 }
 
-/* REQUISITO 3 */
-form {
+header form {
   display: flex;
+}
+
+/* REQUISITO 3 */
+main form {
+  display: flex;
+  flex-direction: column;
   width: 675px;
 }
 
@@ -19,7 +24,6 @@ main {
   display: flex;
   justify-content: flex-end;
   width: auto;
-  border: 1px solid black;
 }
 
 img {
