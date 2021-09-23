@@ -6,12 +6,10 @@
   color: white;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
 }
 
 .header .trybewarts-header-logo {
     height: 100%;
-
 }
 
 header form {
