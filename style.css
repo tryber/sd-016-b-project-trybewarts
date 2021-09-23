@@ -119,3 +119,10 @@ main {
   height: 100px;
   width: 400px;
 }
+
+.termo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  width: 450px;
+}
