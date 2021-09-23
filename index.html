@@ -19,18 +19,20 @@
   </header>
   <main class="flexbox">
     <form method="GET" id="evaluation-form" class="flexbox">
-      <div class="flexbox">
+      <div class="sub-container">
         <input type="text" id="input-name" placeholder="Nome">
         <input type="text" id="input-lastname" placeholder="Sobrenome">
       </div>
-      <div class="flexbox">
+      <div class="sub-container">
         <input type="email" id="email-form" placeholder="Email">
-        <select id="house">
-          <option id="gitnoria-house">Gitnória</option>
-          <option id="reactpuff-house">Reactpuff</option>
-          <option id="corvinode-house">Corvinode</option>
-          <option id="pytherina-house">Pytherina</option>
-        </select>
+        <div id="casa"> 
+          <select id="house">
+            <option id="gitnoria-house">Gitnória</option>
+            <option id="reactpuff-house">Reactpuff</option>
+            <option id="corvinode-house">Corvinode</option>
+            <option id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
       </div>
       <hr>
       <div class="flexbox">
@@ -67,17 +69,18 @@
       <div class="collum flexbox">
         <label for="textarea" class="textarea">Deixe seu comentário:
         </label>
-          <textarea id="textarea" maxlength="500"></textarea>
+          <textarea id="textarea" rows="8" maxlength="500"></textarea>
       </div>
-      <div>
-        
+      <div class="flexbox">
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
+          <input type="checkbox" id="agreement"></label>
       </div>
     </form>
     <aside>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </aside>
   </main>
-  <footer>
+  <footer id="rodape">
     Direitos reservados à Trybewarts©
   </footer>
   <script src="script.js"></script>
