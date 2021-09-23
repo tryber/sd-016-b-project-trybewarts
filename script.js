@@ -13,14 +13,12 @@ const btnSubmit = document.getElementById('submit-btn');
 const agree = document.getElementById('agreement');
 btnSubmit.disabled = true;
 
-function CheckAgreement() {
-  if (agree.value === 'on') { // se o valor do agree for off o botao estara desabilitado
-    btnSubmit.disabled = true;
-  } else if (agree.value === 'off') { // se o valor do agree for on estara habilitado
+ function CheckAgreement() {
+  if (agree.value == 'on') { // se o valor do agree for on o botao estara h habilitado
     btnSubmit.disabled = false;
   }
 }
-agree.addEventListener('Click', CheckAgreement);
+agree.addEventListener('change', CheckAgreement);
 
 // tentei de outras formas como:
 /*
