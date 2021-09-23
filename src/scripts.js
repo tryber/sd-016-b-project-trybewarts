@@ -22,7 +22,7 @@ contractCheck.addEventListener('click', () => {
 });
 
 
-// Requisito 20
+// Requisito 20 - add contador com caracteres disponiveis
 const textArea = document.querySelector('#textarea')
 const remaininhCaracteres = document.querySelector('#counter')
 const MAX_CARACTERES = 500

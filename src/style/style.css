@@ -18,6 +18,7 @@ body {
 
 main {
   display: flex;
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -116,6 +117,7 @@ select {
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin: 20px 75px 0 0;
 }
 
 .section1 {
