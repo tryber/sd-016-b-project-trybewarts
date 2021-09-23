@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="fonts-family/HARRYP__.TTF">
   <title>Trybewarts</title>
 </head>
 
@@ -57,27 +56,27 @@
       <div class="container myFamily">
         <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <div class="container">
-          <input type="checkbox" value="HoFs" id="HoFs">
+          <input type="checkbox" class="subject" value="HoFs" id="HoFs">
           <label for="HoFs">HoFs</label>
         </div>
         <div class="container">
-          <input type="checkbox" value="Jest" id="Jest">
+          <input type="checkbox" class="subject" value="Jest" id="Jest">
           <label for="Jest">Jest</label>
         </div>
         <div class="container">
-          <input type="checkbox" value="Promises" id="Promises">
+          <input type="checkbox" class="subject" value="Promises" id="Promises">
           <label for="Promises">Promises</label>
         </div>
         <div class="container">
-          <input type="checkbox" value="React" id="React">
+          <input type="checkbox" class="subject" value="React" id="React">
           <label for="React">React</label>
         </div>
         <div class="container">
-          <input type="checkbox" value="SQL" id="SQL">
+          <input type="checkbox" class="subject" value="SQL" id="SQL">
           <label for="SQL">SQL</label>
         </div>
         <div class="container">
-          <input type="checkbox" value="Python" id="Python">
+          <input type="checkbox" class="subject" value="Python" id="Python">
           <label for="Python">Python</label>
         </div>
       </div>
@@ -97,16 +96,21 @@
       </div>
       <div class="container myFamily">
         <label for="" class="textarea">Deixe seu comentário:</label>
-        <textarea name="" id="comentario" cols="30" rows="10" maxlength="500"></textarea>
+        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500" onkeyup=""></textarea>
+        <span id="counter">500</span>
       </div>
       <div class="container">
         <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" id="agreement">
+        <input type="checkbox" id="agreement" required>
       </div>
+      <button type="submit" id="submit-btn" disabled>Enviar</button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"
     alt="Emblema da instituição">
   </main>
+  <footer>
+    <address>Direitos reservados à Trybewarts©</address>
+  </footer>
 </body>
 <script src="script.js"></script>
 
