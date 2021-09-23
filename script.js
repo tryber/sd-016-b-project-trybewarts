@@ -50,14 +50,18 @@ function conteudoCheck() {
 // const data = document.getElementById('data');
 function dataForm(event) {
   event.preventDefault();
-  const inputName = document.querySelector('#input-name');
-  const inputLastName = document.querySelector('#input-lastname');
-  const inputEmailForm = document.querySelector('#input-email');
-  const house = document.querySelector('#house');
-  const evoluation = document.querySelector('input[name="rate"]:checked');
-  const family = document.querySelector('input[name="family"]:checked');
+  const inputN = document.querySelector('#input-name').value;
+  const inputL = document.querySelector('#input-lastname').value;
+  const inputEmailF = document.querySelector('#input-email').value;
+  const house = document.querySelector('#house').value;
+  const evo = document.querySelector('input[name="rate"]:checked').value;
+  const family = document.querySelector('input[name="family"]:checked').value;
+  const textarea = document.getElementById('textarea').value;
   const form = document.getElementById('evaluation-form');
-  form.innerHTML = `Nome: ${inputName.value} ${inputLastName.value} Email: ${inputEmailForm.value}  Casa: ${house.value} Família: ${family.value} Matérias: ${conteudoCheck()}  Avaliação: ${evoluation.value}  Observações: ${textArea.value}`;
+  const checkbox = conteudoCheck();
+  form.innerHTML = `Nome: ${inputN} ${inputL} Email: ${inputEmailF}  Casa: ${house}`;
+  form.innerHTML += `Família: ${family}  Matérias: ${checkbox}  Avaliação: ${evo}`;
+  form.innerHTML += `Observações: ${textarea}`;
 }
 
 btnSubmit.addEventListener('click', dataForm);
