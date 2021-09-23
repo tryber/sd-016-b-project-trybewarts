@@ -31,3 +31,12 @@ checkBoxAgreement.addEventListener('click', () => {
     buttonEnviar.disabled = true;
   }
 });
+
+/* Requisito 20 */
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+const limite = 500;
+
+textarea.addEventListener('input', () => {
+  counter.innerText = limite - textarea.value.length;
+});
