@@ -67,20 +67,18 @@ function inputCheckboxValue(arr) {
 function criaParagrafo(value, name) {
   return `<p>${name}: ${value}</p>`;
 }
-const nome = document.getElementById('input-name').value;
-const sobrenome = document.getElementById('input-lastname').value;
-const nomeCompleto = `${nome} ${sobrenome}`;
-const email = document.getElementById('input-email').value;
-const casa = document.getElementById('house').value;
-const comentario = document.getElementById('textarea').value;
-const familia = inputRadioValue(document.getElementsByName('family'));
-const conteudo = inputCheckboxValue(document.getElementsByName('conteudo'));
-const rate = inputRadioValue(document.getElementsByName('rate'));
-const form = document.getElementById('evaluation-form');
-function enviarFormulario(event) {
-  event.preventDefault();
-  let p;
-  p = criaParagrafo(nomeCompleto, 'Nome');
+function enviarFormulario() {
+  const nome = document.getElementById('input-name').value;
+  const sobrenome = document.getElementById('input-lastname').value;
+  const nomeCompleto = `${nome} ${sobrenome}`;
+  const email = document.getElementById('input-email').value;
+  const casa = document.getElementById('house').value;
+  const comentario = document.getElementById('textarea').value;
+  const familia = inputRadioValue(document.getElementsByName('family'));
+  const conteudo = inputCheckboxValue(document.getElementsByName('conteudo'));
+  const rate = inputRadioValue(document.getElementsByName('rate'));
+  const form = document.getElementById('evaluation-form');
+  let p = criaParagrafo(nomeCompleto, 'Nome');
   p += criaParagrafo(email, 'Email');
   p += criaParagrafo(casa, 'Casa');
   p += criaParagrafo(familia, 'Família');
