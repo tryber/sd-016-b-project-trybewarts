@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Gideon Roman', sans-serif;
+  font-family: Gideon Roman, sans-serif;
 }
 
 header h1 {
@@ -122,7 +122,7 @@ main form h1 {
   justify-content: space-between;
 }
 
-.label-choices  {
+.label-choices {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -137,7 +137,7 @@ main form h1 {
   padding: 10px 40px;
 }
 
-.loginBtn, .user-email, .user-password {
+.loginBtn , .user-email , .user-password {
   border-radius: 10px;
   border: none;
 }
