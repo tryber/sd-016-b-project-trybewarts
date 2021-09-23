@@ -37,9 +37,15 @@
                     <option value="Pytherina" id='pytherina-house'>Pytherina</option>
                 </select>
             </div>
-             <label for="label-content">
-                Qual conteúdo você está com mais vontade de aprender?
+            <div>
+                <div class="user-family">
+                    <h4 id="label-family">Qual sua família?</h4>
+                    <label>Frontend <input type="radio" name="family" value="Frontend"></label>
+                    <label>Backend <input type="radio" name="family" value="Backend"></label>
+                    <label>FullStack <input type="radio" name="family" value="FullStack"></label>
+                </div>
                 <div id='inputs-conteudo'>
+                    <label for="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
                     <input type="checkbox" id='label-content'>
                     <span>HoFs</span>
                     <input type="checkbox" id='label-content'>
@@ -53,7 +59,7 @@
                     <input type="checkbox" id='label-content'>
                     <span>Python</span>
                 </div>
-            </label> -->
+            </div>
 
             <label class="textarea" for="">Deixe seu comentário:
                 <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
