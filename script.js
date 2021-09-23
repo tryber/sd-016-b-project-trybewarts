@@ -47,3 +47,40 @@ function contador(chars) {
 }
 
 textArea.addEventListener('input', contador);
+
+
+//Exercício 21
+function inputRadioValue(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i].checked){
+      return arr[i].value
+    }    
+  }
+}
+function inputCheckboxValue(arr) {
+  let aux = []
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i].checked){
+      aux.push(arr[i].value)
+    }    
+  }
+  return aux
+}
+function enviarFormulario(event) {
+  event.preventDefault();
+  let nome = document.getElementById('input-name').value;
+  let sobrenome = document.getElementById('input-lastname').value;
+  let email = document.getElementById('input-email').value;
+  let casa = document.getElementById('house').value;
+  let comentario = document.getElementById('textarea').value;
+  let familia = inputRadioValue(document.getElementsByName('family'));
+  let conteudo = inputCheckboxValue(document.getElementsByName('conteudo'));
+  let rate =inputRadioValue(document.getElementsByName('rate'));
+  let form = document.getElementById('evaluation-form')
+
+
+  form.style.display = 'none';
+  
+}
+
+botaoEnviar.addEventListener('click', enviarFormulario);
