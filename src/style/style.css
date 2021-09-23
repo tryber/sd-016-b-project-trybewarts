@@ -213,7 +213,129 @@ footer {
   bottom: 1;
   background-color: rgb( 60, 64, 74 );
   height: 6vh;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #mainTitle{
+    margin-top: 3rem;
+  }
+
+  .section1{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .alingMail{
+    flex-direction: column;
+  }
+
+  .section2{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .familias, .tecnologias, .tecCheck{
+    align-self: center;
+  }
+
+  .familias h3{
+    margin-bottom: 0.7rem;
+  }
+
+  .familias label{
+    padding-top: 0.4rem;
+  }
+
+  .tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  
+  .tecnologias h4{
+    margin-top: 1.5rem;
+  }
+
+  .tecCheck-label{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center; 
+    flex-wrap: wrap;  
+    /* width: 100%; */
+  }
+
+  .tecCheck label{
+    margin-left: 25px;
+    flex-basis: 25%;
+  }
+
+  .section3{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    margin-top: 1.5rem;
+  }
+
+  .section3 .label-rate-avaliation{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7rem;
+  }
+
+  .section3 .label-rate-avaliation label input{
+    margin-right: 0.12rem;
+  }
+  .section3 .label-rate-avaliation label{
+    margin-right: 0.5rem;
+  }
+
+  .section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  .section4 label{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section4 h4{
+    margin-bottom: 0.3rem;
+  }
+  .section4 div{
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+
+  .section5{
+    display: unset;
+    margin-top: 1.5rem;
+  }
+
+  #submit-btn{
+    width: 100vw;
+    margin-bottom: 1.5rem;
+  }
+
+  footer{
+    width: 100vw;
+  }
+  footer h3{
+    width: 100%;
+  }
+  
+
 }
