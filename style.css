@@ -50,8 +50,8 @@ main {
 }
 
 #trybewarts-forms-logo {
-  margin-right: 0;
   height: 500px;
+  align-self: center;
 }
 
 .dados-pessoais {
@@ -61,12 +61,11 @@ main {
   justify-content: space-between;
   align-content: space-between;
   padding: 10px;
-  height: 74px;
-  border: solid black;
+  height: 95px;
 }
 
 #input-name {
-  width: 250px;
+  width: 320px;
 }
 
 #input-lastname {
@@ -74,7 +73,7 @@ main {
 }
 
 #input-email {
-  width: 250px;
+  width: 320px;
 }
 
 #house {
@@ -91,7 +90,6 @@ main {
 }
 
 .family {
-  margin-top: 20px;
   margin-left: 50px;
   padding: 10px;
 }
@@ -100,4 +98,16 @@ main {
   margin-top: 20px;
   margin-left: 50px;
   padding: 10px;
+}
+
+.avaliacao {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.avaliacao1 {
+  display: flex;
+  align-items: center;
 }
