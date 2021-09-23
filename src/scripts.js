@@ -2,6 +2,7 @@ function query(params) {
   const term = params;
   return document.querySelector(term);
 }
+query();
 
 const btnEntrar = query('#btnEntrar');
 btnEntrar.addEventListener('click', () => {
@@ -21,14 +22,11 @@ contractCheck.addEventListener('click', () => {
   btnSend.removeAttribute('disabled');
 });
 
-
-// Requisito 20 - add contador com caracteres disponiveis
-const textArea = document.querySelector('#textarea')
-const remaininhCaracteres = document.querySelector('#counter')
-const MAX_CARACTERES = 500
-
-textArea.addEventListener('input', () => {
-  const remaining = (MAX_CARACTERES - textArea.value.length)
-
-  remaininhCaracteres.textContent = `${remaining} caracteres disponiveis `
-})
+const txtArea = query('#counter');
+txtArea.addEventListener('keypress', (event) => {
+  const maxChars = 500;
+  const contador = txtArea.value.length;
+  if (contador >= maxChars) {
+    event.preventDefault();
+  }
+});
