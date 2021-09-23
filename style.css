@@ -39,6 +39,7 @@ main input {
 main {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 40px;
 }
 
@@ -76,6 +77,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -88,7 +90,7 @@ h1 {
 }
 
 .checkbox {
-  display: flex;
+  margin: 3px;
 }
 
 .select-family {
