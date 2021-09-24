@@ -15,30 +15,30 @@
     <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt="Trybewarts school logo image: The letter T inside a geometric shape.">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <!-- FORMULÁRIO LOGIN -->
-    <form action="" class="trybewarts-login">
+    <form action="" class="trybewarts-login d-flex">
       <input type="email" class="trybewarts-email" name="email" placeholder="Email" required>
       <input type="password" class="trybewarts-password" name="password" placeholder="Senha" required>
       <button class="trybewarts-submit">Entrar</button>
     </form>
   </header>
-  <main>
-    <form id="evaluation-form" class="container">
-      <div class="name-lastname-container container">
-        <input type="text" id="input-name" name="nome" placeholder="Nome" required>
-        <input type="text" id="input-lastname" name="sobrenome" placeholder="Sobrenome" required>
+  <main class="d-flex justify-content-evenly">
+    <form id="evaluation-form">
+      <div class="name-lastname-container d-flex mt-4">
+        <input type="text" id="input-name" class="form-control" name="nome" placeholder="Nome" required>
+        <input type="text" id="input-lastname" class="form-control" name="sobrenome" placeholder="Sobrenome" required>
       </div>
-      <div class="container">
-        <input type="text" id="input-email" name="email" placeholder="Email" required>
+      <div class="email-select-container d-flex mt-2">
+        <input type="text" id="input-email" class="form-control" name="email" placeholder="Email" required>
         <label for="house">Casa: </label>
-        <select name="casa" id="house">
+        <select name="casa" id="house" class="form-select">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </div>
-      <div class="container d-flex justify-content-between border-bottom border-top trybewarts-family">
-        <div class="family-container">
+      <div class="d-flex justify-content-between border-bottom border-top trybewarts-family">
+        <div class="family-container d-flex flex-column">
           <label for="" id="label-family">Qual sua família?</label>
         </div>
         <div>
@@ -47,20 +47,20 @@
           </div>
         </div>
       </div>
-      <div class="rating-container">
-        <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+      <div class="rating-container form-check d-flex align-items-center py-3 m-0 justify-content-evenly">
+        <label for="" id="label-rate" class="form-check-label">Como você avalia a Trybewarts?</label>
       </div>
       <label for="textarea" class="textarea">Deixe seu comentário:</label>
-      <textarea name="Coment" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-      <div class="checkinfo">
+      <textarea name="Coment" id="textarea" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
+      <div class="checkinfo form-check align-items-center py-3 m-0 justify-content-evenly">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" id="agreement">
+        <input type="checkbox" id="agreement" class="form-check-input">
       </div>
-      <button id="submit-btn" type="submit" disabled>Enviar</button>
+      <button id="submit-btn" type="submit" class="btn mt-2" disabled>Enviar</button>
     </form>
-    <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
+    <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" class="mt-5" alt="">
   </main>
-  <footer class="footer mt-auto py-3 bg-light">
+  <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 mt-4 border-top">
     <p>Direitos reservados à Trybewarts©</p>
   </footer>
   <script src="script.js"></script>
