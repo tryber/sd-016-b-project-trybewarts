@@ -8,11 +8,11 @@
 
 main {
   display: flex;
-  justify-content: right;
+  justify-content: space-around;
 }
 
-main img{
-  height: 500px;  
+#trybewarts-forms-logo {
+  height: 500px;
 }
 
 #label-rate {
@@ -29,11 +29,85 @@ main img{
   width: 675px;
 }
 
+#form-title {
+  display: flex;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#first-row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+#input-name {
+  width: 300px;
+  margin-right: 4px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#input-lastname {
+  width: 300px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#second-row {
+  display: flex;
+}
+
+#input-email {
+  width: 300px;
+  border-radius: 4px;
+  padding: 4px;
+  margin-right: 4px;
+}
+
+#house {
+  width: 312px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#lower-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#family {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+#label-family {
+  font-size: 20px;
+}
+
+#content {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content {
+  font-size: 20px;
+}
+
+#checkboxes {
+  margin-top: 15px;
+}
+
 .trybewarts-header-logo {
   height: 60px;
   margin-left: 8px;
 }
-*{
+
+* {
   margin: 0;
 }
 
@@ -68,5 +142,3 @@ main img{
   border-radius: 4px;
   padding: 4px;
 }
-
-
