@@ -32,6 +32,10 @@ main input {
   padding: 5px 10px;
 }
 
+#house {
+  padding: 5px 91px;
+}
+
 .trybewarts-login input {
   margin: 5px;
 }
@@ -95,6 +99,7 @@ h1 {
 
 .select-family {
   display: block;
+  margin: 3px;
 }
 
 .cadastro3 {

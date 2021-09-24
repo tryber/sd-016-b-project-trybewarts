@@ -10,11 +10,15 @@ buttonEntrar.addEventListener('click', () => {
   return alert('Email ou senha inválidos.');
 });
 
-// const buttonEnviar = document.querySelector('#submit-btn');
-// const inputCheckbox = document.querySelector('#agreement');
+const buttonEnviar = document.querySelector('#submit-btn');
+const inputCheckbox = document.querySelector('#agreement');
 
-// if (inputCheckbox.value) {
-//   buttonEnviar.disabled = false;
-// } else {
-//   buttonEnviar.disabled = true;
-// }
+// Monitoria com Tales e Thyago Person, lógica para colocar o evento no checkbox.
+// https://www.w3schools.com/jsref/prop_checkbox_checked.asp
+inputCheckbox.addEventListener('click', () => {
+  if (inputCheckbox.checked) {
+    buttonEnviar.disabled = false;
+  } else {
+    buttonEnviar.disabled = true;
+  }
+});
