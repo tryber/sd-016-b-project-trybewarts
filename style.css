@@ -133,3 +133,11 @@ main {
   width: 150px;
   align-self: center;
 }
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-right: 34px;
+  display: flex;
+  justify-content: flex-end;
+}
