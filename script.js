@@ -10,6 +10,7 @@ buttonEntrar.addEventListener('click', () => {
   return alert('Email ou senha inválidos.');
 });
 
+// Requisito 18
 const buttonEnviar = document.querySelector('#submit-btn');
 const inputCheckbox = document.querySelector('#agreement');
 
@@ -21,4 +22,13 @@ inputCheckbox.addEventListener('click', () => {
   } else {
     buttonEnviar.disabled = true;
   }
+});
+
+// Requisito 20
+const coment = document.querySelector('#textarea');
+const cont = document.querySelector('#counter');
+
+coment.addEventListener('keyup', () => {
+  const char = coment.value.length;
+  cont.innerHTML = `${char}/${500 - char}`;
 });
