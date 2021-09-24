@@ -1,6 +1,6 @@
 function entrar() {
-  const email = document.querySelector('#input-email').value;
-  const senha = document.querySelector('#input-senha').value;
+  const email = document.querySelector('#login-email').value;
+  const senha = document.querySelector('#login-senha').value;
   if (email === 'tryber@teste.com' && senha === '123456') alert('Olá, Tryber!');
   else alert('Email ou senha inválidos.');
 }
