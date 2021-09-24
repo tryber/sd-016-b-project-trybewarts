@@ -26,3 +26,39 @@ function counter() {
   });
 }
 counter();
+
+const setValues = (valForm) => {
+  const form = document.querySelector('#evaluation-form');
+  form.innerHTML = '';
+  const sectionElement = document.querySelector('#formMain');
+  Object.keys(valForm).forEach((key) => {
+    const pElement = document.createElement('p');
+    pElement.innerText = `${key} ${value}`;
+    sectionElement.appendChild(pElement);
+  });
+};
+const createObj = (obj) => {
+  const formValues = {
+    Nome: 'Nome:',
+  };
+  obj.forEach((value, key) => {
+    if (key === 'Matérias' && formValues.Matérias) {
+      formValues.Matérias += ` / ${value}`;
+    } else if (key === 'Nome' || key === 'lastname') {
+      formValues.Nome += ` ${value}`;
+    } else {
+      formValues[key] = `${key}: ${value}`;
+    }
+  });
+  setValues(formValues);
+};
+// monitoria Tales Coelho(Truma - 11)
+const getFormValues = () => {
+  const form = document.getElementById('evaluation-form');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    createObj(formData);
+  });
+};
+getFormValues();
