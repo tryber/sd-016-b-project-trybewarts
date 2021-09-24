@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Trybewarts Project</title>
 </head>
@@ -20,12 +22,12 @@
     </form>
   </header>
   <main>
-    <form id="evaluation-form">
-      <div class="name-lastname-container">
+    <form id="evaluation-form" class="container">
+      <div class="name-lastname-container container">
         <input type="text" id="input-name" name="nome" placeholder="Nome" required>
         <input type="text" id="input-lastname" name="sobrenome" placeholder="Sobrenome" required>
       </div>
-      <div>
+      <div class="container">
         <input type="text" id="input-email" name="email" placeholder="Email" required>
         <label for="house">Casa: </label>
         <select name="casa" id="house">
@@ -35,12 +37,14 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </div>
-      <div>
+      <div class="container d-flex justify-content-between border-bottom border-top trybewarts-family">
         <div class="family-container">
           <label for="" id="label-family">Qual sua família?</label>
         </div>
-        <div class="learning-container">
+        <div>
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="learning-container">
+          </div>
         </div>
       </div>
       <div class="rating-container">
@@ -56,7 +60,7 @@
     </form>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
   </main>
-  <footer>
+  <footer class="footer mt-auto py-3 bg-light">
     <p>Direitos reservados à Trybewarts©</p>
   </footer>
   <script src="script.js"></script>

@@ -54,16 +54,21 @@
 
 main {
   display: flex;
+  justify-content: space-evenly;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  margin: 0;
   width: 675px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .name-lastname-container {
@@ -73,6 +78,17 @@ main {
 .family-container {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  line-height: 25px;
+}
+
+.learning-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 50%;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .rating-container {
@@ -81,4 +97,10 @@ main {
 
 .checkinfo {
   display: flex;
+}
+
+.trybewarts-family{
+  padding-top: 10px;
+  margin-top: 10px;
+  height: 120px;
 }
