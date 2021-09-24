@@ -36,3 +36,18 @@ function createRate() {
 window.onload = function () {
   createRate();
 };
+
+const submitButton = document.querySelector('#submit-btn');
+
+const agreeCheck = document.querySelector('#agreement');
+
+function sendButton() {
+  if (agreeCheck.checked) {
+    submitButton.removeAttribute('disabled');
+  } else {
+    const disabled = document.createAttribute('disabled');
+    submitButton.setAttributeNode(disabled);
+  }
+}
+
+agreeCheck.addEventListener('click', sendButton);
