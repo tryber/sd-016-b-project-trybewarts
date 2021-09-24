@@ -84,8 +84,7 @@ main {
 
 .learning-container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   height: 50%;
   width: 100%;
   justify-content: space-around;
@@ -99,7 +98,7 @@ main {
   display: flex;
 }
 
-.trybewarts-family{
+.trybewarts-family {
   padding-top: 10px;
   margin-top: 10px;
   height: 120px;
