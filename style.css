@@ -68,9 +68,10 @@ hr {
 #respostas-fomulario {
   width: 550px;
 }
+
 footer {
   align-items: center;
-  background-color: #3c404b;
+  background-color: rgb(59, 63, 74);
   display: flex;
   height: 30px;
   justify-content: center;
@@ -79,7 +80,7 @@ footer {
 footer p {
   color: whitesmoke;
   font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Times New Roman, Times, serif;
   line-height: 18px;
 }
 
@@ -94,8 +95,7 @@ footer p {
   width: 140px;
 }
 
-#email,
-#senha {
+#email , #senha {
   height: 20px;
 }
 
