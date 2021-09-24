@@ -2,6 +2,7 @@ function query(params) {
   const term = params;
   return document.querySelector(term);
 }
+query();
 
 const btnEntrar = query('#btnEntrar');
 btnEntrar.addEventListener('click', () => {
@@ -18,7 +19,12 @@ btnEntrar.addEventListener('click', () => {
 const contractCheck = query('.contractCheck');
 contractCheck.addEventListener('click', () => {
   const btnSend = query('#submit-btn');
-  btnSend.removeAttribute('disabled');
+  const check = query('.contractCheck');
+  if (check.checked) {
+    btnSend.disabled = false;
+  } else {
+    btnSend.disabled = true;
+  }
 });
 
 
@@ -33,3 +39,8 @@ textArea.addEventListener('input', () => {
   remaininhCaracteres.textContent = `${remaining} caracteres disponiveis `
 })
 
+const contaCaracter = query('#textarea');
+contaCaracter.addEventListener('keyup', (event) => {
+  const total = event.target.maxLength - event.target.textLength;
+  query('.result').innerHTML = `Caracteris restantes: ${total}`;
+}, false);

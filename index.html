@@ -30,7 +30,7 @@
         <h1>Formulario de Avaliação</h1>
       </div>
 
-      <form action="" method="post" id="evaluation-form">
+      <form action="" id="evaluation-form">
 
         <section class="section1">
           <div class="alingMail">
@@ -51,53 +51,52 @@
           </div>
         </section>
 
-        <!-- <hr> -->
+        <hr>
 
         <section class="section2">
 
           <div class="familias">
-            <h3 id="label-family">Qual sua família?</h3>
-            <label> <input type="radio" name="family" class="inputStyle" value="Frontend"> Familia Frontend </label>
-            <label> <input type="radio" name="family" class="inputStyle" value="Backend"> Familia Backend </label>
-            <label> <input type="radio" name="family" class="inputStyle" value="FullStack"> Familia FullStack </label>
+            <p id="label-family">Qual sua família?</p>
+            <label for="cFrontend"> <input type="radio" name="family" value="Frontend" id="cFrontend"> Familia Frontend </label>
+            <label for="cBackend"> <input type="radio" name="family" value="Backend" id="cBackend" > Familia Backend </label>
+            <label for="cFullStack"> <input type="radio" name="family" value="FullStack" id="cFullStack"> Familia FullStack </label>
           </div>
 
           <div class="tecnologias">
-            <h4 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h4>
+            <p id="label-content" >Qual conteúdo você está com mais vontade de aprender?</p>
             <div class="tecCheck-label tecCheck">
-              <label class="tecCheck"> <input type="checkbox" value="HoFs">HoFs</label>
-              <label class="tecCheck"> <input type="checkbox" value="Jest">Jest</label>
-              <label class="tecCheck"> <input type="checkbox" value="Promises">Promises</label>
+              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="HoFs">HoFs</label>
+              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="Jest">Jest</label>
+              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="Promises">Promises</label>
               <br>
-              <label class="tecCheck"> <input type="checkbox" value="React">React</label>
-              <label class="tecCheck"> <input type="checkbox" value="SQL">SQL</label>
-              <label class="tecCheck"> <input type="checkbox" value="Python">Python</label>
+              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="React">React</label>
+              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="SQL">SQL</label>
+              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="Python">Python</label>
             </div>
           </div>
         </section>
-        <!-- <hr> -->
+        <hr>
         <section class="section3">
           <h4 id="label-rate">Como você avalia a Trybewarts?</h4>
           <div class="label-rate-avaliation">
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="1">1</label>
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="2">2</label>
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="3">3</label>
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="4">4</label>
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="5">5</label>
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="6">6</label>
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="7">7</label>
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="8">8</label>
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="9">9</label>
-            <label for="ranger"> <input type="radio" name="rate" class="rateStyle" id="um" value="10">10</label>
+            <label for="um"> <input type="radio" name="rate" class="rateStyle" id="um" value="1">1</label>
+            <label for="dois"> <input type="radio" name="rate" class="rateStyle" id="dois" value="2">2</label>
+            <label for="tres"> <input type="radio" name="rate" class="rateStyle" id="tres" value="3">3</label>
+            <label for="quarto"> <input type="radio" name="rate" class="rateStyle" id="quarto" value="4">4</label>
+            <label for="cingo"> <input type="radio" name="rate" class="rateStyle" id="cingo" value="5">5</label>
+            <label for="seis"> <input type="radio" name="rate" class="rateStyle" id="seis" value="6">6</label>
+            <label for="sete"> <input type="radio" name="rate" class="rateStyle" id="sete" value="7">7</label>
+            <label for="oito"> <input type="radio" name="rate" class="rateStyle" id="oito" value="8">8</label>
+            <label for="nove"> <input type="radio" name="rate" class="rateStyle" id="nove" value="9">9</label>
+            <label for="dez"> <input type="radio" name="rate" class="rateStyle" id="dez" value="10">10</label>
           </div>
         </section>
 
         <section class="section4">
-          <label for="" class="textarea">
+          <label for="textarea" class="textarea" maxlength="500">
             <h4>Deixe seu comentário:</h4>
-            <textarea name="textarea" id="textarea" class="textarea" cols="80" rows="10" maxlength="500rows"></textarea>
-            <div id="counter">500 caracteres disponiveis</div>
-            <!-- com essas condicoes aqui, o campo do textarea vai ficar com mais caracteres do 500, neh? deveriamos mudar o numero de colunas e linhas pra chegar no numero certo? -->
+            <textarea name="textarea" id="textarea" class="textarea"  maxlength="500" rows="6" required></textarea>
+            <div class="result" id="counter">Caracteris restantes: 500</div>
           </label>
         </section>
 
