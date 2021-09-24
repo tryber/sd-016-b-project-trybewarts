@@ -87,6 +87,11 @@ main form {
   margin-right: 0.75em;
 }
 
+#comentario-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .right-arms {
   display: flex;
   justify-content: flex-end;
