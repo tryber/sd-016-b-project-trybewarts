@@ -11,30 +11,24 @@ function alerts() {
 }
 enterButton.addEventListener('click', alerts);
 
+const check = document.getElementById('agreement');
+check.addEventListener('click', function checkup () {
+  if (!check.checked){
+    document.getElementById('submit-btn').setAttribute('disabled');
+  } else {
+    document.getElementById('submit-btn').removeAttribute('disabled');
+  }
+});
 
-let check = document.getElementById('agreement')
-  check.addEventListener('click', function() {
-    if(!check.checked){
-      document.getElementById("submit-btn").setAttribute("disabled")
-    }else {
-      document.getElementById("submit-btn").removeAttribute("disabled")
-    }
-    })
+function counterText() {
+  const textArea = document.getElementById('campoTexto');
+  const textCount = document.getElementById('campoTexto').maxLength;
+  const label = document.getElementById('counter');
+  const count = 'Caracteres Disponiveis: ';
+  label.innerHTML = count + textCount;
 
-function counterText (){
-  let textArea = document.getElementById('campoTexto')
-  let textCount = document.getElementById('campoTexto').maxLength
-  let label = document.getElementById('counter')
-  label. innerHTML = 'Caracteres Disponiveis: ' + textCount
-
-  textArea.addEventListener('keypress', function(){
-    label. innerHTML = 'Caracteres Disponiveis: ' + (textCount - textArea.value.length)
-  })
-
-
-}   
-
+  textArea.addEventListener('keypress', function reduceNumber () {
+    label.innerHTML = count + (textCount - textArea.value.length);
+  });
+}
 counterText()
-
-
-
