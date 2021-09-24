@@ -1,6 +1,6 @@
 const botaoLogin = document.getElementsByClassName('botao-login')[0];
-const inputEmail = document.getElementById('input-email');
-const inputPassword = document.getElementById('input-password');
+const inputEmail = document.getElementById('email-login');
+const inputPassword = document.getElementById('password-login');
 const botaoSubmit = document.getElementById('submit-btn');
 const agreed = document.getElementById('agreement');
 

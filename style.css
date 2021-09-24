@@ -40,14 +40,14 @@
   flex-direction: column;
 }
 
-#input-name , #input-lastname , #email-form , #house {
+#input-name , #input-lastname , #input-email , #house {
   width: 49.5%;
   margin-bottom: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
   border-radius: 5px;
 }
 
-#input-name , #input-lastname , #email-form {
+#input-name , #input-lastname , #input-email {
   padding-left: 14px;
 }
 
