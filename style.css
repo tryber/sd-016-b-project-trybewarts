@@ -35,3 +35,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.trybewarts-login {
+  display: flex;
+}
+
+main form {
+  display: flex;
+  width: 675px;
+}
