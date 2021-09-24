@@ -21,3 +21,13 @@ function checkedAgreement() {
   submitBtn.toggleAttribute('disabled');
 }
 agreement.addEventListener('change', checkedAgreement);
+
+// Resquisito 20 adicionar contador de caracteres
+const textarea = document.getElementById('textarea');
+const countCharacters = document.getElementById('counter');
+
+function countingCharacters() {
+  const counter = (500 - (textarea.value.length));
+  countCharacters.innerText = counter;
+}
+textarea.addEventListener('keyup', countingCharacters);
