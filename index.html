@@ -24,19 +24,19 @@
       </div>
   </header>
   <main class="content-container">
-    <form action="" id="evaluation-form">
+    <form action="" id="evaluation-form" required>
       <div class="personal-info">
         <div class="personal-info-input">
           <input type="text" id="input-name" placeholder="Nome">
         </div>
         <div class="personal-info-input">
-          <input type="text" id="input-lastname" placeholder="Sobrenome">
+          <input type="text" id="input-lastname" placeholder="Sobrenome" required>
         </div>
         <div class="personal-info-input">
-          <input type="email" id="input-email" placeholder="Email">
+          <input type="email" id="input-email" placeholder="Email" required>
         </div>
         <div class="select-house">
-          <select name="house" id="house">
+          <select name="house" id="house" required>
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
             <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -47,7 +47,7 @@
       <div class="family-container">
         <label id="label-family">Qual sua família?</label>
         <label for="front">
-          <input type="radio" name="family" value="Frontend" id="front"> Frontend
+          <input type="radio" name="family" value="Frontend" id="front" checked required> Frontend
         </label>
         <label for="backend">
           <input type="radio" name="family" value="Backend" id="backend" > Backend
@@ -60,29 +60,29 @@
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <div class="checkbox">
           <label for="hofs">
-            <input type="checkbox" name="hofs" id="hofs" value="HoFs">HoFs
+            <input type="checkbox" name="content" id="HoFs" value="HoFs"  class="subject">HoFs
           </label>
           <label for="jest">
-            <input type="checkbox" name="jest" id="jest" value="Jest">Jest
+            <input type="checkbox" name="content" id="Jest" value="Jest" class="subject">Jest
           </label>
           <label for="promises">
-            <input type="checkbox" name="promises" id="promises" value="Promises">Promises
+            <input type="checkbox" name="content" id="Promises" value="Promises" class="subject">Promises
           </label>
           <label for="react">
-            <input type="checkbox" name="react" id="react" value="React">React
+            <input type="checkbox" name="content" id="React" value="React" class="subject">React
           </label>
           <label for="sql">
-            <input type="checkbox" name="sql" id="sql" value="SQL">SQL
+            <input type="checkbox" name="content" id="SQL" value="SQL" class="subject">SQL
           </label>
           <label for="python">
-            <input type="checkbox" name="python" id="python" value="Python">Python
+            <input type="checkbox" name="content" id="Python" value="Python" class="subject">Python
           </label>
         </div>
       </div>
       <div id="rate-container">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
          <label for="1">
-           <input type="radio" name="rate" id="1" value="1">1
+           <input type="radio" name="rate" id="1" value="1" checked required>1
          </label>
          <label for="2">
           <input type="radio" name="rate" id="2" value="2">2
@@ -126,7 +126,17 @@
       <div class="btn-container">
         <button type="submit" id="submit-btn" disabled>Enviar</button>
       </div>
+      <div id="form-content">
+        <p>Nome: John Doe"</p>
+        <p>Email: alguem@email.com</p>
+        <p>Casa: -Casa marcada-</p>
+        <p>Família: -Família marcada-</p>
+        <p>Matérias: -Matérias marcadas-</p>
+        <p>Avaliação: -Nota marcada-</p>
+        <p>Observações: -Texto preenchido-</p>
+      </div>
     </form>
+    
     <div class="img-form-container">
       <img src="./images/trybewarts-colored.svg" alt="Imagem Trybewarts Lateral" id="trybewarts-forms-logo">
     </div>
