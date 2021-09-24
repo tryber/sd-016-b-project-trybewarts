@@ -4,6 +4,8 @@ const q = (par) => document.querySelector(par);
 const email = q('#email');
 const senha = q('#senha');
 const entrar = q('#entrar');
+const agreement = q('.agreement-container');
+const submit = q('#submit-btn');
 
 const validateEmail = (e) => {
   e.preventDefault();
@@ -14,4 +16,10 @@ const validateEmail = (e) => {
   }
 };
 
+const ableButton = () => {
+  if (submit.disabled === true) submit.disabled = false;
+  else submit.disabled = true;
+};
+
 entrar.addEventListener('click', validateEmail);
+agreement.addEventListener('change', ableButton);

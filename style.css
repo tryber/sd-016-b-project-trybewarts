@@ -187,3 +187,7 @@ hr {
 #submit-btn {
   width: 100%;
 }
+
+#submit-btn:disabled {
+  opacity: 0.6;
+}
