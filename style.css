@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Header */
 .header {
   display: flex;
@@ -5,18 +10,23 @@
   background-color: rgb(50, 167, 145);
 }
 
+.trybewarts-header-logo {
+  width: 100px;
+}
+
 .trybewarts-login {
   display: flex;
 }
 
+/* Conteúdo principal */
 main {
   display: flex;
 }
 
 #evaluation-form {
   display: flex;
-  width: 675px;
   flex-direction: column;
+  width: 675px;
 }
 
 #trybewarts-forms-logo {
@@ -31,4 +41,38 @@ main {
 
 .main-content {
   display: flex;
+}
+
+.div-form {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  width: 675px;
+}
+
+#input-name {
+  width: 49.4%;
+}
+
+#input-lastname {
+  width: 49.4%;
+}
+
+#input-email {
+  width: 49.4%;
+}
+
+#house {
+  width: 49.4%;
+}
+
+/* Avalia a Trybe */
+#avalia-trybe {
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid black;
+}
+
+#label-rate {
+  margin-right: 10px;
 }

@@ -12,3 +12,22 @@ button.addEventListener('click', (event) => {
     alert('Email ou senha inválidos.');
   }
 });
+
+/* Desabilitando button */
+const checkBox = document.getElementById('agreement'); // recupera checkbox
+
+function desableButton() {
+  document.querySelector('#submit-btn').disabled = true;
+}
+
+function enableButton() {
+  document.querySelector('#submit-btn').disabled = false;
+}
+
+window.onload = () => {
+  desableButton();
+
+  checkBox.addEventListener('click', () => {
+    enableButton();
+  });
+};
