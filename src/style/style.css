@@ -334,15 +334,6 @@ footer {
     margin-top: 6vh;
   }
 
-  #trybewarts-forms-logo{
-    align-self: center;
-    margin-left: 5rem;
-  }
-
-  #mainTitle{
-    margin-top: 3rem;
-  }
-  
   h1 {
     display: flex;
     align-self: center;
@@ -350,7 +341,6 @@ footer {
     flex-shrink: 3;
     font-size: medium;
   }
-
 
   hr {
     border: solid 0.5px rgb(190, 190, 190);
