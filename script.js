@@ -29,10 +29,10 @@ function disableButton() {
   document.querySelector('#submit-btn').disabled = true;
 }
 
-function verifyChecked() {
-  console.log('hello');
-  enableButton();
-}
+// function verifyChecked() {
+//  // console.log('hello');
+//   enableButton();
+// }
 
 count.innerText = textArea.maxLength;
 
@@ -46,9 +46,9 @@ function countTextArea() {
 window.onload = () => {
   sendButton.addEventListener('click', validateLog);
 
-  disableButton();
+  disableButton(); // desabilitar 
   checkBox.addEventListener('click', () => {
-    verifyChecked();
+    enableButton();
   });
   countTextArea();
 };
