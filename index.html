@@ -10,27 +10,27 @@
   <title>Trybewarts Project</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header d-flex justify-content-between align-items-center px-4">
     <!-- IMAGEM LOGO -->
     <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt="Trybewarts school logo image: The letter T inside a geometric shape.">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <!-- FORMULÁRIO LOGIN -->
     <form action="" class="trybewarts-login d-flex">
-      <input type="email" class="trybewarts-email" name="email" placeholder="Email" required>
-      <input type="password" class="trybewarts-password" name="password" placeholder="Senha" required>
+      <input type="email" class="trybewarts-email form-control" name="email" placeholder="Email" required>
+      <input type="password" class="trybewarts-password form-control" name="password" placeholder="Senha" required>
       <button class="trybewarts-submit">Entrar</button>
     </form>
   </header>
   <main class="d-flex justify-content-evenly">
-    <form id="evaluation-form">
+    <form id="evaluation-form" class="d-flex flex-column">
       <div class="name-lastname-container d-flex mt-4">
-        <input type="text" id="input-name" class="form-control" name="nome" placeholder="Nome" required>
+        <input type="text" id="input-name" class="form-control input-name" name="nome" placeholder="Nome" required>
         <input type="text" id="input-lastname" class="form-control" name="sobrenome" placeholder="Sobrenome" required>
       </div>
       <div class="email-select-container d-flex mt-2">
-        <input type="text" id="input-email" class="form-control" name="email" placeholder="Email" required>
+        <input type="text" id="input-email" class="form-control input-email" name="email" placeholder="Email" required>
         <label for="house">Casa: </label>
-        <select name="casa" id="house" class="form-select">
+        <select name="casa" id="house" class="form-select d-flex">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -43,7 +43,7 @@
         </div>
         <div>
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-          <div class="learning-container">
+          <div class="learning-container d-flex justify-content-around">
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
       </div>
       <button id="submit-btn" type="submit" class="btn mt-2" disabled>Enviar</button>
     </form>
-    <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" class="mt-5" alt="">
+    <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" class="d-flex align-content-center flex-column mt-5" alt="">
   </main>
   <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 mt-4 border-top">
     <p>Direitos reservados à Trybewarts©</p>
