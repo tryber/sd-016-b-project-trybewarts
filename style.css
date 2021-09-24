@@ -9,6 +9,10 @@ body {
   background-color: rgb(230, 230, 230);
 }
 
+input:focus , select:focus , textarea:focus {
+  outline: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -36,7 +40,7 @@ header img {
 }
 
 
-.trybewarts-login button, #submit-btn {
+.trybewarts-login button , #submit-btn {
   border: 0;
   border-radius: 7px;
   padding: 10px;
@@ -120,10 +124,6 @@ main {
 
 hr {
   width: 100%;
-}
-
-input:focus, select:focus, textarea:focus {
-  outline: none;
 }
 
 #trybewarts-forms-logo {
