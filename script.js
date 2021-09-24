@@ -33,10 +33,6 @@ function createRate() {
   }
 }
 
-window.onload = function () {
-  createRate();
-};
-
 const submitButton = document.querySelector('#submit-btn');
 
 const agreeCheck = document.querySelector('#agreement');
@@ -51,3 +47,13 @@ function sendButton() {
 }
 
 agreeCheck.addEventListener('click', sendButton);
+
+function submitForm(event) {
+  event.preventDefault();
+}
+
+submitButton.addEventListener('click', submitForm);
+
+window.onload = function () {
+  createRate();
+};

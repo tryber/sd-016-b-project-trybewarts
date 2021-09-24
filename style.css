@@ -9,6 +9,7 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 
 .trybewarts-login {
@@ -19,6 +20,11 @@
 
 main , #evaluation-form {
   display: flex;
+}
+
+main {
+  justify-content: space-between;
+  margin: 6px 20px;
 }
 
 #evaluation-form {
@@ -32,16 +38,11 @@ main , #evaluation-form {
 
 .name-container {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .email-house-container {
   display: flex;
-}
-
-#label-family {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
 }
 
 .checkbox-container {
@@ -51,4 +52,90 @@ main , #evaluation-form {
 
 .rate-container {
   display: flex;
+}
+
+.trybewarts-header-logo {
+  width: 80px;
+}
+
+.email , .senha {
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.login-button {
+  border: 2px solid rgb(239, 239, 239);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.login-button:hover {
+  background-color: rgb(50, 167, 145);
+  color: rgb(239, 239, 239);
+  cursor: pointer;
+}
+
+#trybewarts-header-title {
+  color: rgb(239, 239, 239);
+}
+
+.border {
+  border: 1px solid black;
+}
+
+#input-name , #input-email {
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+#input-lastname {
+  border-radius: 2px;
+}
+
+#input-email {
+  margin-bottom: 10px;
+}
+
+.margin {
+  margin-bottom: 10px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea {
+  border-radius: 2px;
+  flex-basis: 100px;
+  width: 250px;
+}
+
+#label-rate {
+  margin-right: 10px;
+}
+
+#submit-btn {
+  align-self: center;
+  background-color: rgb(134, 129, 129);
+  border: 2px solid rgb(134, 129, 129);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+#submit-btn:disabled {
+  border: 2px solid rgb(190, 184, 184);
+  background-color: rgb(190, 184, 184);
+  cursor: default;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
 }

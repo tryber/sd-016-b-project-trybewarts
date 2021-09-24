@@ -19,12 +19,12 @@
 </header>
     <main>
         <form id='evaluation-form'>
-            <fieldset class="name-container">
-                <input type="text" id="input-name" name="name" placeholder="Nome">
-                <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
+            <fieldset class="name-container margin">
+                <input type="text" id="input-name" name="name" placeholder="Nome" class="border">
+                <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome" class="border">
             </fieldset>
             <fieldset class="email-house-container">
-                <input type="email" name="email" id="input-email" placeholder="Email">
+                <input type="email" name="email" id="input-email" placeholder="Email" class="border">
                 <select id="house">
                     <option id='gitnoria-house' value='Gitnória'>Gitnória</option>  
                     <option id='reactpuff-house' value='Reactpuff'>Reactpuff</option> 
@@ -32,7 +32,7 @@
                     <option id='pytherina-house' value='Pytherina'>Pytherina</option> 
                 </select>
             </fieldset>
-            <fieldset>
+            <fieldset class="margin">
                 <label id="label-family">Qual sua família?</label>
                 <div>
                     <input type="radio" name="family" id="frontend" value="Frontend"><span>Frontend</span>
@@ -42,6 +42,8 @@
                 </div>
                 <div>
                     <input type="radio" name="family" id="fullstack" value="FullStack"><span>FullStack</span>                </div>
+                </fieldset>
+                <fieldset class="margin">
                     <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
                     <div class="checkbox-container">
                         <div>
@@ -64,14 +66,14 @@
                         </div>
                     </div>
                 </fieldset>
-                <fieldset class="rate-container">
+                <fieldset class="rate-container margin">
                     <label id="label-rate">Como você avalia a Trybewarts?</label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="margin comment-container">
                    <label class="textarea">Deixe seu comentário:</label> 
-                    <textarea id="textarea" maxlength="500"></textarea>
+                    <textarea id="textarea" maxlength="500" class="border"></textarea>
                 </fieldset>
-                <fieldset>
+                <fieldset class="margin">
                     <input type="checkbox" name="agreement" id="agreement">
                     <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
                 </fieldset>
