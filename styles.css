@@ -69,6 +69,24 @@ main form {
   display: flex;
 }
 
+#avaliacao-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#container1-10 {
+  display: flex;
+  flex-grow: 1;
+  padding-left: 1em;
+}
+
+#container1-10 input {
+  width: 1.25em;
+  margin-right: 0.75em;
+}
+
 .right-arms {
   display: flex;
   justify-content: flex-end;
