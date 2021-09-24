@@ -41,7 +41,59 @@ main {
   display: flex;
 }
 
+.counter {
+  border: solid 1px gray;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top: none;
+  font-size: 16px;
+  margin: 0 0 20px;
+  text-align: right;
+  width: 304px;
+}
+
 #counter {
+  color: gray;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 5px 2px;
+  vertical-align: auto;
+}
+
+:focus-visible {
+  outline-style: none;
+}
+
+#textarea {
+  border: solid 1px gray;
+  border-bottom: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  height: 200px;
+  margin: 20px 0 0;
+  resize: none;
+  width: 300px;
+
+}
+
+.textarea {
+  align-self: start;
+}
+
+#user-inputs {
   display: flex;
-  justify-content: flex-end;
+  flex-flow: column wrap;
+  width: 675px;
+}
+
+.comment {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.form-content {
+  display: none;
+
 }
