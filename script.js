@@ -10,3 +10,16 @@ function alerts() {
   }
 }
 enterButton.addEventListener('click', alerts);
+
+
+let check = document.getElementById('agreement')
+  check.addEventListener('click', function() {
+    if(!check.checked){
+      document.getElementById("submit-btn").setAttribute("disabled")
+    }else {
+      document.getElementById("submit-btn").removeAttribute("disabled")
+    }
+    })
+
+
+
