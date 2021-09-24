@@ -39,28 +39,29 @@
       <div class="family-container">
         <label id=label-family for="family">Qual sua família?</label>
           <div>
-            <input type="radio" name="family" value="Frontend">Familia FrontEnd
+            <input type="radio" name="family" id="frontend" value="Frontend">Familia FrontEnd
           </div>
           <div>
-            <input type="radio" name="family" value="Backend">Familia Backend
+            <input type="radio" name="family" id="backend" value="Backend">Familia Backend
           </div>  
           <div>
-            <input type="radio" name="family" value="FullStack">Familia FullStack
+            <input type="radio" name="family" id="fullstack" value="FullStack">Familia FullStack
           </div>
         </div>
         <div class="content-container">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div>
             <div>
-              <input type="checkbox" value="HoFs"> HoFs
-              <input type="checkbox" value="Jest"> Jest
-              <input type="checkbox" value="Promises"> Promises
+              <input type="checkbox"  class="subject" value="HoFs"> HoFs
+              <input type="checkbox"  class="subject" value="Jest"> Jest
+              <input type="checkbox"  class="subject" value="Promises"> Promises
 
             </div>
             <div>
-              <input type="checkbox" value="SQL"> SQL
-              <input type="checkbox" value="Python"> Python
-              <input type="checkbox" value="React"> React
+              <input type="checkbox"  class="subject" value="React"> React
+              <input type="checkbox"  class="subject" value="SQL"> SQL
+              <input type="checkbox"  class="subject" value="Python"> Python
+             
             </div>
           </div>
         </div>
@@ -83,7 +84,8 @@
         <div class="comment-container">
           <label class="textarea" for="comment">Deixe seu comentário:</label>
           <div>
-            <textarea name="comment"  cols="70" rows="10" maxlength="500"></textarea>
+            <textarea id="textarea" name="comment"  cols="70" rows="10" maxlength="500"></textarea>
+            <p id="counter"></p>
           </div>
 
         </div>
@@ -92,6 +94,7 @@
       </label>
       <input type="checkbox" name="agreement" id="agreement">
       <button type="submit" id="submit-btn">Enviar</button>
+      <p id="formContent"></p>
     </div>
     </form>
     <aside>
