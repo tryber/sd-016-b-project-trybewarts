@@ -48,14 +48,16 @@
               />
             </div>
           </section>
-          <section>
-            <div id="email-famaily">
+          <section class="formulario">
+            <div id="email-family">
               <input
                 id="input-email"
                 type="text"
                 placeholder="Email"
                 name="input-email"
               />
+            </div>
+            <div>
               <label id="house" for="">Casa:
                 <select name="" id="house">
                   <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -67,91 +69,96 @@
             </div>
           </section>
 
-          <div class="flex-container-family">
-            <label id="label-family" for="family">Qual sua família?</label>
-            <label for="Frontend">
-              <input
-                type="radio"
-                name="family"
-                value="Frontend"
-                id="Frontend"
-              />
-              Família Frontend
-            </label>
-            <label for="Backend">
-              <input type="radio" name="family" value="Backend" id="Backend" />
-              Família Backend
-            </label>
-            <label for="FullStack">
-              <input
-                type="radio"
-                name="family"
-                value="FullStack"
-                id="FullStack"
-              />
-              Família FullStack
-            </label>
-          </div>
+          <hr>
 
-          <div>
-            <label for="" id="label-content"
-              >Qual conteúdo você está com mais vontade de aprender?</label
-            >
-            <div>
-              <label for="hofs"
-                ><input
-                  type="checkbox"
-                  name="hofs"
-                  id="hofs"
-                  value="HoFs"
-                />HoFs</label
-              >
-              <label for="jest"
-                ><input
-                  type="checkbox"
-                  name="jest"
-                  id="jest"
-                  value="Jest"
-                />Jest</label
-              >
-              <label for="promises"
-                ><input
-                  type="checkbox"
-                  name="promises"
-                  id="promises"
-                  value="Promises"
-                />Promises</label
-              >
+          <section id="section-flex-container">
+            <div class="flex-container-family">
+              <label id="label-family" for="family">Qual sua família?</label>
+              <label for="Frontend">
+                <input
+                  type="radio"
+                  name="family"
+                  value="Frontend"
+                  id="Frontend"
+                />
+                Família Frontend
+              </label>
+              <label for="Backend">
+                <input type="radio" name="family" value="Backend" id="Backend" />
+                Família Backend
+              </label>
+              <label for="FullStack">
+                <input
+                  type="radio"
+                  name="family"
+                  value="FullStack"
+                  id="FullStack"
+                />
+                Família FullStack
+              </label>
             </div>
-            <div>
-              <label for="react"
-                ><input
-                  type="checkbox"
-                  name="react"
-                  id="react"
-                  value="React"
-                />React</label
-              >
-              <label for="sql"
-                ><input
-                  type="checkbox"
-                  name="sql"
-                  id="sql"
-                  value="SQL"
-                />SQL</label
-              >
-              <label for="python"
-                ><input
-                  type="checkbox"
-                  name="python"
-                  id="python"
-                  value="Python"
-                />Python</label
-              >
-            </div>
-          </div>
 
-          <div>
+            <div>
+              <label for="label-content-checkbox" id="label-content"
+                >Qual conteúdo você está com mais<br> vontade de aprender?</label>
+              <div id="label-content-checkbox">
+                <label for="hofs"
+                  ><input
+                    type="checkbox"
+                    name="hofs"
+                    id="hofs"
+                    value="HoFs"
+                  />HoFs</label
+                >
+                <label for="jest"
+                  ><input
+                    type="checkbox"
+                    name="jest"
+                    id="jest"
+                    value="Jest"
+                  />Jest</label
+                >
+                <label for="promises"
+                  ><input
+                    type="checkbox"
+                    name="promises"
+                    id="promises"
+                    value="Promises"
+                  />Promises</label
+                >
+              </div>
+              <div id="label-content-checkbox">
+                <label for="react"
+                  ><input
+                    type="checkbox"
+                    name="react"
+                    id="react"
+                    value="React"
+                  />React</label
+                >
+                <label for="sql"
+                  ><input
+                    type="checkbox"
+                    name="sql"
+                    id="sql"
+                    value="SQL"
+                  />SQL</label
+                >
+                <label for="python"
+                  ><input
+                    type="checkbox"
+                    name="python"
+                    id="python"
+                    value="Python"
+                  />Python</label
+                >
+              </div>
+            </div>
+          </section>
+
+          <hr>
+
+          <div id="label-rate-container">
             <label id="label-rate" for="rate">
               Como você avalia a Trybewarts?
             </label>
@@ -207,6 +214,8 @@
               cols="30"
               rows="10"
               maxlength="500"
+              placeholder="500 caracteres"
+              
             ></textarea>
           </div>
 

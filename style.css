@@ -4,10 +4,7 @@
   padding: 0%;
   margin: 0%;
   font-family: Trykker, serif;
-}
-
-body {
-  background-color: #505050;
+  font-weight: 900;
 }
 
 .header {
@@ -34,14 +31,13 @@ body {
   margin-right: 20px;
 }
 
-#email , #senha , #entrar , #input-name , #input-email , #input-lastname {
+#email , #senha , #entrar {
   border-radius: 10px;
-  border: transparent;
   width: 180px;
   height: 65px;
   margin: 0px 5px;
   padding-left: 20px;
-  font-weight: bold;
+  border: transparent;
 }
 
 #entrar {
@@ -50,13 +46,14 @@ body {
   padding: 0px;
 }
 
-.flex-container-main {
+.flex-container-main , .flex-container-id , #section-flex-container , .formulario {
   display: flex;
   justify-content: center;
 }
 
 #evaluation-form {
   display: flex;
+  justify-content: center;
   width: 675px;
   flex-direction: column;
 }
@@ -66,48 +63,77 @@ body {
 }
 
 #trybewarts-forms-logo {
-  height: 500px;
-}
-
-#evaluation-form .formulario {
   display: flex;
-  justify-content: center;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 200px;
 }
 
 #input-name , #input-email , #input-lastname {
   border-radius: 10px;
-  border: transparent;
+  border: rgb(59, 59, 59) solid 0.1px;
   width: 300px;
   height: 65px;
   margin: 0px 5px;
   padding-left: 20px;
   font-weight: 900;
+  margin: 5px;
+}
+
+#email-family {
+  display: flex;
+  justify-content: center;
 }
 
 #house {
-  width: 300px;
-}
-
-#fullName {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-#email-famaily {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 275px;
+  height: 68px;
+  border-radius: 10px;
+  margin: 0px 20px;
 }
 
 .flex-container-family {
   display: flex;
   flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+  line-height: 2.8rem;
+  font-size: 1.2rem;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  margin: 5px 50px;
+  text-align: center;
+}
+
+#label-content-checkbox {
+  display: flex;
+  justify-content: column;
+  justify-content: space-evenly;
+  margin: 5px 25px;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+#label-rate-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
 }
 
 .flex-container-textarea {
   display: flex;
   flex-direction: column;
+  margin: 5px;
+  height: 142px;
 }
 
 #label-infos {
