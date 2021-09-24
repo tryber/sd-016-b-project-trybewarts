@@ -17,21 +17,21 @@ enterButton.addEventListener('click', alerts);
 
 const check = document.getElementById('agreement');
 function checkup() {
-  if (!check.checked){
+  if (!check.checked) {
     document.getElementById('submit-btn').setAttribute('disabled');
   } else {
     document.getElementById('submit-btn').removeAttribute('disabled');
   }
-};
-check.addEventListener('click', checkup)
+}
+check.addEventListener('click', checkup);
 
 function counterText() {
   label.innerHTML = countText + textCount;
 }
-counterText()
+counterText();
 
-  function reduceNumber() {
-    let contador = 500;
-    label.innerHTML = (contador - textArea.value.length);
-  };
+function reduceNumber() {
+  const contador = 500;
+  label.innerHTML = (contador - textArea.value.length);
+}
 textArea.addEventListener('keyup', reduceNumber);
