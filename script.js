@@ -21,5 +21,20 @@ let check = document.getElementById('agreement')
     }
     })
 
+function counterText (){
+  let textArea = document.getElementById('campoTexto')
+  let textCount = document.getElementById('campoTexto').maxLength
+  let label = document.getElementById('counter')
+  label. innerHTML = 'Caracteres Disponiveis: ' + textCount
+
+  textArea.addEventListener('keypress', function(){
+    label. innerHTML = 'Caracteres Disponiveis: ' + (textCount - textArea.value.length)
+  })
+
+
+}   
+
+counterText()
+
 
 

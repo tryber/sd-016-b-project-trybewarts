@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   align-items: center;
@@ -46,6 +51,13 @@ main {
   margin-right: 4px;
   border-radius: 4px;
   padding: 4px;
+}
+
+#rodape{
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: center;
+  padding-bottom: 0;
 }
 
 #input-lastname {
@@ -105,10 +117,6 @@ main {
 .trybewarts-header-logo {
   height: 60px;
   margin-left: 8px;
-}
-
-* {
-  margin: 0;
 }
 
 #trybewarts-header-title {
