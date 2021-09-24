@@ -9,7 +9,7 @@
 
 .header {
   display: flex;
-  background-color: #32a791;
+  background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
   height: 123px;
@@ -35,18 +35,18 @@
   border-radius: 10px;
   width: 180px;
   height: 65px;
-  margin: 0px 5px;
+  margin: 0 5px;
   padding-left: 20px;
   border: transparent;
 }
 
 #entrar {
-  background-color: #4E2C83;
+  background-color: darkmagenta;
   color: white;
-  padding: 0px;
+  padding: 0;
 }
 
-.flex-container-main , .flex-container-id , #section-flex-container , .formulario {
+.flex-container-main , #section-flex-container , .formulario {
   display: flex;
   justify-content: center;
 }
@@ -56,6 +56,7 @@
   justify-content: center;
   width: 675px;
   flex-direction: column;
+  margin-left: 10px;
 }
 
 #title-formulario {
@@ -74,10 +75,9 @@
   border: rgb(59, 59, 59) solid 0.1px;
   width: 300px;
   height: 65px;
-  margin: 0px 5px;
+  margin-top: 10px;
   padding-left: 20px;
   font-weight: 900;
-  margin: 5px;
 }
 
 #email-family {
@@ -85,13 +85,13 @@
   justify-content: center;
 }
 
-#house {
+#house-container , #house {
   display: flex;
   flex-direction: column;
   width: 275px;
   height: 68px;
   border-radius: 10px;
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 
 .flex-container-family {
@@ -116,7 +116,6 @@
 
 #label-content-checkbox {
   display: flex;
-  justify-content: column;
   justify-content: space-evenly;
   margin: 5px 25px;
   line-height: 45px;
@@ -141,23 +140,23 @@
 }
 
 #submit-btn {
-  background-color: #4e2c83;
+  background-color: darkmagenta;
   color: white;
-  padding: 0px;
+  padding: 0;
   border-radius: 10px;
   border: transparent;
   height: 65px;
-  margin: 0px 5px;
+  margin: 0 5px;
   padding-left: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3C404A;
+  background-color: rgb(59, 59, 59);
   margin-top: 20px;
   height: 50px;
-  color: #bbbbbb;
+  color: aliceblue;
 }
