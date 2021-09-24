@@ -19,13 +19,11 @@ function CheckAgreement() {
   }
 }
 agree.addEventListener('change', CheckAgreement);
-// requisito 20 
+// requisito 20
 const qtChart = document.getElementById('textarea');
 const count = document.getElementById('counter');
-function countChar () {
+function countChar() {
   count.innerText = qtChart.maxLength - qtChart.value.length;
-  return count.innerText
+  return count.innerText;
 }
 qtChart.addEventListener('input', countChar);
-
-
