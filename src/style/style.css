@@ -5,11 +5,17 @@
 }
 
 /* fonte disponivel em  https://www.dafont.com/pt/harry-p.font */
+body , html {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,19 +25,21 @@ body {
 main {
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem;
+  padding: 2%;
 }
 
 section {
   display: flex;
   flex-wrap: wrap;
   padding: 0.5rem;
+  overflow-x: hidden;
 }
 
 hr {
   border: solid 0.5px rgb(190, 190, 190);
   box-shadow: rgba(112, 128, 144, 0.233);
-  margin: 0.2rem;
+  margin: 0.3rem;
+  padding: 0 0.5rem;
 }
 
 select {
@@ -42,16 +50,19 @@ select {
   justify-content: flex-end;
   align-items: stretch;
   width: 242px;
+  overflow-x: hidden;
 }
 
-.header {
+header {
   display: flex;
   background-color: rgb(50, 167, 145);
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
-  padding: 0.1rem;
+  height: 6rem;
+  padding: 0.5rem;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .header img {
@@ -61,7 +72,8 @@ select {
 
 .header h1 {
   font-family: haryFonts, Verdana, Tahoma, sans-serif;
-  font-size: 8vh;
+  font-size: 6vh;
+  letter-spacing: 0.3rem;
   color: white;
   text-align: center;
 }
@@ -72,6 +84,8 @@ select {
   border-radius: 0.3rem;
   background-color: white;
   color: slategray;
+  outline-color: rgb( 78, 44, 131 );
+  overflow-x: hidden;
 }
 
 .header input {
@@ -81,6 +95,7 @@ select {
   border-radius: 0.3rem;
   background-color: white;
   color: slategray;
+  overflow-x: hidden;
 }
 
 #btnEntrar {
@@ -94,12 +109,14 @@ select {
 
 .trybewarts-header-logo {
   height: 4rem;
+  overflow-x: hidden;
 }
 
 .trybewarts-login {
   display: flex;
   justify-content: space-evenly;
   padding: 0.3rem;
+  overflow-x: hidden;
 }
 
 #formAvaliation {
@@ -113,18 +130,19 @@ select {
   display: flex;
   width: 675px;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
   margin: 20px 75px 0 0;
+  overflow-x: hidden;
 }
 
 .section1 {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  width: 650px;
+  overflow-x: hidden;
 }
 
 .alingMail {
@@ -134,15 +152,48 @@ select {
 }
 
 .alingMail input {
-  width: 300px;
+  width: 320px;
   margin: 5px;
 }
 
 .section2 {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
   text-align: left;
+  padding: 1rem;
+  font-weight: 550;
+  overflow-x: hidden;
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0.3rem 1.2rem;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.section4 {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.section5 {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.result {
+  text-align: right;
 }
 
 .familias {
@@ -150,6 +201,12 @@ select {
   flex-direction: column;
   align-content: flex-start;
   width: 200px;
+  margin: 0.3rem 0;
+}
+
+.familias label {
+  margin: 0;
+  padding: 0;
 }
 
 .tecnologias {
@@ -158,7 +215,7 @@ select {
   justify-content: flex-start;
   align-content: stretch;
   width: 380px;
-  height: 150px;
+  margin-right: 0.2rem;
 }
 
 .tecCheck {
@@ -173,17 +230,21 @@ select {
 }
 
 .textarea {
-  padding: 5px;
-  text-align: left;
-  border-radius: 5px;
-  box-shadow: slategrey solid 5px;
-  outline-color: rgb( 78, 44, 131 );
+  padding: 2%;
+  margin: 1%;
+  align-content: flex-start;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .textarea textarea {
-  border-collapse: solid rgb( 78, 44, 131 );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-grow: 1;
   border-radius: 5px;
-  box-shadow: 1px rgb( 78, 44, 131 );
+  width: 100%;
   outline-color: rgb( 78, 44, 131 );
 }
 
@@ -191,16 +252,12 @@ select {
   flex-direction: row;
   font-size: medium;
   font-weight: 600;
+  overflow-x: hidden;
 }
 
 .agreement {
   padding: 5px;
-}
-
-#counter {
-  display: flex;
-  align-self: end;
-  align-items: flex-end;
+  overflow-x: hidden;
 }
 
 #submit-btn {
@@ -209,6 +266,9 @@ select {
   border-radius: 0.3rem;
   background-color: rgb( 78, 44, 131 );
   color: white;
+  width: 100%;
+  overflow-x: hidden;
+  cursor: pointer;
 }
 
 footer {
@@ -217,30 +277,88 @@ footer {
   justify-content: center;
   align-content: flex-end;
   align-items: center;
-  margin-bottom: 0;
-  bottom: 1;
+  margin-bottom: 5% 0 0 0;
+  position: absolute;
+  bottom: 0;
   background-color: rgb( 60, 64, 74 );
   height: 6vh;
   width: 100vw;
   text-align: center;
   color: white;
+  overflow-x: hidden;
 }
 
 @media screen and ( max-width : 600px ) {
 
+  html , body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    align-self: center;
+    position: absolute;
+    padding: 5%;
+    text-align: center;
+    top: 0;
+    overflow-x: hidden;
+  }
+
+  header .trybewarts-login {
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
   main {
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+    margin-top: 6vh;
+  }
+
+  h1 {
+    display: flex;
+    align-self: center;
+    align-content: center;
+    flex-shrink: 3;
+    font-size: medium;
+  }
+
+  hr {
+    border: solid 0.5px rgb(190, 190, 190);
+    box-shadow: rgba(112, 128, 144, 0.233);
+    margin: 0.3rem;
+    padding: 0 0.5rem;
+    width: 100%;
+    text-align: center;
   }
 
   #mainTitle {
+    display: flex;
     margin-top: 3rem;
+    text-align: center;
   }
 
   .section1 {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    flex-grow: 3;
+    overflow-x: hidden;
   }
 
   .alingMail {
@@ -250,29 +368,15 @@ footer {
   .section2 {
     flex-direction: column;
     align-items: center;
-    margin-top: 1.5rem;
-  }
-
-  .familias , .tecnologias , .tecCheck {
-    align-self: center;
-  }
-
-  .familias h3 {
-    margin-bottom: 0.7rem;
-  }
-
-  .familias label {
-    padding-top: 0.4rem;
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    overflow-x: hidden;
   }
 
   .tecnologias {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5rem;
-  }
-
-  .tecnologias h4 {
     margin-top: 1.5rem;
   }
 
@@ -289,57 +393,64 @@ footer {
 
   .section3 {
     display: flex;
-    flex-direction: column;
-    margin-top: 1.5rem;
-  }
-
-  .section3 .label-rate-avaliation {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0.7rem;
-  }
-
-  .section3 .label-rate-avaliation label input {
-    margin-right: 0.12rem;
-  }
-
-  .section3 .label-rate-avaliation label {
-    margin-right: 0.5rem;
+    align-items: center;
+    padding-left: 1rem;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .section4 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5rem;
-  }
-
-  .section4 h4 {
-    margin-bottom: 0.3rem;
-  }
-
-  /* .section4 label {
-    display: flex;
-    flex-direction: column;
-  } */
-
-  .section4 div {
-    align-self: flex-end;
-    margin-top: 0.5rem;
+    margin: 0.5rem;
+    overflow-x: hidden;
   }
 
   .section5 {
-    display: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 1.5rem;
+    overflow-x: hidden;
+  }
+
+  .textarea {
+    width: 95vw;
+    overflow-x: hidden;
   }
 
   #submit-btn {
-    width: 100vw;
-    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 70%;
+    margin: 1rem 5rem 5rem 5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #trybewarts-forms-logo {
+    height: 35vh;
+    filter: grayscale(100%);
+    opacity: 75%;
+    align-content: center;
+    align-items: center;
+    top: 12vh;
+    z-index: 0;
+    padding: 0.5rem;
+    margin: 0;
   }
 
   footer {
+    display: flex;
+    margin-top: auto;
     width: 100%;
+    height: 6vh;
   }
 
 }

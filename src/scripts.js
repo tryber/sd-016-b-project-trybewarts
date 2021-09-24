@@ -19,14 +19,16 @@ btnEntrar.addEventListener('click', () => {
 const contractCheck = query('.contractCheck');
 contractCheck.addEventListener('click', () => {
   const btnSend = query('#submit-btn');
-  btnSend.removeAttribute('disabled');
+  const check = query('.contractCheck');
+  if (check.checked) {
+    btnSend.disabled = false;
+  } else {
+    btnSend.disabled = true;
+  }
 });
 
-// const txtArea = query('#counter');
-// txtArea.addEventListener('keypress', (event) => {
-//   const maxChars = 500;
-//   const contador = txtArea.value.length;
-//   if (contador >= maxChars) {
-//     event.preventDefault();
-//   }
-// });
+const contaCaracter = query('#textarea');
+contaCaracter.addEventListener('keyup', (event) => {
+  const total = event.target.maxLength - event.target.textLength;
+  query('.result').innerHTML = `Caracteris restantes: ${total}`;
+}, false);
