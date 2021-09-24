@@ -5,8 +5,18 @@ function entrar() {
   else alert('Email ou senha inválidos.');
 }
 
+function habilitaEnviar() {
+  document.querySelector('#submit-btn').disabled = !document.querySelector('#agreement').checked;
+}
+
+function enviar() {
+  alert('enviado.');
+}
+
 function configurar() {
   document.querySelector('#botao-entrar').addEventListener('click', entrar);
+  document.querySelector('#submit-btn').addEventListener('click', enviar);
+  document.querySelector('#agreement').addEventListener('click', habilitaEnviar);
 }
 
 window.onload = configurar;
