@@ -29,17 +29,3 @@ function habilitaEnvio() {
 }
 
 agree.addEventListener('click', habilitaEnvio);
-
-// const buttonAgreement = document.getElementById('submit-btn');
-// const agree = document.getElementById('agreement');
-// buttonAgreement.disabled = true;
-// function habilitaEnvio() {
-//   if (agree.checked === true) {
-//     buttonAgreement.disabled = false;
-//     console.log('Formulário enviado');
-//   } else {
-//     agree.checked = false;
-//     buttonAgreement.disabled = true;
-//   }
-// }
-// buttonAgreement.addEventListener('click', habilitaEnvio);
