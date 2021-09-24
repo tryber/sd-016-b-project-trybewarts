@@ -24,10 +24,10 @@ main form {
 }
 
 /* REQUISITO 5 */
-main {
+/* main {
   display: flex;
   justify-content: flex-end;
-  width: auto;
+  width: auto; */
 }
 
 img {
@@ -36,7 +36,7 @@ img {
 
 /* REQUISITO 11 */
 
-label {
+.textarea {
   display: flex;
   flex-direction: column;
 } 
@@ -45,4 +45,13 @@ label {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.opnion {
+  display: flex;
+}
+
+.user-family {
+    display: flex;
+    flex-direction: column;
 }
