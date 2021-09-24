@@ -23,8 +23,8 @@ function habilitaBtn() {
 agreement.addEventListener('change', habilitaBtn);
 
 const textArea = document.getElementById('area');
-const charCounter = document.getElementById('char-counter');
-const maxChars = 250;
+const charCounter = document.getElementById('counter');
+const maxChars = 500;
 
 textArea.addEventListener('input', () => {
   const remainingChars = maxChars - textArea.value.length;
