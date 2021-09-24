@@ -32,3 +32,4 @@ textArea.addEventListener('input', () => {
 
   remaininhCaracteres.textContent = `${remaining} caracteres disponiveis `
 })
+

@@ -225,6 +225,11 @@ footer {
     justify-content: center;
   }
 
+  #trybewarts-forms-logo{
+    align-self: center;
+    margin-left: 5rem;
+  }
+
   #mainTitle{
     margin-top: 3rem;
   }
