@@ -98,7 +98,8 @@ main {
   height: 60px;
   margin-left: 8px;
 }
-*{
+
+* {
   margin: 0;
 }
 
@@ -133,5 +134,3 @@ main {
   border-radius: 4px;
   padding: 4px;
 }
-
-
