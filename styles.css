@@ -6,32 +6,32 @@
 
 .header {
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
   color: aliceblue;
 }
 
 .header img {
-  padding: 0.25em;
   align-self: center;
   max-width: 4em;
+  padding: 0.25em;
 }
 
 .header h1 {
-  margin: 0 1em;
   align-self: center;
+  margin: 0 1em;
 }
 
 .trybewarts-login {
-  width: 40%;
   display: flex;
   flex-basis: 35%;
+  width: 40%;
 }
 
 .trybewarts-login input {
   color: dimgray;
-  width: 100%;
+  width: 100%; /* https://stackoverflow.com/questions/42421361
+  /input-button-elements-not-shrinking-in-a-flex-container */
   border-style: none;
   border-radius: 0.75em;
   margin: 1em 0.5em;
@@ -41,7 +41,8 @@
 .trybewarts-login button {
   background-color: rgb(78, 44, 131);
   color: aliceblue;
-  width: 100%;
+  width: 100%;/* https://stackoverflow.com/questions/42421361
+  /input-button-elements-not-shrinking-in-a-flex-container */
   margin: 1em 0.5em;
   border: none;
   border-radius: 0.75em;
@@ -53,8 +54,11 @@ main {
 
 main form {
   display: flex;
-  width: 675px;
   flex-direction: column;
+}
+
+#evaluation-form {
+  width: 675px;/* Requisito 21 */
 }
 
 /* REQUISITO 19 OK */
