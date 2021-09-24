@@ -56,7 +56,6 @@ main {
 
 #evaluation-form {
   display: flex;
-  flex-basis: 50%;
   flex-flow: column wrap;
   width: 675px;
   margin: 10px 0 0 15px;
