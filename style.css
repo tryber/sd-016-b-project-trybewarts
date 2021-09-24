@@ -2,7 +2,7 @@
 
 html {
   font-family: David Libre, serif;
-  background-image: url("https://images8.alphacoders.com/110/thumb-1920-1102284.jpg");
+  background-image: url('https://images8.alphacoders.com/110/thumb-1920-1102284.jpg');
 }
 
 * {
@@ -37,8 +37,8 @@ html {
 /* #img-bg {
   background-image: url(https://i.pinimg.com/originals/c7/47/1d/c7471d47eaef2056d12c37522359b317.png);
 }
- */
- 
+*/
+
 #evaluation-form {
   width: 675px;
   flex-direction: column;
