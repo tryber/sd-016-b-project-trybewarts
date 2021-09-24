@@ -20,10 +20,24 @@
   </header>
   <main>
     <form id="evaluation-form" action="">
-      <!-- requisito 8 -->
-      <input type="text" id="input-name" placeholder="Nome">
-      <input type="text" id="input-lastname" placeholder="Sobrenome">
-      <input type="email" id="input-email" placeholder="Email">
+      <!-- requisito 8 e 10 -->
+      <div class="entrada-dupla-em-linha">
+        <input type="text" id="input-name" placeholder="Nome">
+        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <!-- Requisito 11 -->
+      <div class="entrada-dupla-em-linha">
+        <input type="email" id="input-email" placeholder="Email">
+        <!-- requisito 9 -->
+        <label for="house">Casa:</label>
+        <select name="" id="house">
+          <option value="" disabled selected>selecione sua casa</option>
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option> 
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option> 
+          <option value="Corvinode" id="corvinode-house">Corvinode</option> 
+          <option value="Pytherina" id="pytherina-house">Pytherina</option> 
+        </select>
+      </div>
       <!-- requisito 12 -->
       <div class="familias">
         <label id="label-family">Qual sua família?</label>
@@ -33,16 +47,7 @@
         <label for="Backend">Backend</label> 
         <input id="FullStack" name="family" type="radio" value="FullStack">
         <label for="FullStack">FullStack</label> 
-
       </div>  
-      <!-- requisito 9 -->
-      <select name="" id="house">
-        <option value="" disabled selected>selecione sua casa</option>
-        <option value="Gitnória" id="gitnoria-house">Gitnória</option> 
-        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option> 
-        <option value="Corvinode" id="corvinode-house">Corvinode</option> 
-        <option value="Pytherina" id="pytherina-house">Pytherina</option> 
-      </select>
       <!-- requisito 13 -->
       <div class ="content">
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>

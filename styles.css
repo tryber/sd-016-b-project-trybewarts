@@ -65,6 +65,10 @@ main form {
   width: 675px; /* Requisito 21 */
 }
 
+.entrada-dupla-em-linha {
+  display: flex;
+}
+
 .right-arms {
   display: flex;
   justify-content: flex-end;
