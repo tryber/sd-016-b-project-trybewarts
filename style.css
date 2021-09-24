@@ -140,16 +140,16 @@ main {
   flex-grow: 1;
 }
 
-.container-3 .cb-1, .container-3 .cb-4 {
+.container-3 .cb-1 , .container-3 .cb-4 {
   margin-left: 0;
-} 
+}
 
 .form-div-4 {
   width: 90%;
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
-  margin: 10px auto 20px auto;
+  margin: 10px auto 20px;
 }
 
 .form-div-5 {
@@ -180,7 +180,7 @@ main {
 
 .container-5 {
   display: flex;
-  padding: 10px 0; 
+  padding: 10px 0;
 }
 
 .form-div-5 button {
@@ -194,17 +194,17 @@ main {
 
 footer {
   display: flex;
-  background-color: #535c68;
+  background-color: dimgray;
   color: white;
   justify-content: center;
   align-items: center;
   bottom: 0;
   width: 100%;
   height: 30px;
-  align-items: flex-start;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and ( max-width : 600px ) {
+
   .header {
     flex-direction: column;
     height: 40%;
