@@ -4,6 +4,8 @@ const loginButton = document.querySelector('.trybewarts-submit');
 const familyDiv = document.querySelector('.family-container');
 const learningDiv = document.querySelector('.learning-container');
 const ratingDiv = document.querySelector('.rating-container');
+const submitButton = document.querySelector('#submit-btn');
+const checkboxAgreement = document.querySelector('#agreement');
 
 // Funcao para ajudar na criacao de novos elementos
 function newChild(type, text, classs, id) {
@@ -113,6 +115,10 @@ loginButton.addEventListener('click', (event) => {
   } else {
     alert('Email ou senha inválidos.');
   }
+});
+
+checkboxAgreement.addEventListener('change', (event) => {
+  submitButton.disabled = !event.target.checked;
 });
 
 window.onload = () => {
