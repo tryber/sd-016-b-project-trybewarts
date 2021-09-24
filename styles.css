@@ -61,6 +61,17 @@ main form {
   width: 675px;/* Requisito 21 */
 }
 
+.right-arms {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.right-arms img {
+  display: flex;
+  height: 500px;
+}
+
 /* REQUISITO 19 OK */
 footer {
   width: 100%;
