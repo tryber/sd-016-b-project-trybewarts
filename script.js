@@ -50,22 +50,22 @@ const createInputRating = (number) => {
 // Funcao para criar os labels dos input tipo checkbox
 function createLabelCheck(learningArray) {
   const newLabel = document.createElement('label');
-  newLabel.for = `learning${learningArray}`;
-  newLabel.innerText = learningArray;
+  newLabel.htmlFor = `learning${learningArray}`;
+  newLabel.innerText = ` ${learningArray}`;
   return newLabel;
 }
 
 // Funcao para criar os labels dos input tipo radio da secao familia
 function createLabel(positionId, familyArray) {
   const newLabel = newChild('label', ` Familia ${familyArray}`, '', '');
-  newLabel.for = positionId;
+  newLabel.htmlFor = positionId;
   return newLabel;
 }
 
 // Funcao para criar os labels dos input tipo radio da secao rating
 const createLabelRating = (number) => {
   const newLabel = newChild('label', ` ${number}`, '', '');
-  newLabel.for = `radio_${number}`;
+  newLabel.htmlFor = `radio_${number}`;
   return newLabel;
 };
 

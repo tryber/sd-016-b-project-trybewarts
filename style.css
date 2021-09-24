@@ -78,3 +78,7 @@ main {
 .rating-container {
   display: flex;
 }
+
+.checkinfo {
+  display: flex;
+}
