@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 10. Muito bom fazer projetos. Parece que realmente estamos imersos em uma rotina de trabalho. Fundamental para consolidar os aprendizados também.
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Acredito que como sugestão, poderia ter uma manual de boas práticas ou então uma solução disponível para quem já finalizou o projeto. Falo isso para conseguirmos ver e se for o caso aprender como poderíamos ter melhorado o nosso código.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Gabriel Pinheiro e Lucca Neiva
 
 ---
 

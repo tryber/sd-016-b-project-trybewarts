@@ -50,6 +50,7 @@ textarea.addEventListener('input', countWords);
 
 function testText() {
   const name = document.createElement('li');
+  name.className = 'li';
   for (let i = 0; i < getTextType.length; i += 1) {
     if (getTextType[i].value === '') {
       return false;
@@ -63,6 +64,7 @@ function testText() {
 // Obj: Understanding how the e-mail regex works ref: https://emailregex.com/
 function testEmail() {
   const email = document.createElement('li');
+  email.className = 'li';
   const getEmailType = document.querySelector('#input-email');
   const regex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (!regex.test(getEmailType.value)) {
@@ -74,6 +76,7 @@ function testEmail() {
 
 function testHouse() {
   const house = document.createElement('li');
+  house.className = 'li';
   const getSelectedOption = document.querySelector('#house');
   if (getSelectedOption.value === 'Selecione') {
     return false;
@@ -85,6 +88,7 @@ function testHouse() {
 function testFmy() {
   let count = 0;
   const family = document.createElement('li');
+  family.className = 'li';
   const getSelectedOption = document.querySelectorAll('.input-radio');
   for (let i = 0; i < getSelectedOption.length; i += 1) {
     if (getSelectedOption[i].checked) {
@@ -101,6 +105,7 @@ function testFmy() {
 
 function testSbj() {
   const subject = document.createElement('li');
+  subject.className = 'li';
   let count = 0;
   const getSbjMarked = document.querySelectorAll('.subject');
   for (let i = 0; i < getSbjMarked.length; i += 1) {
@@ -119,6 +124,7 @@ function testSbj() {
 
 function testRate() {
   const rate = document.createElement('li');
+  rate.className = 'li';
   let count = 0;
   const getRate = document.querySelectorAll('[name="rate"]');
   for (let i = 0; i < getRate.length; i += 1) {
@@ -136,6 +142,7 @@ function testRate() {
 
 function testCmt() {
   const comment = document.createElement('li');
+  comment.className = 'li';
   const getComment = document.querySelector('#textarea');
   if (getComment.value === '') {
     return false;
@@ -146,6 +153,9 @@ function testCmt() {
 
 function printInformationStudent() {
   const createUL = document.createElement('ul');
+  for (let i = 0; i < getForm.children.length; i += 1) {
+    getForm.children[i].style.display = 'none';
+  }
   getForm.appendChild(createUL);
   createUL.appendChild(testText());
   createUL.appendChild(testEmail());
@@ -154,6 +164,19 @@ function printInformationStudent() {
   createUL.appendChild(testSbj());
   createUL.appendChild(testRate());
   createUL.appendChild(testCmt());
+}
+
+function styleLI() {
+  const getUL = document.getElementsByTagName('ul');
+  const getLI = document.getElementsByTagName('li');
+  getForm.style.alignSelf = 'flex-start';
+  getUL[0].style.display = 'flex';
+  getUL[0].style.flexDirection = 'column';
+  getUL[0].style.alignSelf = 'flex-start';
+
+  for (let i = 0; i < getLI.length; i += 1) {
+    getLI[i].style.padding = '10px';
+  }
 }
 
 function submitButton(event) {
@@ -165,6 +188,7 @@ function submitButton(event) {
     }
   }
   printInformationStudent();
+  styleLI();
 }
 
 sendBtn.addEventListener('click', submitButton);
