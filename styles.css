@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+input {
+  width: 100%; /* Reset p/ forms input */
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -41,7 +45,7 @@
 .trybewarts-login button {
   background-color: rgb(78, 44, 131);
   color: aliceblue;
-  width: 100%;/* https://stackoverflow.com/questions/42421361
+  width: 100%; /* https://stackoverflow.com/questions/42421361
   /input-button-elements-not-shrinking-in-a-flex-container */
   margin: 1em 0.5em;
   border: none;
@@ -58,7 +62,7 @@ main form {
 }
 
 #evaluation-form {
-  width: 675px;/* Requisito 21 */
+  width: 675px; /* Requisito 21 */
 }
 
 .right-arms {
