@@ -7,6 +7,8 @@ const entrar = q('#entrar');
 const agreement = q('.agreement-container');
 const submit = q('#submit-btn');
 
+const pd = (e) => e.preventDefault();
+
 const validateEmail = (e) => {
   e.preventDefault();
   if (email.value === 'tryber@teste.com' && senha.value === '123456') {
@@ -22,4 +24,6 @@ const ableButton = () => {
 };
 
 entrar.addEventListener('click', validateEmail);
+submit.addEventListener('click', pd);
 agreement.addEventListener('change', ableButton);
+// countdown text area
