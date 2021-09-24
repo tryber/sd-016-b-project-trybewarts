@@ -107,7 +107,7 @@ window.onload = () => {
    */
   const inputELements = document.getElementsByTagName('input');
   Object.values(inputELements).forEach((element) => { // Itera os elementos como objeto e não como array;
-    const pholder = element.placeholder; // Armazena o elemento antigo;
+    const pholder = element.placeholder; // Armazena o placeholder antigo do elemento;
     element.addEventListener('focus', () => { // Remove o placeholder do elemento quando focado;
       element.placeholder = '';
     });
