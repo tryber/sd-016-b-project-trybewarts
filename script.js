@@ -45,8 +45,7 @@ function countTextArea() {
 
 window.onload = () => {
   sendButton.addEventListener('click', validateLog);
-
-  disableButton(); // desabilitar 
+  disableButton();
   checkBox.addEventListener('click', () => {
     enableButton();
   });
