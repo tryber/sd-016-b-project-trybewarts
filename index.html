@@ -17,16 +17,46 @@
             <button class="enter">Entrar</button>
         </form>
     </header>
-
     <main>
-        <form id="evaluation-form">
-
-        </form>
-
+        <div id="all-forms">
+            <form id="evaluation-form">
+            <h1 id="form-title">Formulário de Avaliação</h1>
+            <div id="first-row">
+                <input id="input-name" placeholder="Nome">
+                <input id="input-lastname" placeholder="Sobrenome">
+            </div>
+                <div id="second-row">
+                    <input id="input-email" placeholder="Email">
+                    <select id="house">
+                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                    </select>
+                </div>
+            </form>
+                <div id="lower-row">
+                    <div id="family">
+                        <h2><label id="label-family">Qual sua família?</label></h2>
+                        <label for="family"><input type="radio" name="family" value="Frontend">Família Frontend</label>
+                        <label for="family"><input type="radio" name="family" value="Backend">Família Backend</label>
+                        <label for="family"><input type="radio" name="family" value="FullStack">Família FullStack</label>
+                    </div>
+                    <div id="content">
+                        <h3><label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label></h3>
+                        <div id="checkboxes">
+                        <label for="HoFs"><input type="checkbox" value="HoFs">HoFs</label>
+                        <label for="Jest"><input type="checkbox" value="Jest">Jest</label>
+                        <label for="Promises"><input type="checkbox" value="Promises">Promises</label>
+                        <label for="React"><input type="checkbox" value="React">React</label>
+                        <label for="SQL"><input type="checkbox" value="SQL">SQL</label>
+                        <label for="Python"><input type="checkbox" value="Python">Python</label>
+                        </div>
+                    </div>
+                </div>
+        </div>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
     </main>
-
-
     <script src="script.js" type="text/javascript">
     </script>
 </body>
