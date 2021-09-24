@@ -13,10 +13,19 @@ function enviar() {
   alert('enviado.');
 }
 
+function contador() {
+  document.querySelector(
+    '#counter',
+  ).innerText = 500 - document.querySelector('#textarea').textLength;
+}
+
 function configurar() {
   document.querySelector('#botao-entrar').addEventListener('click', entrar);
   document.querySelector('#submit-btn').addEventListener('click', enviar);
   document.querySelector('#agreement').addEventListener('click', habilitaEnviar);
+  document.querySelector('#textarea').addEventListener('keyup', contador);
+  habilitaEnviar();
+  contador();
 }
 
 window.onload = configurar;
