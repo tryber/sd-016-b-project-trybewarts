@@ -3,6 +3,13 @@
   margin: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
 .header {
   color: white;
   padding: 10px;
@@ -10,6 +17,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+button {
+  min-width: 10vw;
+  padding: 5px;
+  background-color: indigo;
+  color: white;
+  border-radius: 5px;
 }
 
 .trybewarts-header-logo {
@@ -37,25 +52,23 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+
 }
 
 .information-container input , select {
   padding: 20px;
-  flex-basis: 30%;
+  flex-basis: 35%;
   margin: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
 
 }
 
 .trybewarts-login input:focus {
   outline: none;
 }
-
-.trybewarts-login button {
-  min-width: 10vw;
-  padding: 5px;
-}
-
 
 main {
   display: flex;
@@ -66,31 +79,25 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  font-size: 20px;
+  line-height: 35px;
 }
-
 
 hr {
-  margin-top: 30px;
+  margin: 20px;
 }
-
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-
-#label-family {
-  display: flex;
-  flex-direction: column;
-
-}
-
 footer {
   color: white;
   padding: 20px;
-  background-color: black;
+  background-color: rgb(31, 30, 30);
   display: flex;
   justify-content: center;
+  margin-top: auto;
 }
 
 .house-container {
@@ -99,7 +106,70 @@ footer {
 
 }
 
-.test {
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.first-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+
 }
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.mid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.family-container {
+  width: 40%;
+
+}
+
+.content-container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+
+}
+
+.final-container {
+  width: 90%;
+  flex-wrap: wrap;
+  align-self: center;
+
+}
+
+.rate-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+
+}
+
+.final-container button , textarea {
+  width: 100%;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
