@@ -6,24 +6,15 @@ const learningDiv = document.querySelector('.learning-container');
 const ratingDiv = document.querySelector('.rating-container');
 const submitButton = document.querySelector('#submit-btn');
 const checkboxAgreement = document.querySelector('#agreement');
-
-// Funcao para ajudar na criacao de novos elementos
-function newChild(type, text, classs, id) {
-  const newChildItem = document.createElement(type);
-  newChildItem.innerText = text;
-  if (classs !== '') {
-    newChildItem.className = classs;
-  }
-  if (id !== '') {
-    newChildItem.id = id;
-  }
-  return newChildItem;
-}
+const counterTextarea = document.querySelector('#textarea');
+const counterLegend = document.querySelector('#counter');
+const inputsClass = 'form-check-input';
 
 // Funcao para criar os inputs tipo checkbox
 function createCheckbox(learningArray) {
   const newCheck = document.createElement('input');
   newCheck.type = 'checkbox';
+  newCheck.className = inputsClass;
   newCheck.id = `learning${learningArray}`;
   newCheck.value = learningArray;
   return newCheck;
@@ -33,6 +24,7 @@ function createCheckbox(learningArray) {
 function createInput(positionId, familyArray) {
   const newInput = document.createElement('input');
   newInput.id = positionId;
+  newInput.className = inputsClass;
   newInput.type = 'radio';
   newInput.name = 'family';
   newInput.value = familyArray;
@@ -45,31 +37,19 @@ const createInputRating = (number) => {
   newInput.name = 'rate';
   newInput.value = number;
   newInput.id = `radio_${number}`;
+  newInput.className = inputsClass;
   newInput.type = 'radio';
   return newInput;
 };
 
 // Funcao para criar os labels dos input tipo checkbox
-function createLabelCheck(learningArray) {
+function createLabel(stringFor, innerTxt, classLabel) {
   const newLabel = document.createElement('label');
-  newLabel.htmlFor = `learning${learningArray}`;
-  newLabel.innerText = ` ${learningArray}`;
+  newLabel.htmlFor = stringFor;
+  newLabel.innerText = innerTxt;
+  if (classLabel !== '') newLabel.className = classLabel;
   return newLabel;
 }
-
-// Funcao para criar os labels dos input tipo radio da secao familia
-function createLabel(positionId, familyArray) {
-  const newLabel = newChild('label', ` Familia ${familyArray}`, '', '');
-  newLabel.htmlFor = positionId;
-  return newLabel;
-}
-
-// Funcao para criar os labels dos input tipo radio da secao rating
-const createLabelRating = (number) => {
-  const newLabel = newChild('label', ` ${number}`, '', '');
-  newLabel.htmlFor = `radio_${number}`;
-  return newLabel;
-};
 
 // Funcao para criar as divs containers dos input checkbox
 function createLearningSection() {
@@ -78,7 +58,7 @@ function createLearningSection() {
     const newDiv = document.createElement('div');
     learningDiv.append(newDiv);
     newDiv.append(createCheckbox(learningsArray[index]));
-    newDiv.append(createLabelCheck(learningsArray[index]));
+    newDiv.append(createLabel(`learning${learningsArray[index]}`, learningsArray[index], ''));
   }
 }
 
@@ -89,7 +69,7 @@ function createFamilySection() {
   for (let index = 0; index < familysArray.length; index += 1) {
     const newDiv = document.createElement('div');
     newDiv.append(createInput(positionsId[index], familysArray[index]));
-    newDiv.append(createLabel(positionsId[index], familysArray[index]));
+    newDiv.append(createLabel(positionsId[index], familysArray[index], ''));
     familyDiv.append(newDiv);
   }
 }
@@ -99,26 +79,36 @@ const createRatingSection = () => {
   for (let index = 1; index <= 10; index += 1) {
     const newDiv = document.createElement('div');
     newDiv.append(createInputRating(index));
-    newDiv.append(createLabelRating(index));
+    newDiv.append(createLabel(`radio_${index}`, index, ''));
     ratingDiv.append(newDiv);
   }
 };
 
 // Evento do botao para verificar cadastro
-loginButton.addEventListener('click', (event) => {
+loginButton.addEventListener('click', (evt) => {
   const logMail = 'tryber@teste.com';
   const logPass = '123456';
-  event.preventDefault();
+  evt.preventDefault();
 
-  if ((loginEmail.value === logMail) && (loginPassword.value === logPass)) {
+  if (loginEmail.value === logMail && loginPassword.value === logPass) {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
   }
 });
 
-checkboxAgreement.addEventListener('change', (event) => {
-  submitButton.disabled = !event.target.checked;
+// Evento do textarea para limitar a quantidade de caracteres em 500
+counterTextarea.addEventListener('input', (evt) => {
+  const textareaInput = counterTextarea.value.length;
+  const maxChar = 500;
+  if ((textareaInput >= maxChar) && (evt.keyCode !== 8)) {
+    evt.preventDefault();
+  }
+  counterLegend.innerText = maxChar - textareaInput;
+});
+
+checkboxAgreement.addEventListener('change', (evt) => {
+  submitButton.disabled = !evt.target.checked;
 });
 
 window.onload = () => {
