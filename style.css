@@ -139,3 +139,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+.comment-container p {
+  font-size: 0.9em;
+}

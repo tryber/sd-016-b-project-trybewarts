@@ -54,6 +54,21 @@ function submitForm(event) {
 
 submitButton.addEventListener('click', submitForm);
 
-window.onload = function () {
+window.onload = () => {
   createRate();
 };
+
+const textarea = document.querySelector('#textarea');
+
+function countCharacters(event) {
+  const count = event.target.value.length;
+  const elCount = document.querySelector('#counter');
+
+  elCount.innerText = 500 - count;
+
+  if (elCount.innerText === '0') {
+    elCount.parentElement.style.color = 'red';
+  }
+}
+
+textarea.addEventListener('keyup', countCharacters);
