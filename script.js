@@ -29,3 +29,13 @@ function habilitaEnvio() {
 }
 
 agree.addEventListener('click', habilitaEnvio);
+
+function contador() {
+  const texto = document.getElementById('textarea').value;
+  document.getElementById('textarea').contains = texto;
+  document.getElementById('counter').innerHTML = 500 - texto.length;
+}
+const contarTexto = document.getElementById('textarea');
+contarTexto.addEventListener('input', contador);
+
+// referência da função contador: http://www.codigoti.com.br/2018/04/javascript-contando-caracteres-dentro.html //

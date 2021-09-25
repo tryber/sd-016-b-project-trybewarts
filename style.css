@@ -116,8 +116,21 @@ main {
   justify-content: space-around;
   display: flex;
   margin: 50px;
+  margin-right: 0;
   height: 100px;
-  width: 400px;
+  width: 500px;
+}
+
+#counter {
+  margin: 0;
+  width: 35px;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  text-align : center;
+  background-color: rgb(50, 167, 145);
+  color: white;
+  border-radius: 3px;
 }
 
 .termo {
