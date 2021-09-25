@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  color: white;
+  padding: 10px 20px;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+}
+
+.trybewarts-login {
+  display: flex;
+  border-radius: 5px;
+}
+
+.trybewarts-login button {
+  width: 100px;
+  padding: 7px;
+  margin: 5px;
+}
+
+main input {
+  padding: 5px 10px;
+}
+
+#house {
+  padding: 5px 91px;
+}
+
+.trybewarts-login input {
+  margin: 5px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#evaluation-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 675px;
+}
+
+.cadastro1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.cadastro {
+  flex-basis: 46%;
+  width: 280px;
+  margin: 5px 10px;
+}
+
+.cadastro2 {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.linha1 , .linha2 {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 46%;
+}
+
+.checkbox {
+  margin: 3px;
+}
+
+.select-family {
+  display: block;
+  margin: 3px;
+}
+
+.cadastro3 {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cadastro4 {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cadastro5 {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input:placeholder-shown {
+  text-align: center;
+}
+
+#evaluation-form button {
+  display: flex;
+  justify-content: center;
+  width: 650px;
+  padding: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  padding: 40px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
