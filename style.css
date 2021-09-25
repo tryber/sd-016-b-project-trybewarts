@@ -79,7 +79,7 @@ main {
 hr {
   align-items: center;
   width: 95%;
-  margin: 15px auto 15px auto;
+  margin: 15px auto;
   color: rgb(235, 235, 235);
 }
 
@@ -116,7 +116,7 @@ hr {
   display: flex;
 }
 
-.label-rate-container label{
+.label-rate-container label {
   flex-basis: 45%;
   margin-right: 2%;
 }
