@@ -72,8 +72,11 @@ body { background-color: rgb(237, 237, 237); }
   min-width: 40px;
 }
 
-main {
+.container {
   display: flex;
+  margin: auto;
+  margin-top: 10px;
+  width: calc(80% - 80px);
 }
 
 #evaluation-form {
@@ -88,6 +91,7 @@ main {
 
 .user-names {
   display: flex;
+  padding-bottom: 5px;
 }
 
 .user-email-house {
@@ -101,10 +105,14 @@ main {
 
 .container-rate {
   display: flex;
+  margin-top: 15px;
 }
 
 .family-content {
   display: flex;
+  margin-top: 10px;
+  border-bottom: 1px solid grey;
+  padding: 10px;
 }
 
 .container-content div {
@@ -119,4 +127,39 @@ main {
 
 #label-content {
   display: flex;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.user-personal {
+  border-bottom: 1px solid grey;
+  padding: 15px;
+}
+
+.user-names input , #input-email , #house {
+  padding: 10px;
+}
+
+#input-name , #input-email {
+  margin-right: 10px;
+}
+
+#label-family {
+  line-height: 25px;
+}
+
+.container-family label {
+  line-height: 25px;
+}
+
+.subject {
+  width: 15%;
+}
+
+.container-rate label {
+  width: 8%;
+}
+
+#trybewarts-forms-logo {
+  width: 45vw;
 }
