@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Gideon Roman, sans-serif;
+}
+
+header h1 {
+  font-size: 80px;
+}
+
+footer {
+  font-weight: 900;
+  align-self: center;
+}
+
+hr {
+  margin: 40px;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+main form h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#agreement {
+  margin-left: 12px;
+}
+
+#agreement , #label-infos {
+  margin-top: 15px;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#fullName {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#house {
+  margin-left: 5px;
+}
+
+#input-email {
+  margin-right: 5px;
+}
+
+#input-name {
+  margin-right: 5px;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#rate-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#selectHouse {
+  display: flex;
+}
+
+#submit-btn {
+  margin-top: 20px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-family: Courier New, Courier, monospace;
+  font-size: 20px;
+}
+
+.container-inputs-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-secondSection {
+  display: flex;
+  justify-content: space-around;
+}
+
+.formView {
+  height: 50px;
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+
+
+.half {
+  flex-basis: 50%;
+}
+
+.header {
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.label-choices {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBtn {
+  padding: 10px 40px;
+}
+
+.loginBtn , .user-email , .user-password {
+  border-radius: 10px;
+  border: none;
+}
+
+.margin {
+  margin-top: 14px;
+}
+
+.textarea {
+  display: none;
+}
+
+.trybewarts-header-logo {
+  height: 60px;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: space-between;
+  margin-right: 28px;
+}
