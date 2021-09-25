@@ -29,6 +29,8 @@
 
       <div>
         <input type="email" name="input-email" id="input-email" placeholder="Email">
+
+        <label for="house">Casa:</label>
         <select name="" id="house">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -91,7 +93,8 @@
       </div>
 
       <label class="textarea" for="textarea">Deixe seu comentário:</label>
-      <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500" oninput="updateCounter()"></textarea>
+      <p id="counter">500</p>
 
       <label id="label-infos" for="agreement">Você concorda com o uso das informações acima? <input type="checkbox" name="agreement" id="agreement"></label>
 

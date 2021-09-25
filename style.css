@@ -64,6 +64,16 @@ main input {
   padding: 10px;
 }
 
+#submit-btn {
+  padding: 10px 0;
+}
+
+#counter {
+  margin-top: -15px;
+  margin-left: 95%;
+  z-index: 1;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
