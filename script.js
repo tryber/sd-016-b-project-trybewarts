@@ -68,6 +68,8 @@ function countCharacters(event) {
 
   if (elCount.innerText === '0') {
     elCount.parentElement.style.color = 'red';
+  } else {
+    elCount.parentElement.style.color = 'black';
   }
 }
 
