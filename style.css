@@ -35,6 +35,8 @@ main , #evaluation-form {
 #evaluation-form {
   width: 675px;
   flex-direction: column;
+  border-left: 10px;
+  padding-bottom: 10px;
 }
 
 #trybewarts-forms-logo {
@@ -44,8 +46,12 @@ main , #evaluation-form {
 .personal-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
+#conteudo3 {
+  font-size: smaller;
+}
 .personal-container input , .selectHouse-container {
   flex-basis: 50%;
 }
