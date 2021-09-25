@@ -26,3 +26,16 @@ function agreementCheck() {
 agreementCheck();
 
 checkAgreement.addEventListener('click', agreementCheck);
+
+const textArea = document.getElementById('textarea');
+const paragraph = document.getElementById('counter');
+
+paragraph.innerText = 500;
+
+function contador() {
+  const numerocaractere = textArea.value.length;
+  const resultado = 500 - numerocaractere;
+  paragraph.innerText = resultado;
+}
+
+textArea.addEventListener('keyup', contador);
