@@ -78,8 +78,8 @@ main {
 
 hr {
   align-items: center;
-  width: 90%;
-  margin-top: 10px;
+  width: 95%;
+  margin: 15px auto 15px auto;
   color: rgb(235, 235, 235);
 }
 
@@ -110,6 +110,19 @@ hr {
   display: flex;
   flex-basis: 60%;
   flex-wrap: wrap;
+}
+
+.label-rate-container {
+  display: flex;
+}
+
+.label-rate-container label{
+  flex-basis: 45%;
+  margin-right: 2%;
+}
+
+.label-rate-inputs {
+  flex-basis: 53%;
 }
 
 .label-family-inputs {
