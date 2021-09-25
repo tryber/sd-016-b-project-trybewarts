@@ -32,3 +32,14 @@ contaCaracter.addEventListener('keyup', (event) => {
   const total = event.target.maxLength - event.target.textLength;
   query('.result').innerHTML = `Caracteris restantes: ${total}`;
 }, false);
+
+// forms
+const name = query('#input-name');
+const sobName = query('#input-lastname');
+const mail = query('#input-email');
+const casa = query('#house').value;
+const familia = document.getElementsByName('family').forEach((radio) => {
+  if (radio.checked) {
+    console.log(radio.value);
+  }
+});

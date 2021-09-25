@@ -164,7 +164,7 @@ button:disabled {
   display: flex;
   justify-content: space-between;
   text-align: left;
-  padding: 0.5rem;
+  padding: 1.2rem;
   font-weight: 550;
   overflow-x: hidden;
 }
