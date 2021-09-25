@@ -107,7 +107,7 @@ header {
   color: white;
 }
 
-#btnEntrar:disabled {
+button:disabled {
   opacity: 60%;
 }
 
