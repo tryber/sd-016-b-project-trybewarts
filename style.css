@@ -76,3 +76,10 @@
   background-color: rgb(50, 167, 145);
   text-align: center;
 }
+
+#submit-btn {
+  width: 500px;
+  padding: 10px;
+  background-color: purple;
+  color: white;
+}
