@@ -1,0 +1,157 @@
+* {margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  color: rgb(251, 251, 251);
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 3px;
+  background-color: rgb(50, 167, 145);
+}
+
+h1 {display: flex;
+  align-items: center;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.form-login {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+button {
+  border: none;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: rgb(228, 225, 225);
+}
+
+input {
+  padding: 3px;
+  border: solid rgb(161, 160, 160) 1px;
+  border-radius: 3px;
+  background-color: rgb(251, 251, 251);
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  align-self: center;
+}
+
+.dados-pessoais {
+  margin: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 10px;
+  height: 95px;
+}
+
+#input-name {
+  width: 305px;
+}
+
+#input-lastname {
+  width: 250px;
+}
+
+#input-email {
+  width: 305px;
+}
+
+#house {
+  padding: 3px;
+  border-radius: 2px;
+}
+
+.label-family {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 83px;
+}
+
+.family {
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.checkbox {
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.avaliacao {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.avaliacao1 {
+  display: flex;
+  align-items: center;
+}
+
+.coment {
+  justify-content: space-around;
+  display: flex;
+  margin: 50px;
+  margin-right: 0;
+  height: 100px;
+  width: 500px;
+}
+
+#counter {
+  margin: 0;
+  width: 35px;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  text-align : center;
+  background-color: rgb(50, 167, 145);
+  color: white;
+  border-radius: 3px;
+}
+
+.termo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  width: 450px;
+}
+
+.btn-success {
+  border-radius: 3px;
+  margin-top: 50px;
+  width: 150px;
+  align-self: center;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-right: 34px;
+  display: flex;
+  justify-content: flex-end;
+}
+
