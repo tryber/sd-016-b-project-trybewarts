@@ -3,6 +3,9 @@ const emaillUser = document.querySelector('.user-email');
 const userPassword = document.querySelector('.user-password');
 const agreeBox = document.querySelector('#agreement');
 const subtmitButton = document.querySelector('#submit-btn');
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+const limit = 500;
 subtmitButton.disabled = true;
 
 loginButton.addEventListener('click', () => {
@@ -19,4 +22,8 @@ agreeBox.addEventListener('click', (evt) => {
   } else {
     subtmitButton.disabled = true;
   }
+});
+
+textArea.addEventListener('input', () => {
+  counter.innerText = limit - textArea.value.length;
 });

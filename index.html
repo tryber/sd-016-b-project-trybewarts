@@ -56,12 +56,12 @@
           <div class="learn">
             <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
             <div class="label-choices">
-              <input type="checkbox" value="HoFs">HoFs</label>
-              <input type="checkbox" value="Jest">Jest</label>
-              <input type="checkbox" value="Promises">Promises</label>
-              <input type="checkbox" value="React">React</label>
-              <input type="checkbox" value="SQL">SQL
-              <input type="checkbox" value="Python">Python
+              <input type="checkbox" name="content" value="HoFs">HoFs</label>
+              <input type="checkbox" name="content" value="Jest">Jest</label>
+              <input type="checkbox" name="content" value="Promises">Promises</label>
+              <input type="checkbox" name="content" value="React">React</label>
+              <input type="checkbox" name="content" value="SQL">SQL
+              <input type="checkbox" name="content" value="Python">Python
             </div>
           </div>
       </div>
@@ -85,9 +85,10 @@
       <hr>
       
       <label class="textarea" for="">Deixe seu comentário:</label>
-      <textarea placeholder="DEIXE SEU COMENTÁRIO" name="" id="" cols="30" rows="10" maxlength="500"></textarea>
-
+      <textarea placeholder="Deixe aqui seu comentário" name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <span id="counter">500</span>
       <div>
+        
         <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
         <input id="agreement" type="checkbox">
       </div>
