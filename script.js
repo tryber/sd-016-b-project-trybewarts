@@ -6,6 +6,7 @@ const senha = q('#senha');
 const entrar = q('#entrar');
 const agreement = q('.agreement-container');
 const submit = q('#submit-btn');
+const textarea = q('#textarea');
 
 const pd = (e) => e.preventDefault();
 
@@ -23,7 +24,14 @@ const ableButton = () => {
   else submit.disabled = true;
 };
 
+const counter = () => {
+  let count = 500;
+  const charact = textarea.value.length;
+  count -= charact;
+  q('#counter').innerText = count;
+};
+
 entrar.addEventListener('click', validateEmail);
 submit.addEventListener('click', pd);
 agreement.addEventListener('change', ableButton);
-// countdown text area
+textarea.addEventListener('input', counter);

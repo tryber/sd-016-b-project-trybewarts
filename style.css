@@ -5,7 +5,7 @@
   font-family: fantasy;
 }
 
-body {
+body, html {
   background-color: rgb(230, 230, 230);
 }
 
@@ -70,7 +70,7 @@ main {
   display: flex;
   align-items: center;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 #evaluation-form {
@@ -188,6 +188,30 @@ hr {
   width: 100%;
 }
 
-#submit-btn:disabled {
+button:disabled {
   opacity: 0.6;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: cadetblue;
+  position: fixed;
+  bottom: 0;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#counter {
+  position: relative;
+  top: -40px;
+  right: 5px;
 }
