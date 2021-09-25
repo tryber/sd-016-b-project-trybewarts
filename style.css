@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Trykker&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Trykker, serif;
+  font-weight: 900;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  height: 123px;
+  margin-bottom: 20px;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+  margin: 10px 20px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: 60px;
+}
+
+.trybewarts-login {
+  display: flex;
+  margin-right: 20px;
+}
+
+#email , #senha , #entrar {
+  border-radius: 10px;
+  width: 180px;
+  height: 65px;
+  margin: 0 5px;
+  padding-left: 20px;
+  border: transparent;
+}
+
+#entrar {
+  background-color: darkmagenta;
+  color: white;
+  padding: 0;
+}
+
+.flex-container-main , #section-flex-container , .formulario {
+  display: flex;
+  justify-content: center;
+}
+
+#evaluation-form {
+  display: flex;
+  justify-content: center;
+  width: 675px;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#title-formulario {
+  text-align: center;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+#input-name , #input-email , #input-lastname {
+  border-radius: 10px;
+  border: rgb(59, 59, 59) solid 0.1px;
+  width: 300px;
+  height: 65px;
+  margin-top: 10px;
+  padding-left: 20px;
+  font-weight: 900;
+}
+
+#email-family {
+  display: flex;
+  justify-content: center;
+}
+
+#house-container , #house {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  height: 68px;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.flex-container-family {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+  line-height: 2.8rem;
+  font-size: 1.2rem;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  margin: 5px 50px;
+  text-align: center;
+}
+
+#label-content-checkbox {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px 25px;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+#label-rate-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.flex-container-textarea {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  height: 142px;
+}
+
+#label-infos {
+  margin: 20px;
+}
+
+#submit-btn {
+  background-color: darkmagenta;
+  color: white;
+  padding: 0;
+  border-radius: 10px;
+  border: transparent;
+  height: 65px;
+  margin: 0 5px;
+  padding-left: 20px;
+  font-weight: 700;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(59, 59, 59);
+  margin-top: 20px;
+  height: 50px;
+  color: aliceblue;
+}
