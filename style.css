@@ -1,0 +1,60 @@
+@font-face {
+  font-family: harryp;
+  src: url('./src/HARRYP__.TTF');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+  background-color: darkred;
+  border-radius: 20%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 12vh;
+  font-family: harryp, Arial, Helvetica, sans-serif;
+  color: darkred;
+}
+
+.trybewarts-login {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.side-aside {
+  justify-content: space-between;
+}
+
+.markers {
+  flex-direction: column;
+}
+
+address {
+  text-align: center;
+}
