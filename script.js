@@ -30,3 +30,22 @@ function enableButton() {
 }
 
 inputAgreement.addEventListener('click', enableButton);
+
+// Função para contar caracteres na textarea
+// Referencia utilizada para solicionar requisito:
+// https://pt.stackoverflow.com/questions/25753/como-fazer-um-contador-de-caracteres-de-uma-textarea
+
+const textArea = document.getElementById('textarea');
+
+function limiteTextArea() {
+  const quant = 500;
+  const total = textArea.value.length;
+  if (total <= quant) {
+    const resto = quant - total;
+    document.getElementById('counter').innerHTML = resto;
+  } else {
+    document.getElementById('textarea').value = total.substr(0, quant);
+  }
+}
+
+textArea.addEventListener('keyup', limiteTextArea);
