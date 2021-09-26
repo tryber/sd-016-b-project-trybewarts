@@ -4,8 +4,6 @@ const password = document.querySelector('#password');
 const checkBox = document.querySelector('#agreement');
 const textArea = document.querySelector('#textarea');
 const count = document.querySelector('#counter');
-const main = document.querySelector('main');
-const logo = document.querySelector('#trybewarts-forms-logo');
 const form = document.querySelector('#evaluation-form');
 
 function validateLog(event) {
@@ -66,7 +64,7 @@ function getSubject(arrayOfObjects) {
   const content = document.querySelectorAll('.subject');
   for (let index = 0; index < content.length; index += 1) {
     if (content[index].checked === true) {
-      checkBoxes.push(content[index].value);
+      checkBoxes.push(` ${content[index].value}`);
     }
   }
   arrayOfObjects.push({ label: 'Matérias:', value: checkBoxes });
@@ -86,6 +84,13 @@ function getComment(arrayOfObjects) {
   arrayOfObjects.push({ label: 'Observações:', value: comment });
 }
 
+function removeChildForm() {
+  // https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/
+  while (form.firstChild) {
+    form.removeChild(form.firstChild);
+  }
+}
+
 function showData() {
   const arrayOfObjects = [];
   getName(arrayOfObjects);
@@ -95,14 +100,11 @@ function showData() {
   getSubject(arrayOfObjects);
   getEvaluation(arrayOfObjects);
   getComment(arrayOfObjects);
-  main.removeChild(form);
-  const fatherSection = document.createElement('section');
-  fatherSection.id = 'form-data';
-  main.insertBefore(fatherSection, logo);
+  removeChildForm();
   for (let index = 0; index < arrayOfObjects.length; index += 1) {
     const childSection = document.createElement('section');
     childSection.innerText = `${arrayOfObjects[index].label} ${arrayOfObjects[index].value}`;
-    fatherSection.appendChild(childSection);
+    form.appendChild(childSection);
   }
 }
 
