@@ -1,3 +1,6 @@
+// eslint-disable-next-line sonarjs/no-unused-collection
+const dataStudy = [];
+
 function query(params) {
   const term = params;
   return document.querySelector(term);
@@ -24,6 +27,7 @@ contractCheck.addEventListener('click', () => {
     btnSend.disabled = false;
   } else {
     btnSend.disabled = true;
+    btnSend.preventDefault();
   }
 });
 
@@ -34,12 +38,44 @@ contaCaracter.addEventListener('keyup', (event) => {
 }, false);
 
 // forms
-const name = query('#input-name');
-const sobName = query('#input-lastname');
-const mail = query('#input-email');
-const casa = query('#house').value;
-const familia = document.getElementsByName('family').forEach((radio) => {
-  if (radio.checked) {
-    console.log(radio.value);
-  }
-});
+
+function getNome() {
+  const nome = query('#input-name').value; return nome;
+}
+
+function getsubNome() {
+  const subNome = query('#input-lastname').value; return subNome;
+}
+
+function getMail() {
+  const mail = query('#input-email').value; return mail;
+}
+
+function getCasa() {
+  const casa = query('#house').value; return casa;
+}
+
+function family() {
+  const familia = document.getElementsByName('family');
+  let fami = '';
+  familia.forEach((radio) => {
+    if (radio.checked) {
+      fami = radio.value;
+    }
+  });
+  return fami;
+}
+
+function getData() {
+  // eslint-disable-next-line sonarjs/prefer-object-literal
+  const persona = {};
+  persona.name = getNome();
+  persona.subNome = getsubNome();
+  persona.email = getMail();
+  persona.casa = getCasa();
+  persona.familia = family();
+  dataStudy.push(persona);
+}
+
+const btnEnviar = query('#submit-btn');
+btnEnviar.addEventListener('click', getData);

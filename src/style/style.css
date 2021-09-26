@@ -259,8 +259,14 @@ button:disabled {
 
 #label-infos {
   display: flex;
-  padding: 0.2rem 1.1rem;
+  padding: 0 1.1rem;
+  margin: 0 0.5rem;
   overflow-x: hidden;
+}
+
+#agreement {
+  padding: 0 00.3rem;
+  margin: 0 00.3rem;
 }
 
 #submit-btn {
