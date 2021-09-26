@@ -74,3 +74,37 @@ function countCharacters(event) {
 }
 
 textarea.addEventListener('keyup', countCharacters);
+
+const buttonSend = document.querySelector('#submit-btn');
+const values = [];
+function selectedChecked() {
+  // https://pt.stackoverflow.com/questions/83463/pegar-valores-checkbox-com-javascript
+  const language = document.querySelectorAll('[name="language"]:checked');
+  for (let i = 0; i < language.length; i += 1) {
+    values.push(` ${language[i].value}`);
+  }
+  return values;
+}
+
+const newForm = document.querySelector('#evaluation-form');
+const newDiv = document.createElement('div');
+buttonSend.addEventListener('click', () => {
+  const result = {
+    nome: document.querySelector('#input-name').value,
+    lastName: document.querySelector('#input-lastname').value,
+    email: document.querySelector('#input-email').value,
+    house: document.querySelector('#house').value,
+    family: document.querySelector('input[name="family"]:checked').value,
+    language: selectedChecked(),
+    rate: document.querySelector('input[name="rate"]:checked').value,
+    opinion: document.querySelector('#textarea').value };
+  newForm.innerHTML = '';
+  newForm.appendChild(newDiv);
+  newDiv.innerText = `Nome: ${result.nome} ${result.lastName}
+  Email: ${result.email}
+  Casa: ${result.house}
+  Família: ${result.family}
+  Matérias: ${result.language}
+  Avaliação: ${result.rate}
+  Observações: ${result.opinion}`;
+});
