@@ -16,7 +16,7 @@
 
     <h1 id="trybewarts-header-title">Trybewarts</h1>
 
-    <section>
+    <section id="header-login">
       <form action="" class="trybewarts-login">
         <input type="email" name="email" id="email" placeholder="Email">
         <input type="password" name="password" id="password"
@@ -33,7 +33,7 @@
         <input type="text" id="input-lastname" name="sobrenome"
           placeholder="Sobrenome">
       </section>
-
+      
       <section id="data">
         <input type="email" id="input-email" name="email" placeholder="Email">
         <label for="house">Casa:
@@ -46,56 +46,56 @@
         </label>
       </section>
 
-      <br>
-      <section id="families">
-        <label for="" id="label-family">Qual sua família?</label>
-        <label for="front">
-          <input type="radio" name="family" value="Frontend" id="front"
-            checked>
-          Família Frontend
-        </label>
-        <label for="back">
-          <input type="radio" name="family" value="Backend" id="back">
-          Família Backend
-        </label>
-        <label for="full">
-          <input type="radio" name="family" value="FullStack" id="full">
-          Família FullStack
-        </label>
-      </section>
+      <hr>
+        <section id="families">
+          <label for="" id="label-family">Qual sua família?</label>
+          <label for="front">
+            <input type="radio" name="family" value="Frontend" id="front"
+              checked>
+            Família Frontend
+          </label>
+          <label for="back">
+            <input type="radio" name="family" value="Backend" id="back">
+            Família Backend
+          </label>
+          <label for="full">
+            <input type="radio" name="family" value="FullStack" id="full">
+            Família FullStack
+          </label>
+        </section>
 
-      <br>
-      <section id="learn">
-        <label for="" id="label-content">Qual conteúdo você está com mais
-          vontade de aprender?</label>
-        <label for="hofs">
-          <input type="checkbox" value="HoFs" id="hofs" class="subject">
-          HoFs
-        </label>
-        <label for="jest">
-          <input type="checkbox" value="Jest" id="jest" class="subject">
-          Jest
-        </label>
-        <label for="promises">
-          <input type="checkbox" value="Promises" id="promises"
-            class="subject">
-          Promises
-        </label>
-        <label for="react">
-          <input type="checkbox" value="React" id="react" class="subject">
-          React
-        </label>
-        <label for="sql">
-          <input type="checkbox" value="SQL" id="sql" class="subject">
-          SQL
-        </label>
-        <label for="python">
-          <input type="checkbox" value="Python" id="python" class="subject">
-          Python
-        </label>
-      </section>
+        <hr>
+        <section id="learn">
+          <label for="" id="label-content">Qual conteúdo você está com mais
+            vontade de aprender?</label>
+          <label for="hofs">
+            <input type="checkbox" value="HoFs" id="hofs" class="subject">
+            HoFs
+          </label>
+          <label for="jest">
+            <input type="checkbox" value="Jest" id="jest" class="subject">
+            Jest
+          </label>
+          <label for="promises">
+            <input type="checkbox" value="Promises" id="promises"
+              class="subject">
+            Promises
+          </label>
+          <label for="react">
+            <input type="checkbox" value="React" id="react" class="subject">
+            React
+          </label>
+          <label for="sql">
+            <input type="checkbox" value="SQL" id="sql" class="subject">
+            SQL
+          </label>
+          <label for="python">
+            <input type="checkbox" value="Python" id="python" class="subject">
+            Python
+          </label>
+        </section>
 
-      <br>
+      <hr>
       <section id="evaluation">
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
         <label for="one">
@@ -140,13 +140,12 @@
         </label>
       </section>
 
-      <br>
+      <hr>
       <section id="comment">
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
         <textarea id="textarea" cols="80" rows="10" maxlength="500"
           minlength="0"></textarea>
         <label id="counter"></label>
-
       </section>
 
       <br>

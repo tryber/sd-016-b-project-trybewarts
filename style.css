@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -12,10 +13,21 @@
   align-items: center;
 }
 
+input , button , select {
+  border-radius: 5px;
+  padding: 5px 20px;
+  border-style: none;
+}
+
+button {
+  background-color: rgb(78, 44, 131);
+  color: white;
+}
+
 .trybewarts-login {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 580px;
   margin-right: 20px;
 }
 
@@ -44,10 +56,13 @@ main , #evaluation-form , #complete-name , #data {
 
 #trybewarts-forms-logo {
   height: 500px;
+  align-self: center;
 }
 
 #families , #learn {
   flex-direction: column;
+  width: 450px;
+
 }
 
 #evaluation input {
@@ -61,4 +76,41 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+main {
+  justify-content: space-around;
+  background-color: rgb(239, 239, 239);
+}
+
+#complete-name {
+  margin: 15px 0;
+}
+
+#complete-name input , #data input {
+  margin-right: 10px;
+  padding-right: 100px;
+}
+
+#house {
+  background-color: white;
+  padding: 5px 95px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+#label-family , #label-content {
+  margin-bottom: 15px;
+}
+
+textarea {
+  border: 1px solid rgb(78, 44, 131);
+  border-radius: px;
+}
+
+#submit-btn {
+  margin-bottom: 60px;
+  margin-top: 20px;
 }
