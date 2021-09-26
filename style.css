@@ -1,3 +1,8 @@
+@font-face {
+  font-family: harryp;
+  src: url('./src/HARRYP__.TTF');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +23,9 @@
 h1 {
   display: flex;
   align-items: center;
-  font-size: xxx-large;
+  font-size: 12vh;
+  font-family: harryp, Arial, Helvetica, sans-serif;
+  color: darkred;
 }
 
 .trybewarts-login {
@@ -44,6 +51,10 @@ h1 {
   justify-content: space-between;
 }
 
-.myFamily {
+.markers {
   flex-direction: column;
+}
+
+address {
+  text-align: center;
 }
