@@ -5,6 +5,8 @@ const checkBox = document.querySelector('#agreement');
 const textArea = document.querySelector('#textarea');
 const count = document.querySelector('#counter');
 const main = document.querySelector('main');
+const logo = document.querySelector('#trybewarts-forms-logo');
+const form = document.querySelector('#evaluation-form');
 
 function validateLog(event) {
   event.preventDefault();
@@ -34,66 +36,76 @@ function countTextArea() {
   });
 }
 
-const object = {};
-
-function getName() {
-  const name = document.querySelector('#input-name').value;
-  object.nome = name;
-}
-
-function getLastName() {
+function getName(arrayOfObjects) {
+  const firstName = document.querySelector('#input-name').value;
   const lastName = document.querySelector('#input-lastname').value;
-  object.ultimoNome = lastName;
+  arrayOfObjects.push({ label: 'Nome:', value: `${firstName} ${lastName}` });
 }
 
-function getEmail() {
+function getEmail(arrayOfObjects) {
   const userEmail = document.querySelector('#input-email').value;
-  object.email = userEmail;
+  arrayOfObjects.push({ label: 'Email:', value: userEmail });
 }
 
-function getHouse() {
+function getHouse(arrayOfObjects) {
   const house = document.querySelector('#house').value;
-  object.casa = house;
+  arrayOfObjects.push({ label: 'Casa:', value: house });
 }
 
-function getFamily() {
+function getFamily(arrayOfObjects) {
   const families = document.getElementsByName('family');
   for (let index = 0; index < families.length; index += 1) {
     if (families[index].checked === true) {
-      object.familia = families[index].value;
+      arrayOfObjects.push({ label: 'Família:', value: families[index].value });
     }
   }
 }
 
-function getSubject() {
+function getSubject(arrayOfObjects) {
   const checkBoxes = [];
-  const content = document.querySelector('.subject');
+  const content = document.querySelectorAll('.subject');
   for (let index = 0; index < content.length; index += 1) {
     if (content[index].checked === true) {
       checkBoxes.push(content[index].value);
     }
   }
-  object.materia = checkBoxes;
+  arrayOfObjects.push({ label: 'Matérias:', value: checkBoxes });
 }
 
-function getEvaluation() {
+function getEvaluation(arrayOfObjects) {
   const evaluations = document.getElementsByName('rate');
   for (let index = 0; index < evaluations.length; index += 1) {
     if (evaluations[index].checked === true) {
-      object.avaliacao = evaluations[index].value;
+      arrayOfObjects.push({ label: 'Avaliação:', value: evaluations[index].value });
     }
   }
 }
 
-function getComment() {
+function getComment(arrayOfObjects) {
   const comment = document.querySelector('#textarea').value;
-  object.observacoes = comment;
+  arrayOfObjects.push({ label: 'Observações:', value: comment });
 }
-/*
-function name(params) {
 
+function showData() {
+  const arrayOfObjects = [];
+  getName(arrayOfObjects);
+  getEmail(arrayOfObjects);
+  getHouse(arrayOfObjects);
+  getFamily(arrayOfObjects);
+  getSubject(arrayOfObjects);
+  getEvaluation(arrayOfObjects);
+  getComment(arrayOfObjects);
+  main.removeChild(form);
+  const fatherSection = document.createElement('section');
+  fatherSection.id = 'form-data';
+  main.insertBefore(fatherSection, logo);
+  for (let index = 0; index < arrayOfObjects.length; index += 1) {
+    const childSection = document.createElement('section');
+    childSection.innerText = `${arrayOfObjects[index].label} ${arrayOfObjects[index].value}`;
+    fatherSection.appendChild(childSection);
+  }
 }
-*/
+
 window.onload = () => {
   sendButton.addEventListener('click', validateLog);
   disableButton();
@@ -101,16 +113,8 @@ window.onload = () => {
     enableButton();
   });
   countTextArea();
-  submitButton.addEventListener('click', () => {
-    submitButton.preventDefault();
-    getName();
-    getLastName();
-    getEmail();
-    getHouse();
-    getFamily();
-    getSubject();
-    getEvaluation();
-    getComment();
-    main.removeChild(main.firstChild);
+  submitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    showData();
   });
 };
