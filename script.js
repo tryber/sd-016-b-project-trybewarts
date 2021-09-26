@@ -6,6 +6,8 @@
 const agreement = document.getElementById('agreement');
 const button = document.getElementById('btn-submit');
 const submitButton = document.getElementById('submit-btn');
+const textArea = document.getElementById('textarea');
+const count = document.getElementById('counter');
 
 function compare() {
   const email = document.getElementById('email').value;
@@ -30,3 +32,7 @@ function sendButton() {
 }
 
 agreement.addEventListener('click', sendButton);
+
+textArea.addEventListener('keyup', () => {
+  count.innerText = 500 - textArea.value.length;
+});
