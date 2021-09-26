@@ -52,12 +52,12 @@
       </div>
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div class="checkbox-container">
-        <input type="checkbox" name="check" id="hofs" value="HoFs">HoFs 
-        <input type="checkbox" name="check" id="jest" value="Jest">Jest
-        <input type="checkbox" name="check" id="promises" value="Promises">Promises
-        <input type="checkbox" name="check" id="react" value="React">React
-        <input type="checkbox" name="check" id="sql" value="SQL">SQL
-        <input type="checkbox" name="check" id="python" value="Python">Python
+        <input class="subject" type="checkbox" name="check" id="hofs" value="HoFs">HoFs 
+        <input class="subject" type="checkbox" name="check" id="jest" value="Jest">Jest
+        <input class="subject" type="checkbox" name="check" id="promises" value="Promises">Promises
+        <input class="subject" type="checkbox" name="check" id="react" value="React">React
+        <input class="subject" type="checkbox" name="check" id="sql" value="SQL">SQL
+        <input class="subject" type="checkbox" name="check" id="python" value="Python">Python
       </div>
 
       <hr>
@@ -65,22 +65,23 @@
       <div id="avalia-trybe">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
         <div class="radios-container">
-          <input type="radio" name="rate" id="" value="1">1
-          <input type="radio" name="rate" id="" value="2">2
-          <input type="radio" name="rate" id="" value="3">3
-          <input type="radio" name="rate" id="" value="4">4
-          <input type="radio" name="rate" id="" value="5">5
-          <input type="radio" name="rate" id="" value="6">6
-          <input type="radio" name="rate" id="" value="7">7
-          <input type="radio" name="rate" id="" value="8">8
-          <input type="radio" name="rate" id="" value="9">9
-          <input type="radio" name="rate" id="" value="10">10
+          <input type="radio" name="rate" value="1">1
+          <input type="radio" name="rate" value="2">2
+          <input type="radio" name="rate" value="3">3
+          <input type="radio" name="rate" value="4">4
+          <input type="radio" name="rate" value="5">5
+          <input type="radio" name="rate" value="6">6
+          <input type="radio" name="rate" value="7">7
+          <input type="radio" name="rate" value="8">8
+          <input type="radio" name="rate" value="9">9
+          <input type="radio" name="rate" value="10">10
         </div>
       </div>
 
-      <label for="textarea" class="textarea">Deixe seu comentário:</label>
       <div class="textarea-container">
-        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <span id="counter">0/500</span>
       </div>
 
       <div class="agree-conteiner">

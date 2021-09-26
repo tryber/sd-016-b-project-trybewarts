@@ -31,3 +31,46 @@ window.onload = () => {
     enableButton();
   });
 };
+
+/* Requisito 20 */
+const coment = document.querySelector('#textarea');
+const cont = document.querySelector('#counter');
+
+coment.addEventListener('keyup', () => {
+  const char = coment.value.length;
+  cont.innerHTML = `${char}/${500 - char}`;
+});
+
+/* Requisito 21 */
+const buttonSend = document.getElementById('submit-btn');
+const valor = [];
+function inputChecked() {
+  const arrayMaterias = document.querySelectorAll('input[name="check"]:checked');
+  for (let i = 0; i < arrayMaterias.length; i += 1) {
+    valor.push(` ${arrayMaterias[i].value}`);
+  }
+  return valor;
+}
+
+const newForm = document.querySelector('#evaluation-form');
+const newField = document.createElement('p');
+buttonSend.addEventListener('click', () => {
+  const newObject = {
+    studentName: document.getElementById('input-name').value,
+    lastName: document.getElementById('input-lastname').value,
+    email: document.getElementById('input-email').value,
+    house: document.getElementById('house').value,
+    familySelected: document.querySelector('input[name="family"]:checked').value,
+    programing: inputChecked(),
+    rating: document.querySelector('input[name="rate"]:checked').value,
+    comment: document.getElementById('textarea').value };
+  newForm.innerHTML = ' ';
+  newField.innerText = `Nome: ${newObject.studentName} ${newObject.lastName}
+  Email: ${newObject.email}
+  Casa: ${newObject.house}
+  Família: ${newObject.familySelected}
+  Matérias: ${newObject.programing}
+  Avaliação: ${newObject.rating}
+  Observações: ${newObject.comment}`;
+  newForm.appendChild(newField);
+});

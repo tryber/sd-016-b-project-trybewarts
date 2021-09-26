@@ -21,6 +21,7 @@
 /* Conteúdo principal */
 main {
   display: flex;
+  justify-content: space-around;
 }
 
 #evaluation-form {
@@ -44,9 +45,9 @@ main {
 }
 
 .div-form {
+  margin-top: 20px;
   display: flex;
   flex-flow: row wrap;
-  border: 1px solid black;
   width: 675px;
 }
 
@@ -70,9 +71,31 @@ main {
 #avalia-trybe {
   display: flex;
   flex-flow: row nowrap;
-  border: 1px solid black;
+  margin-bottom: 20px;
 }
 
 #label-rate {
   margin-right: 10px;
+}
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 675px;
+  padding: 5px 40px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
 }
