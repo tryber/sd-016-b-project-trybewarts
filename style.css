@@ -47,6 +47,8 @@ header h1 {
 
 main {
   display: flex;
+  padding: 30px;
+  justify-content: center;
 }
 
 #evaluation-form {
@@ -75,14 +77,28 @@ main {
   width: 200px;
 }
 
-#label-family {
+.family-container {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
-#label-content {
+.input-container {
+  margin: 3px 5px;
+}
+
+.skils-container {
+  padding: 10px;
+}
+
+.check-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.check-container div {
+  width: 80px;
 }
 
 footer {
@@ -92,15 +108,6 @@ footer {
   font-size: 20px;
   text-align: center;
   width: 100%;
-}
-
-#label-rate {
-  display: flex;
-  flex-direction: row;
-}
-
-.radio {
-  display: flex;
 }
 
 textarea {
