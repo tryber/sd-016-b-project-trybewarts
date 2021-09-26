@@ -76,7 +76,7 @@ body { background-color: rgb(237, 237, 237); }
   display: flex;
   margin: auto;
   margin-top: 10px;
-  width: calc(80% - 80px);
+  width: calc(90% - 10px);
 }
 
 #evaluation-form {
@@ -156,10 +156,22 @@ body { background-color: rgb(237, 237, 237); }
   width: 15%;
 }
 
-.container-rate label {
-  width: 8%;
+.container-rate label:nth-of-type( 1 ) {
+  padding-left: 30px;
 }
 
-#trybewarts-forms-logo {
-  width: 45vw;
+main {
+  display: flex;
+}
+
+form {
+  width: 675px;
+}
+
+#label-rate {
+  font-size: 15px;
+}
+
+#textarea {
+  width: 100%;
 }
