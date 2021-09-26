@@ -15,13 +15,13 @@ const getBtn = document.querySelector('.bnt');
 getBtn.addEventListener('click', validarSenha);
 
 // Função habilitar/desabiitar botão
-//Referencia utilizada para solicionar requisito: 
+// Referencia utilizada para solicionar requisito:
 // https://www.w3schools.com/jsref/prop_select_disabled.asp
 
-const buttonSubmit = document.getElementById ('submit-btn');
-const inputAgreement = document.getElementById ('agreement');
+const buttonSubmit = document.getElementById('submit-btn');
+const inputAgreement = document.getElementById('agreement');
 
-function enableButton () {
+function enableButton() {
   if (inputAgreement.checked) {
     buttonSubmit.disabled = false;
   } else {
@@ -29,4 +29,4 @@ function enableButton () {
   }
 }
 
-inputAgreement.addEventListener ('click' , enableButton)
+inputAgreement.addEventListener('click', enableButton);
