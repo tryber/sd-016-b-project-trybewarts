@@ -86,4 +86,3 @@ function changeDados(event) {
 }
 
 evaluationForm.addEventListener('submit', changeDados);
-// finalizado
