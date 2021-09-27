@@ -1,10 +1,3 @@
-const name = document.querySelector('#input-name');
-const lastName = document.querySelector('#input-lastname')
-const email = document.querySelector('#input-email');
-const select = document.querySelector('#house');
-const radio = document.getElementsByName('family');
-
-
 function validateCredentials(event) {
   event.preventDefault();
   const email = document.querySelector('#email');
@@ -79,5 +72,68 @@ function updateCounter(event) {
 const textarea = document.getElementById('textarea');
 textarea.addEventListener('keyup', updateCounter);
 
-
 // Requisito 21
+function getInputText(id) {
+  const input = document.getElementById(id);
+  return input.value;
+}
+
+function getSelectedValue(selector) {
+  const options = document.querySelectorAll(selector);
+  for (let index = 0; index < options.length; index += 1) {
+    if (options[index].selected) {
+      return options[index].value;
+    }
+  }
+  return '';
+}
+
+function getRadioValue(selector) {
+  const options = document.querySelectorAll(selector);
+  for (let index = 0; index < options.length; index += 1) {
+    if (options[index].checked) {
+      return options[index].value;
+    }
+  }
+  return '';
+}
+
+function getSelectedSubjects(selector) {
+  const subjects = document.querySelectorAll(selector);
+  let selectedSubjects = '';
+  for (let index = 0; index < subjects.length; index += 1) {
+    if (subjects[index].checked) {
+      selectedSubjects += `${subjects[index].value}, `;
+    }
+  }
+  if (selectedSubjects.length > 0) {
+    selectedSubjects = selectedSubjects.slice(0, selectedSubjects.length - 2);
+  }
+  return selectedSubjects;
+}
+
+function createField(tagName, text) {
+  const field = document.createElement(tagName);
+  field.innerText = text;
+  return field;
+}
+
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  const evaluationForm = document.getElementById('evaluation-form');
+  const responseFields = [
+    createField('p', `Nome: ${getInputText('input-name')} ${getInputText('input-lastname')}`),
+    createField('p', `Email: ${getInputText('input-email')}`),
+    createField('p', `Casa: ${getSelectedValue('#house option')}`),
+    createField('p', `Família: ${getRadioValue('input[name="family"]')}`),
+    createField('p', `Matérias: ${getSelectedSubjects('.subject')}`),
+    createField('p', `Avaliação: ${getRadioValue('#divrate input')}`),
+    createField('p', `Observações: ${getInputText('textarea')}`),
+  ];
+  evaluationForm.innerHTML = '';
+
+  for (let index = 0; index < responseFields.length; index += 1) {
+    evaluationForm.appendChild(responseFields[index]);
+  }
+});
