@@ -21,7 +21,7 @@ body {
 }
 
 #trybewarts-header-title {
-  color: rgb(245, 255, 252);
+  color: rgb(22, 24, 24);
 }
 
 .trybewarts-login {
@@ -45,14 +45,67 @@ main {
   margin-left: 1%;
 }
 
+input, button, select, textarea {
+  font-family: 'Harry Potter', sans-serif;
+}
+
+button:hover {
+  color: rgb(190, 115, 157);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 #evaluation-form {
   display: flex;
-  width: 675px;
   flex-flow: column wrap;
+  width: 675px;
+  
+}
+
+#evaluation-form h2 {
+  margin: 2% 0;
+}
+
+#full-name {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%;
+  padding-bottom: 3%;
+}
+
+#email-house {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 89.6%;
+  padding-bottom: 1.8%;
+}
+
+.radios {
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 0;
+  max-height: 100px;
+}
+
+#div-checkbox-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+#evaluate {
+  height: 13px;
+  padding: 4% 0;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  width: 480px;
 }
 
 .radios {
@@ -65,10 +118,34 @@ main {
   flex-direction: column;
 }
 
+.text-section label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+#textarea {
+  resize: none;
+  border-radius: 9px;
+  border: 2px solid rgb(37, 39, 39);
+  box-sizing: border-box;
+  padding-right: 30px;
+  width: 530px;
+  height: 240px;
+}
+
+.agreement-section {
+  margin: 1.2% 0;
+}
+
+#submit-btn {
+  width: 80px;
+}
+
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2%;
   background-color: rgb(50, 167, 145);
+  color: rgb(37, 39, 39);
 }

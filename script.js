@@ -20,5 +20,4 @@ function radioChecked() {
     sendButton.disabled = true;
   }
 }
-
 agreementChecked.addEventListener('click', radioChecked);
