@@ -17,24 +17,28 @@
       <button id="btn-login" type="submit">Entrar</button>
     </form>
   </header>
-  <main>
-    <form action="#" method="get" id="evaluation-form">
+  <main class="wrapper center flex space-around">
+    <form class="body-forms flex" action="#" method="get" id="evaluation-form">
+      <h2 style="margin: 7px 0;">Formulário de Avaliação</h2>
       <div>
-        <div class="user-names">
-          <label for="input-name"><input type="text" name="input-name" id="input-name" placeholder="Nome"></label>
-          <label for="input-lastname"><input type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome"></label>
-        </div>
-        <div class="user-email-house">
-          <label for="house">
-            <label for="input-email"><input type="email" name="input-email" id="input-email" placeholder="Email"></label>
-            <select name="house" id="house">
-              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-              <option id="corvinode-house" value="Corvinode">Corvinode</option>
-              <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
-          </label>
-        </div>
+        <section class="inf-house">
+          
+          <div class="user-names">
+            <label for="input-name"><input type="text" name="input-name" id="input-name" placeholder="Nome"></label>
+            <label for="input-lastname"><input type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome"></label>
+          </div>
+          <div class="user-email-house">
+              <label for="input-email"><input type="email" name="input-email" id="input-email" placeholder="Email"></label>
+              <label for="house">Casa:
+                <select name="house" id="house">
+                  <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                  <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                  <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                  <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                </select>
+            </label>
+          </div>
+        </section>
         <div class="family-content">
           <div class="container-family">
             <h3 id="label-family">Qual sua família?</h3>
@@ -76,7 +80,7 @@
       </div>
       <button id="submit-btn" type="submit" disabled="disabled">Enviar</button>
     </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="colored image">
+    <img id="trybewarts-forms-logo" class="trybewarts-hero" src="images/trybewarts-colored.svg" alt="colored image">
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="./scripts/script.js"></script>
