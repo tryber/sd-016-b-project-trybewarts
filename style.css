@@ -31,3 +31,13 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.container-radio-checkbox {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.checkbox-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+}
