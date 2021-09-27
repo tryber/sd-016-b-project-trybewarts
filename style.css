@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(239, 239, 239);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  width: 100%;
+  height: 65px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 31px;
+}
+
+.trybewarts-header-logo {
+  padding: 3px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  height: 55px;
+}
+
+#trybewarts-header-title {
+  color: white;
+}
+
+#emailId {
+  text-align: left;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+  width: 140px;
+  height: 35px;
+}
+
+#passwordId {
+  text-align: left;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+  width: 140px;
+  height: 35px;
+}
+
+.trybewarts-login-button {
+  background-color: rgb(80, 60, 131);
+  margin-top: 0;
+  width: 140px;
+  height: 35px;
+}
+
+.trybewarts-login-button:hover {
+  background-color: rgb(137, 108, 211);
+  font-size: 0.9em;
+}
+
+.trybewarts-login {
+  display: flex;
+  text-align: center;
+  padding: 8px;
+  height: 40px;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+#formMain {
+  width: 50%;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#nameAndLastname input {
+  width: 48%;
+  height: 45px;
+  border-radius: 6px;
+  margin-left: 4px;
+  border: none;
+}
+
+#emailAndHouse input {
+  width: 48%;
+  height: 45px;
+  border-radius: 6px;
+  margin-left: 4px;
+  border: none;
+}
+
+.radio-and-checkbox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
+}
+
+footer {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(60 64 74);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: bisque;
+  text-align: center;
+}
+
+
+.radio-family {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#radio-family-style label input {
+  margin-right: 10px;
+  float: left;
+}
+
+#radio-family-style label p {
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.checkbox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: initial;
+}
+
+.checkbox-itens {
+  display: flex;
+  width: 233px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.rate {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+
+#radio-family-style {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-around;
+  padding-top: 14px;
+}
+
+#avaliation {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+}
+
+.agreement {
+  display: flex;
+}
+
+.agreement label {
+  margin-right: 10px;
+}
+
+#agreement {
+  margin-top: 3px;
+}
+
+#img-brasao {
+  justify-items: center;
+  width: 40%;
+}
+
+.first-part-form {
+  display: flex;
+  padding-bottom: 24px;
+  justify-content: space-around;
+}
+
+#nameAndLastname {
+  justify-content: flex-start;
+}
+
+#emailAndHouse {
+  justify-content: flex-start;
+}
+
+#house {
+  width: 290px;
+  height: 45px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(255 255 255);
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label-content {
+  text-align: left;
+}
+
+.label-conteudo-aprender {
+  width: 61px;
+  margin-bottom: 14px;
+}
+
+#label-content {
+  line-height: 2em;
+}
+
+#label-rate {
+  width: 32%;
+  margin-right: 20px;
+}
+
+textarea {
+  min-width: 100%;
+  min-height: 100px;
+  max-height: 100px;
+  border: solid 1px rgb(80 60 131);
+}
+
+#counter {
+  position: absolute;
+  left: 637px;
+  top: 95px;
+}
+
+button {
+  width: 100%;
+  background-color: rgb(80, 60, 131);
+  border-radius: 6px;
+  color: rgb(255 255 255);
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
