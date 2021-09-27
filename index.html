@@ -21,6 +21,9 @@
   </header>
 
   <main>
+
+    <p id="text" style="display: none;"></p>
+
     <form id="evaluation-form">
       <h1>Formulário de avaliação</h1>
       <div class="input-container">
@@ -45,15 +48,15 @@
           <label id="label-family">Qual sua família?</label>
 
           <label for="radio-1">
-            <input type="radio" name="family" id="radio-1" value="Frontend"> Front-End
+            <input class="radio-buttons" type="radio" name="family" id="radio-1" value="Frontend"> Front-End
           </label>
 
           <label for="radio-2">
-            <input type="radio" name="family" id="radio-2" value="Backend"> Back-End
+            <input class="radio-buttons" type="radio" name="family" id="radio-2" value="Backend"> Back-End
           </label>
 
           <label for="radio-3">
-            <input type="radio" name="family" id="radio-3" value="FullStack"> Full-Stack
+            <input class="radio-buttons" type="radio" name="family" id="radio-3" value="FullStack"> Full-Stack
           </label>
 
         </div>
@@ -61,22 +64,22 @@
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div id="label-content">
             <label for="check-1">
-              <input value="HoFs" type="checkbox" id="check-1"> HoFs
+              <input class="subject" value="HoFs" type="checkbox" id="check-1"> HoFs
             </label>
             <label for="check-2">
-              <input value="Jest" type="checkbox" id="check-2"> Jest
+              <input class="subject" value="Jest" type="checkbox" id="check-2"> Jest
             </label>
             <label for="check-3">
-              <input value="Promises" type="checkbox" id="check-3"> Promises
+              <input class="subject" value="Promises" type="checkbox" id="check-3"> Promises
             </label>
             <label for="check-4">
-              <input value="React" type="checkbox" id="check-4"> React
+              <input class="subject" value="React" type="checkbox" id="check-4"> React
             </label>
             <label for="chekc-5">
-              <input value="SQL" type="checkbox" id="chekc-5"> SQL
+              <input class="subject" value="SQL" type="checkbox" id="chekc-5"> SQL
             </label>
             <label for="check-6">
-              <input value="Python" type="checkbox" id="check-6"> Python
+              <input class="subject" value="Python" type="checkbox" id="check-6"> Python
             </label>
           </div>
         </div>
@@ -89,34 +92,34 @@
         <div class="rate-container">
           <label id="label-rate">Como você avalia a Trybewarts?</label>
           <label>
-            <input type="radio" value="1" name="rate"> 1
+            <input class="radio-rate" type="radio" value="1" name="rate"> 1
           </label>
           <label>
-            <input type="radio" value="2" name="rate"> 2
+            <input class="radio-rate" type="radio" value="2" name="rate"> 2
           </label>
           <label>
-            <input type="radio" value="3" name="rate"> 3
+            <input class="radio-rate" type="radio" value="3" name="rate"> 3
           </label>
           <label>
-            <input type="radio" value="4" name="rate"> 4
+            <input class="radio-rate" type="radio" value="4" name="rate"> 4
           </label>
           <label>
-            <input type="radio" value="5" name="rate"> 5
+            <input class="radio-rate" type="radio" value="5" name="rate"> 5
           </label>
           <label>
-            <input type="radio" value="6" name="rate"> 6
+            <input class="radio-rate" type="radio" value="6" name="rate"> 6
           </label>
           <label>
-            <input type="radio" value="7" name="rate"> 7
+            <input class="radio-rate" type="radio" value="7" name="rate"> 7
           </label>
           <label>
-            <input type="radio" value="8" name="rate"> 8
+            <input class="radio-rate" type="radio" value="8" name="rate"> 8
           </label>
           <label>
-            <input type="radio" value="9" name="rate"> 9
+            <input class="radio-rate" type="radio" value="9" name="rate"> 9
           </label>
           <label>
-            <input type="radio" value="10" name="rate"> 10
+            <input class="radio-rate" type="radio" value="10" name="rate"> 10
           </label>
         </div>
 
