@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  height: 14vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  width: 6rem;
+  height: 4rem;
+}
+
+.trybewarts-login {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-container {
+  display: flex;
+  align-items: space-between;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.personal-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.personal-info-input {
+  flex-basis: 35%;
+}
+
+.personal-info-input input {
+  width: 100%;
+}
+
+.house-input-container {
+  display: flex;
+}
+
+.family-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-content {
+  display: none;
+  flex-direction: column;
+}
