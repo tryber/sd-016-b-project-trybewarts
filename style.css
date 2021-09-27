@@ -69,14 +69,22 @@ main {
   margin: 5vh 0 0 10vh;
 }
 
+#form-title {
+  align-self: center;
+}
+
+#input-lastname {
+  margin-left: 1vh;
+}
+
 .border-radius {
   border-radius: 5px;
 }
 
 .text-type-input {
-  height: 5vh;
+  height: 6vh;
   border: none;
-  width: 35vh;
+  width: 42vh;
 }
 
 #house {
