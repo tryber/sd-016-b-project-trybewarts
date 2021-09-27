@@ -14,13 +14,15 @@
     <img class="trybewarts-header-logo" src="/images/trybewarts-header-logo.svg" alt="logo-trybewarts">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" action="#" method="GET">
-      <input class="login" id="email" type="text" name="email" placeholder="Email">
-      <input class="login" id="senha" type="password" name="password" placeholder="Senha">
+      <input class="login login-input" id="email" type="text" name="email" placeholder="Email">
+      <input class="login login-input" id="senha" type="password" name="password" placeholder="Senha">
       <button class="login" id="login-btn">Entrar</button>
     </form>
   </header>
+
   <main class="main">
     <form action="#" id="evaluation-form" method="GET" class="eval-form">
+      <h1>Formulário de Avaliação</h1>
       <div id="respostas-fomulario">
         <p id="resposta-nome">Nome: John Doe</p>
         <p id="resposta-email">Email: alguem@email.com</p>
@@ -33,12 +35,12 @@
       <div id="formulario-inputs">
         <!-- Nome -->
         <div class="flex-container">
-          <input type="text" id="input-name" placeholder="Nome">
-          <input type="text" id="input-lastname" placeholder="Sobrenome">
+          <input class="text-input" type="text" id="input-name" placeholder="Nome">
+          <input class="text-input" type="text" id="input-lastname" placeholder="Sobrenome">
         </div>
         <!-- Email e Casa -->
-        <div class="flex-container">
-          <input type="text" id="input-email" placeholder="Email">
+        <div class="flex-container email-house">
+          <input class="text-input" type="text" id="input-email" placeholder="Email">
           <label for="house">Casa:</label>
           <select name="casa" id="house">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -49,18 +51,18 @@
         </div>
         <hr>
         <!-- Parte 2 -->
-        <div class="flex-container">
+        <div class="flex-container family-techs-container">
           <div class="family-container">
             <label for="family" id="label-family">Qual sua família?</label>
-            <div>
+            <div class="family-div">
               <input class="family-check" type="radio" name="family" value="Frontend" id="frontend">
               <label for="frontend">Frontend</label>
             </div>
-            <div>
+            <div class="family-div">
               <input class="family-check" type="radio" name="family" value="Backend" id="backend">
               <label for="backend">Backend</label>
             </div>
-            <div>
+            <div class="family-div">
               <input class="family-check" type="radio" name="family" value="FullStack" id="fullStack">
               <label for="fullStack">FullStack</label>
             </div>
@@ -68,27 +70,27 @@
           <div class="techs-container">
             <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
             <div class="checks-container">
-              <div>
+              <div class="tech-div">
                 <input class="subject" type="checkbox" name="conteudo" value="HoFs" id="hofs">
                 <label for="hofs">HoFs</label>
               </div>
-              <div>
+              <div class="tech-div">
                 <input class="subject" type="checkbox" name="conteudo" value="Jest" id="jest">
                 <label for="jest">Jest</label>
               </div>
-              <div>
+              <div class="tech-div">
                 <input class="subject" type="checkbox" name="conteudo" value="Promises" id="promises">
                 <label for="promises">Promises</label>
               </div>
-              <div>
+              <div class="tech-div">
                 <input class="subject" type="checkbox" name="conteudo" value="React" id="react">
                 <label for="react">React</label>
               </div>
-              <div>
+              <div class="tech-div">
                 <input class="subject" type="checkbox" name="conteudo" value="SQL" id="sql">
                 <label for="sql">SQL</label>
               </div>
-              <div>
+              <div class="tech-div">
                 <input class="subject" type="checkbox" name="conteudo" value="Python" id="python">
                 <label for="python">Python</label>
               </div>
@@ -100,43 +102,43 @@
           <!-- Avaliação -->
           <div class="flex-container">
             <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="1" id="1">
               <label for="1">1</label>
             </div>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="2" id="2">
               <label for="2">2</label>
             </div>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="3" id="3">
               <label for="3">3</label>
             </div>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="4" id="4">
               <label for="4">4</label>
             </div>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="5" id="5">
               <label for="5">5</label>
             </div>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="6" id="6">
               <label for="6">6</label>
             </div>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="7" id="7">
               <label for="7">7</label>
             </div>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="8" id="8">
               <label for="8">8</label>
             </div>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="9" id="9">
               <label for="9">9</label>
             </div>
-            <div>
+            <div class="rate">
               <input class="rate-input" type="radio" name="rate" value="10" id="10">
               <label for="10">10</label>
             </div>

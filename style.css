@@ -1,3 +1,10 @@
+@font-face {
+  font-family: harry;
+  src: url('/HARRYP__.TTF');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
 * {
   border: 0;
   margin: 0;
@@ -14,6 +21,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: Scheherazade New, serif;
 }
 
 .header {
@@ -22,6 +30,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 3px 15px;
+}
+
+#trybewarts-header-title {
+  font-family: harry, serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px rgb(75, 75, 75);
+  color: white;
 }
 
 .trybewarts-login {
@@ -37,6 +52,7 @@ body {
 .main {
   display: flex;
   flex: 1;
+  margin: 30px;
 }
 
 #evaluation-form {
@@ -45,8 +61,13 @@ body {
   width: 675px;
 }
 
+#evaluation-form h1 {
+  text-align: center;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+  margin-inline: auto;
 }
 
 .flex-container {
@@ -84,10 +105,6 @@ footer p {
   line-height: 18px;
 }
 
-#trybewarts-header-title {
-  color: white;
-}
-
 .login {
   border-radius: 10px;
   margin: 0 5px;
@@ -95,7 +112,7 @@ footer p {
   width: 140px;
 }
 
-#email , #senha {
+.login-input {
   height: 20px;
 }
 
@@ -104,4 +121,70 @@ footer p {
   background-color: blueviolet;
   color: white;
   cursor: pointer;
+}
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checks-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+.tech-div {
+  margin: 10px 20px;
+}
+
+.family-container {
+  width: 150px;
+}
+
+.text-input {
+  border-radius: 5px;
+  height: 30px;
+  margin: 7px 2px;
+  padding-left: 5px;
+  width: 250px;
+}
+
+.email-house {
+  align-items: center;
+}
+
+#house {
+  border-radius: 5px;
+  height: 30px;
+  margin: 7px 2px;
+  padding-left: 5px;
+  width: 220px;
+  background-color: white;
+}
+
+.family-div {
+  margin: 10px 0;
+}
+
+.rate {
+  margin-right: 8px;
+  margin-bottom: 20px;
+}
+
+#submit-btn {
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 549px;
+  border-radius: 5px;
+}
+
+.agreement-container {
+  margin: 10px 0;
+}
+
+#counter {
+  align-self: flex-end;
 }
