@@ -76,6 +76,28 @@ body {
   width: 100%;
 }
 
+#label-infos , .learning-container label , .family-container div label {
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.rating-container , .check-info {
+  padding-left: 0;
+}
+
+.rating-container div label , .family-container div input {
+  cursor: pointer;
+}
+
+.learning-container div input {
+  cursor: pointer;
+}
+
+.form-check .form-check-input {
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
 /* IMAGE STYLES */
 #trybewarts-forms-logo {
   height: 500px;
@@ -123,8 +145,16 @@ footer {
     width: 90%;
   }
 
+  #evaluation-form label {
+    font-size: 1rem;
+  }
+
   #trybewarts-forms-logo {
     max-width: 100%;
     height: auto;
+  }
+
+  .family-container {
+    line-height: 150%;
   }
 }
