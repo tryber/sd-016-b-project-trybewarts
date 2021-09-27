@@ -54,11 +54,13 @@ input {
 
 main {
   display: flex;
+  justify-content: space-between;
 }
 
 main form {
   display: flex;
   flex-direction: column;
+ 
 }
 
 #evaluation-form {
@@ -97,6 +99,7 @@ main form {
   justify-content: flex-end;
   align-items: flex-start;
 }
+  
 
 .right-arms img {
   display: flex;
