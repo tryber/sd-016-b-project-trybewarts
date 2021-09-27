@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+
+body , html {
+  background-color: rgb(230, 230, 230);
+}
+
+input:focus , select:focus , textarea:focus {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  padding: 20px;
+}
+
+header img {
+  width: 50px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.trybewarts-login input {
+  margin-right: 1rem;
+  border: 0;
+  border-radius: 7px;
+  padding: 10px;
+  width: 200px;
+  font-size: medium;
+  font-weight: 800;
+}
+
+
+.trybewarts-login button , #submit-btn {
+  border: 0;
+  border-radius: 7px;
+  padding: 10px;
+  width: 170px;
+  font-size: medium;
+  background-color: rgb(87, 27, 160);
+  color: white;
+  font-weight: 800;
+}
+
+.trybewarts-login button:hover {
+  cursor: pointer;
+}
+
+.trybewarts-login button:focus {
+  background-color: rgb(101, 59, 151);
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto 40px;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  align-items: center;
+}
+
+#evaluation-form h1 {
+  margin: 40px 0;
+}
+
+.input-container {
+  padding: 0 0 25px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.input-container input {
+  border: 0;
+  border-radius: 7px;
+  padding: 10px;
+  width: 47%;
+  font-size: medium;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.input-container label {
+  width: 47%;
+  display: flex;
+  align-items: center;
+  font-size: large;
+}
+
+.input-container label select {
+  border: 0;
+  background-color: white;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: medium;
+  flex-grow: 1;
+}
+
+.input-container label select option {
+  font-size: medium;
+}
+
+hr {
+  width: 100%;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin: 0 auto;
+}
+
+.input-container2 {
+  padding: 25px 0;
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#container-family {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#container-content {
+  display: flex;
+  flex-flow: wrap column;
+  width: 60%;
+  justify-content: space-around;
+}
+
+#label-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#label-content label {
+  width: 30%;
+}
+
+.input-container3 {
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.rate-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid rgb(87, 27, 160);
+  border-radius: 7px;
+  font-size: large;
+}
+
+#submit-btn {
+  width: 100%;
+}
+
+#submit-btn:disabled {
+  opacity: 0.6;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: cadetblue;
+  position: fixed;
+  bottom: 0;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#counter {
+  position: relative;
+  top: -40px;
+  right: 5px;
+}
