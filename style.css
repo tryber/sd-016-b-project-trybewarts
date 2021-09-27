@@ -61,9 +61,20 @@ main {
   height: 500px;
 }
 
+#evaluation-form h1 {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.form-content {
+  display: flex;
+  margin-bottom: 10px;
+}
+
 .form-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
 }
 
 .form-container input , select {
@@ -71,10 +82,6 @@ main {
   border: 1px solid black;
   padding: 10px;
   margin: 5px;
-}
-
-.form-container select {
-  width: 200px;
 }
 
 .family-container {
@@ -101,6 +108,16 @@ main {
   width: 80px;
 }
 
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.textarea-container span {
+  align-self: end;
+}
+
 footer {
   background-color: rgb(50, 167, 145);
   bottom: 0;
@@ -113,4 +130,18 @@ footer {
 textarea {
   resize: none;
   padding: 2px;
+}
+
+.agreement-container {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#submit-btn {
+  padding: 10px;
+  margin: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: purple;
+  color: white;
 }
