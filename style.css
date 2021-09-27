@@ -1,7 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
 
 body {
-  font-family: 'Harry Potter', sans-serif;
+  font-family: Harry Potter, sans-serif;
   background-color: rgb(204, 198, 198);
   margin: 0;
 }
@@ -29,6 +29,10 @@ body {
   margin-right: 8%;
 }
 
+input , button , select , textarea {
+  font-family: Harry Potter, sans-serif;
+}
+
 .trybewarts-login input {
   padding: 3%;
   border-radius: 2%;
@@ -37,16 +41,6 @@ body {
 
 #botao {
   margin-left: 3%;
-}
-
-main {
-  display: flex;
-  margin-bottom: 1%;
-  margin-left: 1%;
-}
-
-input, button, select, textarea {
-  font-family: 'Harry Potter', sans-serif;
 }
 
 button:hover {
@@ -64,7 +58,6 @@ main {
   display: flex;
   flex-flow: column wrap;
   width: 675px;
-  
 }
 
 #evaluation-form h2 {
@@ -87,6 +80,7 @@ main {
 
 .radios {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 4% 0;
   max-height: 100px;
@@ -94,6 +88,7 @@ main {
 
 #div-checkbox-content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 2% 0;
 }
@@ -106,16 +101,6 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
   width: 480px;
-}
-
-.radios {
-  display: flex;
-  flex-direction: column;
-}
-
-#div-checkbox-content {
-  display: flex;
-  flex-direction: column;
 }
 
 .text-section label {
