@@ -5,7 +5,9 @@
     const passwordInput = document.querySelector('#passwordId');
     if (emailInput.value === 'tryber@teste.com' && passwordInput.value === '123456') {
       alert('Olá, Tryber!');
-    } else { alert('Email ou senha inválidos.'); }
+    } else {
+      alert('Email ou senha inválidos.');
+    }
   });
 })();
 
@@ -26,33 +28,31 @@ function counter() {
   });
 }
 counter();
-
+// monitoria Tales Coelho(Truma - 11)
 const setValues = (valForm) => {
   const form = document.querySelector('#evaluation-form');
   form.innerHTML = '';
-  const sectionElement = document.querySelector('#formMain');
   Object.keys(valForm).forEach((key) => {
     const pElement = document.createElement('p');
-    pElement.innerText = `${key} ${value}`;
-    sectionElement.appendChild(pElement);
+    form.appendChild(pElement).classList.add('subject');
+    pElement.innerText = `${valForm[key]}`;
   });
 };
+
 const createObj = (obj) => {
   const formValues = {
-    Nome: 'Nome:',
+    name: `Nome: ${obj.get('name')} ${obj.get('lastname')}`,
+    email: `Email: ${obj.get('email')}`,
+    house: `Casa: ${obj.get('house')}`,
+    family: `Família: ${obj.get('family')}`,
+    subject: `Matérias: ${obj.getAll('subject').join(', ')}`,
+    rate: `Avaliação: ${obj.get('rate')}`,
+    textArea: `Observações: ${obj.get('textArea')}`,
   };
-  obj.forEach((value, key) => {
-    if (key === 'Matérias' && formValues.Matérias) {
-      formValues.Matérias += ` / ${value}`;
-    } else if (key === 'Nome' || key === 'lastname') {
-      formValues.Nome += ` ${value}`;
-    } else {
-      formValues[key] = `${key}: ${value}`;
-    }
-  });
   setValues(formValues);
 };
 // monitoria Tales Coelho(Truma - 11)
+
 const getFormValues = () => {
   const form = document.getElementById('evaluation-form');
   form.addEventListener('submit', (e) => {
