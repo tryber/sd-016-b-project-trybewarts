@@ -40,12 +40,12 @@
       </div>
       <div class="learn">
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
-        <label><input type="checkbox" value="HoFs">HoFs</label>
-        <label><input type="checkbox" value="Jest">Jest</label>
-        <label><input type="checkbox" value="Promises">Promises</label>
-        <label><input type="checkbox" value="React">React</label>
-        <label><input type="checkbox" value="SQL">SQL</label>
-        <label><input type="checkbox" value="Python">Python</label>
+        <label><input type="checkbox" class="subject" value="HoFs">HoFs</label>
+        <label><input type="checkbox" class="subject" value="Jest">Jest</label>
+        <label><input type="checkbox" class="subject" value="Promises">Promises</label>
+        <label><input type="checkbox" class="subject" value="React">React</label>
+        <label><input type="checkbox" class="subject" value="SQL">SQL</label>
+        <label><input type="checkbox" class="subject" value="Python">Python</label>
       </div>
       <div class="rate">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
@@ -65,7 +65,7 @@
         <textarea id="textarea" rows="5" maxlength="500"></textarea>
           <label>Caracteres restantes --> </label><output id="counter">500</output>
       </div>
-        <label id="label-infos">Você concorda com o uso das informações acima?<input type="checkbox" id="agreement" required></label>
+        <label id="label-infos">Você concorda com o uso das informações acima?<input type="checkbox" class="subject" id="agreement" required></label>
         <button id="submit-btn" type="submit">Enviar</button>
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
@@ -74,4 +74,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-

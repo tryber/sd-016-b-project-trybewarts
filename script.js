@@ -27,3 +27,17 @@ function countChar() {
   return count.innerText;
 }
 qtChart.addEventListener('input', countChar);
+// requisito 21
+/*Todos os campos do formulário devem ser substituídos.
+Nome: Alguem Aqui
+Email: email@mail.com
+Casa: Casa Escolhida
+Família: Família Escolhida
+Matérias: Matérias, Marcadas, Aqui
+Avaliação: NotaAqui
+Observações: Observações aqui */
+function replaceForm () {
+const nome = document.getElementById('evaluation-form');
+nome.innerHTML = '';
+}
+btnSubmit.addEventListener('click',replaceForm);
