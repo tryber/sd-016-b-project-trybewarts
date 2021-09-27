@@ -23,15 +23,17 @@ button.addEventListener('click', compare);
 
 submitButton.disabled = true;
 
-function sendButton() {
+/* function sendButton() {
   if (agreement.checked) {
     submitButton.disabled = false;
   } else {
     submitButton.disabled = true;
   }
-}
+} */
 
-agreement.addEventListener('click', sendButton);
+agreement.addEventListener('click', () => {
+  (agreement.checked) ? submitButton.disabled = false : submitButton.disabled = true;
+});
 
 textArea.addEventListener('keyup', () => {
   count.innerText = 500 - textArea.value.length;
