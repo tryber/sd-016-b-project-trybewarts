@@ -41,3 +41,12 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
+
+.avaliator-container {
+  display: flex;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+}
