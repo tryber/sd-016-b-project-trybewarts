@@ -108,6 +108,10 @@ main {
   width: 80px;
 }
 
+.radio {
+  margin: 10px;
+}
+
 .textarea-container {
   display: flex;
   flex-direction: column;
@@ -118,22 +122,13 @@ main {
   align-self: end;
 }
 
-footer {
-  background-color: rgb(50, 167, 145);
-  bottom: 0;
-  height: 50px;
-  font-size: 20px;
-  text-align: center;
-  width: 100%;
-}
-
 textarea {
   resize: none;
   padding: 2px;
 }
 
 .agreement-container {
-  margin-bottom: 10px;
+  margin: 10px;
   font-size: 18px;
 }
 
@@ -144,4 +139,13 @@ textarea {
   border-radius: 5px;
   background-color: purple;
   color: white;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
+  bottom: 0;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
 }
