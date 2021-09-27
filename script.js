@@ -107,6 +107,7 @@ counterTextarea.addEventListener('input', (evt) => {
   counterLegend.innerText = maxChar - textareaInput;
 });
 
+// Evento para desabilitar o button Enviar quando o checkbox não estiver selecionado
 checkboxAgreement.addEventListener('change', (evt) => {
   submitButton.disabled = !evt.target.checked;
 });
