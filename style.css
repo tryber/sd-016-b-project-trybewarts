@@ -24,7 +24,7 @@ body {
   height: 65px;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 31px;
+  padding: 0 31px;
 }
 
 .trybewarts-header-logo {
@@ -95,13 +95,44 @@ main {
   height: 500px;
 }
 
+#nameAndLastname input {
+  width: 48%;
+  height: 45px;
+  border-radius: 6px;
+  margin-left: 4px;
+  border: none;
+}
+
+#emailAndHouse input {
+  width: 48%;
+  height: 45px;
+  border-radius: 6px;
+  margin-left: 4px;
+  border: none;
+}
+
 .radio-and-checkbox {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  padding: 30px 0px;
+  padding: 30px 0;
 }
+
+footer {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(60 64 74);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: bisque;
+  text-align: center;
+}
+
 
 .radio-family {
   display: flex;
@@ -142,7 +173,7 @@ main {
 .rate {
   display: flex;
   justify-content: flex-start;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 #radio-family-style {
@@ -168,7 +199,7 @@ main {
   margin-right: 10px;
 }
 
-.agreement input {
+#agreement {
   margin-top: 3px;
 }
 
@@ -187,24 +218,8 @@ main {
   justify-content: flex-start;
 }
 
-#nameAndLastname input {
-  width: 48%;
-  height: 45px;
-  border-radius: 6px;
-  margin-left: 4px;
-  border: none;
-}
-
 #emailAndHouse {
   justify-content: flex-start;
-}
-
-#emailAndHouse input {
-  width: 48%;
-  height: 45px;
-  border-radius: 6px;
-  margin-left: 4px;
-  border: none;
 }
 
 #house {
@@ -260,18 +275,4 @@ button {
   height: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-footer {
-  width: 100%;
-  height: 45px;
-  background-color: rgb(60 64 74);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer p {
-  color: bisque;
-  text-align: center;
 }
