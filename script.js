@@ -32,7 +32,11 @@ submitButton.disabled = true;
 } */
 
 agreement.addEventListener('click', () => {
-  (agreement.checked) ? submitButton.disabled = false : submitButton.disabled = true;
+  if (agreement.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
 });
 
 textArea.addEventListener('keyup', () => {

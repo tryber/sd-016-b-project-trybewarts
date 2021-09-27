@@ -12,10 +12,12 @@ header {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
 
 header img {
-  width: 100px;
+  width: 80px;
+  margin-left: 15px;
 }
 
 header h1 {
