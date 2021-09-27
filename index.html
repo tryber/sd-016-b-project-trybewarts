@@ -29,13 +29,13 @@
   <main>
     <form id="evaluation-form" action="#" method="GET">
       <h2>Formulário de Avaliação</h2>
-      <div>
+      <div id="name-complete">
         <input id="input-name" type="text"  placeholder="Nome">
 
         <input id="input-lastname" type="text" placeholder="Sobrenome">
       </div>
 
-      <div>
+      <div id="email-house">
         <input id="input-email" type="text" placeholder="Email">
 
         <label for="house-select">Casa: </label>
@@ -49,7 +49,7 @@
 
       <hr>
 
-      <div class="container-radio-checkbox">
+      <div id="container-radio-checkbox">
         <div class="family-container">
           <label id="label-family" for="">Qual sua família?</label>
 
@@ -76,32 +76,32 @@
 
           <div class="checkbox-conteiner">
             <div>
-              <input id="hofs" type="checkbox" value="HoFs">
+              <input class="subject" id="hofs" type="checkbox" value="HoFs">
               <label for="hofs">HoFs</label>
             </div>
 
             <div>
-              <input id="jest" type="checkbox" value="Jest">
+              <input class="subject" id="jest" type="checkbox" value="Jest">
               <label for="jest">Jest</label>
             </div>
 
             <div>
-              <input id="promises" type="checkbox" value="Promises">
+              <input class="subject" id="promises" type="checkbox" value="Promises">
               <label for="promises">Promises</label>
             </div>
 
             <div>
-              <input id="react" type="checkbox" value="React">
+              <input class="subject" id="react" type="checkbox" value="React">
               <label for="react">React</label>
             </div>
 
             <div>
-              <input id="sql" type="checkbox" value="SQL">
+              <input class="subject" id="sql" type="checkbox" value="SQL">
               <label for="sql">SQL</label>
             </div>
 
             <div>
-              <input id="python" type="checkbox" value="Python">
+              <input class="subject" id="python" type="checkbox" value="Python">
               <label for="python">Python</label>
             </div>
           </div>
@@ -110,7 +110,7 @@
 
       <hr>
 
-      <div class="avaliator-container">
+      <div id="avaliator-container">
 
         <label id="label-rate" for="">
           Como você avalia a Trybewarts?
@@ -166,12 +166,18 @@
           <label for="rate-10">10</label>
         </div>
       </div>
-      <div class="comment-container">
+      <div id="comment-container">
         <label class="textarea" for="textarea">Deixe seu comentário:</label>
-        <textarea name="comment" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <div class="comment">
+          <textarea name="comment" id="textarea" cols="60" rows="10" maxlength="500"></textarea>
+          <div class="counter-line">
+            <p>Caracteres restantes:</p>
+            <p id="counter">500</p>
+          </div>
+        </div>
       </div>
 
-      <div class="terms">
+      <div id="terms">
         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
         <input id="agreement" type="checkbox">
       </div>
@@ -182,6 +188,7 @@
 
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Imagem da logo da Trybewarts">
   </main>
+
   <footer>
     <div>
       <h6>Direitos reservados à Trybewarts©</h6>

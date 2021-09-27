@@ -32,7 +32,7 @@ main {
   height: 500px;
 }
 
-.container-radio-checkbox {
+#container-radio-checkbox {
   display: flex;
   justify-content: space-evenly;
 }
@@ -42,11 +42,20 @@ main {
   flex-wrap: wrap;
 }
 
-.avaliator-container {
+#avaliator-container {
   display: flex;
 }
 
-.comment-container {
+#comment-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-line {
+  display: flex;
+}
+
+.coment {
   display: flex;
   flex-direction: column;
 }
