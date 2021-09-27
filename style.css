@@ -8,6 +8,7 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   color: beige;
+  align-items: center;
 }
 
 header img {
@@ -61,4 +62,9 @@ fieldset {
 #label-family {
   display: flex;
   flex-direction: column;
+}
+#header-button{
+  background-color: purple;
+  color: white;
+  border-radius: 10%;
 }

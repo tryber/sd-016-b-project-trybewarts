@@ -27,11 +27,14 @@
     <form action="#" id="evaluation-form">
       <!-- Nome, Sobrenome e Casa -->
       <div id="cadastro">
-        <label for="input-name">Nome:</label>
+        <div id="C1">
+        <label for="input-name"></label>
         <input type="text" name="name" id="input-name" placeholder="Nome">
-        <label for="input-lastname">Sobrenome:</label>
+        <label for="input-lastname"></label>
         <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
-        <label for="input-email">Email:</label>
+        </div>
+        <div id="C2">
+        <label for="input-email"></label>
         <input type="email" name="email" id="input-email" placeholder="Email">
 
         <select name="house" id="house">
@@ -40,8 +43,8 @@
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
+        </div>
       </div>
-
       <!-- Radio com escolha das famílias -->
       <div class="family-container">
         <label for="" id="label-family">Qual sua família?</label>
@@ -59,7 +62,6 @@
           <input type="radio" name="family" value="FullStack" id="fullstack">
           <label for="fullstack">FullStack</label>
         </div>
-      </div>
 
       <!-- Escolha de conteúdo -->
       <div class="conteudo-container">
@@ -71,6 +73,7 @@
           <label for="jest">Jest</label>
           <input type="checkbox" name="" value="Promises" id="promises">
           <label for="promises">Promises</label>
+        </div>
         </div>
 
         <div class="conteudo">
