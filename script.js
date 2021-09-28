@@ -22,7 +22,9 @@ function concordar() {
 
   if (checked) {
     submitBtn.removeAttribute('disabled');
+    submitBtn.style.cursor = 'pointer';
   } else {
+    submitBtn.style.cursor = 'initial';
     submitBtn.setAttribute('disabled', null);
   }
 }
