@@ -149,7 +149,8 @@ main form {
 
 hr {
   margin: 2em 0;
-  border: 1px solid gray;
+  border: none;
+  border-top: 1px solid gray;
 }
 
 /* REQUISITO 19 OK */
