@@ -77,6 +77,18 @@ main {
   flex-direction: column;
 }
 
+#label-infos{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 12px;
+}
+
+#terms {
+  display: flex;
+  align-items: center;
+}
+
 .img-container {
   display: flex;
   align-items: center;
@@ -89,6 +101,11 @@ main {
   margin-left: 25px;
   margin-top: 15px;
   margin-bottom: 0;
+}
+
+.counter-line p , #label-rate , .subject , .textarea , #textarea , #submit-btn {
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .footer {
