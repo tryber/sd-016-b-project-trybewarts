@@ -47,6 +47,7 @@ function inputChecked() {
 
 const novoForms = document.querySelector('#evaluation-form');
 const novoCampo = document.createElement('p');
+
 btnEnviar.addEventListener('click', () => {
   const inputObjeto = {
     studentName: document.getElementById('input-name').value,
