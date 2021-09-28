@@ -53,3 +53,16 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+/* REQUISITO 13 */
+#inputs-conteudo {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#label-inputs {
+  margin-top: 5px;
+  display: flex;
+}
+
