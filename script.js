@@ -46,7 +46,7 @@ const getChecked = (array) => {
   for (let i = 0; i < array.length; i += 1) {
     const el = array[i];
     if (el.checked === true) {
-    // el.className += ' subject';
+      // el.className += ' subject';
       returnedValue.push(el.value);
     }
   }
@@ -81,3 +81,5 @@ submit.addEventListener('click', getData);
 submit.addEventListener('click', replaceForm);
 agreement.addEventListener('change', ableButton);
 textarea.addEventListener('input', counter);
+
+//requisito 21 tá troll ctz
