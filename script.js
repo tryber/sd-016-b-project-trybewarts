@@ -25,8 +25,8 @@ agreed.addEventListener('change', disable);
 botaoLogin.addEventListener('click', checkLogin);
 
 function contador() {
-  let contadorValor = document.querySelector('#textarea').textLength;
-  let number = 500 - contadorValor;
+  const contadorValor = document.querySelector('#textarea').textLength;
+  const number = 500 - contadorValor;
   document.querySelector('#counter').innerHTML = number;
 }
 areaContador.addEventListener('keyup', contador);
