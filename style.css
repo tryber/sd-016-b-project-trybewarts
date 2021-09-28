@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(239, 239, 239);
+  color: rgb(66, 66, 66);
+}
 
 .header {
   display: flex;
@@ -80,7 +84,6 @@ footer {
 
 main {
   justify-content: space-around;
-  background-color: rgb(239, 239, 239);
 }
 
 #complete-name {
@@ -94,7 +97,7 @@ main {
 
 #house {
   background-color: white;
-  padding: 5px 95px;
+  padding: 5px 90px;
 }
 
 hr {
@@ -113,4 +116,30 @@ textarea {
 #submit-btn {
   margin-bottom: 60px;
   margin-top: 20px;
+}
+
+.final-style-form {
+  justify-content: center;
+  padding-left: 250px;
+  line-height: 30px;
+
+}
+
+.final-style-footer {
+  margin-top: 60px;
+}
+
+.form-title {
+  margin: 40px auto 20px;
+  font-size: xx-large;
+}
+
+.form-title-after {
+  font-size: xx-large;
+  margin-bottom: 40px;
+}
+
+#content-container {
+  display: flex;
+  justify-content: space-between;
 }

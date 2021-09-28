@@ -5,6 +5,7 @@ const checkBox = document.querySelector('#agreement');
 const textArea = document.querySelector('#textarea');
 const count = document.querySelector('#counter');
 const form = document.querySelector('#evaluation-form');
+const footer = document.querySelector('footer');
 
 function validateLog(event) {
   event.preventDefault();
@@ -84,11 +85,22 @@ function getComment(arrayOfObjects) {
   arrayOfObjects.push({ label: 'Observações:', value: comment });
 }
 
+function createH1() {
+  const h1 = document.createElement('h1');
+  h1.innerText = 'Dados do Formulário';
+  h1.classList.add('form-title-after');
+  form.appendChild(h1);
+}
+
 function removeChildForm() {
-  // https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/
+  /*
+  Consultamos o site abaixo para fazer a função de remoção dos filhos de um nó;
+  link: https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/
+  */
   while (form.firstChild) {
     form.removeChild(form.firstChild);
   }
+  createH1();
 }
 
 function showData() {
@@ -111,12 +123,16 @@ function showData() {
 window.onload = () => {
   sendButton.addEventListener('click', validateLog);
   disableButton();
+  submitButton.style.opacity = '0.5';
   checkBox.addEventListener('click', () => {
     enableButton();
+    submitButton.style.opacity = '1';
   });
   countTextArea();
   submitButton.addEventListener('click', (event) => {
     event.preventDefault();
     showData();
+    form.classList.add('final-style-form');
+    footer.classList.add('final-style-footer');
   });
 };

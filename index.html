@@ -28,12 +28,13 @@
 
   <main>
     <form id="evaluation-form">
+      <h1 class="form-title">Formulário de Avaliação</h1>
       <section id="complete-name">
         <input type="text" id="input-name" name="name" placeholder="Nome">
         <input type="text" id="input-lastname" name="sobrenome"
           placeholder="Sobrenome">
       </section>
-      
+
       <section id="data">
         <input type="email" id="input-email" name="email" placeholder="Email">
         <label for="house">Casa:
@@ -47,27 +48,28 @@
       </section>
 
       <hr>
-        <section id="families">
-          <label for="" id="label-family">Qual sua família?</label>
-          <label for="front">
-            <input type="radio" name="family" value="Frontend" id="front"
-              checked>
-            Família Frontend
-          </label>
-          <label for="back">
-            <input type="radio" name="family" value="Backend" id="back">
-            Família Backend
-          </label>
-          <label for="full">
-            <input type="radio" name="family" value="FullStack" id="full">
-            Família FullStack
-          </label>
-        </section>
+      <section id="families">
+        <label for="" id="label-family">Qual sua família?</label>
+        <label for="front">
+          <input type="radio" name="family" value="Frontend" id="front"
+            checked>
+          Família Frontend
+        </label>
+        <label for="back">
+          <input type="radio" name="family" value="Backend" id="back">
+          Família Backend
+        </label>
+        <label for="full">
+          <input type="radio" name="family" value="FullStack" id="full">
+          Família FullStack
+        </label>
+      </section>
 
-        <hr>
-        <section id="learn">
-          <label for="" id="label-content">Qual conteúdo você está com mais
-            vontade de aprender?</label>
+      <hr>
+      <section id="learn">
+        <label for="" id="label-content">Qual conteúdo você está com mais
+          vontade de aprender?</label>
+        <div id="content-container">
           <label for="hofs">
             <input type="checkbox" value="HoFs" id="hofs" class="subject">
             HoFs
@@ -93,7 +95,8 @@
             <input type="checkbox" value="Python" id="python" class="subject">
             Python
           </label>
-        </section>
+        </div>
+      </section>
 
       <hr>
       <section id="evaluation">
@@ -143,7 +146,7 @@
       <hr>
       <section id="comment">
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        <textarea id="textarea" cols="80" rows="10" maxlength="500"
+        <textarea id="textarea" cols="89" rows="10" maxlength="500"
           minlength="0"></textarea>
         <label id="counter"></label>
       </section>
