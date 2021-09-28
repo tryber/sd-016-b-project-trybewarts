@@ -81,5 +81,3 @@ submit.addEventListener('click', getData);
 submit.addEventListener('click', replaceForm);
 agreement.addEventListener('change', ableButton);
 textarea.addEventListener('input', counter);
-
-  //requisito 21 tá troll ctz
