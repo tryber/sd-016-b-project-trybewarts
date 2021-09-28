@@ -46,7 +46,7 @@ input {
   padding: 0.5em;
 }
 
-.trybewarts-login button {
+.trybewarts-login button , #submit-btn {
   background-color: rgb(78, 44, 131);
   color: aliceblue;
   width: 100%; /* https://stackoverflow.com/questions/42421361
@@ -54,6 +54,11 @@ input {
   margin: 1em 0.5em;
   border: none;
   border-radius: 0.75em;
+}
+
+#submit-btn {
+  height: 3em;
+  font-weight: 900;
 }
 
 main {
