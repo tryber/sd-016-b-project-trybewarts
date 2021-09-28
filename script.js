@@ -124,4 +124,4 @@ window.onload = () => {
   btnSubmitLogin.addEventListener('click', verifyData);
   textArea.addEventListener('keyup', charCounter);
   btnSubmit.addEventListener('click', createFormContent);
-};
+};//Fim!
