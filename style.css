@@ -16,7 +16,7 @@ body {
   display: flex;
   color: white;
   align-items: center;
-  margin: 1px 10px;
+  margin: 0 10px;
 }
 
 #background img {
@@ -25,6 +25,22 @@ body {
 
 .trybewarts-login {
   display: flex;
+}
+
+.login{
+  padding:10px ;
+  border-radius: 6px;
+  border-style: none;
+  width: 130px;
+}
+
+.trybewarts-login input {
+  margin-right: 10px;
+}
+
+#header-button{
+  background-color: purple;
+  color: white;
 }
 
 .main-container {
@@ -105,18 +121,5 @@ fieldset {
   flex-direction: column;
 }
 
-#header-button{
-  background-color: purple;
-  color: white;
-  width: 150px;
-}
 
-.login{
-  padding:8px ;
-  border-radius: 10px;
-  border-style: none;
-}
 
-.login input {
-  width: 150px;
-}
