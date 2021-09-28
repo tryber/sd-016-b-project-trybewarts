@@ -18,7 +18,7 @@
             <label for="password"> </label>
             <input type="password" name="password" id="password" placeholder="Senha" required> 
             
-            <button type="button" id="botaoEntrar"> Entrar </button>
+            <button type="button" id="botaoEntrar" value="Entrar">Entrar</button>
         </form>        
     </header>
     <main>
@@ -45,18 +45,20 @@
                     <label>FullStack <input type="radio" name="family" value="FullStack"></label>
                 </div>
                 <div id='inputs-conteudo'>
-                    <label for="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-                    <input type="checkbox" id='label-content' value="HoFs">
+
+                    <label for="label-content" id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
+                    
+                    <input type="checkbox" value="HoFs">
                     <span>HoFs</span>
-                    <input type="checkbox" id='label-content' value="Jest">
+                    <input type="checkbox" value="Jest">
                     <span>Jest</span>
-                    <input type="checkbox" id='label-content' value="Promises">
+                    <input type="checkbox" value="Promises">
                     <span>Promises</span>
-                    <input type="checkbox" id='label-content' value="React">
+                    <input type="checkbox" value="React">
                     <span>React</span>
-                    <input type="checkbox" id='label-content' value="SQL">
+                    <input type="checkbox" value="SQL">
                     <span>SQL</span>
-                    <input type="checkbox" id='label-content' value="Python">
+                    <input type="checkbox" value="Python">
                     <span>Python</span>
                 </div>
             </div>
@@ -85,7 +87,7 @@
                 <input id="agreement" type="checkbox" name="agreement">
             </div>
 
-            <button type="button" name="submit" id='submit-btn'disabled>Enviar</button>
+            <button type="submit" name="submit" id='submit-btn'>Enviar</button>
 
         </form> 
 
