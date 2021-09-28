@@ -24,18 +24,19 @@
   </header>
 
   <main class="main-container">
-    <!-- <h2>Formulário de Avaliação</h2> -->
     <form action="#" id="evaluation-form">
+      <h2>Formulário de Avaliação</h2>
       <!-- Nome, Sobrenome, Email e Casa -->
-      <div class="cadastro">
+      <div class="cadastro-container">
         <div id="cadastro-l1">         
-          <input class="cadastro" type="text" name="name" id="input-name" placeholder="Nome">         
-          <input class="cadastro" type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
+          <input class="cadastro1" type="text" name="name" id="input-name" placeholder="Nome">         
+          <input class="cadastro1" type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
         </div>
 
         <div class="cadastro-l2">
-          <input class="cadastro" type="email" name="email" id="input-email" placeholder="Email">
-          <select class="cadastro" name="house" id="house">
+          <input class="cadastro2" type="email" name="email" id="input-email" placeholder="Email">
+          <label for="">Casa:</label>
+          <select class="cadastro2" name="house" id="house">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
             <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -43,7 +44,7 @@
           </select>
         </div>
       </div>
-
+      <hr>
       <!-- Qual sua família e Qual conteúdo você[...] -->
       <div class="mid-content">
         <!-- Radio com escolha das famílias -->
