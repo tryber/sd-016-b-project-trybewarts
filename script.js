@@ -3,6 +3,9 @@ const senha = document.getElementById('senha');
 const botao = document.getElementById('botao');
 const sendButton = document.querySelector('#submit-btn');
 const agreementChecked = document.querySelector('#agreement');
+const myTextArea = document.querySelector('#textarea');
+const remainingCharsText = document.querySelector('#counter');
+const maxChars = 500;
 
 function validarEmailSenha() {
   if (email.value === 'tryber@teste.com' && senha.value === '123456') {
@@ -21,3 +24,11 @@ function radioChecked() {
   }
 }
 agreementChecked.addEventListener('click', radioChecked);
+
+function justTest() {
+  const remaining = maxChars - myTextArea.value.length;
+
+  remainingCharsText.textContent = `${remaining} characters remaining`;
+}
+
+myTextArea.addEventListener('input', justTest);

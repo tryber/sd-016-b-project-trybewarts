@@ -134,3 +134,8 @@ footer {
   background-color: rgb(50, 167, 145);
   color: rgb(37, 39, 39);
 }
+
+#counter {
+  width: 520px;
+  text-align:end;
+}
