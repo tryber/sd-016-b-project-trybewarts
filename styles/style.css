@@ -148,10 +148,6 @@ main {
   flex-direction: column;
 }
 
-/* Checkbox secao */
-.check-options {
-}
-
 /* checkbox label do elemento -> linha de baixo */
 .check-options label:nth-of-type(4n) { clear: both; }
 
@@ -168,10 +164,22 @@ main {
 /* checkbox caixa elemeento */
 .check-options label .subject { margin-right: 5px; }
 
-
+/* avaliacao secao */
 .container-rate {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
+
+/* labels dos elementos */
+.container-rate label {
+  line-height: 27pt;
+  font-size: 11pt;
+  font-weight: 600;
+}
+
+/* elementos */
+.container-rate label input { margin-right: 5px; }
 
 
 .container-agreement {
@@ -211,7 +219,7 @@ main {
   padding: 11px;
   cursor: pointer;
   outline: none;
-  border-radius: 5px;
+  rder-radius: 5px;
 }
 
 .inf-house select {
