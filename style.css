@@ -7,6 +7,12 @@ body {
   background-color:rgb(233, 233, 233)
 }
 
+hr {
+  margin: 17px;
+  width: 100%;
+  align-self: center;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
 }
@@ -19,8 +25,9 @@ body {
   margin: 0 10px;
 }
 
-#background img {
-  width: 60px;
+.trybewarts-header-logo {
+  width: 50px;
+  padding: 8px 0;
 }
 
 .trybewarts-login {
@@ -28,8 +35,8 @@ body {
 }
 
 .login{
-  padding:10px ;
-  border-radius: 6px;
+  padding:9px ;
+  border-radius: 8px;
   border-style: none;
   width: 130px;
 }
@@ -79,14 +86,11 @@ margin-bottom: 5px;
   width: 43%;
 }
 
-hr {
-  margin: 17px;
-}
-
 .mid-content {
   display: flex;
   justify-content: space-between;
-  line-height: 30px;
+  line-height: 26px;
+  margin: 0 10px;
 }
 
 .family-container {
