@@ -72,13 +72,18 @@
         <label for=""><input type="radio" name="rate" value="9">9</label>
         <label for=""><input type="radio" name="rate" value="10">10</label>
       </div>
-      <div>
-        <label class="textarea" for="textarea">Deixe seu comentário:<textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea></label>
-        <div id="counter">500</div>
-      </div>
+      <section class="textarea-section">
+        <label for="textarea"><h3>Deixe seu comentário:</h3></label>
+        <div class="box">
+          <div id="counter" class="counter">500</div>
+          <textarea class="textarea" name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        </div>
+        
+      </section>
       <div class="container-agreement">
-        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
         <input type="checkbox" id="agreement">
+        <label id="label-infos" for="agreement"><h3>Você concorda com o uso das informações acima?</h3></label>
+        
       </div>
       <button id="submit-btn" type="submit" disabled="disabled">Enviar</button>
     </form>
