@@ -1,0 +1,160 @@
+/* GENERAL STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(239, 239, 239);
+}
+
+/* HEADER STYLES */
+#trybewarts-header-title {
+  color: white;
+  font-size: 36px;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  width: 100%;
+}
+
+.trybewarts-header-logo {
+  max-width: 15vh;
+}
+
+.trybewarts-email , .trybewarts-password , .trybewarts-submit {
+  border-radius: 4px;
+  border: none;
+  height: 30px;
+  margin: 0 0 0 10px;
+  width: 80%;
+}
+
+.trybewarts-submit {
+  background-color: rgb(143, 2, 2);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.trybewarts-submit:hover {
+  background-color: rgba(143, 2, 2, 0.6);
+  border: 1px solid rgb(143, 2, 2);
+  color: white;
+}
+
+/* FORM STYLES */
+#evaluation-form {
+  width: 675px;
+}
+
+#house {
+  width: 80%;
+}
+
+.input-name , .input-email {
+  margin-right: 0.5vh;
+}
+
+/* FAMILY AND LEARNING STYLES */
+.family-container {
+  width: 50%;
+  line-height: 25px;
+}
+
+.trybewarts-family {
+  padding-top: 10px;
+  margin-top: 10px;
+  height: 120px;
+}
+
+.learning-container {
+  flex-flow: column wrap;
+  height: 50%;
+  width: 100%;
+}
+
+#label-infos , .learning-container label , .family-container div label {
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.rating-container , .check-info {
+  padding-left: 0;
+}
+
+.rating-container div label , .family-container div input {
+  cursor: pointer;
+}
+
+.learning-container div input {
+  cursor: pointer;
+}
+
+.form-check .form-check-input {
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+/* IMAGE STYLES */
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+/* BUTTON SUBMIT STYLES */
+.btn , .btn:disabled {
+  background-color: rgb(143, 2, 2);
+  border-color: rgb(143, 2, 2);
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: rgb(60, 64, 74);
+  color: white;
+}
+
+.fs-7 {
+  font-size: 0.7rem;
+}
+
+@media screen and ( max-width : 900px ) {
+
+  .header {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .trybewarts-email , .trybewarts-password , .trybewarts-submit {
+    display: none;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  #evaluation-form {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #evaluation-form label {
+    font-size: 1rem;
+  }
+
+  #trybewarts-forms-logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .family-container {
+    line-height: 150%;
+  }
+}
