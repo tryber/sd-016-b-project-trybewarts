@@ -1,8 +1,3 @@
-// If (email = tryber@teste.com && senha = 123456) {
-//   alert ("Olá, Tryber!")
-// } else {
-//   alert ("Email ou senha inválidos")
-// }
 const agreement = document.getElementById('agreement');
 const button = document.getElementById('btn-submit');
 const submitButton = document.getElementById('submit-btn');
