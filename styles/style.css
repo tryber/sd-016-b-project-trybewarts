@@ -17,13 +17,18 @@ body {
   background-color: rgb(237, 237, 237);
 }
 
-h3 { font-size: 11pt; letter-spacing: 1pt; line-height: 27pt; }
+h3 { font-size: 11pt;
+  letter-spacing: 1pt;
+  line-height: 27pt; }
 
 /** Prototipos de centralização; */
 .center { margin: 0 auto; }
 
 /** Prototipos de container; */
 .wrapper { width: 90%; }
+
+/** Clear both; */
+.clear { clear: both; }
 
 /** Prototipos de exibição flexível; */
 .flex { display: flex; }
@@ -133,13 +138,13 @@ main {
   justify-content: space-around;
 }
 
-.container-family label {
+.container-family .element {
   padding: 7px 0;
   font-size: 11pt;
   font-weight: 600;
 }
 
-.container-family label input { margin-right: 5px; }
+.container-family .radio { margin-right: 5px; }
 
 /* campos: aprender; */
 .container-content {
@@ -148,21 +153,17 @@ main {
   flex-direction: column;
 }
 
-/* checkbox label do elemento -> linha de baixo */
-.check-options label:nth-of-type(4n) { clear: both; }
-
 /* checkbox labels dos elementos */
-.check-options label {
+.check-options .element {
   padding: 7px;
   float: left;
   display: block;
-
   font-size: 11pt;
   font-weight: 600;
 }
 
 /* checkbox caixa elemeento */
-.check-options label .subject { margin-right: 5px; }
+.check-options .subject { margin-right: 5px; }
 
 /* avaliacao secao */
 .container-rate {
@@ -172,14 +173,14 @@ main {
 }
 
 /* labels dos elementos */
-.container-rate label {
+.container-rate .element {
   line-height: 27pt;
   font-size: 11pt;
   font-weight: 600;
 }
 
 /* elementos */
-.container-rate label input { margin-right: 5px; }
+.container-rate .radio { margin-right: 5px; }
 
 .textarea-section {
   margin-top: 20px;
@@ -188,8 +189,8 @@ main {
   width: 100%;
 }
 
-.textarea-section label h3 { line-height: 16pt !important; }
- 
+.textarea-section .element h3 { line-height: 16pt; }
+
 .textarea-section .box {
   position: relative;
   width: 100%;
@@ -199,33 +200,34 @@ main {
   position: absolute;
   bottom: 10px;
   right: 10px;
-
   color: var(--s-color);
   font-size: 12pt;
   font-weight: 600;
 }
 
-.textarea-section .textarea {
+.textarea-section .textarea-box {
   width: 100%;
   max-width: 100%;
   height: 100px;
-
   outline: none;
   cursor: pointer;
-
   border: 1px solid var(--s-color);
   border-radius: 5px;
 }
 
-.container-agreement {
-  background-color: yellowgreen;
-  
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-}
+.container-agreement { width: 100%; }
 
-.container-agreement input { line-height:  27pt !important; background: red; }
+.container-agreement .checkbox { margin-left: 5pt; }
+
+.send-form {
+  background-color: var(--s-color);
+  padding: 7px;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
 
 #label-content {
   display: flex;
@@ -258,7 +260,7 @@ main {
   padding: 11px;
   cursor: pointer;
   outline: none;
-  rder-radius: 5px;
+  border-radius: 5px;
 }
 
 .inf-house select {
@@ -286,15 +288,11 @@ main {
   width: 100%;
 }
 
-
-
-
 /** Footer */
 .footer {
   background-color: var(--t-color);
   padding: 13px;
   width: 100;
-
   text-align: center;
 }
 
