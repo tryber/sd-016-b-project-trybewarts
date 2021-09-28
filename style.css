@@ -77,11 +77,8 @@ main {
   flex-direction: column;
 }
 
-#label-infos{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-right: 10px;
-  margin-left: 12px;
+#label-infos {
+  margin: 12px;
 }
 
 #terms {
