@@ -35,73 +35,54 @@ function characterCounter() {
   document.getElementById('counter').innerText = charactersRemaining;
 }
 
-function fullNameForm() {
-  const name = document.getElementById('input-name').value;
-  const lastName = document.getElementById('input-lastname').value;
-  const nameComplete = document.getElementById('name-complete');
-  nameComplete.innerHTML = '';
-  const createP = document.createElement('p');
-  nameComplete.appendChild(createP);
-  createP.innerText = `Nome: ${name} ${lastName}`;
-}
-
-function emailHouseForm() {
-  const emailForm = document.getElementById('input-email').value;
-  const house = document.getElementById('house').value;
-  const getemailHouse = document.getElementById('email-house');
-  getemailHouse.innerHTML = '';
-  const createP = document.createElement('p');
-  getemailHouse.appendChild(createP);
-  createP.innerHTML = `Email: ${emailForm} <br> Casa: ${house}`;
-}
-
-function familySubjectsForm() {
-  const family = document.querySelector('input[name="family"]:checked').value;
+function getSubject() {
   const subject = document.querySelectorAll('input[class="subject form-check-input"]:checked');
   const subjectChecked = [];
   for (let index = 0; index < subject.length; index += 1) {
     subjectChecked.push(` ${subject[index].value}`);
   }
-  const familySubjects = document.getElementById('container-radio-checkbox');
-  familySubjects.innerHTML = '';
-  const createP = document.createElement('p');
-  familySubjects.appendChild(createP);
-  createP.innerHTML = `Família: ${family} <br> Matérias: ${subjectChecked}`;
+  return subjectChecked;
 }
 
-function rateForm() {
-  const rate = document.querySelector('input[name="rate"]:checked').value;
-  const avaliator = document.getElementById('avaliator-container');
-  avaliator.innerHTML = '';
-  const createP = document.createElement('p');
-  avaliator.appendChild(createP);
-  createP.innerText = `Avaliação: ${rate}`;
+function getValues() {
+  const name = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  const inputs = [
+    `${name} ${lastName}`,
+    document.getElementById('input-email').value,
+    document.getElementById('house').value,
+    document.querySelector('input[name="family"]:checked').value,
+    getSubject(),
+    document.querySelector('input[name="rate"]:checked').value,
+    document.getElementById('textarea').value,
+  ];
+  return inputs;
 }
 
-function comentForm() {
-  const coment = document.getElementById('textarea').value;
-  const getComentDiv = document.getElementById('comment-container');
-  getComentDiv.innerHTML = '';
-  const createP = document.createElement('p');
-  getComentDiv.appendChild(createP);
-  createP.innerText = `Observações: ${coment}`;
-}
-
-function clear() {
-  const terms = document.getElementById('terms');
-  const button = document.getElementById('submit-btn');
-  terms.remove();
-  button.remove();
+function writeInputs(array, local) {
+  const descriptions = [
+    'Nome: ',
+    'Email: ',
+    'Casa: ',
+    'Família: ',
+    'Matérias: ',
+    'Avaliação: ',
+    'Observações: ',
+  ];
+  for (let index = 0; index < array.length; index += 1) {
+    const createP = document.createElement('p');
+    local.appendChild(createP);
+    createP.innerText = `${descriptions[index]}${array[index]}`;
+    createP.className = 'text-start';
+  }
 }
 
 function updates(event) {
   event.preventDefault();
-  fullNameForm();
-  emailHouseForm();
-  familySubjectsForm();
-  rateForm();
-  comentForm();
-  clear();
+  const inputsForm = getValues();
+  const getForm = document.getElementById('evaluation-form');
+  getForm.innerHTML = '';
+  writeInputs(inputsForm, getForm);
 }
 
 window.onload = function () {
