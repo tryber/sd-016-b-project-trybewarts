@@ -8,28 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header"> 
+    <header class="header">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class='trybewarts-login'>
             <label for="email"> </label>
-            <input type="email" name="email" id="email" placeholder="Email" required> 
-            
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
             <label for="password"> </label>
-            <input type="password" name="password" id="password" placeholder="Senha" required> 
-            
+            <input type="password" name="password" id="password" placeholder="Senha" required>
+
             <button type="button" id="botaoEntrar" value="Entrar">Entrar</button>
-        </form>        
+        </form>
     </header>
     <main>
-        <form action="#" method="GET" id="evaluation-form"> 
+        <form action="#" method="GET" id="evaluation-form">
             <div class="name-lastname">
                 <input id="input-name" placeholder="Nome">
-
                 <input id="input-lastname" placeholder="Sobrenome">
             </div>
             <div class="email-house">
-                <input id="input-email" placeholder="Email">
+                <input id="input-email" placeholder="Email">Casa
                 <select name="Casa" id="house">
                     <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                     <option value="Reactpuff" id='reactpuff-house'>Reactpuff</option>
@@ -37,12 +36,16 @@
                     <option value="Pytherina" id='pytherina-house'>Pytherina</option>
                 </select>
             </div>
+            <hr>
             <div>
                 <div class="user-family">
                     <h4 id="label-family">Qual sua família?</h4>
-                    <label>Frontend <input type="radio" name="family" value="Frontend"></label>
-                    <label>Backend <input type="radio" name="family" value="Backend"></label>
-                    <label>FullStack <input type="radio" name="family" value="FullStack"></label>
+                    <label>
+                        <input type="radio" name="family" value="Frontend"> Frontend</label>
+                    <label>
+                        <input type="radio" name="family" value="Backend"> Backend</label>
+                    <label>
+                        <input type="radio" name="family" value="FullStack"> FullStack</label>
                 </div>
 
                 <div id='inputs-conteudo'>
@@ -76,7 +79,7 @@
                     <label>8 <input type="radio" name="rate" value="8"></label>
                     <label>9 <input type="radio" name="rate" value="9"></label>
                     <label>10 <input type="radio" name="rate" value="10"></label>
-                </div>    
+                </div>
             </div>
 
             <label class="textarea" for="">Deixe seu comentário:
@@ -90,7 +93,7 @@
 
             <button type="submit" name="submit" id='submit-btn' disabled >Enviar</button>
 
-        </form> 
+        </form>
 
         <img id="trybewarts-forms-logo" src="/images/trybewarts-colored.svg"><img>
 
@@ -98,6 +101,6 @@
 
     <footer>Direitos reservados à Trybewarts©</footer>
     <script src="./script.js"> </script>
-    
+
 </body>
 </html>
