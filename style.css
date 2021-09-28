@@ -17,21 +17,28 @@ header form {
 }
 
 /* REQUISITO 3 */
-main form {
+/* main form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+ */
+
+ /* REQUISITO 5  */
+main {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+#evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
 }
 
-/* REQUISITO 5
-
-main {
-  display: flex;
-  justify-content: flex-end;
-  width: auto;
-} */
-
-img {
+/* REQUISITO 7 */
+#trybewarts-forms-logo {
   height: 500px;
 }
 
