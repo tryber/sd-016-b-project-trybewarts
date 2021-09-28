@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color:rgb(233, 233, 233)
+  background-color: rgb(233, 233, 233);
 }
 
 hr {
@@ -13,16 +13,17 @@ hr {
   align-self: center;
 }
 
-.header {
-  background-color: rgb(50, 167, 145);
+button {
+  cursor: pointer;
 }
 
-#background{
-  justify-content: space-between;
+.header {
   display: flex;
-  color: white;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 10px;
+  background-color: rgb(50, 167, 145);
+  color: white;
+  padding: 0 10px;
 }
 
 .trybewarts-header-logo {
@@ -34,8 +35,8 @@ hr {
   display: flex;
 }
 
-.login{
-  padding:9px ;
+.login {
+  padding: 9px;
   border-radius: 8px;
   border-style: none;
   width: 130px;
@@ -45,8 +46,8 @@ hr {
   margin-right: 10px;
 }
 
-#header-button{
-  background-color: purple;
+#header-button {
+  background-color: rgb(78, 44, 131);
   color: white;
 }
 
@@ -59,30 +60,30 @@ hr {
   display: flex;
   width: 675px;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
-#evaluation-form h2{
+#evaluation-form h2 {
   text-align: center;
   margin: 25px;
 }
 
 .cadastro1 {
-width: 46%;
-padding: 10px;
-border-radius: 5px;
-border-style: none;
-margin-bottom: 5px;
+  width: 46%;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  margin-bottom: 5px;
 }
 
-.cadastro2{
+.cadastro2 {
   width: 46%;
   padding: 10px;
   border-style: none;
   border-radius: 5px;
 }
 
-#house{
+#house {
   width: 43%;
 }
 
@@ -93,12 +94,7 @@ margin-bottom: 5px;
   margin: 0 10px;
 }
 
-.family-container , .conteudo-container{
-  display: flex;
-  flex-direction: column;
-}
-
-#label-family {
+.family-container , .conteudo-container , #label-family {
   display: flex;
   flex-direction: column;
 }
@@ -106,10 +102,34 @@ margin-bottom: 5px;
 .avaliacao {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .avaliacao label {
   margin-right: 10px;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#textarea {
+  border-radius: 5px;
+}
+
+.agreement {
+  margin-bottom: 10px;
+}
+
+#submit-btn {
+  background-color: rgb(78, 44, 131);
+  color: white;
+  border-style: none;
+  border-radius: 6px;
+  padding: 6px 0;
+  margin: 10px 5px;
 }
 
 .aside-content {
@@ -117,5 +137,15 @@ margin-bottom: 5px;
 }
 
 #trybewarts-forms-logo {
-  height: 400px;
+  height: 500px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  padding: 8px;
+  margin-top: 20px;
 }
