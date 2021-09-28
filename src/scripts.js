@@ -29,15 +29,15 @@ contractCheck.addEventListener('click', () => {
 
 
 // Requisito 20 - add contador com caracteres disponiveis
-const textArea = document.querySelector('#textarea')
-const remainingCaracteres = document.querySelector('#counter')
-const MAX_CARACTERES = 500
+const textArea = document.querySelector('#textarea');
+const remainingCaracteres = document.querySelector('#counter');
+const MAX_CARACTERES = 500;
 
 textArea.addEventListener('input', () => {
-  const remaining = (MAX_CARACTERES - textArea.value.length)
+  const remaining = (MAX_CARACTERES - textArea.value.length);
 
   remainingCaracteres.textContent = `${remaining} caracteres disponiveis `
-})
+});
 
 const contaCaracter = query('#textarea');
 contaCaracter.addEventListener('keyup', (event) => {
