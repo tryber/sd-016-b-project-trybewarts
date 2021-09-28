@@ -8,20 +8,6 @@ body {
   background-color: rgb(239, 239, 239);
 }
 
-.inputs-e-selects {
-  width: 100%; /* Reset p/ forms input */
-  height: 3em;
-  border: none;
-  border-radius: 3px;
-  margin: 0.25em;
-  padding-left: 1em;
-  color: dimgray;
-}
-
-.entrada-dupla-em-linha label {
-  align-self: center;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -66,11 +52,6 @@ body {
   border-radius: 0.75em;
 }
 
-#submit-btn {
-  height: 3em;
-  font-weight: 900;
-}
-
 main {
   display: flex;
   justify-content: space-between;
@@ -86,9 +67,45 @@ main form {
   width: 675px; /* Requisito 21 */
 }
 
+.inputs-e-selects {
+  width: 100%; /* Reset p/ forms input */
+  height: 3em;
+  border: none;
+  border-radius: 3px;
+  margin: 0.25em;
+  padding-left: 1em;
+  color: dimgray;
+}
+
+.entrada-dupla-em-linha label {
+  align-self: center;
+}
+
 .entrada-dupla-em-linha {
   display: flex;
 }
+
+.familias , .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.familias div , .content div {
+  margin: 0.5em 0;
+}
+
+.content-caixa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container-central {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 
 #avaliacao-container {
   display: flex;
@@ -111,6 +128,12 @@ main form {
 #comentario-container {
   display: flex;
   flex-direction: column;
+  margin: 2em 0;
+}
+
+#submit-btn {
+  height: 3em;
+  font-weight: 900;
 }
 
 .right-arms {
