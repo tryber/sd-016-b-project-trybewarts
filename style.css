@@ -16,15 +16,7 @@ header form {
   display: flex;
 }
 
-/* REQUISITO 3 */
-/* main form {
-  display: flex;
-  flex-direction: column;
-  width: 675px;
-}
- */
-
- /* REQUISITO 5  */
+/* REQUISITO 5  */
 main {
   display: flex;
   justify-content: flex-end;
