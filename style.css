@@ -30,11 +30,11 @@ main {
   display: flex;
 }
 
-#name-complete, #email-house {
+#name-complete , #email-house {
   display: flex;
 }
 
-#input-name, #input-email {
+#input-name , #input-email {
   margin-right: 5px;
 }
 
@@ -65,7 +65,6 @@ main {
 #comment-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .counter-line {
@@ -86,7 +85,7 @@ main {
 }
 
 .footer {
-  background-color: #212529;
+  background-color: #22262b;
   margin-top: 20px;
   color: antiquewhite;
   padding: 10px;
