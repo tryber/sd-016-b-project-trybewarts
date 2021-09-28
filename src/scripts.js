@@ -35,7 +35,8 @@ const MAX_CARACTERES = 500;
 textArea.addEventListener('input', () => {
   const remaining = (MAX_CARACTERES - textArea.value.length);
 
-  remainingCaracteres.textContent = `${remaining} caracteres disponiveis`
+  remainingCaracteres.textContent =
+    `${remaining} caracteres disponiveis`
 });
 
 const contaCaracter = query('#textarea');
