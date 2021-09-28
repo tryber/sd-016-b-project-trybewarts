@@ -1,5 +1,7 @@
 :root {
-  --color-green: red;
+  --p-color: rgb(050, 167, 145);
+  --s-color: rgb(079, 050, 131);
+  --t-color: rgb(060, 064, 074);
 }
 
 /** Definição de configurações globais iniciais; */
@@ -15,6 +17,8 @@ body {
   background-color: rgb(237, 237, 237);
 }
 
+h3 { font-size: 11pt; letter-spacing: 1pt; line-height: 27pt; }
+
 /** Prototipos de centralização; */
 .center { margin: 0 auto; }
 
@@ -28,7 +32,6 @@ body {
 
 .flex-space-between { justify-content: space-between; }
 
-
 /* Correções de tela; */
 
 @media screen and ( max-width : 900px ) {
@@ -41,7 +44,7 @@ body {
 .header {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(50, 167, 145);
+  background-color: var(--p-color);
   justify-content: space-between;
   align-items: center;
   padding: 1vh 2vw;
@@ -73,7 +76,7 @@ body {
 
 /* botao */
 .trybewarts-login button {
-  background-color: rgb(078, 44, 131);
+  background-color: var(--s-color);
   width: 32%;
   height: 100%;
   color: white;
@@ -130,22 +133,41 @@ main {
   justify-content: space-around;
 }
 
+.container-family label {
+  padding: 7px 0;
+  font-size: 11pt;
+  font-weight: 600;
+}
+
+.container-family label input { margin-right: 5px; }
+
+/* campos: aprender; */
 .container-content {
   width: 49%;
   display: flex;
   flex-direction: column;
 }
 
+/* Checkbox secao */
 .check-options {
-  text-align: center;
 }
 
+/* checkbox label do elemento -> linha de baixo */
+.check-options label:nth-of-type(4n) { clear: both; }
+
+/* checkbox labels dos elementos */
 .check-options label {
-  background: red;
-  width: calc(100% / 4 + 150px);
+  padding: 7px;
+  float: left;
+  display: block;
+
+  font-size: 11pt;
+  font-weight: 600;
 }
 
-.subject:checked { background: red; }
+/* checkbox caixa elemeento */
+.check-options label .subject { margin-right: 5px; }
+
 
 .container-rate {
   display: flex;
@@ -181,10 +203,10 @@ main {
   justify-content: space-around;
 }
 
-.body-forms label , .body-forms input { margin: 2px;
+.inf-house label , .inf-house input { margin: 2px;
   width: 100%; }
 
-.body-forms input , .body-forms .house {
+.inf-house input , .inf-house .house {
   background-color: white;
   padding: 11px;
   cursor: pointer;
@@ -192,19 +214,19 @@ main {
   border-radius: 5px;
 }
 
-.body-forms select {
+.inf-house select {
   width: 80%;
   text-align: center;
 }
 
-.body-forms .label-house {
+.inf-house .label-house {
   vertical-align: center;
   text-align: right;
 
 }
 
-.body-forms input:focus {
-  border: 1.5px solid rgb(078, 44, 131);
+.inf-house input:focus {
+  border: 1.5px solid var(--s-color);
 }
 
 /*
@@ -213,7 +235,24 @@ main {
 
 .inf-house , .inf-family {
   padding: 11px 7px 27px;
-  border-bottom: 1px solid rgb(127, 127, 127);
+  border-bottom: 1px solid var(--t-color);
   width: 100%;
 }
 
+
+
+
+/** Footer */
+.footer {
+  background-color: var(--t-color);
+  padding: 13px;
+  width: 100;
+
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+  font-size: 14pt;
+  font-weight: 600;
+}
