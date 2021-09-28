@@ -9,7 +9,7 @@
 }
 
 .header .trybewarts-header-logo {
-    height: 100%;
+  height: 100%;
 }
 
 header form {
@@ -23,28 +23,27 @@ main form {
   width: 675px;
 }
 
-/* REQUISITO 5 */
-/* main {
+/* REQUISITO 5
+
+main {
   display: flex;
   justify-content: flex-end;
-  width: auto; */
-}
+  width: auto;
+} */
 
 img {
-  height: 500px ;    
+  height: 500px;
 }
 
 /* REQUISITO 11 */
-
 .textarea {
   display: flex;
   flex-direction: column;
-} 
+}
 
 #inputs-conteudo {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .opnion {
@@ -52,6 +51,6 @@ img {
 }
 
 .user-family {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
