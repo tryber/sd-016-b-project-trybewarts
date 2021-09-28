@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: white;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
