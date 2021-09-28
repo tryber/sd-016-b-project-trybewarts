@@ -44,22 +44,20 @@ body {
 }
 
 .main-container {
-  margin-left: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin-left: 50px;
 }
 
 #evaluation-form h2{
   text-align: center;
   margin: 25px;
-}
-
-.main-container , #evaluation-form {
-  display: flex;
-}
-
-
-#evaluation-form {
-  width: 675px;
-  flex-direction: column;
 }
 
 .cadastro1 {
@@ -70,15 +68,15 @@ border-style: none;
 margin-bottom: 5px;
 }
 
-#house{
-  width: 43%;
-}
-
 .cadastro2{
   width: 46%;
   padding: 10px;
   border-style: none;
   border-radius: 5px;
+}
+
+#house{
+  width: 43%;
 }
 
 hr {
@@ -106,14 +104,12 @@ hr {
   justify-content: space-around;
 }
 
-#trybewarts-forms-logo {
+.aside-content {
   display: flex;
-  height: 500px;
-  align-self: flex-end;
 }
 
-fieldset {
-  width: 550px;
+#trybewarts-forms-logo {
+  height: 400px;
 }
 
 #label-family {
