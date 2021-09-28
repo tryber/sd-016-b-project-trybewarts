@@ -48,6 +48,15 @@ main {
   margin-top: 5%;
 }
 
+.container-checkbox-radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.solo-checkbox-1 input , .solo-checkbox-2 input {
+  margin-right: 10px;
+}
+
 .div-row-container {
   display: flex;
 }
