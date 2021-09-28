@@ -1,4 +1,4 @@
-/* REQUISITO 3 */
+/* REQUISITO_3 */
 const buttonEntrar = document.getElementById('botaoEntrar');
 const inputLogin = document.getElementById('email');
 const inputPassword = document.getElementById('password');
