@@ -25,7 +25,7 @@ function createCheckbox(learningArray) {
   return newCheck;
 }
 
-// Funcao para criar os inputs do tipo radio da secao da familia
+// Funcao para criar os inputs do tipo radio da secao das familias
 function createInput(positionId, familyArray) {
   const newInput = document.createElement('input');
   newInput.id = positionId;
