@@ -134,6 +134,19 @@ main form {
   margin: 2em 0;
 }
 
+#textarea {
+  resize: none;
+  border: 1px rgb(78, 44, 131) solid;
+  border-radius: 5px;
+}
+
+#counter {
+  position: relative;
+  align-self: end;
+  bottom: 1.25em;
+  left: -0.25em;
+}
+
 #submit-btn {
   height: 3.5em;
   font-weight: 900;
