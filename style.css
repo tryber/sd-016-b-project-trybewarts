@@ -4,13 +4,18 @@
 }
 
 .header {
-  display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
-  color: beige;
 }
 
-header img {
+#background{
+  justify-content: space-between;
+  display: flex;
+  color: white;
+  align-items: center;
+  margin: 1px 10px;
+}
+
+#background img {
   width: 60px;
 }
 
@@ -18,13 +23,32 @@ header img {
   display: flex;
 }
 
+.main-container {
+  margin-left: 100px;
+}
+
+.main-container h2{
+  flex-direction: column;
+}
+
 .main-container , #evaluation-form {
   display: flex;
 }
 
+
 #evaluation-form {
   width: 675px;
   flex-direction: column;
+}
+
+#cadastro {
+padding: 20px;
+}
+
+.mid-content {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
 }
 
 .family-container {
@@ -42,12 +66,6 @@ header img {
   justify-content: space-around;
 }
 
-
-.aside-content {
-  display: flex;
-  justify-content: flex-end;
-}
-
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
@@ -61,4 +79,20 @@ fieldset {
 #label-family {
   display: flex;
   flex-direction: column;
+}
+
+#header-button{
+  background-color: purple;
+  color: white;
+  width: 150px;
+}
+
+.login{
+  padding:8px ;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.login input {
+  width: 150px;
 }
