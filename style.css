@@ -113,3 +113,7 @@ html {
   background-color: rgba(211, 211, 211, 0.87);
   cursor: default;
 }
+
+#div-counter {
+  margin-left: 100px;
+}
