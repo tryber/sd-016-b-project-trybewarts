@@ -93,19 +93,23 @@ margin-bottom: 5px;
   margin: 0 10px;
 }
 
-.family-container {
+.family-container , .conteudo-container{
   display: flex;
   flex-direction: column;
 }
 
-.conteudo-container {
+#label-family {
   display: flex;
   flex-direction: column;
 }
 
 .avaliacao {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.avaliacao label {
+  margin-right: 10px;
 }
 
 .aside-content {
@@ -115,11 +119,3 @@ margin-bottom: 5px;
 #trybewarts-forms-logo {
   height: 400px;
 }
-
-#label-family {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
