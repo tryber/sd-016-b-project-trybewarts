@@ -1,0 +1,93 @@
+body {
+  background-color: rgb(239, 239, 239);
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  color: rgb(239, 239, 239);
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.trybewarts-header-logo {
+  width: 70px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.topnav {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#form-title {
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-top: 5%;
+}
+
+.container-checkbox-radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.solo-checkbox-1 input , .solo-checkbox-2 input {
+  margin-right: 10px;
+}
+
+.div-row-container {
+  display: flex;
+}
+
+.radio-family {
+  flex-direction: column;
+}
+
+.div-column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+  max-width: 88%;
+}
+
+#submit-btn {
+  margin-bottom: 100px;
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(60, 64, 74);
+  color: rgb(239, 239, 239);
+  bottom: 0;
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
