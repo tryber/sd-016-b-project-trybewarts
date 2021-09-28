@@ -7,4 +7,3 @@ function enable() {
   console.log('teste');
 }
 checkbox.addEventListener('click', enable);
-

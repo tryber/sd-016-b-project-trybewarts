@@ -40,13 +40,20 @@ main {
   flex-direction: column;
 }
 
+/* REQUISITO 13 */
 #inputs-conteudo {
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .opnion {
   display: flex;
+}
+
+#rate {
+  display: flex;
+  align-items: center;
 }
 
 .user-family {
@@ -54,12 +61,6 @@ main {
   flex-direction: column;
 }
 
-/* REQUISITO 13 */
-#inputs-conteudo {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-}
 
 #label-inputs {
   margin-top: 5px;
