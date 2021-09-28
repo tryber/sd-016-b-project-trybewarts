@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(231, 233, 235);
+}
+
+header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+header img {
+  width: 80px;
+  margin-left: 15px;
+}
+
+header h1 {
+  color: white;
+  font-size: 45px;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-login input {
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+  margin: 5px;
+}
+
+.trybewarts-login button {
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  border: 0;
+  border-radius: 5px;
+  background-color: purple;
+  color: white;
+}
+
+main {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-flow: column wrap;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#evaluation-form h1 {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.form-content {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-container input , select {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+}
+
+.family-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.input-container {
+  margin: 3px 5px;
+}
+
+.skils-container {
+  padding: 10px;
+}
+
+.check-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.check-container div {
+  width: 80px;
+}
+
+.radio {
+  margin: 10px;
+}
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.textarea-container span {
+  align-self: end;
+}
+
+textarea {
+  resize: none;
+  padding: 2px;
+}
+
+.agreement-container {
+  margin: 10px;
+  font-size: 18px;
+}
+
+#submit-btn {
+  padding: 10px;
+  margin: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: purple;
+  color: white;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
+  bottom: 0;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
