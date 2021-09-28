@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Trybewarts Project</title>
+</head>
+<body>
+  <header class="header d-flex justify-content-between align-items-center px-4">
+    <!-- IMAGEM LOGO -->
+    <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt="Trybewarts school logo image: The letter T inside a geometric shape.">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <!-- FORMULÁRIO LOGIN -->
+    <form action="" class="trybewarts-login d-flex">
+      <input type="email" class="trybewarts-email form-control" name="email" placeholder="Email" required>
+      <input type="password" class="trybewarts-password form-control" name="password" placeholder="Senha" required>
+      <button class="trybewarts-submit">Entrar</button>
+    </form>
+  </header>
+  <main class="d-flex justify-content-evenly">
+    <form id="evaluation-form" class="d-flex flex-column">
+      <div class="name-lastname-container d-flex mt-4">
+        <input type="text" id="input-name" class="form-control input-name" name="nome" placeholder="Nome" required>
+        <input type="text" id="input-lastname" class="form-control" name="sobrenome" placeholder="Sobrenome" required>
+      </div>
+      <div class="email-select-container d-flex mt-2">
+        <input type="text" id="input-email" class="form-control input-email" name="email" placeholder="Email" required>
+        <label for="house">Casa: </label>
+        <select name="casa" id="house" class="form-select d-flex">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+      <div class="d-flex justify-content-between border-bottom border-top trybewarts-family">
+        <div class="family-container d-flex flex-column">
+          <label for="" id="label-family">Qual sua família?</label>
+        </div>
+        <div>
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="learning-container d-flex justify-content-around">
+          </div>
+        </div>
+      </div>
+      <div class="rating-container form-check d-flex align-items-center py-3 m-0 justify-content-evenly">
+        <label for="" id="label-rate" class="form-check-label">Como você avalia a Trybewarts?</label>
+      </div>
+      <label for="textarea" class="textarea">Deixe seu comentário:</label>
+      <textarea name="Coment" id="textarea" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
+      <legend id="counter" class="d-flex justify-content-end fs-7">500</legend>
+      <div class="check-info form-check align-items-center py-3 m-0 justify-content-evenly">
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" id="agreement" class="subject form-check-input">
+      </div>
+      <button id="submit-btn" type="submit" class="btn mt-2" disabled>Enviar</button>
+    </form>
+    <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" class="d-flex align-content-center flex-column mt-5 img-fluid" alt="">
+  </main>
+  <footer class="d-flex flex-column-reverse justify-content-center align-items-center py-3 mt-4 border-top">
+    <div>
+      <p>Direitos reservados à Trybewarts©</p>
+    </div>
+    <div>
+      <p>Desenvolvido por: Bruno Ribeiro e Lucas Araújo Carvalho</p>
+    </div>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
