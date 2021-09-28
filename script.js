@@ -11,15 +11,14 @@ function login(event) {
     alert('Email ou senha inválidos.');
   }
 }
-
 buttonEntrar.addEventListener('click', login);
 
 const submitBtn = document.getElementById('submit-btn');
-let checkbox = document.getElementById('agreement');
+const checkbox = document.getElementById('agreement');
 
 function enable() {
   // checkbox.checked == true {
   submitBtn.removeAttribute('disabled');
-  console.log("teste");
+  console.log('teste');
 }
 checkbox.addEventListener('click', enable);
