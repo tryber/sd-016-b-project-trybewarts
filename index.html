@@ -20,18 +20,20 @@
     </form>
   </header>
   <main>
-    <form id="evaluation-form" action="">
+    <form id="evaluation-form" action="" method="">
       <!-- requisito 8 e 10 -->
       <div class="entrada-dupla-em-linha">
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
+        <label for="input-name">Nome:</label>
+        <input type="text" id="input-name" placeholder="Nome" name='Nome'>
+        <input type="text" id="input-lastname" placeholder="Sobrenome" name='Sobrenome'>
       </div>
       <!-- Requisito 11 -->
       <div class="entrada-dupla-em-linha">
-        <input type="email" id="input-email" placeholder="Email">
+        <label for="input-email">Email:</label>
+        <input type="email" id="input-email" name="Email" placeholder="Email">
         <!-- requisito 9 -->
         <label for="house">Casa:</label>
-        <select name="casa" id="house">
+        <select name="Casa" id="house">
           <option value="" disabled selected>selecione sua casa</option>
           <option value="Gitnória" id="gitnoria-house">Gitnória</option> 
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option> 
@@ -53,17 +55,17 @@
       <!-- requisito 13 -->
       <div class ="content">
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <input id="hofs" type="checkbox" value="HoFs">
+        <input class="subject" name="Materias" id="hofs" type="checkbox" value="HoFs">
         <label for="hofs">Hofs</label>
-        <input id="jest" type="checkbox" value="Jest">
+        <input class="subject" name="Materias" id="jest" type="checkbox" value="Jest">
         <label for="jest">Jest</label>
-        <input id="promisses" type="checkbox" value="Promises">
+        <input class="subject" name="Materias" id="promisses" type="checkbox" value="Promises">
         <label for="promisses">Promisses</label>
-        <input id="react" type="checkbox" value="React">
+        <input class="subject" name="Materias" id="react" type="checkbox" value="React">
         <label for="react">React</label>
-        <input id="sql" type="checkbox" value="SQL">
+        <input class="subject" name="Materias" id="sql" type="checkbox" value="SQL">
         <label for="sql">SQL</label>
-        <input id="python" type="checkbox" value="Python">
+        <input class="subject" name="Materias" id="python" type="checkbox" value="Python">
         <label for="python">Python</label>
       </div>
       <hr>
