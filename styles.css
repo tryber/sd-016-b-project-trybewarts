@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(239, 239, 239);
+}
+
 input {
   width: 100%; /* Reset p/ forms input */
 }
@@ -103,6 +107,11 @@ main form {
 .right-arms img {
   display: flex;
   height: 500px;
+}
+
+hr {
+  margin: 2em;
+  border: 1px solid gray;
 }
 
 /* REQUISITO 19 OK */
