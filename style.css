@@ -41,7 +41,6 @@ body {
 
 .trybewarts-submit:hover {
   background-color: rgba(143, 2, 2, 0.6);
-  border: 1px solid rgb(143, 2, 2);
   color: white;
 }
 
@@ -121,7 +120,7 @@ footer {
 }
 
 .fs-7 {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 @media screen and ( max-width : 900px ) {
