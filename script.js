@@ -15,12 +15,11 @@ function login(event) {
 buttonEntrar.addEventListener('click', login);
 
 let submitBtn = document.getElementById('submit-btn')
-let checkbox = document.getElementById('agreement')
+var checkbox = document.getElementById('agreement')
 
 function enable(){
   // checkbox.checked == true {
-    // document.getElementById('submit-btn').removeAttribute("disabled");
-    submitBtn.disabled = !submitBtn.disabled
-  }
+    submitBtn.removeAttribute("disabled");
+    console.log("teste")
 };
 checkbox.addEventListener('click', enable);
