@@ -3,6 +3,7 @@ const inputEmail = document.getElementById('email-login');
 const inputPassword = document.getElementById('password-login');
 const botaoSubmit = document.getElementById('submit-btn');
 const agreed = document.getElementById('agreement');
+const areaContador = document.querySelector('#textarea');
 
 function checkLogin() {
   if (inputEmail.value === 'tryber@teste.com' && inputPassword.value === '123456') {
@@ -22,3 +23,10 @@ function disable() {
 
 agreed.addEventListener('change', disable);
 botaoLogin.addEventListener('click', checkLogin);
+
+function contador() {
+  let contadorValor = document.querySelector('#textarea').textLength;
+  let number = 500 - contadorValor;
+  document.querySelector('#counter').innerHTML = number;
+}
+areaContador.addEventListener('keyup', contador);

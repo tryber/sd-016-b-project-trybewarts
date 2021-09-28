@@ -77,9 +77,15 @@
           </label>
             <textarea id="textarea" rows="8" maxlength="500"></textarea>
         </div>
+        <!-- submit informacoes e contador -->
         <div class="flexbox">
-          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
-            <input type="checkbox" id="agreement"></label>
+          <div class="flexbox">
+            <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
+              <input type="checkbox" id="agreement"></label>
+          </div>
+          <div>
+            <p>você possui <em id="counter">500</em> character</p>
+          </div>
         </div>
         <button type="submit" class="btn" id="submit-btn" disabled>Enviar</button>
       </form>
