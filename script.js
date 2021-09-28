@@ -52,12 +52,12 @@ function emailHouseForm() {
   getemailHouse.innerHTML = '';
   const createP = document.createElement('p');
   getemailHouse.appendChild(createP);
-  createP.innerText = `Email: ${emailForm} || Casa: ${house}`;
+  createP.innerHTML = `Email: ${emailForm} <br> Casa: ${house}`;
 }
 
 function familySubjectsForm() {
   const family = document.querySelector('input[name="family"]:checked').value;
-  const subject = document.querySelectorAll('input[class="subject"]:checked');
+  const subject = document.querySelectorAll('input[class="subject form-check-input"]:checked');
   const subjectChecked = [];
   for (let index = 0; index < subject.length; index += 1) {
     subjectChecked.push(` ${subject[index].value}`);
@@ -66,7 +66,7 @@ function familySubjectsForm() {
   familySubjects.innerHTML = '';
   const createP = document.createElement('p');
   familySubjects.appendChild(createP);
-  createP.innerText = `Família: ${family} || Matérias: ${subjectChecked}`;
+  createP.innerHTML = `Família: ${family} <br> Matérias: ${subjectChecked}`;
 }
 
 function rateForm() {
