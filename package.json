@@ -38,5 +38,8 @@
     "mochawesome-report-generator": "5.2.0",
     "stylelint": "13.11.0",
     "stylelint-config-standard": "20.0.0"
+  },
+  "dependencies": {
+    "just-validate": "^1.5.0"
   }
 }
