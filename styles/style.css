@@ -1,7 +1,8 @@
-/**
- * SETUP;
- */
+:root {
+  --color-green: red;
+}
 
+/** Definição de configurações globais iniciais; */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,33 +10,34 @@
   border: 0;
 }
 
+/** Corpo da pagina; */
 body {
   background-color: rgb(237, 237, 237);
 }
 
+/** Prototipos de centralização; */
 .center { margin: 0 auto; }
-.wrapper { width: calc(90%); }
+
+/** Prototipos de container; */
+.wrapper { width: 90%; }
+
+/** Prototipos de exibição flexível; */
 .flex { display: flex; }
+
 .flex.space-around { justify-content: space-around; }
+
 .flex-space-between { justify-content: space-between; }
 
-/* Font legacy */
-@font-face {
-  font-family: rockabye-regular;
-  src: url('../fonts/rockabye.otf');
-}
 
-/* Corrections to resolution x */
+/* Correções de tela; */
+
 @media screen and ( max-width : 900px ) {
 
+  /** Define uma medida menor para o titulo do header; */
   .trybewarts-header-title { font-size: 17pt;}
 }
 
-
-/**
-* HEADER;
-*/
-
+/** Cabeçalho; */
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +47,7 @@ body {
   padding: 1vh 2vw;
 }
 
-/* forms */
+/* formulario */
 .trybewarts-login {
   display: flex;
   justify-content: space-between;
@@ -55,6 +57,7 @@ body {
   min-height: 20px;
 }
 
+/* campos; */
 .trybewarts-login input {
   width: 32%;
   min-width: 71px;
@@ -64,8 +67,11 @@ body {
   padding-left: 11px;
 }
 
-.trybewarts-login input::placeholder { font-weight: 800; color: rgb(147, 147, 147); }
+/* texto de orientação; */
+.trybewarts-login input::placeholder { font-weight: 800;
+  color: rgb(147, 147, 147); }
 
+/* botao */
 .trybewarts-login button {
   background-color: rgb(078, 44, 131);
   width: 32%;
@@ -75,58 +81,76 @@ body {
   cursor: pointer;
 }
 
-/* title */
+/* titulo */
 .trybewarts-header-title {
   align-self: center;
   color: white;
-  font-family: rockabye-regular, serif;
   letter-spacing: 4px;
 }
 
-/* image */
+/* icone */
 .trybewarts-header-logo {
   width: 5%;
   min-width: 40px;
 }
 
+/** Conteudo principal; */
 main {
   display: flex;
 }
 
+/* formulario; */
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
 }
 
+/* heroi; */
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.user-names {
+/* campos: nome e sobrenome; e-mail; */
+.user-names , .user-email-house {
   display: flex;
 }
 
-.user-email-house {
+/* secao familia */
+.family-content {
   display: flex;
+  justify-content: space-between;
 }
 
+/* campos: familia; */
 .container-family {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container-content {
+  width: 49%;
   display: flex;
   flex-direction: column;
 }
+
+.check-options {
+  text-align: center;
+}
+
+.check-options label {
+  background: red;
+  width: calc(100% / 4 + 150px);
+}
+
+.subject:checked { background: red; }
 
 .container-rate {
   display: flex;
 }
 
-.family-content {
-  display: flex;
-}
-
-.container-content div {
-  width: 35%;
-}
 
 .container-agreement {
   display: flex;
@@ -137,14 +161,18 @@ main {
 #label-content {
   display: flex;
 }
+
 /**
 * Trybewarts HERO;
 */
+
 .trybewarts-hero { width: 37%; }
+
 
 /**
 * Main FORM;
 */
+
 .body-forms {
   margin: 14pt 0;
   max-width: 60%;
@@ -152,33 +180,40 @@ main {
   align-items: center;
   justify-content: space-around;
 }
-.body-forms label, .body-forms input { margin: 2px; width: 100%; }
-.body-forms input, .body-forms select {
+
+.body-forms label , .body-forms input { margin: 2px;
+  width: 100%; }
+
+.body-forms input , .body-forms .house {
   background-color: white;
   padding: 11px;
   cursor: pointer;
   outline: none;
   border-radius: 5px;
 }
+
 .body-forms select {
   width: 80%;
   text-align: center;
 }
 
-.body-forms label[for="house"] {
+.body-forms .label-house {
   vertical-align: center;
   text-align: right;
 
 }
 
-.boddy-forms input { width: 950px; }
-
 .body-forms input:focus {
   border: 1.5px solid rgb(078, 44, 131);
 }
 
-.inf-house {
-  padding: 11px 7px 27px 7px;
+/*
+* Sections Style;
+*/
+
+.inf-house , .inf-family {
+  padding: 11px 7px 27px;
   border-bottom: 1px solid rgb(127, 127, 127);
   width: 100%;
 }
+
