@@ -26,29 +26,11 @@ function t(n) {
 }
 
 function pegamateria() {
-  // let a = ''; // lint transformou uma função bonita em um caco :(
-  // if (document.querySelector('#hofs').checked) a = `${a} Hofs,`;
-  // if (document.querySelector('#jest').checked) a = `${a} Jest,`;
-  // if (document.querySelector('#promisses').checked) a = `${a} Promisses,`;
-  // if (document.querySelector('#react').checked) a = `${a} React,`;
-  // if (document.querySelector('#sql').checked) a = `${a} SQL,`;
-  // if (document.querySelector('#python').checked) a = `${a} Python,`;
   const a = `${t('Hofs')}${t('Jest')}${t('Promisses')}${t('React')}${t('SQL')}${t('Python')}`;
   return a.slice(0, a.length - 1);
 }
 
 function pegaavaliacao() {
-  // if (document.querySelector('#avalia-1').checked) return 1;  // lint maudito
-  // if (document.querySelector('#avalia-2').checked) return 2;
-  // if (document.querySelector('#avalia-3').checked) return 3;
-  // if (document.querySelector('#avalia-4').checked) return 4;
-  // if (document.querySelector('#avalia-5').checked) return 5;
-  // if (document.querySelector('#avalia-6').checked) return 6;
-  // if (document.querySelector('#avalia-7').checked) return 7;
-  // if (document.querySelector('#avalia-8').checked) return 8;
-  // if (document.querySelector('#avalia-9').checked) return 9;
-  // if (document.querySelector('#avalia-10').checked) return 10;
-
   for (let i = 1; i < 11; i += 1) {
     if (document.querySelector(`#avalia-${i}`).checked) return i;
   }

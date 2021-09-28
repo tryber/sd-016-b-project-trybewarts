@@ -63,6 +63,10 @@ main form {
   flex-direction: column;
 }
 
+#titulo-formulario {
+  text-align: center;
+}
+
 #evaluation-form {
   width: 675px; /* Requisito 21 */
 }
@@ -106,7 +110,6 @@ main form {
   width: 100%;
 }
 
-
 #avaliacao-container {
   display: flex;
   align-items: baseline;
@@ -132,8 +135,9 @@ main form {
 }
 
 #submit-btn {
-  height: 3em;
+  height: 3.5em;
   font-weight: 900;
+  margin: 1em 0;
 }
 
 .right-arms {
