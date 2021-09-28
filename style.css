@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(239, 239, 239);
+  font-size: 22px;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 15px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  height: 18px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 1px 1px rgb(212, 212, 212);
+
+}
+
+select {
+  padding: 10px;
+  margin-right: 10px;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 1px 1px rgb(212, 212, 212);
+  background-color: white;
+  width: 142px;
+  font-size: 20px;
+}
+
+.house-label {
+  align-items: center;
+  justify-content: center;
+}
+
+.trybewarts-header-logo {
+  height: 78px;
+  padding-left: 5px;
+}
+
+.trybewarts-login {
+  display: flex;
+  padding-right: 5px;
+}
+
+#buttonLogin {
+  background-color: rgb(79, 55, 132);
+  color: white;
+  font-size: medium;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 70px;
+}
+
+#main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 150px;
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+h2 {
+  padding: 20px;
+}
+
+.fullname {
+  display: flex;
+}
+
+.email-and-house {
+  display: flex;
+}
+
+.avaliation , #evaluation-form {
+  display: flex;
+}
+
+textarea {
+  resize: none;
+}
+
+#textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-btn {
+  background-color: rgb(79, 55, 132);
+  color: white;
+  font-size: medium;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+#footer {
+  background-color: rgb(36, 36, 36);
+  color: white;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+#char-counter {
+  text-align: right;
+}
+
+.radio-buttons {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+label , input {
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  margin-right: 5px;
+}
+
+#label-rate {
+  margin-right: 20px;
+}
+
+section {
+  margin: 20px;
+  font-size: 24px;
+  padding: 10px;
+}
