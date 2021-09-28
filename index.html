@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="./images/trybewarts-header-logo.svg">
+  <title>Trybewarts</title>
+  <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+  <!-- cria a caixa verde no topo da tela -->
+  <header class="header">
+    <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form class="trybewarts-login">
+        <input id="login-email" type="email" name="email" placeholder="Email">
+        <input id="login-senha" type="password" name="password" placeholder="Senha">
+        <button id="botao-entrar" type="button">Entrar</button>
+    </form>
+  </header>
+  <main>
+    <div>
+      <label id='titulo-formulario' for="evaluation-form"><h1>Formulário de Avaliação</h1></label><br>
+      <form id="evaluation-form" action="" method="">
+        <!-- requisito 8 e 10 -->
+        <div class="entrada-dupla-em-linha">
+          <input class="inputs-e-selects" type="text" id="input-name" placeholder="Nome" name='Nome'>
+          <input class="inputs-e-selects" type="text" id="input-lastname" placeholder="Sobrenome" name='Sobrenome'>
+        </div>
+        <!-- Requisito 11 -->
+        <div class="entrada-dupla-em-linha">
+          <input class="inputs-e-selects" type="email" id="input-email" name="Email" placeholder="Email">
+          <!-- requisito 9 -->
+          <label for="house">Casa:</label>
+          <select name="Casa" id="house" class="inputs-e-selects" >
+            <option value="" disabled selected>selecione sua casa</option>
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option> 
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option> 
+            <option value="Corvinode" id="corvinode-house">Corvinode</option> 
+            <option value="Pytherina" id="pytherina-house">Pytherina</option> 
+          </select>
+        </div>
+        <hr>
+        <!-- requisito 12 -->
+        <div class="container-central">
+          <div class="familias">
+            <label id="label-family">Qual sua família?</label>
+            <div>
+              <input id="Frontend" name="family" type="radio" value="Frontend">
+              <label for="Frontend">Família Frontend</label>
+            </div>
+            <div>
+              <input id="Backend" name="family" type="radio" value="Backend">
+              <label for="Backend">Família Backend</label> 
+            </div>
+            <div>
+              <input id="FullStack" name="family" type="radio" value="FullStack">
+              <label for="FullStack">Família FullStack</label> 
+            </div>
+          </div>  
+          <!-- requisito 13 -->
+          <div class ="content">
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div class="content-caixa">
+              <div class="itens">
+                <input class="subject" name="Materias" id="hofs" type="checkbox" value="HoFs">
+                <label for="hofs">Hofs</label>
+              </div>
+              <div class="itens">
+                <input class="subject" name="Materias" id="jest" type="checkbox" value="Jest">
+                <label for="jest">Jest</label>
+              </div>
+              <div class="itens">
+                <input class="subject" name="Materias" id="promisses" type="checkbox" value="Promises">
+                <label for="promisses">Promisses</label>
+              </div>
+              <div class="itens">
+                <input class="subject" name="Materias" id="react" type="checkbox" value="React">
+                <label for="react">React</label>
+              </div>
+              <div class="itens">
+                <input class="subject" name="Materias" id="sql" type="checkbox" value="SQL">
+                <label for="sql">SQL</label>
+              </div>
+              <div class="itens">
+                <input class="subject" name="Materias" id="python" type="checkbox" value="Python">
+                <label for="python">Python</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- requisito 14 -->
+        <div id="avaliacao-container">
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+          <div id="container1-10">
+            <label for="avalia-1">1</label>
+            <input id="avalia-1" name="rate" type="radio" value="1">
+            <label for="avalia-2">2</label>
+            <input id="avalia-2" name="rate" type="radio" value="2">
+            <label for="avalia-3">3</label>
+            <input id="avalia-3" name="rate" type="radio" value="3">
+            <label for="avalia-4">4</label>
+            <input id="avalia-4" name="rate" type="radio" value="4">
+            <label for="avalia-5">5</label>
+            <input id="avalia-5" name="rate" type="radio" value="5">
+            <label for="avalia-6">6</label>
+            <input id="avalia-6" name="rate" type="radio" value="6">
+            <label for="avalia-7">7</label>
+            <input id="avalia-7" name="rate" type="radio" value="7">
+            <label for="avalia-8">8</label>
+            <input id="avalia-8" name="rate" type="radio" value="8">
+            <label for="avalia-9">9</label>
+            <input id="avalia-9" name="rate" type="radio" value="9">
+            <label for="avalia-10">10</label>
+            <input id="avalia-10" name="rate" type="radio" value="10">
+          </div>
+        </div>
+        <!-- Requisito 15 -->
+        <div id="comentario-container">
+          <label for="comentario-caixa" class="textarea">Deixe seu comentário:</label>
+          <textarea name="comentario-caixa" id="textarea" cols="50" rows="10" maxlength="500"></textarea>
+        <!-- Requisito 20 -->
+          <label for="" id="counter">500</label>
+        </div>
+        <!-- Requisito 17 -->
+        <div id="aceitacao-container">
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" id="agreement">
+        </div>
+        <!-- Requisito 18 -->
+        <div id="enviar-container">
+          <button type="submit" id="submit-btn" disabled>Enviar</button>
+        </div>
+      </form>
+    </div>
+    <!-- requisito 7 -->
+    <div class="right-arms">
+      <img id="trybewarts-forms-logo" src="./images/trybewarts-colored.svg" alt="" >
+    </div>
+  </main>
+  
+  <!-- REQUISITO 19 OK -->
+  <footer>Direitos reservados à Trybewarts©</footer>
+  <script src="./script.js"></script>
+</body>
+</html>
+
+<!-- Só pra lembrar da linha no final do arquivo -->
