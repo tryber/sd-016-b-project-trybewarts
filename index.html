@@ -26,35 +26,37 @@
             </div>
             <div class ="email-and-house">
                 <input type="email" id="input-email" name="email" placeholder="Email">
-                <label for="house">Casa:</label>
+                <label id="house-label"for="house">Casa:
                 <select name="" id="house">
                 <option value="Gitnória"  id="gitnoria-house">Gitnória</option>
                 <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                 <option value="Corvinode" id="corvinode-house">Corvinode</option>
                 <option value="Pytherina" id="pytherina-house">Pytherina</option>
-                </select>
+                </select></label>
             </div>
-            <label for="family" id="label-family">Qual sua família?</label>
-            <label for="front">Frontend</label>
-            <input type="radio" id=front name="family" value="Frontend">
-            <label for="back">Backend</label>
-            <input type="radio" id=back name="family" value="Backend">
-            <label for="full">FullStack</label>
-            <input type="radio" id=full name="family" value="FullStack">
 
-            <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                <label class = radio-buttons for="family" id="label-family">Qual sua família?</label>
+                <label class = radio-buttons for="front">Frontend
+                <input class = radio-buttons type="radio" id=front name="family" value="Frontend"></label>
+                <label class = radio-buttons for="back">Backend
+                <input class = radio-buttons type="radio" id=back name="family" value="Backend"></label>
+                <label class = radio-buttons for="full">FullStack
+                <input class = radio-buttons type="radio" id=full name="family" value="FullStack"></label>
+
+         <div>
+            <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
             <label for="hofs">HoFs</label>
-            <input type="checkbox" name="content" value="HoFs"  id="hofs">
+            <input class = "checkboxes subject" type="checkbox" name="content" value="HoFs"  id="hofs">
             <label for="jest">Jest</label>
-            <input type="checkbox" name="content" value="Jest"  id="jest">
+            <input class = "checkboxes subject" type="checkbox" name="content" value="Jest"  id="jest">
             <label for="promises">Promises</label>
-            <input type="checkbox" name="content" value ="Promises" id="promises">
+            <input class = "checkboxes subject" type="checkbox" name="content" value ="Promises" id="promises">
             <label for="react">React</label>
-            <input type="checkbox" name="content" value="React" id="react">
+            <input class = "checkboxes subject" type="checkbox" name="content" value="React" id="react">
             <label for="sql">SQL</label>
-            <input type="checkbox" name="content" value ="SQL" id="sql">
+            <input class = "checkboxes subject" type="checkbox" name="content" value ="SQL" id="sql">
             <label for="python">Python</label>
-            <input type="checkbox" name="content" value="Python" id="python">
+            <input class = "checkboxes subject" type="checkbox" name="content" value="Python" id="python">
             <div class="avaliation">
             <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
             <label for="1">1</label>
@@ -77,6 +79,7 @@
             <input type="radio" name="rate" value="9">
             <label for="">10</label>
             <input type="radio" name="rate" value="10">
+        </div>
             </div>
             <div id="textarea">
             <label for="area" class="textarea">Deixe seu comentário:
@@ -90,6 +93,7 @@
             </div>
             <button type="submit" id="submit-btn" disabled>Enviar</button>
         </form>
+        <form action="" id ="new-form"></form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="trybewarts-forms-logo" height="500px">
     </main>
     <footer id="footer">Direitos reservados à Trybewarts©</footer>
