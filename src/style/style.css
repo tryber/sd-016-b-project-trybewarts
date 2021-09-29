@@ -157,8 +157,8 @@ button:disabled {
   background-color: rgba(245, 245, 245, 0.377);
 }
 
-.row:nth-of-type(odd){
-    background-color: rgba(170, 170, 170, 0.781);
+.row:nth-of-type( odd ) {
+  background-color: rgba(170, 170, 170, 0.781);
 }
 
 #trybewarts-forms-logo {
