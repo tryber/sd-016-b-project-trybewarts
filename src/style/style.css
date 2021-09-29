@@ -1,0 +1,666 @@
+@font-face {
+  font-family: haryFonts;
+  src: url('./HARRYP__.TTF');
+  color: whitesmoke;
+}
+
+/* fonte disponivel em  https://www.dafont.com/pt/harry-p.font */
+body , html {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  overflow-x: hidden;
+}
+
+hr {
+  border: solid 0.5px rgb(190, 190, 190);
+  box-shadow: rgba(112, 128, 144, 0.233);
+  margin: 0.3rem;
+  padding: 0 0.5rem;
+}
+
+select {
+  padding: 0.9rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  justify-content: flex-end;
+  align-items: stretch;
+  width: 242px;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  padding: 0.5rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header img {
+  padding: 0.6rem;
+  margin-right: 0.4rem;
+}
+
+.header h1 {
+  font-family: haryFonts, Verdana, Tahoma, sans-serif;
+  font-size: 6vh;
+  letter-spacing: 0.3rem;
+  color: white;
+  text-align: center;
+}
+
+.inputStyle {
+  padding: 0.8rem;
+  margin: 5px 5px 2px 10px;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: slategray;
+  outline-color: rgb( 78, 44, 131 );
+  overflow-x: hidden;
+}
+
+.header input {
+  padding: 0.8rem;
+  margin: 4px;
+  width: 12vw;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: slategray;
+  overflow-x: hidden;
+}
+
+#btnEntrar {
+  padding: 0.8rem;
+  margin: 4px;
+  width: 10vw;
+  border-radius: 0.3rem;
+  background-color: rgb( 78, 44, 131 );
+  color: white;
+}
+
+button:disabled {
+  opacity: 60%;
+}
+
+.trybewarts-header-logo {
+  height: 4rem;
+  overflow-x: hidden;
+}
+
+.trybewarts-login {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.3rem;
+  overflow-x: hidden;
+}
+
+#formAvaliation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 650px;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.table {
+  display: table;
+  font-size: x-large;
+  padding: 0.7rem;
+}
+
+.row {
+  display: table-row;
+  background-color: rgba(245, 245, 245, 0.377);
+}
+
+.row:nth-of-type( odd ) {
+  background-color: rgba(170, 170, 170, 0.781);
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin: 20px 75px 0 0;
+  overflow-x: hidden;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.alingMail {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 2;
+}
+
+.alingMail input {
+  width: 320px;
+  margin: 5px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 1.2rem;
+  font-weight: 550;
+  overflow-x: hidden;
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0.3rem 1.2rem;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.section4 {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.section5 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.result {
+  align-self: flex-end;
+  text-align: right;
+  text-overflow: clip;
+}
+
+.familias {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 200px;
+  margin: 0.3rem 0;
+}
+
+.familias label {
+  margin: 0;
+  padding: 0;
+}
+
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: stretch;
+  width: 380px;
+  margin-right: 0.2rem;
+}
+
+.tecCheck {
+  justify-content: space-around;
+  text-align: justify;
+  text-overflow: ellipsis;
+  padding: 0.5em 0.5em 0.5em 0;
+  margin: 0.2rem 0;
+}
+
+.rateStyle {
+  background-color: slategray;
+  padding: 4px;
+  margin: 4px 0 0 10px;
+}
+
+.textarea {
+  padding: 2%;
+  margin: 1%;
+  align-content: flex-start;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.textarea textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-grow: 1;
+  border-radius: 5px;
+  width: 100%;
+  outline-color: rgb( 78, 44, 131 );
+}
+
+#label-infos {
+  display: flex;
+  padding: 0 1.1rem;
+  margin: 0 0.5rem;
+  overflow-x: hidden;
+}
+
+#agreement {
+  padding: 0 00.3rem;
+  margin: 0 00.3rem;
+}
+
+#submit-btn {
+  display: flex;
+  padding: 0.6rem;
+  margin: 2rem 0.6rem;
+  border-radius: 0.3rem;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  background-color: rgb( 78, 44, 131 );
+  color: white;
+  width: 97%;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: center;
+  margin-bottom: 5% 0 0 0;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb( 60, 64, 74 );
+  height: 6vh;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  overflow-x: hidden;
+}
+
+@media screen and ( max-width : 600px ) {
+
+  html , body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    align-self: center;
+    position: absolute;
+    padding: 5%;
+    text-align: center;
+    top: 0;
+    overflow-x: hidden;
+  }
+
+  header .trybewarts-login {
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 6vh;
+  }
+
+  h1 {
+    display: flex;
+    align-self: center;
+    align-content: center;
+    flex-shrink: 3;
+    font-size: medium;
+  }
+
+  hr {
+    border: solid 0.5px rgb(190, 190, 190);
+    box-shadow: rgba(112, 128, 144, 0.233);
+    margin: 0.3rem;
+    padding: 0 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  #mainTitle {
+    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 3;
+    overflow-x: hidden;
+  }
+
+  .alingMail {
+    flex-direction: column;
+  }
+
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    overflow-x: hidden;
+  }
+
+  .tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .tecCheck-label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .tecCheck label {
+    margin-left: 25px;
+    flex-basis: 25%;
+  }
+
+  .section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .section4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    overflow-x: hidden;
+  }
+
+  .section5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5rem;
+    overflow-x: hidden;
+  }
+
+  .textarea {
+    width: 95vw;
+    overflow-x: hidden;
+  }
+
+  #submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 70%;
+    margin: 5rem 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #trybewarts-forms-logo {
+    height: 35vh;
+    filter: grayscale(100%);
+    opacity: 75%;
+    align-content: center;
+    align-items: center;
+    top: 12vh;
+    z-index: 0;
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  footer {
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+    height: 6vh;
+  }
+
+}
+
+
+@media screen and ( max-width : 1080px ) {
+
+  html , body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    align-self: center;
+    position: absolute;
+    padding: 4rem;
+    text-align: center;
+    top: 0;
+    overflow-x: hidden;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header .trybewarts-login {
+    display: flex;
+    margin: 0;
+    padding: 2rem;
+    border: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 6vh;
+  }
+
+  h1 {
+    display: flex;
+    align-self: center;
+    align-content: center;
+    flex-shrink: 3;
+    font-size: medium;
+  }
+
+  hr {
+    border: solid 0.5px rgb(190, 190, 190);
+    box-shadow: rgba(112, 128, 144, 0.233);
+    margin: 0.3rem;
+    padding: 0 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  #mainTitle {
+    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 3;
+    overflow-x: hidden;
+  }
+
+  .alingMail {
+    flex-direction: column;
+  }
+
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    overflow-x: hidden;
+  }
+
+  .tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .tecCheck-label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .tecCheck label {
+    margin-left: 25px;
+    flex-basis: 25%;
+  }
+
+  .section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .section4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    overflow-x: hidden;
+  }
+
+  .section5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5rem;
+    overflow-x: hidden;
+  }
+
+  .textarea {
+    width: 95vw;
+    overflow-x: hidden;
+  }
+
+  #submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 70%;
+    margin: 5rem 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #trybewarts-forms-logo {
+    height: 35vh;
+    filter: grayscale(100%);
+    opacity: 75%;
+    align-content: center;
+    align-items: center;
+    top: 12vh;
+    z-index: 0;
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  footer {
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+    height: 6vh;
+  }
+
+}
