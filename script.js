@@ -29,10 +29,11 @@ agreeBox.addEventListener('click', disableOrEnableSendButton);
 const textarea = document.querySelector('#textarea');
 const info = document.querySelector('#counter');
 const limite = 500;
-textarea.addEventListener('keyup', verificar);
 
-function verificar(e) {
+function countCharacters() {
   const qtdcaracteres = this.value.length;
   const restantes = limite - qtdcaracteres;
   info.innerHTML = restantes;
 }
+
+textarea.addEventListener('keyup', countCharacters);
