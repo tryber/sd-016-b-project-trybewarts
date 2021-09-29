@@ -45,7 +45,7 @@ function result() {
     <p>Casa: ${house}</p>
     <p>Família: ${family}</p>
     <p>Avaliação: ${evaluation}</p>
-    <p>Observações: ${text}</p
+    <p>Observações: ${text}</p>
   `;
 }
 
