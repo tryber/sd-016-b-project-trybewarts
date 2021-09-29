@@ -1,0 +1,91 @@
+/* RESET CSS */
+html , body , div , h1 , header , main , footer , section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 1;
+}
+
+/* TAG */
+header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+}
+
+/* #corvinode-house {} */
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#form-label-content , #form-label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #form-label-infos {} */
+
+/* #form-label-rate {} */
+
+/* #form-label-textarea {} */
+
+/* #gitnoria-house {} */
+
+/* #house {} */
+
+/* #input-name {} */
+
+/* #input-lastname {} */
+
+/* #input-email {} */
+
+/* #input-rate {} */
+
+/* #label-content {} */
+
+/* #label-family {} */
+
+/* #label-infos {} */
+
+/* #label-rate {} */
+
+/* #login-email {} */
+
+/* #login-senha {} */
+
+/* #pytherina-house {} */
+
+/* #reactpuff-house {} */
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+/* #trybewarts-header-title {} */
+
+/* CLASS */
+
+/* .checkbox-contet {} */
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .header {} */
+
+/* .input-family {} */
+
+/* .textarea {} */
+
+/* .trybewarts-header-logo {} */
+.trybewarts-login {
+  display: flex;
+}
