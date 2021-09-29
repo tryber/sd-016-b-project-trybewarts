@@ -149,17 +149,3 @@ button {
   padding: 8px;
   margin-top: 20px;
 }
-
-#trybewarts-forms-logo {
-  height: 500px;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background-color: rgb(60, 64, 74);
-  color: white;
-  padding: 8px;
-  margin-top: 20px;
-}
