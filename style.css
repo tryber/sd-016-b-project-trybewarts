@@ -9,8 +9,6 @@ html , body , div , h1 , header , main , footer , section {
   line-height: 1;
 }
 
-/* VARIAVEIS */
-
 /* TAG */
 header {
   background-color: rgb(50, 167, 145);
