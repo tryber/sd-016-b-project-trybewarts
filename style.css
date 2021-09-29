@@ -69,3 +69,17 @@ hr {
 #respostas-fomulario {
   width: 550px;
 }
+
+#counter {
+  position: absolute;
+  left: 220px;
+  margin-top: -30px;
+}
+
+#textarea {
+
+}
+
+#textarea-container {
+
+}
