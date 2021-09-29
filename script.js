@@ -1,6 +1,11 @@
+const emailLogin = document.getElementById('email-login');
+const pass = document.getElementById('pass');
+const agree = document.getElementById('agreement');
+const qtChart = document.getElementById('textarea');
+const count = document.getElementById('counter');
+  
 function login() {
-  const emailLogin = document.getElementById('email-login');
-  const pass = document.getElementById('pass');
+  
   if (emailLogin.value === 'tryber@teste.com' && pass.value === '123456') {
     return alert('Olá, Tryber!');
   }
@@ -10,7 +15,6 @@ function login() {
 document.getElementById('btn-login').addEventListener('click', login);
 // requisito 18
 const btnSubmit = document.getElementById('submit-btn');
-const agree = document.getElementById('agreement');
 btnSubmit.disabled = true;
 
 function CheckAgreement() {
@@ -20,32 +24,33 @@ function CheckAgreement() {
 }
 agree.addEventListener('change', CheckAgreement);
 // requisito 20
-const qtChart = document.getElementById('textarea');
-const count = document.getElementById('counter');
 function countChar() {
   count.innerText = qtChart.maxLength - qtChart.value.length;
   return count.innerText;
 }
 qtChart.addEventListener('input', countChar);
-// requisito 21
-/* Todos os campos do formulário devem ser substituídos.
-Nome: Alguem Aqui
-Email: email@mail.com
-Casa: Casa Escolhida
-Família: Família Escolhida
-Matérias: Matérias, Marcadas, Aqui
-Avaliação: NotaAqui
-Observações: Observações aqui */
-/* function replaceForm() {
-  const getForm = document.getElementById('evaluation-form');
-  getForm.innerHTML = '';
+
+//requisito 21
+
+btnSubmit.addEventListener('click', result);
+
+function result() {
   const name = document.getElementById('input-name').value;
-  const lasName = document.getElementById('input-lastname').value;
+  const lastName = document.getElementById('input-lastname').value;
   const email = document.getElementById('input-email').value;
-  const famlily = document.getElementById('label-family').value;
-  const classes = document.getElementById('label-content').value;
-  const rate = document.getElementById('label-rate').value;
-  const obs = document.getElementById('textarea').value;
-  getForm.innerText = 'Nome: '+ name + ' ' + lasName; ... verificar erro. colocar os outros input...
+  const house = document.getElementById('house').value;
+  const family = document.querySelector('input[name ="family"]:checked').value;
+  const evaluation = document.querySelector('input[name ="rate"]:checked').value;
+  const text = qtChart.value;
+
+  
+  document.getElementById('evaluation-form').innerHTML = `
+    <p>Nome: ${name} ${lastName}</p>
+    <p>Email: ${email}</p>
+    <p>Casa: ${house}</p>
+    <p>Família: ${family}</p>
+    <p>Avaliação: ${evaluation}</p>
+    <p>Observações: ${text}</p
+  `;
 }
-btnSubmit.addEventListener('click', replaceForm); */
+
