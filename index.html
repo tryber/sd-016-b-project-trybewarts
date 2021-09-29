@@ -21,7 +21,7 @@
         </form>
     </header>
     <main>
-        <form action="" method="" id="evaluation-form">
+        <form action="" method="get" id="evaluation-form">
             <div class="name-lastname">
                 <input id="input-name" placeholder="Nome">
                 <input id="input-lastname" placeholder="Sobrenome">
@@ -50,17 +50,17 @@
                 <div id='inputs-conteudo'>
                     <label for="label-content" id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
                         <div id=label-inputs>
-                            <input type="checkbox" value="HoFs">
+                            <input class="subject" type="checkbox" value="HoFs">
                             <span>HoFs</span>
-                            <input type="checkbox" value="Jest">
+                            <input class="subject" type="checkbox" value="Jest">
                             <span>Jest</span>
-                            <input type="checkbox" value="Promises">
+                            <input class="subject" type="checkbox" value="Promises">
                             <span>Promises</span>
-                            <input type="checkbox" value="React">
+                            <input class="subject" type="checkbox" value="React">
                             <span>React</span>
-                            <input type="checkbox" value="SQL">
+                            <input class="subject" type="checkbox" value="SQL">
                             <span>SQL</span>
-                            <input type="checkbox" value="Python">
+                            <input class="subject" type="checkbox" value="Python">
                             <span>Python</span>
                         </div>
                 </div>
@@ -90,7 +90,7 @@
                 <input id="agreement" type="checkbox" name="agreement">
             </div>
 
-            <button type="submit" name="submit" id='submit-btn' disabled >Enviar</button>
+            <button type="submit" id='submit-btn' disabled >Enviar</button>
 
         </form>
 
