@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(233, 233, 233);
+}
+
+hr {
+  margin: 17px;
+  width: 100%;
+  align-self: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  color: white;
+  padding: 0 10px;
+}
+
+.trybewarts-header-logo {
+  width: 50px;
+  padding: 8px 0;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.login {
+  padding: 9px;
+  border-radius: 8px;
+  border-style: none;
+  width: 130px;
+}
+
+.trybewarts-login input {
+  margin-right: 10px;
+}
+
+#header-button {
+  background-color: rgb(78, 44, 131);
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+#evaluation-form h2 {
+  text-align: center;
+  margin: 25px;
+}
+
+.cadastro1 {
+  width: 46%;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  margin-bottom: 5px;
+}
+
+.cadastro2 {
+  width: 46%;
+  padding: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+#house {
+  width: 43%;
+}
+
+.mid-content {
+  display: flex;
+  justify-content: space-between;
+  line-height: 26px;
+  margin: 0 10px;
+}
+
+.family-container , .conteudo-container , #label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.avaliacao {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.avaliacao label {
+  margin-right: 10px;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#textarea {
+  border-radius: 5px;
+}
+
+.agreement {
+  margin-bottom: 10px;
+}
+
+#submit-btn {
+  background-color: rgb(78, 44, 131);
+  color: white;
+  border-style: none;
+  border-radius: 6px;
+  padding: 6px 0;
+  margin: 10px 5px;
+}
+
+.aside-content {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  padding: 8px;
+  margin-top: 20px;
+}
