@@ -137,6 +137,30 @@ button:disabled {
   overflow-x: hidden;
 }
 
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 650px;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.table {
+  display: table;
+  font-size: x-large;
+  padding: 0.7rem;
+}
+
+.row {
+  display: table-row;
+  background-color: rgba(245, 245, 245, 0.377);
+}
+
+.row:nth-of-type( odd ) {
+  background-color: rgba(170, 170, 170, 0.781);
+}
+
 #trybewarts-forms-logo {
   height: 500px;
   margin: 20px 75px 0 0;

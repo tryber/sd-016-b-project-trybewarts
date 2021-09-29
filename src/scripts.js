@@ -1,6 +1,3 @@
-// eslint-disable-next-line sonarjs/no-unused-collection
-const dataStudy = [];
-
 function query(params) {
   const term = params;
   return document.querySelector(term);
@@ -35,7 +32,7 @@ const contaCaracter = query('#textarea');
 contaCaracter.addEventListener('keyup', (event) => {
   const total = event.target.maxLength - event.target.textLength;
   query('.result').innerHTML = `Caracteris restantes: ${total}`;
-}, false);
+});
 
 // forms
 
@@ -55,6 +52,10 @@ function getCasa() {
   const casa = query('#house').value; return casa;
 }
 
+function getObservacoes() {
+  const text = query('#textarea').value; return text;
+}
+
 function family() {
   const familia = document.getElementsByName('family');
   let fami = '';
@@ -66,16 +67,61 @@ function family() {
   return fami;
 }
 
+function rateRange() {
+  const avaliacao = document.getElementsByName('rate');
+  let rat = 0;
+  avaliacao.forEach((radio) => {
+    if (radio.checked) {
+      rat = radio.value;
+    }
+  });
+  return rat;
+}
+
+function getMaterias() {
+  const meterias = document.getElementsByName('aprender');
+  const lessions = [];
+  meterias.forEach((subject) => {
+    if (subject.checked) {
+      const val = subject.value;
+      lessions.push(val);
+    }
+  });
+  return lessions.join(', ');
+}
+
 function getData() {
-  // eslint-disable-next-line sonarjs/prefer-object-literal
-  const persona = {};
-  persona.name = getNome();
-  persona.subNome = getsubNome();
-  persona.email = getMail();
-  persona.casa = getCasa();
-  persona.familia = family();
-  dataStudy.push(persona);
+  const persona = {
+    name: getNome(),
+    subNome: getsubNome(),
+    email: getMail(),
+    casa: getCasa(),
+    familia: family(),
+    materias: getMaterias(),
+    avaliacao: rateRange(),
+    observacoes: getObservacoes(),
+  };
+  return persona;
+}
+
+function newFrame() {
+  const person = getData();
+  const newForm = query('#evaluation-form');
+  newForm.innerHTML = `<div class="data">
+  <table class=" table"> <tbody>
+  <tr class="row"><th> Nome: </th><td> ${person.name} ${person.subNome}</td></tr>
+  <tr class="row"><th> Email: </th><td> ${person.email} </td></tr>
+  <tr class="row"><th> Casa: </th><td> ${person.casa} </td></tr>
+  <tr class="row"><th> Família: </th><td> ${person.familia} </td></tr>
+  <tr class="row"><th> Matérias: </th><td> ${person.materias} </td></tr>
+  <tr class="row"><th> Avaliação: </th><td> ${person.avaliacao} </td></tr>
+  <tr class="row"><th> Observações: </th><td> ${person.observacoes} </td></tr>
+  </tbody></table> </div>
+  `;
 }
 
 const btnEnviar = query('#submit-btn');
-btnEnviar.addEventListener('click', getData);
+btnEnviar.addEventListener('click', (event) => {
+  event.preventDefault();
+  newFrame();
+});

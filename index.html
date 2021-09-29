@@ -20,7 +20,7 @@
     <form action="" class="trybewarts-login">
       <input type="email" name="email" id="email" placeholder="Email" class="emailVal nputStyle">
       <input type="password" name="password" id="password" placeholder="Senha" class="pswVal nputStyle">
-      <button type="submit" id="btnEntrar" preventdefault>Entrar</button>
+      <button id="btnEntrar" preventdefault>Entrar</button>
     </form>
   </header>
 
@@ -59,8 +59,8 @@
             <p id="label-family">Qual sua família?</p>
             <label for="cFrontend"> <input type="radio" name="family" value="Frontend" id="cFrontend"> Familia Frontend
             </label>
-            <label for="cBackend"> <input type="radio" name="family" value="Backend" id="cBackend"> Familia Backend
-            </label>
+            <label for="cBackend"> <input type="radio" name="family" value="Backend" id="cBackend" checked> Familia
+              Backend </label>
             <label for="cFullStack"> <input type="radio" name="family" value="FullStack" id="cFullStack"> Familia
               FullStack </label>
           </div>
@@ -68,13 +68,16 @@
           <div class="tecnologias">
             <p id="label-content">Qual conteúdo você está com mais vontade de aprender?</p>
             <div class="tecCheck-label tecCheck">
-              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="HoFs">HoFs</label>
-              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="Jest">Jest</label>
-              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="Promises">Promises</label>
+              <label class="tecCheck"> <input type="checkbox" name="aprender" class="subject" value="HoFs">HoFs</label>
+              <label class="tecCheck"> <input type="checkbox" name="aprender" class="subject" value="Jest">Jest</label>
+              <label class="tecCheck"> <input type="checkbox" name="aprender" class="subject"
+                  value="Promises">Promises</label>
               <br>
-              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="React">React</label>
-              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="SQL">SQL</label>
-              <label class="subject tecCheck"> <input type="checkbox" name="aprender" value="Python">Python</label>
+              <label class="tecCheck"> <input type="checkbox" name="aprender" class="subject"
+                  value="React">React</label>
+              <label class="tecCheck"> <input type="checkbox" name="aprender" class="subject" value="SQL">SQL</label>
+              <label class="tecCheck"> <input type="checkbox" name="aprender" class="subject"
+                  value="Python">Python</label>
             </div>
           </div>
         </section>
@@ -82,7 +85,7 @@
         <section class="section3">
           <h4 id="label-rate">Como você avalia a Trybewarts?</h4>
           <div class="label-rate-avaliation">
-            <label for="um"> <input type="radio" name="rate" class="rateStyle" id="um" value="1">1</label>
+            <label for="um"> <input type="radio" name="rate" class="rateStyle" id="um" value=1>1</label>
             <label for="dois"> <input type="radio" name="rate" class="rateStyle" id="dois" value="2">2</label>
             <label for="tres"> <input type="radio" name="rate" class="rateStyle" id="tres" value="3">3</label>
             <label for="quarto"> <input type="radio" name="rate" class="rateStyle" id="quarto" value="4">4</label>
@@ -110,7 +113,7 @@
           </label>
           <div></div>
         </section>
-        <button type="submit" id="submit-btn" disabled preventdefault>Enviar</button>
+        <button type="submit" id="submit-btn" disabled preventDefault>Enviar</button>
       </form>
     </div>
 
