@@ -52,6 +52,10 @@ function getCasa() {
   const casa = query('#house').value; return casa;
 }
 
+function getObservacoes() {
+  const text = query('#textarea').value; return text;
+}
+
 function family() {
   const familia = document.getElementsByName('family');
   let fami = '';
@@ -83,7 +87,7 @@ function getMaterias() {
       lessions.push(val);
     }
   });
-  return lessions;
+  return lessions.join(', ');
 }
 
 function getData() {
@@ -95,21 +99,24 @@ function getData() {
     familia: family(),
     materias: getMaterias(),
     avaliacao: rateRange(),
+    observacoes: getObservacoes(),
   };
   return persona;
 }
 
 function newFrame() {
   const person = getData();
-  const newForm = query('#formAvaliation');
-  newForm.innerHTML = `
-  Nome: ${person.name} <br>
-  Sobre Nome: ${person.subNome}<br>
-  Email: ${person.email}<br>
-  Casa: ${person.casa}<br>
-  Familia: ${person.familia}<br>
-  Materias: ${person.materias}<br>
-  Avaliação: ${person.avaliacao}<br>
+  const newForm = query('#evaluation-form');
+  newForm.innerHTML = `<div class="data">
+  <table class=" table"> <tbody>
+  <tr class="row"><th> Nome: </th><td> ${person.name} ${person.subNome}</td></tr>
+  <tr class="row"><th> Email: </th><td> ${person.email} </td></tr>
+  <tr class="row"><th> Casa: </th><td> ${person.casa} </td></tr>
+  <tr class="row"><th> Família: </th><td> ${person.familia} </td></tr>
+  <tr class="row"><th> Matérias: </th><td> ${person.materias} </td></tr>
+  <tr class="row"><th> Avaliação: </th><td> ${person.avaliacao} </td></tr>
+  <tr class="row"><th> Observações: </th><td> ${person.observacoes} </td></tr>
+  </tbody></table> </div>
   `;
 }
 
