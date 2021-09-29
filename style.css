@@ -52,6 +52,7 @@ main , #evaluation-form {
 #conteudo3 {
   font-size: smaller;
 }
+
 .personal-container input , .selectHouse-container {
   flex-basis: 50%;
 }
