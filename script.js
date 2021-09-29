@@ -31,7 +31,6 @@ checkbox.addEventListener('click', enable);
 //   const inputFamily = document.getElementById('input[name ="family"]:checked').value;
 //   const inputRate = document.querySelectorAll('input[name ="rate"]:checked').value;
 //   const textArea = document.getElementById('textarea').value;
-  
 //   const formFull =`
 //   <p>Nome: ${inputName} ${inputLastName}</p>
 //   <p>Email: ${inputEmail}</p>
@@ -42,5 +41,4 @@ checkbox.addEventListener('click', enable);
 //   `
 //   document.getElementById('evaluation-form').innerHTML = formFull
 // }
-
 // submitBtn.addEventListener('click', submitData);
