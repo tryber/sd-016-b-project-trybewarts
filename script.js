@@ -30,6 +30,19 @@ function countChar() {
 qtChart.addEventListener('input', countChar);
 
 // requisito 21
+// pesquisa sobre como pegar conteudos checked: https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value
+// https://pt.stackoverflow.com/questions/226144/pegar-valor-de-todos-os-checkbox-marcados
+function SaveChecked() { //salva o conteudo do checked tipo checkbox
+  let subjects = ''; // string vazia
+  const subjectsSelect = []; // array vazio
+  const inputSubjects = document.querySelectorAll('input[class="subject"]:checked'); // pega o conteudo com classe subject se tiver checked.
+  for (let index = 0; index < inputSubjects.length; index += 1) {  // loop para pegar qual indice tem o check
+    subjectsSelect.push(inputSubjects[index].value); // inclui o indice com check no array
+  }
+  subjects += subjectsSelect.join(', '); //transforma conteudo em string separado por , espaco fonte:https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+  return subjects;
+}
+
 function result() {
   const name = document.getElementById('input-name').value;
   const lastName = document.getElementById('input-lastname').value;
@@ -38,6 +51,7 @@ function result() {
   const family = document.querySelector('input[name ="family"]:checked').value;
   const evaluation = document.querySelector('input[name ="rate"]:checked').value;
   const text = qtChart.value;
+  const subjects = SaveChecked();
 
   document.getElementById('evaluation-form').innerHTML = `
     <p>Nome: ${name} ${lastName}</p>
@@ -46,6 +60,7 @@ function result() {
     <p>Família: ${family}</p>
     <p>Avaliação: ${evaluation}</p>
     <p>Observações: ${text}</p
+    <p>Matérias: ${subjects}</p
   `;
 }
 

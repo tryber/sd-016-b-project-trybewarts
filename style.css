@@ -64,7 +64,7 @@ main {
 
 #evaluation-form {
   display: flex;
-  width: 40%;
+  width:  675px;
   flex-direction: column;
   justify-content: space-around;
   padding: 50px;
