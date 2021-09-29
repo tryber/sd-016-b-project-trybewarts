@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  width: 85px;
+  height: 85px;
+  margin-left: 40px;
+}
+
+.trybewarts-login {
+  display: flex;
+  margin-right: 40px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin-top: 27px;
+  margin-left: 80px;
+}
+
+#evaluation-form img {
+  height: 500px;
+}
+
+.nome-completo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  height: 45px;
+}
+
+#input-name {
+  width: 335px;
+  margin-right: 5px;
+}
+
+#input-lastname {
+  width: 335px;
+}
+
+.radio-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.boxes-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.rate-container {
+  display: flex;
+}
+
+.rate-input {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#input-email {
+  margin-bottom: 20px;
+  height: 45px;
+  width: 690px;
+}
+
+#house {
+  height: 45px;
+  margin-left: 5px;
+}
+
+.labels {
+  margin-bottom: 10px;
+}
+
+.areaTextual {
+  display: flex;
+  flex-direction: column;
+}
+
+.areaTextual textarea {
+  align-self: end;
+}
+
+.areaTextual label {
+  margin-bottom: 10px;
+}
+
+.ratediv {
+  margin-left: 20px;
+}
+
+.ratediv div {
+  margin-left: 20px;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  align-self: center;
+  width: 500px;
+  height: 500px;
+}
+
+#form-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#div-infos {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+
+#agreement {
+  margin-left: 10px;
+}
+
+#submit-btn {
+  display: flex;
+  width: 80px;
+  align-self: center;
+}
+
+#btndiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#opt-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#footer-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(50, 167, 145);
+  margin-top: 62px;
+}
+
+#footer-page h5 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#email-input {
+  margin-right: 5px;
+}
+
+#senha-input {
+  margin-right: 5px;
+}
+
+.emailHouse {
+  display: flex;
+}
