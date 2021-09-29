@@ -1,0 +1,190 @@
+@font-face {
+  font-family: harry;
+  src: url('/HARRYP__.TTF');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Scheherazade New, serif;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 15px;
+}
+
+#trybewarts-header-title {
+  font-family: harry, serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px rgb(75, 75, 75);
+  color: white;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.trybewarts-header-logo {
+  max-width: 80px;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  margin: 30px;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#evaluation-form h1 {
+  text-align: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-inline: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.parte-3 {
+  flex-direction: column;
+}
+
+hr {
+  margin-inline: 0;
+  margin-block: 20px;
+  width: 549px;
+  background-color: rgb(167, 174, 180);
+  height: 1px;
+}
+
+#respostas-fomulario {
+  width: 550px;
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(59, 63, 74);
+  display: flex;
+  height: 30px;
+  justify-content: center;
+}
+
+footer p {
+  color: whitesmoke;
+  font-size: 18px;
+  font-family: Times New Roman, Times, serif;
+  line-height: 18px;
+}
+
+.login {
+  border-radius: 10px;
+  margin: 0 5px;
+  padding: 10px;
+  width: 140px;
+}
+
+.login-input {
+  height: 20px;
+}
+
+#login-btn {
+  height: 40px;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+}
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checks-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+.tech-div {
+  margin: 10px 20px;
+}
+
+.family-container {
+  width: 150px;
+}
+
+.text-input {
+  border-radius: 5px;
+  height: 30px;
+  margin: 7px 2px;
+  padding-left: 5px;
+  width: 250px;
+}
+
+.email-house {
+  align-items: center;
+}
+
+#house {
+  border-radius: 5px;
+  height: 30px;
+  margin: 7px 2px;
+  padding-left: 5px;
+  width: 220px;
+  background-color: white;
+}
+
+.family-div {
+  margin: 10px 0;
+}
+
+.rate {
+  margin-right: 8px;
+  margin-bottom: 20px;
+}
+
+#submit-btn {
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 549px;
+  border-radius: 5px;
+}
+
+.agreement-container {
+  margin: 10px 0;
+}
+
+#counter {
+  align-self: flex-end;
+}
