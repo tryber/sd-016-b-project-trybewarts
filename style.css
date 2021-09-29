@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Scheherazade New, serif;
+  width: 100%;
 }
 
 .header {
@@ -53,6 +54,7 @@ body {
   display: flex;
   flex: 1;
   margin: 30px;
+  align-self: center;
 }
 
 #evaluation-form {
@@ -185,6 +187,6 @@ footer p {
   margin: 10px 0;
 }
 
-#counter {
-  align-self: flex-end;
+#textarea {
+  width: 549px;
 }
