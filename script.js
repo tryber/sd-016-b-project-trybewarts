@@ -3,9 +3,8 @@ const pass = document.getElementById('pass');
 const agree = document.getElementById('agreement');
 const qtChart = document.getElementById('textarea');
 const count = document.getElementById('counter');
-  
+
 function login() {
-  
   if (emailLogin.value === 'tryber@teste.com' && pass.value === '123456') {
     return alert('Olá, Tryber!');
   }
@@ -30,10 +29,7 @@ function countChar() {
 }
 qtChart.addEventListener('input', countChar);
 
-//requisito 21
-
-btnSubmit.addEventListener('click', result);
-
+// requisito 21
 function result() {
   const name = document.getElementById('input-name').value;
   const lastName = document.getElementById('input-lastname').value;
@@ -43,7 +39,6 @@ function result() {
   const evaluation = document.querySelector('input[name ="rate"]:checked').value;
   const text = qtChart.value;
 
-  
   document.getElementById('evaluation-form').innerHTML = `
     <p>Nome: ${name} ${lastName}</p>
     <p>Email: ${email}</p>
@@ -54,3 +49,4 @@ function result() {
   `;
 }
 
+btnSubmit.addEventListener('click', result);
