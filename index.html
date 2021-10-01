@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trybewarts | Giovanni | Leandro</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<!-- bootstrap e jquery -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 </head>
 <body>
   <header class="header">
@@ -23,62 +30,85 @@
       </form>
     </div>
   </header>
+<br>
+<br>
   <main>
+    <div id='new-form-container'></div>
     <div id="form-container">
       <form action="" method="get" id="evaluation-form">
+      <div class="questionBlock">
+        <br>
         <div id="name-lastName-container">
-          <input type="text" id="input-name" placeholder="Nome">
-          <input type="text" id="input-lastname" placeholder="Sobrenome">
+          <input type="text" id="input-name" class="input" placeholder="Nome">
+          <input type="text" id="input-lastname" class="input" placeholder="Sobrenome">
         </div>
+        
         <div id="name-email-container">
-          <input type="email" name="" id="input-email" placeholder="Email">
-          <select name="" id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
+          <input type="email" name="" id="input-email" class="input" placeholder="Email">
+          
+
+          <label for="house" class="input">
+            <select name="house" id="house" class="input">
+              <option value="Gitnória" id="gitnoria-house" class="input">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house" class="input">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house" class="input">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house" class="input">Pytherina</option>
+            </select>
+          </label>
+
+
+
         </div>
         <div id="radio-container">
           <label id="label-family">Qual sua família?</label> <br>
-          <input type="radio" id="frontend" name="family" value="Frontend">
+          <input type="radio" id="frontend" name="family" class="family" value="Frontend">
           <label for="frontend">Frontend</label><br>
-          <input type="radio" id="backend" name="family" value="Backend">
+          <input type="radio" id="backend" name="family" class="family" value="Backend">
           <label for="backend">Backend</label><br>
-          <input type="radio" id="fullStack" name="family" value="FullStack">
+          <input type="radio" id="fullStack" name="family" class="family" value="FullStack">
           <label for="fullStack">FullStack</label><br>
         </div>
+      </div>
+      <br>
+      <br>
+      
+      <div class='rateBox' id="rate-box-container">
         <div id="check-container">
           <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label><br><br>
           <label for="HoFs">HoFs</label>
-          <input type="checkbox" name="" value="HoFs" id="HoFs">
+          <input type="checkbox" name="" value="HoFs" class="subject" id="HoFs">
           <label for="Jest">Jest</label>
-          <input type="checkbox" name="" value="Jest" id="Jest">
+          <input type="checkbox" name="" value="Jest" class="subject" id="Jest">
           <label for="Promises">Promises</label>
-          <input type="checkbox" name="" value="Promises" id="Promises">
+          <input type="checkbox" name="" value="Promises" class="subject" id="Promises">
           <label for="React">React</label>
-          <input type="checkbox" name="" value="React" id="React">
+          <input type="checkbox" name="" value="React" class="subject" id="React">
           <label for="SQL">SQL</label>
-          <input type="checkbox" name="" value="SQL" id="SQL">
+          <input type="checkbox" name="" value="SQL" class="subject" id="SQL">
           <label for="Python">Python</label>
-          <input type="checkbox" name="" value="Python" id="Python">
+          <input type="checkbox" name="" value="Python" class="subject" id="Python">
         </div>
-        <div id="rate-container">
-          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-          <label for="1">1<input type="radio" id="1" name="rate" value="1"></label><br>
-          <label for="2">2<input type="radio" id="2" name="rate" value="2"></label><br>
-          <label for="3">3<input type="radio" id="3" name="rate" value="3"></label><br>
-          <label for="4">4<input type="radio" id="4" name="rate" value="4"></label><br>
-          <label for="5">5<input type="radio" id="5" name="rate" value="5"></label><br>
-          <label for="6">6<input type="radio" id="6" name="rate" value="6"></label><br>
-          <label for="7">7<input type="radio" id="7" name="rate" value="7"></label><br>
-          <label for="8">8<input type="radio" id="8" name="rate" value="8"></label><br>
-          <label for="9">9<input type="radio" id="9" name="rate" value="9"></label><br>
-          <label for="10">10<input type="radio" id="10" name="rate" value="10"></label><br>
+        <div id="rate-container" >
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label><br>
+          <label for="1">1<input type="radio" id="1" name="rate" class="rate" value="1"></label><br>
+          <label for="2">2<input type="radio" id="2" name="rate" class="rate" value="2"></label><br>
+          <label for="3">3<input type="radio" id="3" name="rate" class="rate" value="3"></label><br>
+          <label for="4">4<input type="radio" id="4" name="rate" class="rate" value="4"></label><br>
+          <label for="5">5<input type="radio" id="5" name="rate" class="rate" value="5"></label><br>
+          <label for="6">6<input type="radio" id="6" name="rate" class="rate" value="6"></label><br>
+          <label for="7">7<input type="radio" id="7" name="rate" class="rate" value="7"></label><br>
+          <label for="8">8<input type="radio" id="8" name="rate" class="rate" value="8"></label><br>
+          <label for="9">9<input type="radio" id="9" name="rate" class="rate" value="9"></label><br>
+          <label for="10">10<input type="radio" id="10" name="rate" class="rate" value="10"></label><br>
         </div>
+      </div>
+      <div class='final-box'>
         <div id="text-area-container">
-          <label class="textarea" for="">Deixe seu comentário:</label><br>
-          <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+          <label class="textarea" for="textarea">Deixe seu comentário:</label>
+          <textarea type="text" name="textarea" id="textarea" cols="30" rows="10" maxlength="500" class="input"></textarea>
+        </div>
+        <div id='counter'>
+          500
         </div>
         <div id="info-container">
           <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
@@ -87,6 +117,7 @@
         <div id="submit-button">
           <button type="submit" id="submit-btn" disabled>Enviar</button>
         </div>
+      </div>
       </form>
     </div>
     <div id="image-container">
@@ -94,7 +125,7 @@
     </div>
   </main>
 </body>
-<footer>
+<footer id='footer'>
   <p>Direitos reservados à Trybewarts©</p>
 </footer>
 <script src="script.js"></script>
