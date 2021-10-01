@@ -1,0 +1,132 @@
+body {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 18px -4px black;
+}
+
+h1 {
+  font-family: Gloria Hallelujah, cursive;
+  font-size: 0;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
+#email , #password , #login-button {
+  padding: 3px;
+  margin: 3px;
+  border-radius: 6px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#name-lastName-container {
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+#name-email-container {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+#house , #input-lastname {
+  margin-left: 10px;
+}
+
+#radio-container {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex-row;
+  justify-content: center;
+}
+
+#check-container {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#rate-container {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+
+#text-area-container {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea , #input-name , #input-lastname , #input-email , #house {
+  border-radius: 7px;
+}
+
+#counter , #info-container {
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  background-color: aliceblue;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#right-container {
+  margin-left: 15px;
+}
+
+.final-box {
+  background-color: rgba(71, 120, 144, 0.63);
+  border-radius: 15px;
+  box-shadow: 5px 5px 18px -4px black;
+  padding: 10px;
+}
+
+.questionBlock {
+  border-radius: 15px;
+  background-color: rgb(224, 119, 125);
+  box-shadow: 5px 5px 18px -4px black;
+}
+
+.rateBox {
+  border-radius: 15px;
+  background-color: rgb(225, 221, 143);
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 18px -4px black;
+}
