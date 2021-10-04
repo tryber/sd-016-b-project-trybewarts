@@ -87,10 +87,6 @@ html {
   text-align: start;
 }
 
-#input-name , #input-lastname , #input-email {
-  padding-left: 4px;
-}
-
 #rodape {
   text-align: center;
   position: absolute;
@@ -139,7 +135,7 @@ h2 {
   text-align: center;
   margin-top: 30px;
   color: white;
-  font-size: xx-large; 
+  font-size: xx-large;
 }
 
 #form-central {
