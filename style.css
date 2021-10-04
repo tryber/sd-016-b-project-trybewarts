@@ -151,3 +151,44 @@ h2 {
 #aside {
   margin-top: 100px;
 }
+
+#email-login , #password-login {
+  width: 50%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+}
+
+#email-login:hover {
+  text-align: start;
+}
+
+#password-login:hover {
+  text-align: start;
+}
+
+.botao-login {
+  width: 25%;
+  padding: 5px 10px;
+  border: darkslateblue 2px solid;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+  background-color: white;
+  color: darkslateblue;
+}
+
+.botao-login:hover {
+  border: none;
+  background-color: darkslateblue;
+  color: white;
+  transition: 0.3s;
+}
