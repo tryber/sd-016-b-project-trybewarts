@@ -22,12 +22,13 @@ html {
 
 .header {
   height: 70px;
-  padding: 0 30px;
+  padding: 20px;
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
   color: white;
+  font-size: large;
 }
 
 .trybewarts-header-logo {
@@ -47,7 +48,6 @@ html {
   margin: 30px;
   border-radius: 20px;
   background-color: whitesmoke;
-  opacity: 0.9;
 }
 
 #evaluation-form:hover {
@@ -65,9 +65,26 @@ html {
 
 #input-name , #input-lastname , #input-email , #house {
   width: 50%;
-  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
   cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+}
+
+#input-name:hover {
+  text-align: start;
+}
+
+#input-lastname:hover {
+  text-align: start;
+}
+
+#input-email:hover {
+  text-align: start;
 }
 
 #input-name , #input-lastname , #input-email {
@@ -80,9 +97,9 @@ html {
   bottom: 0;
   width: 100%;
   padding: 15px;
-  background-color: rgb(50, 167, 145);
   color: white;
   font-family: David Libre, serif;
+  background-image: inherit;
 }
 
 .main-content {
@@ -116,4 +133,21 @@ html {
 
 #div-counter {
   margin-left: 100px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-size: xx-large; 
+}
+
+#form-central {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+#aside {
+  margin-top: 100px;
 }

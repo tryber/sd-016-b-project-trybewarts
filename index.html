@@ -23,6 +23,7 @@
   <main class="flexbox main-content">
     <!-- formulario -->
     <section id="img-bg"> 
+      <h2>Formulário de Avaliação</h2>
       <form method="GET" id="evaluation-form" class="flexbox">
         <!-- parte superior do form -->
         <div class="sub-container">
@@ -40,7 +41,7 @@
         </div>
         <hr>
         <!-- parte central do form -->
-        <div class="flexbox">
+        <div id="form-central" class="flexbox">
           <div class="collum">
             <label id="label-family">Qual sua família?</label>
             <label><input type="radio" name="family" value="Frontend">Frontend</label>
@@ -84,7 +85,7 @@
               <input type="checkbox" id="agreement"></label>
           </div>
           <div id="div-counter">
-            <p>você possui <em id="counter">500</em> character</p>
+            <p><em id="counter">500</em> character</p>
           </div>
         </div>
         <button type="submit" class="btn" id="submit-btn" disabled>Enviar</button>
