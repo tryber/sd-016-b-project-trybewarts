@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TrybeWarts</title>
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <nav class="header">
     <img src="images/trybewarts-header-logo.svg" alt="Logo TrybeWarts" class="trybewarts-header-logo">
@@ -20,30 +22,30 @@
   </nav>
   <main>
     <form id="evaluation-form">
-    <h2>Formulário de Avaliação</h2>
-     <div class="information-container">
+      <h2>Formulário de Avaliação</h2>
+      <div class="information-container">
         <input type="text" id="input-name" name="name" placeholder="Nome">
-        <input type="text" id="input-lastname" name="lastname" placeholder="Sobrenome">      
-          <input type="text" id="input-email" name="email" placeholder="Email">
-          <label for="house">Casa:</label>
-          <select name="house" id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
-        </div>
+        <input type="text" id="input-lastname" name="lastname" placeholder="Sobrenome">
+        <input type="text" id="input-email" name="email" placeholder="Email">
+        <label for="house">Casa:</label>
+        <select name="house" id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
       </div>
       <hr>
       <div class="mid-container">
-      <div class="family-container">
-        <label id=label-family for="family">Qual sua família?</label>
+        <div class="family-container">
+          <label id=label-family for="family">Qual sua família?</label>
           <div>
             <input type="radio" name="family" id="frontend" value="Frontend">Familia FrontEnd
           </div>
           <div>
             <input type="radio" name="family" id="backend" value="Backend">Familia Backend
-          </div>  
+          </div>
           <div>
             <input type="radio" name="family" id="fullstack" value="FullStack">Familia FullStack
           </div>
@@ -52,50 +54,50 @@
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div>
             <div>
-              <input type="checkbox"  class="subject" value="HoFs"> HoFs
-              <input type="checkbox"  class="subject" value="Jest"> Jest
-              <input type="checkbox"  class="subject" value="Promises"> Promises
+              <input type="checkbox" class="subject" value="HoFs"> HoFs
+              <input type="checkbox" class="subject" value="Jest"> Jest
+              <input type="checkbox" class="subject" value="Promises"> Promises
 
             </div>
             <div>
-              <input type="checkbox"  class="subject" value="React"> React
-              <input type="checkbox"  class="subject" value="SQL"> SQL
-              <input type="checkbox"  class="subject" value="Python"> Python
-             
+              <input type="checkbox" class="subject" value="React"> React
+              <input type="checkbox" class="subject" value="SQL"> SQL
+              <input type="checkbox" class="subject" value="Python"> Python
+
             </div>
           </div>
         </div>
       </div>
-        <hr>
-        <div class="final-container">
+      <hr>
+      <div class="final-container">
         <div class="rate-us">
           <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
-            <input type="radio"name="rate" value="1">1
-            <input type="radio"name="rate" value="2">2
-            <input type="radio"name="rate" value="3">3
-            <input type="radio"name="rate" value="4">4
-            <input type="radio"name="rate" value="5">5
-            <input type="radio"name="rate" value="6">6
-            <input type="radio"name="rate" value="7">7
-            <input type="radio"name="rate" value="8">8
-            <input type="radio"name="rate" value="9">9
-            <input type="radio"name="rate" value="10">10
+          <input type="radio" name="rate" value="1">1
+          <input type="radio" name="rate" value="2">2
+          <input type="radio" name="rate" value="3">3
+          <input type="radio" name="rate" value="4">4
+          <input type="radio" name="rate" value="5">5
+          <input type="radio" name="rate" value="6">6
+          <input type="radio" name="rate" value="7">7
+          <input type="radio" name="rate" value="8">8
+          <input type="radio" name="rate" value="9">9
+          <input type="radio" name="rate" value="10">10
         </div>
         <div class="comment-container">
           <label class="textarea" for="comment">Deixe seu comentário:</label>
           <div>
-            <textarea id="textarea" name="comment"  cols="70" rows="10" maxlength="500"></textarea>
+            <textarea id="textarea" name="comment" cols="70" rows="10" maxlength="500"></textarea>
             <p id="counter"></p>
           </div>
 
         </div>
-      <label id="label-infos" for="agreement">
-        Você concorda com o uso das informações acima?
-      </label>
-      <input type="checkbox" name="agreement" id="agreement">
-      <button type="submit" id="submit-btn">Enviar</button>
-      <p id="formContent"></p>
-    </div>
+        <label id="label-infos" for="agreement">
+          Você concorda com o uso das informações acima?
+        </label>
+        <input type="checkbox" name="agreement" id="agreement">
+        <button type="submit" id="submit-btn">Enviar</button>
+        <p id="formContent"></p>
+      </div>
     </form>
     <aside>
       <img src="images/trybewarts-colored.svg" alt="Logo colorido" id="trybewarts-forms-logo">
@@ -106,4 +108,5 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>
