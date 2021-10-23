@@ -20,3 +20,13 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.box-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-family {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
