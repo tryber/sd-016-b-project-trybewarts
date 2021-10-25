@@ -3,6 +3,8 @@ const inputSenha = document.getElementById('login-senha');
 const buttonEntrar = document.getElementById('btn-entrar');
 const chckAgreement = document.getElementById('agreement');
 const buttonEnviar = document.getElementById('submit-btn');
+const inputTxt = document.querySelector('#textarea');
+const counterChar = document.querySelector('#counter');
 
 // Função valida email e senha, e retorna um alert
 function menssagem() {
@@ -17,6 +19,18 @@ function menssagem() {
   }
 }
 buttonEntrar.addEventListener('click', menssagem);
+
+// Função para contar caracteres no textarea:
+const numCharText = () => {
+  let maxChars = 500;
+  let inputLength = inputTxt.value.length;
+  let charCounter = maxChars - inputLength;
+  if (inputLength >= maxChars) {
+    counterChar.innerHTML = `${charCounter} você atingiu o limite!`;
+  }
+  counterChar.innerHTML = `${charCounter} caracteres restantes!` ;
+}
+inputTxt.addEventListener('input', numCharText);
 
 // Função habilita botão submit
 function submitOn() {
