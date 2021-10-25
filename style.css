@@ -40,3 +40,19 @@ main {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
+
+#rate-radio {
+  display: flex;
+  flex-direction: row;
+}
+
+#label-rate {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+hr {
+  color: black;
+  height: 2px;
+
+}

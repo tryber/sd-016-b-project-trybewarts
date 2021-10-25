@@ -32,6 +32,33 @@ for(let i = 0; i < selectOptions.length; i+=1) {
 
 }
 
+function selectRate() {
+    let arrayRate = [1,2,3,4,5,6,7,8,9,10];
+
+    let rateRadio = document.querySelector('#rate-radio');
+
+    for(let i = 0; i < arrayRate.length; i+=1) {
+        let divRate =document.createElement('div');
+        let inputRate = document.createElement('input');
+        inputRate.type = 'radio';
+        inputRate.name = 'rate';
+        inputRate.id = arrayRate[i];
+        inputRate.value = arrayRate[i];
+
+        let label = document.createElement('label');
+        label.htmlFor = arrayRate[i];
+        label.innerHTML = arrayRate[i];
+
+        if(i === 0){
+            inputRate.checked = true;
+        }
+        rateRadio.appendChild(divRate);
+        divRate.appendChild(inputRate);
+        divRate.appendChild(label);
+    }
+
+}
+
 window.onload = function () {
 
 let button = document.querySelector('#buttonSubmit');
@@ -43,4 +70,6 @@ validateAccount();
 }
 
 selectHouse();
+
+selectRate();
 }
