@@ -30,3 +30,13 @@ main {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
+
+#checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
