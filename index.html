@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Project Trybe Warts</title>
+</head>
+<body>
+    <header class="header">
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg"></img>
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form action="" method="get" class="trybewarts-login">
+            <input type="email" name="email" placeholder="Email" id="emailInput" required>
+            <input type="password" name="password" placeholder="Senha" id="passwordInput" required>
+            <button type="submit" id="buttonSubmit">Entrar</button>
+        </form>
+    </header>
+    <main>
+        <form action="" method="get" id="evaluation-form">
+        <div id="nameAndLastName">
+        <input type="text" name="nome" id="input-name" placeholder="Nome" required>
+        <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome" required>
+        </div>
+        <div id="emailAndHouse">
+        <input type="email" name="email" id="input-email" placeholder="Email" required>
+        <label for="house">Casa
+        <select name="house" id="house">
+        </select>
+        </div> 
+        </label>
+        <div class="box-radio">
+            <label for="" id="label-family">Qual sua família?</label>
+            <div>
+            <input type="radio" name="family" id="familia-1" value="Frontend" checked>
+            <label for="familia-1">Família Frontend</label>
+            </div>
+            <div>
+            <input type="radio" name="family" id="familia-2" value="Backend">
+            <label for="familia-2">Família Backend</label>
+            </div>
+            <div>
+            <input type="radio" name="family" id="familia-3" value="FullStack">
+            <label for="familia-3">Família FullStack</label>
+            </div>    
+        </div>
+        <div id="checkbox">
+            
+            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?
+            </label>
+            <div>
+                <input type="checkbox" value="HoFs" id="HoFs">
+                <label for="HoFs">Hofs</label>
+            </div>
+            <div>
+                <input type="checkbox" value="Jest" id="Jest">
+                <label for="Jest">Jest</label>
+            </div>
+            <div>
+                <input type="checkbox" value="Promises" id="Promises">
+                <label for="Promises">Promises</label>
+            </div>
+            <div>
+                <input type="checkbox" value="React" id="React">
+                <label for="React">React</label>
+            </div>
+            <div>
+                <input type="checkbox" value="SQL" id="SQL">
+                <label for="SQL">SQL</label>
+            </div>
+            <div>
+                <input type="checkbox" value="Python" id="Python">
+                <label for="Python">Python</label>
+            </div>              
+        </div>
+        <br>                
+        <div id="rate-radio">
+            <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+
+        </div>
+
+        <label for="comment" class="textarea"><h3>Deixe seu comentário:</h3>
+            <textarea name="comment" id="comment" cols="50" rows="10" maxlength="500"></textarea required>
+
+        </label>
+
+        <div>
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" value="agreement" id="agreement">
+        </div>
+
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
+        </form>
+        <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+
+
+
+    </main>
+    <footer>Direitos reservados à Trybewarts©</footer>
+    <script src="script.js"></script>
+</body>
+</html>
