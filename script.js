@@ -59,6 +59,16 @@ function selectRate() {
 
 }
 
+function agreementCondition() {
+    let checked = document.querySelector('#agreement');
+    checked.addEventListener('click', function(event) {
+        let submitBtn = document.querySelector('#submit-btn');
+        submitBtn.disabled = !event.target.checked
+    });
+    
+    
+}
+
 window.onload = function () {
 
 let button = document.querySelector('#buttonSubmit');
@@ -72,4 +82,8 @@ validateAccount();
 selectHouse();
 
 selectRate();
+
+agreementCondition();
+
 }
+
