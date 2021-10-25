@@ -26,9 +26,9 @@ const numCharText = () => {
   const inputLength = inputTxt.value.length;
   const charCounter = maxChars - inputLength;
   if (inputLength >= maxChars) {
-    counterChar.innerHTML = `${charCounter} você atingiu o limite!`;
+    counterChar.innerHTML = `${charCounter}`;
   }
-  counterChar.innerHTML = `${charCounter} caracteres restantes!`;
+  counterChar.innerHTML = `${charCounter}`;
 };
 inputTxt.addEventListener('input', numCharText);
 
