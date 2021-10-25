@@ -26,10 +26,10 @@ const numCharText = () => {
   const inputLength = inputTxt.value.length;
   const charCounter = maxChars - inputLength;
   if (inputLength >= maxChars) {
-    counterChar.innerHTML = `${ charCounter } você atingiu o limite!`;
+    counterChar.innerHTML = `${charCounter} você atingiu o limite!`;
   }
-  counterChar.innerHTML = `${ charCounter } caracteres restantes!`;
-}
+  counterChar.innerHTML = `${charCounter} caracteres restantes!`;
+};
 inputTxt.addEventListener('input', numCharText);
 
 // Função habilita botão submit
