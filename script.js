@@ -22,13 +22,13 @@ buttonEntrar.addEventListener('click', menssagem);
 
 // Função para contar caracteres no textarea:
 const numCharText = () => {
-  let maxChars = 500;
-  let inputLength = inputTxt.value.length;
-  let charCounter = maxChars - inputLength;
+  const maxChars = 500;
+  const inputLength = inputTxt.value.length;
+  const charCounter = maxChars - inputLength;
   if (inputLength >= maxChars) {
-    counterChar.innerHTML = `${charCounter} você atingiu o limite!`;
+    counterChar.innerHTML = `${ charCounter } você atingiu o limite!`;
   }
-  counterChar.innerHTML = `${charCounter} caracteres restantes!` ;
+  counterChar.innerHTML = `${ charCounter } caracteres restantes!`;
 }
 inputTxt.addEventListener('input', numCharText);
 
