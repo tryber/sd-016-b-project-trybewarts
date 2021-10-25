@@ -31,6 +31,7 @@ const numCharText = () => {
   counterChar.innerHTML = `${charCounter}`;
 };
 inputTxt.addEventListener('input', numCharText);
+numCharText();
 
 // Função habilita botão submit
 function submitOn() {
