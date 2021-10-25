@@ -13,19 +13,19 @@
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg"></img>
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form action="" method="get" class="trybewarts-login">
-            <input type="email" name="email" placeholder="Email" id="emailInput">
-            <input type="password" name="password" placeholder="Senha" id="passwordInput">
+            <input type="email" name="email" placeholder="Email" id="emailInput" required>
+            <input type="password" name="password" placeholder="Senha" id="passwordInput" required>
             <button type="submit" id="buttonSubmit">Entrar</button>
         </form>
     </header>
     <main>
         <form action="" method="get" id="evaluation-form">
         <div id="nameAndLastName">
-        <input type="text" name="nome" id="input-name" placeholder="Nome">
-        <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+        <input type="text" name="nome" id="input-name" placeholder="Nome" required>
+        <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome" required>
         </div>
         <div id="emailAndHouse">
-        <input type="email" name="email" id="input-email" placeholder="Email">
+        <input type="email" name="email" id="input-email" placeholder="Email" required>
         <label for="house">Casa
         <select name="house" id="house">
         </select>
@@ -82,7 +82,7 @@
         </div>
 
         <label for="comment" class="textarea"><h3>Deixe seu comentário:</h3>
-            <textarea name="comment" id="comment" cols="50" rows="10" maxlength="500"></textarea>
+            <textarea name="comment" id="comment" cols="50" rows="10" maxlength="500"></textarea required>
 
         </label>
 
@@ -90,7 +90,8 @@
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         <input type="checkbox" value="agreement" id="agreement">
         </div>
-        
+
+        <button type="submit" id="submit-btn">Enviar</button>
         </form>
         <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
 
