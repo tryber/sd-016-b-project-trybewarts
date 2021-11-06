@@ -1,5 +1,5 @@
 const selecionaBtnEntrar = document.querySelector('.btn-entrar');
-const selecionaInputEmail = document.getElementById('input-email');
+const selecionaInputEmail = document.getElementById('input-email-login');
 const selecionaInputSenha = document.getElementById('input-senha');
 
 selecionaBtnEntrar.addEventListener('click', () => {
