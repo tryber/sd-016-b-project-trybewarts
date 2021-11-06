@@ -1,4 +1,8 @@
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145)
+  background-color: rgb(50, 167, 145); 
+}
+
+#trybewarts-header-title {
+  align-self: center;
 }
