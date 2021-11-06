@@ -28,3 +28,11 @@ main {
   float: right;
 }
 
+.form-pt2 {
+  display: flex;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: column;
+}
