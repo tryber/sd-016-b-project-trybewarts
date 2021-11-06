@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -20,30 +22,39 @@
       <button class="btn-entrar">Entrar</button>
     </form>
   </header>
+
   <main>
     <form action="" id="evaluation-form">
-
       <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <input placeholder="Nome" id="input-name" type="text" class="validate">
-            </div>
-            <div class="input-field col s6">
-              <input placeholder="Sobrenome" id="input-lastname" type="text" class="validate">
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s6">
-              <input placeholder="Email" id="input-email" type="email" class="validate">
-            </div>
-          </div>
-        </form>
+        <div class="input-field col s6">
+          <input placeholder="Nome" id="input-name" type="text" class="validate">
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Sobrenome" id="input-lastname" type="text" class="validate">
+        </div>
       </div>
 
-    </form>
+      <!-- Requisito 11 - posicionamento BUGADO -->
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Email" id="input-email" type="email" class="validate">
+          <label for="input-email"></label>
+        </div>
 
+        <div class="input-field col s6">
+          <label>Casa :</label>
+          <select id="house">
+            <option value="" disabled selected></option>
+            <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" text="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" text="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" text="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
+      </div>
+    </form>
   </main>
+
   <aside>
     <img src="images/trybewarts-colored.svg" alt="logo trybe warts" id="trybewarts-forms-logo">
   </aside>
