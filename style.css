@@ -21,3 +21,9 @@ main {
   width: 675px;
   flex-direction: column;
 }
+
+#trybewarts-forms-logo {
+ height: 500px;
+ /* REMOVER O FLOAT NO FINAL. FIZ APENAS PARA NÃO ATRAPALHAR NA MONTAGEM DO FORM */
+ float: right; 
+}
