@@ -8,3 +8,8 @@ selecionaBtnEntrar.addEventListener('click', () => {
   }
   alert('Email ou senha inválidos.');
 });
+
+// Chama o JQuery
+$(document).ready(function(){
+  $('select').formSelect();
+});
