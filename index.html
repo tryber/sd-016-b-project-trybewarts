@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -20,25 +22,80 @@
       <button class="btn-entrar">Entrar</button>
     </form>
   </header>
+
   <main>
     <form action="" id="evaluation-form">
-      <!-- ERRO NO REQUISITO 12. NÃO ESTAO ALINHADOS EMBORA ESTEJA -->
-      <div class="form-pt2">
-        <div class="radio-button">
-          <p ></p>
-          <label id="label-family">Qual sua família?</label>
-            <input name="family" type="radio" value="Frontend"/>
-            <span>Família Frontend</span>
-          
-          <label></label>
-            <input name="family" type="radio" value="Backend"/>
-            <span>Família Backend</span>
-          
-          <label></label>
-            <input name="family" type="radio" value="FullStack"/>
-            <span>Família FullStack</span>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Nome" id="input-name" type="text" class="validate">
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Sobrenome" id="input-lastname" type="text" class="validate">
         </div>
       </div>
+
+      <!-- Requisito 11 - posicionamento BUGADO -->
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Email" id="input-email" type="email" class="validate">
+          <label for="input-email"></label>
+        </div>
+
+        <div class="input-field col s6">
+          <label>Casa :</label>
+          <select id="house">
+            <option value="" disabled selected></option>
+            <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" text="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" text="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" text="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
+      </div>
+          <!-- ERRO NO REQUISITO 12. NÃO ESTAO ALINHADOS EMBORA ESTEJA -->
+      <div class="row">
+            <div class="radio-button col s6">
+              <label id="label-family">Qual sua família?</label>
+              <label></label>
+              <input name="family" type="radio" value="Frontend" />
+              <span>Família Frontend</span>
+
+              <label></label>
+              <input name="family" type="radio" value="Backend" />
+              <span>Família Backend</span>
+
+              <label></label>
+              <input name="family" type="radio" value="FullStack" />
+              <span>Família FullStack</span>
+            </div>
+            <div class="checkbox col s6">
+              <label id="label-content">Qual Conteúdo você está com mais vontade de aprender?</label>
+              <label>
+                <input type="checkbox" value="HoFs"/>
+                <span>HoFs</span>
+              </label>
+              <label>
+                <input type="checkbox" value="Jest"/>
+                <span>Jest</span>
+              </label>
+              <label>
+                <input type="checkbox" value="Promises"/>
+                <span>Promises</span>
+              </label>
+              <label>
+                <input type="checkbox" value="React"/>
+                <span>React</span>
+              </label>
+              <label>
+                <input type="checkbox" value="SQL"/>
+                <span>SQL</span>
+              </label>
+              <label>
+                <input type="checkbox" value="Python"/>
+                <span>Python</span>
+              </label>
+            </div>
+          </div>
     </form>
   </main>
   <aside>
