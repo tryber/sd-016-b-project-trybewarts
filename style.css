@@ -1,4 +1,9 @@
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145)
+  background-color: rgb(50, 167, 145);
+  justify-content: space-around;
+}
+
+.trybewarts-login {
+  display: flex;
 }
