@@ -27,3 +27,12 @@ main {
  /* REMOVER O FLOAT NO FINAL. FIZ APENAS PARA NÃO ATRAPALHAR NA MONTAGEM DO FORM */
  float: right; 
 }
+
+.form-pt2 {
+  display: flex;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: column;
+}
