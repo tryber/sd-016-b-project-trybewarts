@@ -1,6 +1,5 @@
 .header {
   display: flex;
-<<<<<<< HEAD
   background-color: rgb(50, 167, 145);
   justify-content: space-around;
 }
@@ -8,11 +7,7 @@
 .trybewarts-login {
   display: flex;
 }
-=======
-  background-color: rgb(50, 167, 145); 
-}
 
 #trybewarts-header-title {
   align-self: center;
 }
->>>>>>> c4deeb7874cc3c7314df22c68d8266aa20a74169
