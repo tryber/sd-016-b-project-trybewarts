@@ -1,0 +1,62 @@
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-login input {
+  width: 100px;
+  border-style: solid;
+}
+
+main {
+  display: flex;
+}
+
+/* 6- muda eixo do formulário para vertical */
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  border: 2px solid black;
+  flex-direction: column;
+}
+
+/* 7- Adiciona logo trybewarts colorido ao lado direito do form e altura de 500px */
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#input-name , #input-lastname {
+  flex-direction: row;
+  width: 30%;
+}
+
+#families {
+  display: flex;
+  flex-direction: column;
+}
+
+#principal {
+  display: flex;
+  justify-content: space-between;
+}
+
+#avaliation-radios {
+  display: flex;
+  justify-content: space-between;
+}
+
+#coments {
+  display: flex;
+  flex-direction: column;
+}
+
+#agree {
+  display: flex;
+  justify-content: space-between;
+}
