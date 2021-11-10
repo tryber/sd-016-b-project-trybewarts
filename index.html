@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Trybewarts</title>
+</head>
+<body>
+  <!-- 1- Crie uma barra verde na parte superior -->
+  <header class="header">
+  <!-- 2- Adiciona logotipo trybewarts -->
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logotipo da trybewarts">
+    <!-- 4- Adiciona Titulo no header -->
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form class="trybewarts-login" action="">
+      <input type="email" id="email" name="email" placeholder="Email"></input>
+      <input type="password" id="senha" name="password" placeholder="Senha"></input>
+      <button id="button" type="submit">Entrar</button>
+    </form>
+  </header>
+  <!-- 5- Cria main e formulário evaluation -->
+  <main>
+    <form id="evaluation-form" action="">
+      <!-- 8- Cria os inputs para nome, sobrenome e email -->
+      <!-- 10 e 11- coloca os inputs em linha  -->
+      <div class="complete-name">
+        <input type="text" name="Nome" id="input-name" placeholder="Nome">
+        <input type="text" name="SobreNome" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div class="house-email">
+        <input type="email" name="Email" id="input-email" placeholder="Email">
+        <!-- 9- cria select com os nomes das casas -->
+        <select name="Casa" id="house">
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
+      </div>
+      <section id="principal">
+        <!-- 12- cria os radio-buttons com as famílias -->
+        <div id="families">
+          <label id="label-family" action="">Qual sua família?</label>
+          <label for="frontend">
+            <input type="radio" name="family" id="frontend" value="Frontend">Família Frontend
+          </label><br>        
+          <label for="backend">
+            <input type="radio" name="family" id="backend" value="Backend">Família Backend
+          </label><br>        
+          <label for="fullstack">
+            <input type="radio" name="family" id="fullstack" value="FullStack">Família FullStack
+          </label><br>
+        </div>
+        <!-- 13- cria os checkbox com os conteudos que tem vontade de aprender -->
+        <div id="contents">
+          <div>
+            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          </div>
+          <div>
+            <label for="">
+              <input type="checkbox" name="" id="" value="HoFs">HoFs
+            </label>
+            <label for="">
+              <input type="checkbox" name="" id="" value="Jest">Jest
+            </label>
+            <label for="">
+              <input type="checkbox" name="" id="" value="Promises">Promises
+            </label>
+            <label for="">
+              <input type="checkbox" name="" id="" value="React">React
+            </label>
+            <label for="">
+              <input type="checkbox" name="" id="" value="SQL">SQL
+            </label>
+            <label for="">
+              <input type="checkbox" name="" id="" value="Python">Python
+            </label>
+          </div>
+        </div>
+      </section>
+      <!-- 14- cria avaliacao de satisfacao -->
+      <section id="avaliacao">
+        <div id="avaliation-radios">
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+          <div id="rate-buttons"></div>
+        </div>
+        <!-- 15- cria caixa de texto para comentarios -->
+        <div id="coments">
+          <label for="" class="textarea">Deixe seu comentário:</label>
+          <textarea name="" id="textarea" maxlength="500" cols="30" rows="10"></textarea>
+        </div>
+        <!-- 16- cria caixa de selecao de concorda com o uso das informacoes -->
+        <div id="agree">
+          <label for="" id="label-infos">
+            <input type="checkbox" name="agreement" id="agreement">Você concorda com o uso das informações acima?
+          </label>
+          <label id="counter" for="">500</label>
+        </div>
+        <!-- 17- cria botao de submeter -->
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
+      </section>
+    </form>
+    <img id="trybewarts-forms-logo" src="/images/trybewarts-colored.svg" alt="Logotipo colorido da trybewarts">
+  </main>
+  <!-- 19- adiciona footer -->
+  <footer>Direitos reservados à Trybewarts©</footer>
+  <script src="script.js"></script>
+</body>
+</html>
