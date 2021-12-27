@@ -5,15 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
-  <title>Trybewarts</title>
+  <title>TRYBEWARTS</title>
 </head>
 
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo trybewarts">
 
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <h1 id="trybewarts-header-title">TRYBEWARTS</h1>
 
     <form class="trybewarts-login" method="GET">
       <input type="email" name="email" id="email" placeholder="Email">
@@ -26,13 +31,13 @@
       <h2>Formulário de avaliação</h2>
       <div id="user-inputs">
 
-        <div class="container">
+        <div class="container newClass">
           <input type="text" name="name" id="input-name" placeholder="Nome">
           <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
         </div>
-        <div class="container">
+        <div class="container newClass">
           <input type="email" name="email" id="input-email" placeholder="Email">
-          <label for="house">Casa: </label>
+          <label for="house"> </label>
           <select name="house" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -40,22 +45,42 @@
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
           </select>
         </div>
-        <div class="container">
-        <section class="column">
+        <div class="container ">
+        <section class="column family-container">
           <label id="label-family">Qual sua família?</label>
+          <div id="typeRadio">
           <input type="radio" class="family" name="family" value="Frontend"> Frontend
+          </div>
+          <div id="typeRadio">
           <input type="radio" class="family" name="family" value="Backend"> Backend
+          </div>
+          <div id="typeRadio">
           <input type="radio" class="family" name="family" value="FullStack"> FullStack
-        </section>
-        <section class="column">
+          </div>
+        
+        <section class="columnTest">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          
+          <div id="typeRadio">
           <input type="checkbox" class="subject" name="content" id="HoFs" value="HoFs">HoFs
+          </div>
+          <div id="typeRadio">
           <input type="checkbox" class="subject" name="content" id="Jest" value="Jest">Jest
+          </div>
+          <div id="typeRadio">
           <input type="checkbox" class="subject" name="content" id="Promises" value="Promises">Promises
+          </div>
+          <div id="typeRadio">
           <input type="checkbox" class="subject" name="content" id="React" value="React">React
+          </div>
+          <div id="typeRadio">
           <input type="checkbox" class="subject" name="content" id="SQL" value="SQL">SQL
+          </div>
+          <div id="typeRadio">
           <input type="checkbox" class="subject" name="content" id="Python" value="Python">Python
+          </div>
         </section>
+
       </div>
         <section class="evaluation">
           <label id="label-rate">Como você avalia a Trybewarts?</label>
@@ -71,13 +96,12 @@
           <input type="radio" class="rate" name="rate" value="10">10
         </section>
 
-        <section class="comment">
+        <div class="text-area-container">
           <label class="textarea" for="textarea">Deixe seu comentário:</label>
           <textarea name="comment" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-          <div class="counter">
-            <p id="counter">500</p>
-          </div>
-        </section>
+          <span id="counter">500</span> 
+        </div>
+        
 
         <section class="infos-agreement">
           <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>

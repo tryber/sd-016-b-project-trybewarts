@@ -1,12 +1,12 @@
 body {
-  background-color: rgb(221, 221, 221);
+  background-image: url(https://1.bp.blogspot.com/-vkG0CjoS0I0/YG8kU_tQHkI/AAAAAAAADMM/ZZHt3UHGMmoo4TVQ2GfTR2bMoJ20CzV6gCLcBGAsYHQ/s2048/EONb4ENU4AIipTP.jpg);
   margin: 0;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(50, 167, 145);
+  background-color: rgba(209, 209, 209, 0.5);
   padding: 5px 15px;
   align-items: center;
 }
@@ -17,31 +17,30 @@ body {
 }
 
 #email , #password {
-  height: 35px;
-  border-radius: 8px;
+  height: 32px;
+  border-radius: 0px;
   border: none;
   margin-right: 10px;
-  width: 150px;
+  width: 200px;
 }
 
 #login-btn {
-  height: 35px;
-  border-radius: 8px;
+  height: 34px;
+  border-radius: 0px;
   border: none;
   width: 150px;
-  background-color: rgb(81, 0, 128);
+  background-color: rgb(209, 209, 209);
   color: white;
 }
 
 #trybewarts-header-title {
-  justify-self: center;
   color: white;
   font-size: 40px;
   margin: 0;
 }
 
 .trybewarts-header-logo {
-  width: 70px;
+  width: 60px;
 }
 
 main {
@@ -60,13 +59,14 @@ main {
 h2 {
   font-size: 30px;
   text-align: center;
+  color: rgb(209, 209, 209);
 }
 
 #trybewarts-forms-logo {
-  height: 500px;
+  height: 400px;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +89,7 @@ label {
   display: flex;
   flex-flow: column wrap;
   flex-basis: 50%;
+  margin: 10px 0 10px;
 }
 
 .family , .subject {
@@ -106,24 +107,11 @@ label {
   justify-content: space-between;
 }
 
-.counter {
-  background-color: white;
-  border: solid 1px rgb(81, 0, 128);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top: none;
-  font-size: 16px;
-  margin: 0 0 20px;
-  text-align: right;
-  width: 100%;
-}
-
 #counter {
   color: gray;
+  display: flex;
   font-size: 14px;
-  margin: 0;
-  padding: 5px 5px 2px;
-  vertical-align: auto;
+  align-self: flex-end;
 }
 
 :focus-visible {
@@ -132,13 +120,9 @@ label {
 
 #textarea {
   border: solid 1px rgb(81, 0, 128);
-  border-bottom: none;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
   height: 200px;
   margin: 20px 0 0;
-  resize: none;
-  width: 99.5%;
+  width: 100%;
 
 }
 
@@ -150,13 +134,6 @@ label {
   display: flex;
   flex-flow: column wrap;
   width: 675px;
-}
-
-.comment {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 .form-content {
@@ -182,4 +159,107 @@ footer {
   background-color: rgb(83, 83, 83);
   color: white;
   margin-top: 30px;
+}
+
+#typeRadio {
+  display: flex;
+  margin: 10px 0 ;
+}
+
+#checkbox-container{
+  flex-flow: column wrap;
+} */
+
+.newClass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#input-name , #input-lastname , #input-email , #house {
+  width: 50%;
+  margin: 0 8px 8px 0;
+  height: 32px;
+  border-radius: 0px;
+  border: none;
+  background-color: white;
+}
+
+#label-family {
+  font-size: 18px;
+  color: azure;
+}
+
+.family-container {
+  margin: 15px 0 20px;
+  font-size: 16px;
+  color: azure;
+}
+
+.family {
+  margin: 10px 5px;
+}
+
+#label-content{
+  font-size: 18px;
+  color: azure;
+}
+
+.columnTest {
+  margin: 15px 0 20px;
+  font-size: 16px; 
+}
+
+.subject  {
+  margin: 10px 5px;
+}
+
+#label-rate {
+  font-size: 18px;
+  color: azure;
+}
+
+.evaluation {
+  margin: 15px 0 20px;
+  font-size: 16px;
+  color: white;
+}
+
+.rate {
+  margin: 10px 5px;
+}
+
+.text-area-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 20px;
+  font-size: 16px; 
+  color: azure;
+}
+
+.textarea {
+  margin: 10px 0;
+  width: 100%;
+}
+
+#counter {
+  display: flex;
+  align-self: flex-end;
+  font-size: 14px;
+}
+
+.infos-agreement {
+  margin: 15px 0 20px;
+  font-size: 16px; 
+  color: azure;
+}
+
+#submit-btn {
+  width: 100%;
+}
+
+footer {
+  margin: 50px 0 30px;
+  font-size: 16px;
+  text-align: center; 
 }
